@@ -7,14 +7,61 @@ categories: jekyll decap-cms
 
 ## Install Jekyll
 
-See Jekyll install here make a post
+See [Jekyll install doc](https://docs.google.com/document/d/1LaqoY2Qii0Hcc6W6c8yt6eByBQiBJ1MB/edit?usp=sharing&ouid=104371554567107929993&rtpof=true&sd=true)
+
+## Version your project
+
+See [Git documentation](https://docs.google.com/document/d/1TfthdzUD5Cu6U8MjtL_WqqI4O09He0nr/edit?usp=sharing&ouid=104371554567107929993&rtpof=true&sd=true)
+
+[Repo here](https://github.com/djacquel/jekyll-decap-cms)
 
 ## Install Decap CMS
 
 ref : [Decap CMS documentation for Jekyll](https://decapcms.org/docs/jekyll/)
 
+Create an admin folder at the root of your site.
 
+Create an index.html file containing :
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <!-- Include the identity widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>
+{% endhighlight %}
+
+And a config.yml file containing :
+
+{% highlight yaml %}
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: 'assets/uploads'
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+      - { name: Title }
+{% endhighlight %}
+
+## Deploy to Netlify
+
+Follow the steps : Add new site > Import an existing project > etc
+
+[Site config here](https://app.netlify.com/sites/jekyll-decap-cms/overview)
+
+~~Then, in site configuration, activate __Visual Editor__.~~ A little bit hard.
+
