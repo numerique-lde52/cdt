@@ -63,5 +63,9 @@ Follow the steps : Add new site > Import an existing project > etc
 
 [Site config here](https://app.netlify.com/sites/jekyll-decap-cms/overview)
 
-~~Then, in site configuration, activate __Visual Editor__.~~ A little bit hard.
+### Activate Netlify Identity 
 
+From site overview > Integrations > Identity
+
+ 1 - Activate Identity
+ 2 - From Identity > Services : Activate Git Gateway
