@@ -3,9 +3,8 @@ layout: post
 title: Installing Decap CMS with Jekyll
 date: 2024-09-03 17:21:22 +0200
 categories: jekyll decap-cms
-author: DaJa
+author: DaJA
 ---
-
 ## Install Jekyll
 
 See [Jekyll install doc](https://docs.google.com/document/d/1LaqoY2Qii0Hcc6W6c8yt6eByBQiBJ1MB/edit?usp=sharing&ouid=104371554567107929993&rtpof=true&sd=true)
@@ -22,10 +21,12 @@ ref : [Decap CMS documentation for Jekyll](https://decapcms.org/docs/jekyll/)
 
 Create an admin folder at the root of your site.
 
-Create an ___index.html___ file containing :
+Create an ***index.html*** file containing :
 
 {% highlight html %}
+
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -41,7 +42,7 @@ Create an ___index.html___ file containing :
 </html>
 {% endhighlight %}
 
-And a ___config.yml___ file containing :
+And a ***config.yml*** file containing :
 
 {% highlight yaml %}
 backend:
@@ -51,22 +52,23 @@ backend:
 media_folder: 'assets/uploads'
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    fields:
-      - { name: Title }
-{% endhighlight %}
+
+* name: 'blog'
+      label: 'Blog'
+      folder: '_posts/'
+      fields:
+        - { name: Title }
+  {% endhighlight %}
 
 ## Deploy to Netlify
 
-Follow the steps : __Add new site__ > __Import an existing project__
+Follow the steps : **Add new site** > **Import an existing project**
 
 [Site config here](https://app.netlify.com/sites/jekyll-decap-cms/overview)
 
-### Activate Netlify Identity 
+### Activate Netlify Identity
 
-From site overview > __Integrations__ > __Identity__
+From site overview > **Integrations** > **Identity**
 
-  1. __Activate Identity__
-  2. From Identity > Services : __Activate Git Gateway__
+1. **Activate Identity**
+2. From Identity > Services : **Activate Git Gateway**
