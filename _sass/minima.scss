@@ -49,3 +49,13 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+
+a.externalLink{
+  background: url(../img/external-link-10.png) center right no-repeat;
+  padding-right: 13px;
+}
+
+a.externalLink:hover{
+  background: url(../img/external-link-10-green.png) center right no-repeat;
+}
