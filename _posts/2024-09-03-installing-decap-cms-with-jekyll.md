@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Installing Decap CMS"
+title:  "Installing Decap CMS with Jekyll"
 date:   2024-09-03 17:21:22 +0200
 categories: jekyll decap-cms
 ---
@@ -21,7 +21,7 @@ ref : [Decap CMS documentation for Jekyll](https://decapcms.org/docs/jekyll/)
 
 Create an admin folder at the root of your site.
 
-Create an index.html file containing :
+Create an ___index.html___ file containing :
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -40,7 +40,7 @@ Create an index.html file containing :
 </html>
 {% endhighlight %}
 
-And a config.yml file containing :
+And a ___config.yml___ file containing :
 
 {% highlight yaml %}
 backend:
@@ -59,13 +59,13 @@ collections:
 
 ## Deploy to Netlify
 
-Follow the steps : Add new site > Import an existing project > etc
+Follow the steps : __Add new site__ > __Import an existing project__
 
 [Site config here](https://app.netlify.com/sites/jekyll-decap-cms/overview)
 
 ### Activate Netlify Identity 
 
-From site overview > Integrations > Identity
+From site overview > __Integrations__ > __Identity__
 
- 1 - Activate Identity
- 2 - From Identity > Services : Activate Git Gateway
+  1. __Activate Identity__
+  2. From Identity > Services : __Activate Git Gateway__
