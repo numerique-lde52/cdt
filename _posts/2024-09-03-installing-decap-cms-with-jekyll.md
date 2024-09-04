@@ -3,7 +3,7 @@ layout: post
 title: Installing Decap CMS with Jekyll
 date: 2024-09-03 17:21:22 +0200
 categories: jekyll decap-cms
-author: DaJA
+author: DaJa
 ---
 ## Install Jekyll
 
