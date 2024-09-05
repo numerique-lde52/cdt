@@ -1,0 +1,13 @@
+---
+layout: page
+title: Galleries
+permalink: /galleries/
+---
+{% for gallery in site.galleries %}
+<a href="{{ gallery.url | relative_url }}">
+<figure>
+<img src="/.netlify/images?url={{ gallery.thumbnail | relative_url }}&w=340" alt='{{ gallery.title }}"' />
+<figcaption>{{ gallery.title }}"</figcaption>
+</figure>
+</a>
+{% endfor %}

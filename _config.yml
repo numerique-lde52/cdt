@@ -20,7 +20,13 @@ plugins:
 
 collections:
   authors:
+  galleries:
+    output: True  
 
+input: GFM
+kramdown:
+    parse_block_html: true
+    parse_span_html: true
 
 
 # Exclude from processing.
