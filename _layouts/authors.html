@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for author in site.authors %}
+
+<figure>
+  <img src="{{ author.image | relative_url }}" alt='{{ author.name }} - "{{ author.pseudo }}"' />
+  <figcaption>{{ author.name }} - "{{ author.pseudo }}"</figcaption>
+</figure>
+
+<p>{{ author.bio | markdownify }}</p>
+{% endfor %}

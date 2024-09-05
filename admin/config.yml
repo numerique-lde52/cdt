@@ -42,7 +42,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
       - { label: 'Pseudo', name: 'pseudo', widget: 'string' }
       - { label: 'Full Name', name: 'name', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown', required: False }
