@@ -5,7 +5,7 @@ layout: default
 <script type="module">
 import PhotoSwipeLightbox from "{{ '/assets/js/photoswipe-lightbox.esm.min.js' | relative_url }}";
 const lightbox = new PhotoSwipeLightbox({
-  gallery: '#my-gallery',
+  gallery: '#gallery',
   children: 'a',
   pswpModule: () => import("{{ '/assets/js/photoswipe.esm.min.js' | relative_url }}")
 });
@@ -13,7 +13,7 @@ lightbox.init();
 </script>
 
 <h2>{{ page.title }}</h2>
-<div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+<div class="pswp-gallery pswp-gallery--single-column" id="gallery">
 {% for image in page.images %}
 <a href="/.netlify/images?url={{ image.url | relative_url }}&w=1024" 
     data-pswp-width="1669" 
