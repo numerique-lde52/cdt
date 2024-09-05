@@ -11,4 +11,8 @@ images:
     caption: Cèpe de Bordeaux
   - url: /assets/uploads/mante-seb.jpg
     caption: Mante feuille
+  - url: /assets/uploads/pxl_20240901_093722771.jpg
+    caption: Eau
+  - url: /assets/uploads/pxl_20240815_085439560.jpg
+    caption: Cordulégastre bidenté - Cordulegaster bidentata
 ---
