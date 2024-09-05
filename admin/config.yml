@@ -46,3 +46,47 @@ collections:
       - { label: 'Display Name', name: 'display_name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'test'
+    label: 'Test'
+    folder: '_tests'
+    create: True
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'test' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: 'Code', name: 'code', widget: 'code' }
+      - { label: 'Color', name: 'color', widget: 'color', enableAlpha: true, allowInput: true }
+      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "L", picker_utc: false }
+      - { label: "Document", name: "document", widget: "file" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true }
+      - { label: "Authors", name: "authors", widget: "list", default: ["authors"] }
+      - { label: "Location", name: "location", widget: "map" }
+      - { label: 'Mardown', name: 'body', widget: 'markdown' }
+      - { label: "Count", name: "count", widget: "number", default: 2, value_type: "int", min: 1, max: 101, step: 2 }
+      - { label: "City", name: "airport-code", widget: "select", options: { label: "Chicago", value: "ORD" }, { label: "Paris", value: "CDG" }, { label: "Tokyo", value: "HND" } }
+      - label: 'Home Section'
+        name: 'sections'
+        widget: 'list'
+        types:
+          - label: 'Carousel'
+            name: 'carousel'
+            widget: object
+            summary: '{{fields.header}}'
+            fields:
+              - { label: Header, name: header, widget: string, default: 'Image Gallery' }
+              - { label: Template, name: template, widget: string, default: 'carousel.html' }
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+          - label: 'Spotlight'
+            name: 'spotlight'
+            widget: object
+            fields:
+              - { label: Header, name: header, widget: string, default: 'Spotlight' }
+              - { label: Template, name: template, widget: string, default: 'spotlight.html' }
+              - { label: Text, name: text, widget: text, default: 'Hello World' }
