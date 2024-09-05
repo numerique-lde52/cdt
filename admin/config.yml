@@ -63,9 +63,9 @@ collections:
       - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "L", picker_utc: false }
       - { label: "Document", name: "document", widget: "file" }
       - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true }
-      - { label: "Authors", name: "authors", widget: "list", default: ["authors"] }
+      - { label: "Authors", name: "authors", widget: "list", allow_add: True, default: ["authors"] }
       - { label: "Location", name: "location", widget: "map" }
-      - { label: 'Mardown', name: 'body', widget: 'markdown' }
+      - { label: 'Mardown', name: 'somemarkdown', widget: 'markdown' }
       - { label: "Count", name: "count", widget: "number", default: 2, value_type: "int", min: 1, max: 101, step: 2 }
       - { label: "City", name: "airport-code", widget: "select", options: [ { label: "Chicago", value: "ORD" }, 
                                                                             { label: "Paris", value: "CDG" }, 
