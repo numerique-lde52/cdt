@@ -67,7 +67,10 @@ collections:
       - { label: "Location", name: "location", widget: "map" }
       - { label: 'Mardown', name: 'body', widget: 'markdown' }
       - { label: "Count", name: "count", widget: "number", default: 2, value_type: "int", min: 1, max: 101, step: 2 }
-      - { label: "City", name: "airport-code", widget: "select", options: { label: "Chicago", value: "ORD" }, { label: "Paris", value: "CDG" }, { label: "Tokyo", value: "HND" } }
+      - { label: "City", name: "airport-code", widget: "select", options: [ { label: "Chicago", value: "ORD" }, 
+                                                                            { label: "Paris", value: "CDG" }, 
+                                                                            { label: "Tokyo", value: "HND" } ] 
+        }
       - label: 'Home Section'
         name: 'sections'
         widget: 'list'
