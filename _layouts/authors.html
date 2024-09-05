@@ -11,6 +11,6 @@ layout: default
 
 <p>{{ author.bio | markdownify }}</p>
 
-<img src="{{ site.url }}/.netlify/images?url={{ author.image | relative_url }}" alt='{{ author.name }} - "{{ author.pseudo }}"' />
+<img src="{{ site.url }}/.netlify/images?url={{ author.image | relative_url }}&w=740" alt='{{ author.name }} - "{{ author.pseudo }}"' />
 
 {% endfor %}
