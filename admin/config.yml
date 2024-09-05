@@ -27,14 +27,15 @@ collections:
           name: 'author',
           widget: 'relation',
           collection: 'authors',
-          display_fields: [display_name],
-          search_fields: [display_name],
+          display_fields: [name],
+          search_fields: [name],
           value_field: 'name',
         }      
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'authors'
     label: 'Authors'
+    label_singular: 'Authors'
     folder: '_authors/'
     create: true
     identifier_field: name
@@ -42,10 +43,10 @@ collections:
       preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'author' }
-      - { label: 'Short Name', name: 'name', widget: 'string' }
-      - { label: 'Display Name', name: 'display_name', widget: 'string' }
-      - { label: 'Position', name: 'position', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Pseudo', name: 'pseudo', widget: 'string' }
+      - { label: 'Full Name', name: 'name', widget: 'string' }
+      - { label: 'Bio', name: 'bio', widget: 'markdown' }
+      - { label: 'Image', name: 'image', widget: 'image' }
 
   - name: 'test'
     label: 'Test'
@@ -60,7 +61,7 @@ collections:
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: 'Code', name: 'code', widget: 'code' }
       - { label: 'Color', name: 'color', widget: 'color', enableAlpha: true, allowInput: true }
-      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "L", picker_utc: false }
+      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "YYYY/MM/DD", picker_utc: false }
       - { label: "Document", name: "document", widget: "file" }
       - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true }
       - { label: "Authors", name: "authors", widget: "list", allow_add: True, default: ["authors"] }
