@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href={{ "photoswipe/dist/photoswipe.css" | relative_url}}>
+<link rel="stylesheet" href={{ "/assets/js/photoswipe.css" | relative_url }}>
 <script type="module">
-import PhotoSwipeLightbox from {{ '/assets/js/photoswipe-lightbox.esm.js' | relative_url }};
+import PhotoSwipeLightbox from "{{ '/assets/js/photoswipe-lightbox.esm.min.js' | relative_url }}";
 const lightbox = new PhotoSwipeLightbox({
   gallery: '#my-gallery',
   children: 'a',
-  pswpModule: () => import({{ '/assets/js/photoswipe.esm.js' | relative_url }})
+  pswpModule: () => import("{{ '/assets/js/photoswipe.esm.min.js' | relative_url }}")
 });
 lightbox.init();
 </script>

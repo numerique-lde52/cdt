@@ -35,7 +35,7 @@ collections:
 
   - name: 'authors'
     label: 'Authors'
-    label_singular: 'Authors'
+    label_singular: 'Author'
     folder: '_authors/'
     create: true
     identifier_field: name
@@ -47,52 +47,32 @@ collections:
       - { label: 'Bio', name: 'bio', widget: 'markdown', required: False }
       - { label: 'Image', name: 'image', widget: 'image', required: False }
 
-  - name: 'test'
-    label: 'Test'
-    folder: '_tests'
+  - name: 'galleries'
+    label: 'Galleries'
+    label_singular: 'Gallery'
+    folder: '_galleries'
     create: True
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'test' }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'gallery' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
-      - { label: 'Code', name: 'code', widget: 'code' }
-      - { label: 'Color', name: 'color', widget: 'color', enableAlpha: true, allowInput: true }
       - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "YYYY/MM/DD", picker_utc: false }
-      - { label: "Document", name: "document", widget: "file" }
       - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true }
-      - { label: "Authors", name: "authors", widget: "list", allow_add: True, default: ["authors"] }
-      - { label: "Location", name: "location", widget: "map" }
-      - { label: 'Mardown', name: 'somemarkdown', widget: 'markdown' }
-      - { label: "Count", name: "count", widget: "number", default: 2, value_type: "int", min: 1, max: 101, step: 2 }
-      - { label: "City", name: "airport-code", widget: "select", options: [ { label: "Chicago", value: "ORD" }, 
-                                                                            { label: "Paris", value: "CDG" }, 
-                                                                            { label: "Tokyo", value: "HND" } ] 
-        }
-      - label: 'Home Section'
-        name: 'sections'
-        widget: 'list'
-        types:
-          - label: 'Carousel'
-            name: 'carousel'
-            widget: object
-            summary: '{{fields.header}}'
-            fields:
-              - { label: Header, name: header, widget: string, default: 'Image Gallery' }
-              - { label: Template, name: template, widget: string, default: 'carousel.html' }
-              - label: Images
-                name: images
-                widget: list
-                fields: 
-                  - { label: Image, name: image, widget: image }
-                  - { label: Caption, name: caption, widget: string }
-                  
-          - label: 'Spotlight'
-            name: 'spotlight'
-            widget: object
-            fields:
-              - { label: Header, name: header, widget: string, default: 'Spotlight' }
-              - { label: Template, name: template, widget: string, default: 'spotlight.html' }
-              - { label: Text, name: text, widget: text, default: 'Hello World' }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'relation',
+          collection: 'authors',
+          display_fields: [name],
+          search_fields: [name],
+          value_field: 'name',
+        }      
+        - label: Images
+            name: images
+            widget: list
+            fields: 
+              - { label: Image, name: image, widget: image }
+              - { label: Caption, name: caption, widget: string }
