@@ -53,7 +53,7 @@ media_folder: 'assets/uploads'
 
 collections:
 
-* name: 'blog'
+- name: 'blog'
       label: 'Blog'
       folder: '_posts/'
       fields:
