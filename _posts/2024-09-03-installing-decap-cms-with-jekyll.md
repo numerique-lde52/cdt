@@ -72,3 +72,7 @@ From site overview > **Integrations** > **Identity**
 
 1. **Activate Identity**
 2. From Identity > Services : **Activate Git Gateway**
+
+### Local development
+
+[Netlify CLI documentation](https://docs.netlify.com/cli/get-started/)
