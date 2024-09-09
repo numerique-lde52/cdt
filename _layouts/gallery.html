@@ -9,7 +9,19 @@ import PhotoSwipeLightbox from "{{ '/assets/js/photoswipe-lightbox.esm.min.js' |
 const options = {
   gallery: '#gallery',
   children: 'a',
-  pswpModule: () => import("{{ '/assets/js/photoswipe.esm.min.js' | relative_url }}")
+  
+  closeTitle: 'Fermer',
+  zoomTitle: 'Zoom',
+  arrowPrevTitle: 'Photo précédente',
+  arrowNextTitle: 'Photo suivante',
+
+  errorMsg: "La photo n'est pas disponible",
+  indexIndicatorSep: ' sur ',
+
+  bgOpacity: 1,
+
+  pswpModule: () => import("{{ '/assets/js/photoswipe.esm.min.js' | relative_url }}"),
+  spacing: 0.5,
 };
 
 const lightbox = new PhotoSwipeLightbox(options);
@@ -45,7 +57,7 @@ lightbox.init();
     data-pswp-height="1536" 
     data-cropped="true" 
     target="_blank">
-    <img src="/.netlify/images?url={{ image.url | relative_url }}&w=200" alt="{{ image.caption }}" />
+    <img src="/.netlify/images?url={{ image.url | relative_url }}&w=200&h=151&fit=cover" alt="{{ image.caption }}" />
 </a>
 {% endfor %}
 </div>
