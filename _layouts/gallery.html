@@ -4,60 +4,63 @@ layout: default
 
 <script type="module">
 
-import PhotoSwipeLightbox from "{{ '/assets/js/photoswipe-lightbox.esm.min.js' | relative_url }}";
+  import PhotoSwipeLightbox from "{{ '/assets/js/photoswipe-lightbox.esm.min.js' | relative_url }}";
 
-const options = {
-  gallery: '#gallery',
-  children: 'a',
-  
-  closeTitle: 'Fermer',
-  zoomTitle: 'Zoom',
-  arrowPrevTitle: 'Photo précédente',
-  arrowNextTitle: 'Photo suivante',
+  const options = {
+    gallery: '#gallery',
+    children: 'a',
+    
+    closeTitle: 'Fermer',
+    zoomTitle: 'Zoom',
+    arrowPrevTitle: 'Photo précédente',
+    arrowNextTitle: 'Photo suivante',
 
-  errorMsg: "La photo n'est pas disponible",
-  indexIndicatorSep: ' sur ',
+    errorMsg: "La photo n'est pas disponible",
+    indexIndicatorSep: ' sur ',
 
-  bgOpacity: 1,
+    bgOpacity: 1,
 
-  pswpModule: () => import("{{ '/assets/js/photoswipe.esm.min.js' | relative_url }}"),
-  spacing: 0.5,
-};
+    pswpModule: () => import("{{ '/assets/js/photoswipe.esm.min.js' | relative_url }}"),
+    spacing: 0.5,
+  };
 
-const lightbox = new PhotoSwipeLightbox(options);
-lightbox.on('uiRegister', function() {
-  lightbox.pswp.ui.registerElement({
-    name: 'custom-caption',
-    order: 9,
-    isButton: false,
-    appendTo: 'root',
-    html: 'Caption text',
-    onInit: (el, pswp) => {
-      lightbox.pswp.on('change', () => {
-        const currSlideElement = lightbox.pswp.currSlide.data.element;
-        let captionHTML = '';
-        if (currSlideElement) {
-          captionHTML = currSlideElement.querySelector('img').getAttribute('alt');
-        }
-        el.innerHTML = captionHTML || '';
-      });
-    }
+  const lightbox = new PhotoSwipeLightbox(options);
+  lightbox.on('uiRegister', function() {
+    lightbox.pswp.ui.registerElement({
+      name: 'custom-caption',
+      order: 9,
+      isButton: false,
+      appendTo: 'root',
+      html: 'Caption text',
+      onInit: (el, pswp) => {
+        lightbox.pswp.on('change', () => {
+          const currSlideElement = lightbox.pswp.currSlide.data.element;
+          let captionHTML = '';
+          if (currSlideElement) {
+            captionHTML = currSlideElement.querySelector('img').getAttribute('alt');
+          }
+          el.innerHTML = captionHTML || '';
+        });
+      }
+    });
   });
-});
 
-lightbox.init();
+  lightbox.init();
 
 </script>
 
 <h2>{{ page.title }}</h2>
+{% assign indexFile = page.name | replace:'.md','.html' %}
+{% assign galleryPath = page.url | remove : indexFile %}
+
 <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
 {% for image in page.images %}
-<a href="/.netlify/images?url={{ image.url | relative_url }}&w=2040" 
+<a href="/.netlify/images?url={{ galleryPath }}{{ image.url }}&w=2040" 
     data-pswp-width="2040" 
     data-pswp-height="1536" 
     data-cropped="true" 
     target="_blank">
-    <img src="/.netlify/images?url={{ image.url | relative_url }}&w=200&h=151&fit=cover" alt="{{ image.caption }}" loading="lazy" />
+    <img src="/.netlify/images?url={{ galleryPath }}{{ image.url }}&w=200&h=151&fit=cover" alt="{{ image.caption }}" loading="lazy" />
 </a>
 {% endfor %}
 </div>
