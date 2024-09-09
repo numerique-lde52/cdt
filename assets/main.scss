@@ -33,6 +33,18 @@ a.externalLink:hover{
   left: 50%;
   bottom: 16px;
   transform: translateX(-50%);
+  text-align: center;
+
+  em{
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+  }
+
+  span{
+    font-size: 12px;
+  }
+
 }
 .pswp__custom-caption a {
   color: #fff;

@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <script type="module">
 
   import PhotoSwipeLightbox from "{{ '/assets/js/photoswipe-lightbox.esm.min.js' | relative_url }}";
@@ -37,7 +36,8 @@ layout: default
           const currSlideElement = lightbox.pswp.currSlide.data.element;
           let captionHTML = '';
           if (currSlideElement) {
-            captionHTML = currSlideElement.querySelector('img').getAttribute('alt');
+            captionHTML = "<em>'" + currSlideElement.querySelector('img').getAttribute('alt') + "'</em>";
+            captionHTML = captionHTML + ' <span class="tech">(' + currSlideElement.querySelector('img').getAttribute('data-exif') + ')</span>';
           }
           el.innerHTML = captionHTML || '';
         });
@@ -48,19 +48,48 @@ layout: default
   lightbox.init();
 
 </script>
-
 <h2>{{ page.title }}</h2>
 {% assign indexFile = page.name | replace:'.md','.html' %}
-{% assign galleryPath = page.url | remove : indexFile %}
+{% assign imageRelativeUrl = page.url | remove : indexFile %}
+{% assign imagePath = page.path | remove : page.name %}
 
 <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
 {% for image in page.images %}
-<a href="/.netlify/images?url={{ galleryPath }}{{ image.url }}&w=2040" 
-    data-pswp-width="2040" 
-    data-pswp-height="1536" 
+
+{% assign imageFullPath = site.source | append: '/' | append: imagePath | append: image.url %}
+{% assign imageUrl = imageRelativeUrl | append: image.url %}
+
+{% capture has_exif %}{{ imageFullPath | exif: "exif?" }}{% endcapture %}
+{% if has_exif %}{% capture exif %}
+    {{ imageFullPath | exif: 'date_time' | date: "%Y" }}
+    - {{ imageFullPath | exif: 'shutter_speed_value' }}s 
+    - f/{{ imageFullPath | exif: 'aperture_value' }} 
+    - ISO{{ imageFullPath | exif: 'iso_speed_ratings' }} 
+    - {{ imageFullPath | exif: 'focal_length_in_35mm_film' }}mm
+{% endcapture %}{% endif %}
+
+{% capture imageW %}{{ imageFullPath | exif: "width" }}{% endcapture %}
+{% capture imageH %}{{ imageFullPath | exif: "height" }}{% endcapture %}
+
+{% if imageW > imageH %} <!-- Portrait -->
+  {% assign w = 2040 %}
+  {% assign h = 1536 %}
+  {% assign ws = 200 %}
+  {% assign hs = 200 %}
+{% else %}
+  {% assign w = 1536 %} <!-- Paysage -->
+  {% assign h = 2040 %}
+  {% assign ws = 200 %}
+  {% assign hs = 200 %}
+{% endif %}
+
+<a href="/.netlify/images?url={{ imageUrl }}&w={{ w }}" 
+    data-pswp-width="{{ w }}" 
+    data-pswp-height="{{ h }}" 
     data-cropped="true" 
     target="_blank">
-    <img src="/.netlify/images?url={{ galleryPath }}{{ image.url }}&w=200&h=151&fit=cover" alt="{{ image.caption }}" loading="lazy" />
+    <img src="/.netlify/images?url={{ imageUrl }}&w={{ ws }}&h={{ hs }}&fit=cover" alt="{{ image.caption }}" data-exif="{{ exif }}" loading="lazy" />
 </a>
+
 {% endfor %}
 </div>
