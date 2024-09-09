@@ -20,15 +20,15 @@ a.externalLink:hover{
 }
 
 /*! PhotoSwipe captions styling */
-.pswp__custom-caption {
+.pswp--ui-visible .pswp__custom-caption {
   background: #111;
-  opacity: 0.5;
+  opacity: 0.9;
   font-size: 16px;
   color: #fff;
   width: 100%; /*calc(100% - 32px);*/
   max-width: 400px;
   padding: 2px 8px;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   position: absolute;
   left: 50%;
   bottom: 16px;
