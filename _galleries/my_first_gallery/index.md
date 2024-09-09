@@ -2,7 +2,7 @@
 layout: gallery
 title: My first gallery
 description: empty
-draft: true
+published: true
 date: 2024/09/05
 thumbnail: mante-seb.jpg
 author: David Jacquel

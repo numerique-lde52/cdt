@@ -2,7 +2,7 @@
 layout: gallery
 title: My new gallery
 description: Description here ff
-draft: true
+published: true
 date: 2024/09/09
 thumbnail: faune-retouche.jpg
 author: David Jacquel
