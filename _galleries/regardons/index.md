@@ -2,7 +2,7 @@
 layout: gallery
 title: Regardons
 description: Exposition en préparation
-published: false
+published: true
 date: 2024/09/06
 thumbnail: pxl_20240806_094033371.jpg
 author: David Jacquel
