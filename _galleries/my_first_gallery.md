@@ -12,7 +12,7 @@ images:
   - url: /assets/uploads/mante-seb.jpg
     caption: Mante feuille
   - url: /assets/uploads/pxl_20240901_093722771.jpg
-    caption: Eau
+    caption: Algues dans l'Aube
   - url: /assets/uploads/pxl_20240815_085439560.jpg
     caption: Cordulégastre bidenté - Cordulegaster bidentata
 ---
