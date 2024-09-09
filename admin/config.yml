@@ -60,7 +60,6 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'gallery' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Dir', name: 'dir', widget: 'hidden', default: {{slug}} }
       - { label: 'Description', name: 'description', widget: 'markdown' }
       - { label: "Draft", name: "draft", widget: "boolean", default: true }
       - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "YYYY/MM/DD", picker_utc: false }
