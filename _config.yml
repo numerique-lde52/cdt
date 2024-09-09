@@ -15,7 +15,8 @@ timezone: Europe/Paris
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
+  - jekyll-exif-data
+  
 collections:
   authors:
   galleries:
