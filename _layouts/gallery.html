@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href={{ "/assets/js/photoswipe.css" | relative_url }}>
+
 <script type="module">
 
 import PhotoSwipeLightbox from "{{ '/assets/js/photoswipe-lightbox.esm.min.js' | relative_url }}";
@@ -57,7 +57,7 @@ lightbox.init();
     data-pswp-height="1536" 
     data-cropped="true" 
     target="_blank">
-    <img src="/.netlify/images?url={{ image.url | relative_url }}&w=200&h=151&fit=cover" alt="{{ image.caption }}" />
+    <img src="/.netlify/images?url={{ image.url | relative_url }}&w=200&h=151&fit=cover" alt="{{ image.caption }}" loading="lazy" />
 </a>
 {% endfor %}
 </div>
