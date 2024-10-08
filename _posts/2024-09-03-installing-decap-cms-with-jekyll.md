@@ -53,7 +53,7 @@ media_folder: 'assets/uploads'
 
 collections:
 
-- name: 'blog'
+* name: 'blog'
       label: 'Blog'
       folder: '_posts/'
       fields:
@@ -77,12 +77,17 @@ From site overview > **Integrations** > **Identity**
 
 [Netlify CLI documentation](https://docs.netlify.com/cli/get-started/)
 {% highlight bash %}
+
 # Install Node Version Manager
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm install node
 
 # Install Netlify CLI
+
 npm install netlify-cli -g
+
 # And run it
+
 netlify dev
 {% endhighlight %}
