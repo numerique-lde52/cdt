@@ -81,7 +81,7 @@ collections:
           - { label: 'Caption', name: 'caption', widget: 'string' }
 
 
-- name: pages
+  - name: pages
     label: Pages
     label_singular: 'Page'
     folder: pages
