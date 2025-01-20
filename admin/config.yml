@@ -113,8 +113,8 @@ collections:
         widget: relation
         collection: configuration
         file: _data/categories.yml
-        search_fields: ["categorie.*.name"]
-        value_field: "categorie.*.name"
+        search_fields: ["categories.*.name"]
+        value_field: "categories.*.name"
 
       - label: Ordre
         name: Ordre
@@ -125,12 +125,12 @@ collections:
     name: "configuration"
     files:
 
-      - label: Catégorie
+      - label: Catégories
         name: categories
         file: _data/categories.yml
         fields:
-          - label: Catégorie
-            name: categorie
+          - label: Catégories
+            name: categories
             widget: list
             fields:
               - label: Name
