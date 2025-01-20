@@ -119,8 +119,7 @@ collections:
 
       - label: Ordre
         name: Ordre
-        widget: text
-        default: 000
+        widget: number
 
   - label: "Configuration"
     name: "configuration"
