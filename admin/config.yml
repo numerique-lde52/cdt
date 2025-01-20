@@ -112,8 +112,9 @@ collections:
         name: categorie
         widget: relation
         collection: configuration
-        search_fields: ["categories.*.name"]
-        value_field: "categories.*.name"
+        file: _data/categories.yml
+        search_fields: ["categorie.*.name"]
+        value_field: "categorie.*.name"
 
       - label: Ordre
         name: Ordre
@@ -132,5 +133,9 @@ collections:
             name: categorie
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
+              - label: Name
+                name: name
+                widget: string
+              - label: Position
+                name: position
+                widget: number
