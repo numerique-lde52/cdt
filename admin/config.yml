@@ -124,29 +124,13 @@ collections:
     name: "configuration"
     files:
 
-    - label: Catégorie
-      name: categories
-      file: _data/categories.yml"
-      fields:
-        - label: Catégorie
-          name: categorie
-          widget: list
-          fields:
-            - {label: Name, name: name, widget: string}
-
-  - label: "Yolo"
-    name: "yolo"
-    files:
-      - label: "About Page"
-        name: "about"
-        file: "_data/about.yml"
+      - label: Catégorie
+        name: categories
+        file: _data/categories.yml
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - label: Catégorie
+            name: categorie
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
