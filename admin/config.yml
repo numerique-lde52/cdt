@@ -128,7 +128,8 @@ collections:
       name: categories
       file: _data/categories.yml"
       fields:
-        - label: Title
-          name: title  
-          widget: string
-
+        - label: Catégorie
+          name: categorie
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
