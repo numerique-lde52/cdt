@@ -87,10 +87,10 @@ collections:
     create: true
 
     fields:
-      - label: Draft
-        name: draft
+      - label: Publiée
+        name: published
         widget: boolean
-        default: true
+        default: false
 
       - label: URL
         name: permalink
@@ -108,12 +108,12 @@ collections:
         name: body
         widget: markdown
 
-      # - label: Catégorie
-      #   name: categorie
-      #   widget: relation
-      #   collection: categories
-      #   search_fields: ["name"]
-      #   value_field: "name"
+      - label: Catégorie
+        name: categorie
+        widget: relation
+        collection: configuration
+        search_fields: ["categories.*.name"]
+        value_field: "categories.*.name"
 
       - label: Ordre
         name: Ordre
