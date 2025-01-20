@@ -92,13 +92,17 @@ collections:
         widget: boolean
         default: true
 
+      - label: URL
+        name: permalink
+        widget: string
+
       - label: Title
         name: title
         widget: string
 
-      - label: URL
-        name: permalink
-        widget: string
+      - label: Introduction
+        name: intro
+        widget: markdown
 
       - label: Body
         name: body
