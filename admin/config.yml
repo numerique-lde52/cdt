@@ -82,7 +82,7 @@ collections:
 
   - name: pages-fr
     label: Pages FR
-    label_singular: 'Page FR'
+    label_singular: Page FR
     folder: pages-fr
     create: true
 
@@ -120,11 +120,15 @@ collections:
         widget: text
         default: 000
 
-  - label: Catégorie
-    name: categories
-    file: _data/categories.yml"
-    fields:
-      - label: Title
-        name: title  
-        widget: string
+  - label: "Configuration"
+    name: "configuration"
+    files:
+
+    - label: Catégorie
+      name: categories
+      file: _data/categories.yml"
+      fields:
+        - label: Title
+          name: title  
+          widget: string
 
