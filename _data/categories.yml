@@ -1,0 +1,11 @@
+categorie:
+  - name: Général
+    position: "10"
+  - name: Hébergements
+    position: "20"
+  - name: Activités
+    position: "30"
+  - name: Découvrir
+    position: "40"
+  - name: Participer
+    position: "50"
