@@ -112,7 +112,7 @@ collections:
         name: categorie
         widget: relation
         collection: configuration
-        file: _data/categories.yml
+        file: categories
         search_fields: ["categories.*.name"]
         display_fields: ["categories.*.name"]
         value_field: "categories.*.name"
