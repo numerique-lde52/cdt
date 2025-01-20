@@ -133,3 +133,20 @@ collections:
           widget: list
           fields:
             - {label: Name, name: name, widget: string}
+
+  - label: "Yolo"
+    name: "yolo"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
