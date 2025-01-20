@@ -96,6 +96,15 @@ collections:
         name: permalink
         widget: string
 
+      - label: Catégorie
+        name: categorie
+        widget: relation
+        collection: configuration
+        file: categories
+        search_fields: ["categories.*.name"]
+        display_fields: ["categories.*.name"]
+        value_field: "categories.*.name"
+
       - label: Title
         name: title
         widget: string
@@ -108,18 +117,24 @@ collections:
         name: body
         widget: markdown
 
-      - label: Catégorie
-        name: categorie
-        widget: relation
-        collection: configuration
-        file: categories
-        search_fields: ["categories.*.name"]
-        display_fields: ["categories.*.name"]
-        value_field: "categories.*.name"
+      - label: Image principale
+        name: main_img
+        widget: image
+        choose_url: false  
+
+      - label: Galerie
+        name: gallery
+        widget: list
+        field: 
+          label: Image
+          name: image
+          widget: image
+          choose_url: false
 
       - label: Ordre
         name: Ordre
         widget: number
+        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
 
   - label: "Configuration"
     name: "configuration"
@@ -139,3 +154,8 @@ collections:
               - label: Position
                 name: position
                 widget: number
+              - label: Est parent
+                hint: Cette catégorie est-elle un point d'entrée dans le menu, comme "Hébergements" ou "Activités"
+                name: is_parent
+                widget: boolean
+                default: true
