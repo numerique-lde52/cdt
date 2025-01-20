@@ -1,11 +1,16 @@
 categories:
   - name: Général
     position: "10"
+    is_parent: false
   - name: Hébergements
     position: "20"
+    is_parent: true
   - name: Activités
     position: "30"
+    is_parent: true
   - name: Découvrir
     position: "40"
+    is_parent: true
   - name: Participer
     position: "50"
+    is_parent: true
