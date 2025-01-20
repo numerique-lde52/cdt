@@ -114,6 +114,7 @@ collections:
         collection: configuration
         file: _data/categories.yml
         search_fields: ["categories.*.name"]
+        display_fields: ["categories.*.name"]
         value_field: "categories.*.name"
 
       - label: Ordre
