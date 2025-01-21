@@ -2,7 +2,7 @@
 published: true
 permalink: /hebergements/tentes-nomades/
 categorie: Hébergements
-title: Tentes nomades
+title: Tentes nomades blanche
 intro: La tente nomade est ronde et spacieuse avec ses 5 ou 6 mètres de diamètre
   et ses 3 mètres de hauteur. Sa conception en fait une habitation fixe ou
   nomade, fiable, agréable à vivre et très conviviale.
