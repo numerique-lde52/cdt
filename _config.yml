@@ -28,6 +28,17 @@ defaults:
     values:
       layout: "page"
 
+  - scope:
+      path: "pages-fr"
+    values:
+      lang: fr
+
+  - scope:
+      path: "pages-en"
+    values:
+      lang: en
+
+
 input: GFM
 kramdown:
     parse_block_html: true
