@@ -159,3 +159,18 @@ collections:
                 name: is_parent
                 widget: boolean
                 default: true
+
+      - label: Options
+        name: options
+        file: _data/options.yml
+        fields:
+          - label: Options
+            name: options
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
