@@ -34,3 +34,14 @@
 
 </footer>
 <script src="{{ "/assets/scripts.js" | relative_url }}"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
