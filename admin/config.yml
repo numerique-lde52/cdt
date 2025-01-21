@@ -1,3 +1,8 @@
+# local dev : https://decapcms.org/docs/working-with-a-local-git-repository/
+# when using the default proxy server port
+# comment this line when publishing online
+local_backend: true
+
 backend:
   name: git-gateway
   branch: main
@@ -11,6 +16,159 @@ show_preview_links: true
 media_folder: 'assets/uploads'
 
 collections:
+
+  - name: pages-en
+    label: Pages EN
+    label_singular: Page EN
+    folder: pages-en
+    create: true
+    sortable_fields: ['ordre', 'title']
+    fields:
+      - label: Publiée
+        name: published
+        widget: boolean
+        default: false
+
+      - label: URL
+        name: permalink
+        widget: string
+
+      - label: Catégorie
+        name: categorie
+        widget: relation
+        collection: configuration
+        file: categories
+        search_fields: ["categories.*.name"]
+        display_fields: ["categories.*.name"]
+        value_field: "categories.*.name"
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Introduction
+        name: intro
+        widget: markdown
+
+      - label: Body
+        name: body
+        widget: markdown
+
+      - label: Image principale
+        name: main_img
+        widget: image
+        choose_url: false  
+
+      - label: Galerie
+        name: gallery
+        widget: list
+        field: 
+          label: Image
+          name: image
+          widget: image
+          choose_url: false
+
+      - label: Ordre
+        name: Ordre
+        widget: text
+        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
+
+  - name: pages-fr
+    label: Pages FR
+    label_singular: Page FR
+    folder: pages-fr
+    create: true
+    sortable_fields: ['ordre', 'title']
+    fields:
+      - label: Publiée
+        name: published
+        widget: boolean
+        default: false
+
+      - label: URL
+        name: permalink
+        widget: string
+
+      - label: Catégorie
+        name: categorie
+        widget: relation
+        collection: configuration
+        file: categories
+        search_fields: ["categories.*.name"]
+        display_fields: ["categories.*.name"]
+        value_field: "categories.*.name"
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Introduction
+        name: intro
+        widget: markdown
+
+      - label: Body
+        name: body
+        widget: markdown
+
+      - label: Image principale
+        name: main_img
+        widget: image
+        choose_url: false  
+
+      - label: Galerie
+        name: gallery
+        widget: list
+        field: 
+          label: Image
+          name: image
+          widget: image
+          choose_url: false
+
+      - label: Ordre
+        name: ordre
+        widget: text
+        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
+
+  - label: "Configuration"
+    name: "configuration"
+    files:
+
+      - label: Catégories
+        name: categories
+        file: _data/categories.yml
+        fields:
+          - label: Catégories
+            name: categories
+            identifier_field: fr
+            widget: list
+            fields:
+              - label: Nom
+                name: fr
+                widget: string
+              - label: Traduction EN
+                name: en
+                widget: string
+              - label: Est parent
+                hint: Cette catégorie est-elle un point d'entrée dans le menu, comme "Hébergements" ou "Activités"
+                name: is_parent
+                widget: boolean
+                default: true
+
+      - label: Options
+        name: options
+        file: _data/options.yml
+        fields:
+          - label: Options
+            name: options
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+
   - name: 'blog'
     label: 'Blog'
     folder: '_posts/'
@@ -80,97 +238,3 @@ collections:
           - { label: 'Image', name: 'url', widget: 'image' }
           - { label: 'Caption', name: 'caption', widget: 'string' }
 
-  - name: pages-fr
-    label: Pages FR
-    label_singular: Page FR
-    folder: pages-fr
-    create: true
-
-    fields:
-      - label: Publiée
-        name: published
-        widget: boolean
-        default: false
-
-      - label: URL
-        name: permalink
-        widget: string
-
-      - label: Catégorie
-        name: categorie
-        widget: relation
-        collection: configuration
-        file: categories
-        search_fields: ["categories.*.name"]
-        display_fields: ["categories.*.name"]
-        value_field: "categories.*.name"
-
-      - label: Title
-        name: title
-        widget: string
-
-      - label: Introduction
-        name: intro
-        widget: markdown
-
-      - label: Body
-        name: body
-        widget: markdown
-
-      - label: Image principale
-        name: main_img
-        widget: image
-        choose_url: false  
-
-      - label: Galerie
-        name: gallery
-        widget: list
-        field: 
-          label: Image
-          name: image
-          widget: image
-          choose_url: false
-
-      - label: Ordre
-        name: Ordre
-        widget: number
-        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
-
-  - label: "Configuration"
-    name: "configuration"
-    files:
-
-      - label: Catégories
-        name: categories
-        file: _data/categories.yml
-        fields:
-          - label: Catégories
-            name: categories
-            widget: list
-            fields:
-              - label: Name
-                name: name
-                widget: string
-              - label: Position
-                name: position
-                widget: number
-              - label: Est parent
-                hint: Cette catégorie est-elle un point d'entrée dans le menu, comme "Hébergements" ou "Activités"
-                name: is_parent
-                widget: boolean
-                default: true
-
-      - label: Options
-        name: options
-        file: _data/options.yml
-        fields:
-          - label: Options
-            name: options
-            widget: list
-            fields:
-              - label: Name
-                name: name
-                widget: string
-              - label: Description
-                name: description
-                widget: markdown

@@ -1,16 +1,16 @@
 categories:
-  - name: Général
-    position: "10"
+  - fr: Hébergements
+    en: Accomodations
+    is_parent: true
+  - fr: Activités
+    is_parent: true
+    en: Activities
+  - fr: Découvrir
+    is_parent: true
+    en: Discover
+  - fr: Participer
+    is_parent: true
+    en: Participate
+  - fr: Général
     is_parent: false
-  - name: Hébergements
-    position: "20"
-    is_parent: true
-  - name: Activités
-    position: "30"
-    is_parent: true
-  - name: Découvrir
-    position: "40"
-    is_parent: true
-  - name: Participer
-    position: "50"
-    is_parent: true
+    en: General
