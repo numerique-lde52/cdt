@@ -5,36 +5,15 @@
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
   </div>
-
 </footer>
+
 <script src="{{ '/assets/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+
 <script src="{{ "/assets/scripts.js" | relative_url }}"></script>
+
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", (user) => {
@@ -46,3 +25,26 @@
     });
   }
 </script>
+
+    <script>
+      // Enable hover behavior for dropdowns on desktop only
+      if (window.innerWidth > 768) {
+        document.querySelectorAll('.dropdown').forEach(function(element) {
+          element.addEventListener('mouseenter', function() {
+            this.querySelector('.dropdown-toggle').click();
+          });
+          element.addEventListener('mouseleave', function() {
+            this.querySelector('.dropdown-toggle').click();
+          });
+        });
+        
+        document.querySelectorAll('.dropend').forEach(function(element) {
+          element.addEventListener('mouseenter', function() {
+            this.querySelector('.dropdown-toggle').click();
+          });
+          element.addEventListener('mouseleave', function() {
+            this.querySelector('.dropdown-toggle').click();
+          });
+        });
+      }
+    </script>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*!
+ * You can override Bootstrap variables here
+ * @see https://getbootstrap.com/docs/5.3/customize/color/
+ */
+
+
+:root, [data-bs-theme="light"] {
+
+/*  --bs-body-color: red ;
+
+  
+*/
+
+  --bs-body-bg: #c4e14c;
+  --bs-heading-color: #4b7242;
+
+  --bs-bg-opacity: 1;
+  --bs-tertiary-bg: #4b7242;
+  --bs-tertiary-bg-rgb: rgb(75 114 66);
+  --bs-tertiary-color: black;
+
+
+  --bs-link-color-rgb: green;
+  --bs-link-opacity: 1;
+
+  
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+
+}
+
+.navbar-brand small {
+    display: block;
+}

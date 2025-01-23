@@ -1,84 +1,76 @@
+<div class="container">
+
 <header class="site-header" role="banner">
-    <nav class="menu-navbar">
-      <button class="menu-toggle">Menu</button>
-      <ul class="menu-list">
-        <li>
-          <a href="/products">Products</a>
-          <ul class="menu-submenu">
-            <li>
-              <a href="/electronics">Electronics</a>
-              <ul class="menu-submenu-2">
-                <li><a href="/phones">Phones</a></li>
-                <li><a href="/laptops">Laptops</a></li>
-                <li><a href="/tablets">Tablets</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="/clothing">Clothing</a>
-              <ul class="menu-submenu-2">
-                <li><a href="/mens">Men's</a></li>
-                <li><a href="/womens">Women's</a></li>
-                <li><a href="/kids">Kids</a></li>
-              </ul>
-            </li>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="{{ site.logo | relative_url }}" alt="Logo" width="70" class="d-inline-block align-text-top">
+        <span class="display-5">{{ site.title }}</span>
+        <small>{{ site.subtitle }}</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+            {%- assign cats = site.data.categories.categories -%}
+
+            {%- for cat in cats -%}
+              {%- assign pages = site.pages | where:"categorie", cat.fr | where:"lang", page.lang | sort: "ordre" -%}
+              {%- assign pages-size = pages | size -%}
+
+              {% if pages-size > 0 %}
+                {% if cat.is_parent == true %}
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      {{ cat[page.lang] }}
+                    </a>
+                    <ul class="dropdown-menu">
+                      {%- for p in pages -%}
+                      <li>
+                        <a class="dropdown-item" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+                      </li>
+                      {%- endfor -%}
+                    </ul>
+                  </li>
+                {% else %}
+                  {%- for p in pages -%}
+                  <li class="nav-item">
+                    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+                  </li>
+                  {%- endfor -%}
+                {% endif %}
+              {% endif %}
+            {%- endfor -%}
           </ul>
-        </li>
-        <li>
-          <a href="/services">Services</a>
-          <ul class="menu-submenu">
-            <li>
-              <a href="/consulting">Consulting</a>
-              <ul class="menu-submenu-2">
-                <li><a href="/business">Business</a></li>
-                <li><a href="/technical">Technical</a></li>
-                <li><a href="/design">Design</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="/support">Support</a>
-              <ul class="menu-submenu-2">
-                <li><a href="/help-desk">Help Desk</a></li>
-                <li><a href="/maintenance">Maintenance</a></li>
-                <li><a href="/training">Training</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="/about">About</a>
-          <ul class="menu-submenu">
-            <li>
-              <a href="/company">Company</a>
-              <ul class="menu-submenu-2">
-                <li><a href="/history">History</a></li>
-                <li><a href="/team">Team</a></li>
-                <li><a href="/careers">Careers</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-              <ul class="menu-submenu-2">
-                <li><a href="/locations">Locations</a></li>
-                <li><a href="/support">Support</a></li>
-                <li><a href="/feedback">Feedback</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+
+          <div class="navbar-text">
+            {%- if page.lang == "fr" -%}
+              <a href="{{ '/en' | relative_url }}">
+                <img src="{{ '/assets/english-language.svg' | relative_url }}" alt="English version" width="40">
+              </a>
+            {% elsif page.lang == "en" %}
+              <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/langue-francaise.svg' | relative_url }}" alt="Version française" width="40">
+              </a>
+            {% endif %}
+          </div> 
+
+        </div>
 
 
-    {%- if page.lang == "fr" -%}
-    <a href="{{ "/en" | relative_url }}">English</a>
-    {% elsif page.lang == "en" %}
-    <a href="{{ "/" | relative_url }}">Français</a>
-    {% endif %}
+      </div>
+    </div>
+  </nav>
+
 </header>
 
-
-    <script>
-      document.querySelector('.menu-toggle').addEventListener('click', () => {
-        document.querySelector('.menu-list').classList.toggle('active');
-      });
-    </script>
+</div>
