@@ -6,11 +6,11 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
         <img src="{{ site.logo | relative_url }}" alt="Logo" width="70" class="d-inline-block align-text-top">
-        <span class="display-5">{{ site.title }}</span>
+        <span>{{ site.title }}</span>
         <small>{{ site.subtitle }}</small>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span>Menu</span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
         <div class="offcanvas-header">
@@ -36,7 +36,7 @@
                     <ul class="dropdown-menu">
                       {%- for p in pages -%}
                       <li>
-                        <a class="dropdown-item" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+                        <a class="dropdown-item {% if p.url == page.url %} active{% endif %}" href="{{ p.url | relative_url }}">{{ p.title }}</a>
                       </li>
                       {%- endfor -%}
                     </ul>

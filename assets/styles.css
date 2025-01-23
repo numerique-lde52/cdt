@@ -24,6 +24,7 @@
   --bs-link-color-rgb: green;
   --bs-link-opacity: 1;
 
+
   
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -31,6 +32,11 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #4b7242;
+}
+
 
 }
 
