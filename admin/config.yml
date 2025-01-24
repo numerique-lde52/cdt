@@ -159,6 +159,7 @@ collections:
         name: date_end
         widget: datetime
 
+
   - label: "Configuration"
     name: "configuration"
     files:
