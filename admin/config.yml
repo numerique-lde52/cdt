@@ -146,7 +146,7 @@ collections:
 
       - label: Date début
         name: date_start
-        widget: date
+        widget: datetime
         
 
   - label: "Configuration"
