@@ -129,6 +129,26 @@ collections:
         widget: text
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
 
+
+  - name: agenda      
+    label: Agenda
+    folder: agenda
+    create: true
+    sortable_fields: ['date_start', 'title']
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Description
+        name: intro
+        widget: markdown
+
+      - label: Date début
+        name: date_start
+        widget: date
+        
+
   - label: "Configuration"
     name: "configuration"
     files:
