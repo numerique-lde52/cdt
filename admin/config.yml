@@ -129,10 +129,9 @@ collections:
         widget: text
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
 
-
   - name: agenda      
     label: Agenda
-    folder: agenda
+    folder: _agenda
     create: true
     sortable_fields: ['date_start', 'title']
     fields:
@@ -147,7 +146,6 @@ collections:
       - label: Date début
         name: date_start
         widget: datetime
-        
 
   - label: "Configuration"
     name: "configuration"

@@ -22,7 +22,9 @@ plugins:
 collections:
   authors:
   galleries:
-    output: True  
+    output: True
+  agenda:
+
 
 defaults:
   - scope:
