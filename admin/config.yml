@@ -143,8 +143,20 @@ collections:
         name: intro
         widget: markdown
 
+      - label: Title EN
+        name: title-en
+        widget: string
+
+      - label: Description
+        name: intro-en
+        widget: markdown
+
       - label: Date début
         name: date_start
+        widget: datetime
+
+      - label: Date fin
+        name: date_end
         widget: datetime
 
   - label: "Configuration"
