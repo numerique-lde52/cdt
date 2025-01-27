@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<h1>{{ page.title | escape }}</h1>
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+{%- assign reference_time = site.time | date: "%s" -%}
+{%- assign reference_time = reference_time | minus: 86400 -%}
+
+{% assign events = site.agenda | sort: "date_start" %}
+
+{%- for event in events -%}
+
+  {%- assign event_timestamp = event.date_start | date: "%s" | to_integer -%}
+
+  {%- comment -%}
+    Guess if this is future current or past event
+    We compare current time to event time using timestamp (time from 1 jan 1970 also known as Unix time)
+    Future or current event must include the current day time frame, 
+    so we substract 1 day in seconds to server time to be sure that a today envents are still on our agenda.
+    today = today + 1 day in seconds (86400)
+  {%- endcomment -%}    
+
+  {%- if event_timestamp > reference_time -%}
+    <div class="col">
+      <div class="card shadow-sm">
+
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-body-secondary">{{ event.date_start }}</h6>
+
+          {%- if page.lang == "fr" -%}
+              <h5 class="card-title">{{ event.title }}</h5>
+              <p class="card-text">{{ event.intro }}</p>      
+            {%- include date_fr.html -%}<br>
+
+          {%- else -%}
+              <h5 class="card-title">{{ event.title-en }}</h5>
+              <p class="card-text">{{ event.intro-en }}</p>
+            date_start = {{ event.date_start | date_to_string }}<br>
+
+          {%- endif -%}
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+
+        </div>
+
+       </div>
+    </div>
+  {%- endif -%}
+
+{%- endfor -%}
+      </div>
+    </div>
+  </div>

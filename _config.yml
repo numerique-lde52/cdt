@@ -25,7 +25,6 @@ collections:
     output: True
   agenda:
 
-
 defaults:
   - scope:
       type: "pages"

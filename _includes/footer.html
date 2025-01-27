@@ -1,14 +1,33 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<div class="container text-bg-light">
+  <footer class="py-3 my-4">
+      <a class="navbar-brand" href="/">
+        <img src="{{ site.logo | relative_url }}" alt="Logo" width="70" class="d-inline-block align-text-top">
+        <span>{{ site.title }}</span>
+        <small>{{ site.subtitle }}</small>
+      </a>
+          
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
 
-  <div class="wrapper">
+    {%- assign cats = site.data.categories.categories | where: 'menu', 'footer' -%}
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    {%- for cat in cats -%}
+      {%- assign pages = site.pages | where:"categorie", cat.fr | where:"lang", page.lang | sort: "ordre" -%}
+      {%- assign pages-size = pages | size -%}
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      {% if pages-size > 0 %}
+          {%- for p in pages -%}
+          <li class="nav-item">
+            <a class="nav-link px-2 text-body-secondary" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+          </li>
+          {%- endfor -%}
+      {% endif %}
+    {%- endfor -%}
 
-  </div>
-</footer>
+    </ul>
+    <p class="text-center text-body-secondary">© {{ site.time | date:"%Y" }} {{ site.title }}</p>
+  </footer>
+</div>
+
 
 <script src="{{ '/assets/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 

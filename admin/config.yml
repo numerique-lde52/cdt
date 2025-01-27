@@ -7,6 +7,11 @@ backend:
   name: git-gateway
   branch: main
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"  
+
 site_url: https://jekyll-decap-cms.netlify.app
 
 publish_mode: simple # can be editorial_workflow
@@ -38,9 +43,9 @@ collections:
         widget: relation
         collection: configuration
         file: categories
-        search_fields: ["categories.*.name"]
-        display_fields: ["categories.*.name"]
-        value_field: "categories.*.name"
+        search_fields: ["categories.*.fr"]
+        display_fields: ["categories.*.fr"]
+        value_field: "categories.*.fr"
 
       - label: Title
         name: title
@@ -94,6 +99,7 @@ collections:
         widget: relation
         collection: configuration
         file: categories
+        search_fields: ["categories.*.fr"]
         display_fields: ["categories.*.fr"]
         value_field: "categories.*.fr"
 
@@ -183,6 +189,10 @@ collections:
                 name: is_parent
                 widget: boolean
                 default: true
+              - label: Menu
+                name: menu
+                widget: "select"
+                options: ["main", "footer"]
 
       - label: Options
         name: options
