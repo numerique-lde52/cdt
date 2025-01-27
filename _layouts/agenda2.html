@@ -1,0 +1,33 @@
+---
+layout: default
+---
+page.lang {{ page.lang }}
+{%- assign reference_time = site.time | date: "%s" -%}
+{%- assign reference_time = reference_time | minus: 86400 -%}
+<ul>
+{%- for event in site.agenda -%}
+  {%- assign event_timestamp = event.date_start | date: "%s" | to_integer -%}
+	{%- comment -%}
+		Guess if this is future current or past event
+		We compare current time to event time using timestamp (time from 1 jan 1970 also known as Unix time)
+		Future or current event must include the current day time frame, 
+		so we substract 1 day in seconds to server time to be sure that a today envents are still on our agenda.
+		today = today + 1 day in seconds (86400)
+	{%- endcomment -%}		
+  {%- if event_timestamp > reference_time -%}
+  <li>
+	{%- if page.lang == "fr" -%}
+	    {{ event.title }}<br>
+		{%- include date_fr.html -%}<br>
+		{{ event.intro }}
+
+	{%- else -%}
+	    {{ event.title-en }}<br>
+		date_start = {{ event.date_start | date_to_string }}<br>
+		{{ event.intro-en }}
+
+	{%- endif -%}
+  </li>
+  {%- endif -%}
+
+{%- endfor -%}
