@@ -94,9 +94,8 @@ collections:
         widget: relation
         collection: configuration
         file: categories
-        search_fields: ["categories.*.name"]
-        display_fields: ["categories.*.name"]
-        value_field: "categories.*.name"
+        display_fields: ["categories.*.fr"]
+        value_field: "categories.*.fr"
 
       - label: Title
         name: title
