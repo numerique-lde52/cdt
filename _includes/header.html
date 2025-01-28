@@ -4,14 +4,27 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
+
       <a class="navbar-brand" href="/">
-        <img src="{{ site.logo | relative_url }}" alt="Logo" width="70" class="d-inline-block align-text-top">
-        <span>{{ site.title }}</span>
-        <small>{{ site.subtitle }}</small>
+        <div class="row">
+          <div class="col-3">
+            <img src="{{ site.logo | relative_url }}" alt="Logo" width="70" class="d-inline-block align-text-top">
+          </div>
+          <div class="col-9">
+            <div class="col-8">
+              <span>{{ site.title }}</span>
+            </div>
+            <div class="col-8">
+              <small>{{ site.subtitle }}</small>
+            </div>
+          </div>
+        </div>
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
         <span>Menu</span>
       </button>
+
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
