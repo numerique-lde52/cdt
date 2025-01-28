@@ -17,7 +17,7 @@
       {% if pages-size > 0 %}
           {%- for p in pages -%}
           <li class="nav-item">
-            <a class="nav-link px-2 text-body-secondary" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+            <a class="nav-link px-2 text-body-secondary{% if p.url == page.url %} active" aria-current="page{% endif %}"  href="{{ p.url | relative_url }}">{{ p.title }}</a>
           </li>
           {%- endfor -%}
       {% endif %}

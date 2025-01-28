@@ -36,7 +36,7 @@
                     <ul class="dropdown-menu">
                       {%- for p in pages -%}
                       <li>
-                        <a class="dropdown-item {% if p.url == page.url %} active{% endif %}" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+                        <a class="dropdown-item {% if p.url == page.url %} active" aria-current="page"{% endif %}" href="{{ p.url | relative_url }}">{{ p.title }}</a>
                       </li>
                       {%- endfor -%}
                     </ul>
