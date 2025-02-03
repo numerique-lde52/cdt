@@ -7,10 +7,11 @@
 
 :root, [data-bs-theme="light"] {
 
-/*  --bs-body-color: red ;
+/*  
 
   
 */
+  --bs-body-color: red ;
 
   --bs-body-bg: #c4e14c;
   --bs-heading-color: #4b7242;
@@ -33,9 +34,17 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
 
+
+
+.main-col{
+  background: #eee;
+}
+
+
 .dropdown-menu {
   --bs-dropdown-link-active-bg: #4b7242;
 }
+
 
 
 }

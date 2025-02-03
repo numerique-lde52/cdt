@@ -94,6 +94,10 @@ collections:
         name: permalink
         widget: string
 
+      - label: Title
+        name: title
+        widget: string
+
       - label: Catégorie
         name: categorie
         widget: relation
@@ -102,10 +106,6 @@ collections:
         search_fields: ["categories.*.fr"]
         display_fields: ["categories.*.fr"]
         value_field: "categories.*.fr"
-
-      - label: Title
-        name: title
-        widget: string
 
       - label: Introduction
         name: intro
@@ -118,11 +118,13 @@ collections:
       - label: Image principale
         name: main_img
         widget: image
-        choose_url: false  
+        choose_url: false
+        required: false  
 
       - label: Galerie
         name: gallery
         widget: list
+        required: false
         field: 
           label: Image
           name: image
