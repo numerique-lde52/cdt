@@ -5,14 +5,22 @@ layout: default
 
 
 <style>
+  /* TEST
+testing Jumbo and css background images
+  */
 .jumbo{
   background-image: url("{{ page.gallery | first }}");
   background-size: cover;
+  text-shadow: -1px 0px 1px #fff;
+}
+.jumbo-text{
+  background-image: url("/assets/jumbo-background.png");
+  background-repeat: repeat;
 }
 </style>
 
-<div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbo">
-  <div class="container-fluid py-5">
+<div class="p-5 mb-4 bg-body-tertiary jumbo">
+  <div class="container-fluid  jumbo-text">
     <h1 class="display-5 fw-bold">{{ page.title }}</h1>
     <p class="col-md-8 fs-4">{{ page.intro }}</p>
     <button class="btn btn-primary btn-lg" type="button">Réserver</button>
