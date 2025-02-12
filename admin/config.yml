@@ -7,6 +7,8 @@ backend:
   name: git-gateway
   branch: main
 
+logo_url: /assets/logo-chemins-de-traverse-proto-1-optimized.svg
+
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -21,62 +23,6 @@ show_preview_links: true
 media_folder: 'assets/uploads'
 
 collections:
-
-  - name: pages-en
-    label: Pages EN
-    label_singular: Page EN
-    folder: pages-en
-    create: true
-    sortable_fields: ['ordre', 'title']
-    fields:
-      - label: Publiée
-        name: published
-        widget: boolean
-        default: false
-
-      - label: URL
-        name: permalink
-        widget: string
-
-      - label: Catégorie
-        name: categorie
-        widget: relation
-        collection: configuration
-        file: categories
-        search_fields: ["categories.*.fr"]
-        display_fields: ["categories.*.fr"]
-        value_field: "categories.*.fr"
-
-      - label: Title
-        name: title
-        widget: string
-
-      - label: Introduction
-        name: intro
-        widget: markdown
-
-      - label: Body
-        name: body
-        widget: markdown
-
-      - label: Image principale
-        name: main_img
-        widget: image
-        choose_url: false  
-
-      - label: Galerie
-        name: gallery
-        widget: list
-        field: 
-          label: Image
-          name: image
-          widget: image
-          choose_url: false
-
-      - label: Ordre
-        name: Ordre
-        widget: text
-        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
 
   - name: pages-fr
     label: Pages FR
@@ -136,6 +82,62 @@ collections:
         widget: text
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
 
+  - name: pages-en
+    label: Pages EN
+    label_singular: Page EN
+    folder: pages-en
+    create: true
+    sortable_fields: ['ordre', 'title']
+    fields:
+      - label: Publiée
+        name: published
+        widget: boolean
+        default: false
+
+      - label: URL
+        name: permalink
+        widget: string
+
+      - label: Catégorie
+        name: categorie
+        widget: relation
+        collection: configuration
+        file: categories
+        search_fields: ["categories.*.fr"]
+        display_fields: ["categories.*.fr"]
+        value_field: "categories.*.fr"
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Introduction
+        name: intro
+        widget: markdown
+
+      - label: Body
+        name: body
+        widget: markdown
+
+      - label: Image principale
+        name: main_img
+        widget: image
+        choose_url: false  
+
+      - label: Galerie
+        name: gallery
+        widget: list
+        field: 
+          label: Image
+          name: image
+          widget: image
+          choose_url: false
+
+      - label: Ordre
+        name: Ordre
+        widget: text
+        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
+
   - name: agenda      
     label: Agenda
     folder: _agenda
@@ -165,7 +167,6 @@ collections:
       - label: Date fin
         name: date_end
         widget: datetime
-
 
   - label: "Configuration"
     name: "configuration"
