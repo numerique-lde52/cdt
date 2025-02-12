@@ -1,7 +1,7 @@
 ---
 published: true
 permalink: /qui-sommes-nous/
-categorie: Général
+category: Général
 title: Qui sommes nous ?
 intro: >-
   Le Centre d’Initiation à la Nature d’Auberive est géré depuis 30 ans par la
@@ -12,7 +12,7 @@ intro: >-
 main_img: /assets/uploads/pxl_20240806_091444176-sd.jpg
 gallery:
   - /assets/uploads/pxl_20240806_084259505.jpg
-ordre: "20"
+order: "20"
 ---
 Il est au cœur du vaste massif forestier d’Auberive. Un espace entrecoupé de vallées ouvertes aux villages typiques et aux maisons en pierre.
 

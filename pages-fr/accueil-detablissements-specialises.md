@@ -1,8 +1,8 @@
 ---
 published: true
 permalink: /activites/accueils-d-etablissements-specialises/
-categorie: Activités
-title: Accueil d'établissements spécialisés
+category: Activités
+title: Accueil d'établissements spécialisés ???????????
 intro: Vous êtes  éducateur, psychomotricien, infirmier spécialisé, …, vous
   souhaitez organiser une journée ou un séjour d’animation adapté(e) à des
   enfants, des adultes, des personnes en situation de handicap ou de fragilité,
@@ -11,7 +11,7 @@ intro: Vous êtes  éducateur, psychomotricien, infirmier spécialisé, …, vou
 main_img: /assets/uploads/cea-logo-feader.jpg
 gallery:
   - /assets/uploads/pxl_20240806_084259505.jpg
-ordre: "60"
+order: "60"
 ---
 Les formules d’animation permettent d’élaborer pour votre groupe un projet sur mesure. Ce projet s’appuiera sur le contact avec la nature et différentes formules de découverte, activités de plein air, randonnée, contact avec les animaux, etc.  pour être le plus bénéfique aux attentes et aux besoins de vos participants.
 

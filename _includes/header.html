@@ -37,7 +37,7 @@
             {%- assign cats = site.data.categories.categories | where: 'menu', 'main' -%}
 
             {%- for cat in cats -%}
-              {%- assign pages = site.pages | where:"categorie", cat.fr | where:"lang", page.lang | sort: "ordre" -%}
+              {%- assign pages = site.pages | where:"category", cat.fr | where:"lang", page.lang | sort: "order" -%}
               {%- assign pages-size = pages | size -%}
 
               {% if pages-size > 0 %}

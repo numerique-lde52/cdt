@@ -1,7 +1,7 @@
 ---
 published: true
 permalink: /activites/sejours-ete-enfants-et-jeunes/
-categorie: Activités
+category: Activités
 title: Les séjours été enfants et jeunes
 intro: >-
   Après une intense année d’école, il est temps de prendre de bonnes vacances.
@@ -16,7 +16,7 @@ intro: >-
 main_img: /assets/uploads/coollogo_com-28252544.png
 gallery:
   - /assets/uploads/coollogo_com-28252544.png
-ordre: "50"
+order: "50"
 ---
 **Prêt pour l’aventure ? Si tu veux passer des vacances en 
 pleine nature avec d’autres enfants qui, comme toi, adorent jouer dehors

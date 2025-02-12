@@ -7,6 +7,21 @@ backend:
   name: git-gateway
   branch: main
 
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: single_file
+
+  # Required - a list of locales to show in the editor UI
+  locales: [en, fr]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: fr
+
+
 logo_url: /assets/logo-chemins-de-traverse-proto-1-optimized.svg
 
 slug:
@@ -25,13 +40,15 @@ media_folder: 'assets/uploads'
 collections:
 
   - name: pages-fr
+    summary: "{{ order }} - {{category}} - {{title}}"
     label: Pages FR
     label_singular: Page FR
     folder: pages-fr
     create: true
-    sortable_fields: ['ordre', 'title']
+
+    sortable_fields: ['ordre', 'category', 'title']
     fields:
-      - label: Publiée
+      - label: Publication
         name: published
         widget: boolean
         default: false
@@ -39,13 +56,14 @@ collections:
       - label: URL
         name: permalink
         widget: string
+        hint: De la forme "/categorie/titre-de-la-page/" Pas d'espace et pas d'accent
 
       - label: Title
         name: title
         widget: string
 
       - label: Catégorie
-        name: categorie
+        name: category
         widget: relation
         collection: configuration
         file: categories
@@ -57,17 +75,21 @@ collections:
         name: intro
         widget: markdown
 
-      - label: Body
+      - label: Texte principal
         name: body
         widget: markdown
 
-      - label: Image principale
-        name: main_img
-        widget: image
-        choose_url: false
-        required: false  
+      - label: Description technique
+        name: tech-description
+        widget: markdown  
+        required: false
 
-      - label: Galerie
+      - label: Tarifs
+        name: tarifs
+        widget: markdown  
+        required: false
+
+      - label: Galerie photos
         name: gallery
         widget: list
         required: false
@@ -78,11 +100,14 @@ collections:
           choose_url: false
 
       - label: Ordre
-        name: ordre
-        widget: text
+        name: order
+        widget: string
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
+        required: true
+
 
   - name: pages-en
+    summary: "{{category}} - {{title}}"
     label: Pages EN
     label_singular: Page EN
     folder: pages-en
@@ -138,7 +163,8 @@ collections:
         widget: text
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
 
-  - name: agenda      
+  - name: agenda
+    summary: "{{date_start | date('YYYY-MM-DD')}} - {{title}}"
     label: Agenda
     folder: _agenda
     create: true
@@ -168,8 +194,8 @@ collections:
         name: date_end
         widget: datetime
 
-  - label: "Configuration"
-    name: "configuration"
+  - name: configuration
+    label: Configuration
     files:
 
       - label: Catégories
@@ -194,8 +220,30 @@ collections:
                 default: true
               - label: Menu
                 name: menu
+                hint: Dans quel menu doit apparaitre cette catégorie "main = menu principal" et "footer = menu pied de page"
                 widget: "select"
                 options: ["main", "footer"]
+
+      - label: Traductions
+        name: translations
+        file: _data/translations.yml
+        fields:
+          - label: Traductions
+            name: translations
+            identifier_field: fr
+            widget: list
+            fields:
+              - label: ID
+                name: slug
+                widget: string
+                hint: De la forme "nom-de-la-trad" Pas d'espace et pas d'accent
+              - label: Texte FR
+                name: fr
+                widget: markdown                    
+              - label: Traduction EN
+                name: en
+                widget: markdown                    
+
 
       - label: Options
         name: options
@@ -280,4 +328,6 @@ collections:
         fields: 
           - { label: 'Image', name: 'url', widget: 'image' }
           - { label: 'Caption', name: 'caption', widget: 'string' }
+
+
 

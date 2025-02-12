@@ -7,48 +7,58 @@
 
 :root, [data-bs-theme="light"] {
 
-/*  
+  /*  
+--bs-body-color: red ; 
+    
+  */
+    
 
-  
-*/
-  --bs-body-color: red ;
+    --bs-body-bg: #c4e14c;
+    --bs-heading-color: #4b7242;
 
-  --bs-body-bg: #c4e14c;
-  --bs-heading-color: #4b7242;
+    --bs-bg-opacity: 1;
+    --bs-tertiary-bg: #4b7242;
+    --bs-tertiary-bg-rgb: rgb(75 114 66);
+    --bs-tertiary-color: black;
 
-  --bs-bg-opacity: 1;
-  --bs-tertiary-bg: #4b7242;
-  --bs-tertiary-bg-rgb: rgb(75 114 66);
-  --bs-tertiary-color: black;
+    --bs-link-color-rgb: green;
+    --bs-link-opacity: 1;
+    
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
 
-
-  --bs-link-color-rgb: green;
-  --bs-link-opacity: 1;
-
-
-  
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
+  .main-col{
+    background: #eee;
+  }
 
 
+  .dropdown-menu {
+    --bs-dropdown-link-active-bg: #4b7242;
+  }
 
-.main-col{
-  background: #eee;
 }
 
 
-.dropdown-menu {
-  --bs-dropdown-link-active-bg: #4b7242;
-}
-
-
-
+/* latin */
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/marckscript/v20/nwpTtK2oNgBA3Or78gapdwuyyCg_.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 .navbar-brand small {
     display: block;
+
+    font-family: "Marck Script", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
+
