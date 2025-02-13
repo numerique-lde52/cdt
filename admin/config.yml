@@ -89,6 +89,18 @@ collections:
         widget: markdown  
         required: false
 
+      - label: Adhésion ligue
+        name: show_adhesion
+        widget: boolean
+        default: true
+        hint: Afficher l'adhésion à la Ligue obligatoire
+
+      - label: Conditions de location
+        name: show_rent_conditions
+        widget: boolean
+        default: false
+        hint: Afficher les conditions de location (hébergements)
+
       - label: Galerie photos
         name: gallery
         widget: list

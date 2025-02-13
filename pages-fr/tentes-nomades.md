@@ -4,8 +4,10 @@ permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
-  nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes
-  nomades ; installées dans un vallon de rêve en bordure de la forêt.
+
+
+  Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes
+  nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
   ## Descriptif intérieur
 
@@ -54,7 +56,7 @@ category: Hébergements
 ---
 La tente nomade est ronde et spacieuse avec ses 5 ou 6 mètres de diamètre et ses 3 mètres de hauteur. 
 
-Sa conception en fait une habitation fixe ou nomade, fiable, agréable à vivre et très conviviale. \
+Sa conception en fait une habitation fixe ou nomade, fiable, agréable à vivre et très conviviale.
 
 Elle est disposée sur une plateforme bois et spécialement aménagée pour vous accueillir de façon très confortable. 
 
