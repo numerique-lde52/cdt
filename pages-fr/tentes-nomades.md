@@ -2,12 +2,13 @@
 published: true
 permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
-intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
+category: Hébergements
+intro: >-
+  Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
 
 
-  Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes
-  nomades installées dans un vallon de rêve en bordure de la forêt.
+  Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
   ## Descriptif intérieur
 
@@ -48,11 +49,12 @@ tarifs: |-
   Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
 
   Adhésion à la Ligue de l’enseignement : 10,76 €/foyer/an
+show_adhesion: true
+show_rent_conditions: true
 gallery:
   - /assets/uploads/pxl_20240513_120246001.long_exposure-01.cover-sd.jpg
   - /assets/uploads/pxl_20240806_091444176-sd.jpg
 order: "10"
-category: Hébergements
 ---
 La tente nomade est ronde et spacieuse avec ses 5 ou 6 mètres de diamètre et ses 3 mètres de hauteur. 
 
