@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
 category: Hébergements
