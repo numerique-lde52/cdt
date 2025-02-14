@@ -112,7 +112,7 @@ collections:
             hint: "Exemple : Téléchargez le dossier d'inscription à la Diagonale"
 
           - label: "Texte du lien de téléchargement EN"
-            name: link_text
+            name: link_text_en
             widget: string           
 
       - label: Ordre
