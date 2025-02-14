@@ -96,6 +96,25 @@ collections:
           widget: image
           choose_url: false
 
+      - label: Document
+        name: documents
+        required: false
+        widget: list
+        fields: 
+          - label: Document
+            name: url
+            widget: file
+            choose_url: false
+
+          - label: "Texte du lien de téléchargement"
+            name: link_text
+            widget: string
+            hint: "Exemple : Téléchargez le dossier d'inscription à la Diagonale"
+
+          - label: "Texte du lien de téléchargement EN"
+            name: link_text
+            widget: string           
+
       - label: Ordre
         name: order
         widget: string
