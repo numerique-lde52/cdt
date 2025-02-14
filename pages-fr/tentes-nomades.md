@@ -54,6 +54,9 @@ show_rent_conditions: true
 gallery:
   - /assets/uploads/pxl_20240513_120246001.long_exposure-01.cover-sd.jpg
   - /assets/uploads/pxl_20240806_091444176-sd.jpg
+documents:
+  - url: /assets/uploads/certificat_selection_ndc2024_scratch.pdf
+    link_text: Télécharger le document
 order: "10"
 ---
 La tente nomade est ronde et spacieuse avec ses 5 ou 6 mètres de diamètre et ses 3 mètres de hauteur. 
