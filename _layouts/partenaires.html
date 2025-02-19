@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<h1>{{ page.title | escape }}</h1>
+
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+    {% assign partners = site.partenaires | sort: "type" %}
+
+    {%- for partner in partners -%}
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">
+            {%- if partner.url -%}
+              <a href="{{ partner.url }}" target ="_blank">{{ partner.name }}</a>
+            {%- else -%}
+              {{ partner.name }}
+            {%- endif -%}
+            </h5>
+            {%- if partner.description -%}
+              {%- if page.lang == "fr" -%}              
+                <p class="card-text">{{ partner.description }}</p> 
+              {%- elsif partner.description-en -%}
+                <p class="card-text">{{ partner.description-en }}</p> 
+              {%- endif -%}  
+            {%- endif -%}
+            {%- if partner.logo -%}
+              <a href="{{ partner.url }}" target ="_blank">
+              <img src="{{ partner.logo | relative_url}}" alt="{{ partner.name }} logo" class="img-fluid">
+              </a>
+            {%- endif -%}
+
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+    </div>
+  </div>
+</div>

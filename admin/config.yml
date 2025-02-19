@@ -110,17 +110,13 @@ collections:
             name: link_text
             widget: string
             hint: "Exemple : Téléchargez le dossier d'inscription à la Diagonale"
-
-          - label: "Texte du lien de téléchargement EN"
-            name: link_text_en
-            widget: string           
+   
 
       - label: Ordre
         name: order
         widget: string
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
         required: true
-
 
   - name: pages-en
     summary: "{{category}} - {{title}}"
@@ -209,6 +205,40 @@ collections:
       - label: Date fin
         name: date_end
         widget: datetime
+
+  - name: partenaires
+    label: Partenaires
+    folder: _partenaires
+    create: true
+    summary: "{{name}}"
+    fields: 
+      - label: Nom 
+        name: name
+        widget: string
+      - label: Site internet
+        name: url
+        widget: string
+        required: false
+      - label: Description 
+        name: description 
+        widget: text
+        required: false
+      - label: Description EN
+        name: description-en
+        widget: text
+        required: false
+      - label: Type de partenaire
+        name: type
+        widget: "select"
+        options: ["Premimum", "Animation", "Technique"]
+        default: "Premium"        
+      - label: Logo
+        name: logo
+        widget: image
+        hint: Taille maximum 200 px
+        required: false
+        choose_url: false
+
 
   - name: configuration
     label: Configuration

@@ -23,6 +23,7 @@ collections:
   galleries:
     output: True
   agenda:
+  partenaires:
 
 defaults:
   - scope:
