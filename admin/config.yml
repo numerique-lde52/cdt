@@ -3,6 +3,9 @@
 # comment this line when publishing online
 local_backend: true
 
+# backend locale
+locale: fr 
+
 backend:
   name: git-gateway
   branch: main
