@@ -8,7 +8,7 @@ intro: >-
   cabanes sont isolées et chauffables.
 
 
-  Chacune d’elle accueille une famille ou un groupe de 5 à 8 personnes.
+  Chacune d’elle accueille une famille ou un groupe de 4 à 8 personnes.
 tech-description: >-
   En intérieur, chaque lodge propose :
 
@@ -19,9 +19,12 @@ tech-description: >-
 
   * 1 chambre avec 2 lits superposés 80 x 190 avec matelas, draps, couettes et oreillers.
 
-  * 1 mezzanine avec 2 lit simples 80x190 avec matelas, draps, couettes et oreillers.
+  * 1 mezzanine avec 2 matelas 80x190, draps, couettes et oreillers.
 
-  * 1 espace vie quotidienne avec 2 tables et 8 chaises, une kitchenette équipée avec un évier inox sur meuble, avec vaisselle pour 8 personnes et nécessaire pour cuisiner (poêle, casserole, couvercles et autres petits ustensiles de cuisine. Attention, le lodge n’est pas équipé d’aliments de première nécessité (huile, condiments, thé, café... 
+    ***Nous attirons votre attention sur le fait que les chambres sont petites et ne sont de fait pas des pièces de vie.***
+  * 1 espace vie quotidienne, une kitchenette équipée avec un évier inox sur meuble, avec vaisselle pour 8 personnes et nécessaire pour cuisiner (poêle, casserole, couvercles et autres petits ustensiles de cuisine. Attention, le lodge n’est pas équipé d’aliments de première nécessité (huile, condiments, thé, café...)
+
+  * 1 terrasse avec 2 tables et 8 chaises
 
   * 1 bidon d’eau de 10 l à recharger aux bornes eau sur le terrain de camping
 
@@ -31,7 +34,7 @@ tech-description: >-
 
   * Le lodge est isolé, favorisant les séjours en avant-saison (mi-avril-mai) et en fin de saison (septembre-octobre).
 
-  * Attention, le linge de toilette n’est pas fourni.(voir onglet options plus bas)
+  * Attention, le linge de toilette n’est pas fourni (voir onglet options plus bas)
 
 
   A l’extérieur sous le auvent :
@@ -39,10 +42,10 @@ tech-description: >-
 
   * Une terrasse de 10 m2 semi abritée (accès cabane avec quelques marches).
 
-  * 1 carriole à bras pour le transport des affaires sur l’éco camping (les voitures restent sur le parking en bordure du site). 
+  * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site). 
 
 
-  A proximité de la tente :
+  A proximité du lodge :
 
 
   * 1 toilette sec privatif (le seau est à déposer avant votre départ sur un espace où il sera ensuite acheminé vers un composteur)
@@ -53,10 +56,10 @@ tech-description: >-
 
   * Réfrigérateurs et micro-ondes partagés supplémentaires disponibles à l’espace commun à côté de la maison forestière.
 
-  * 1 parking non surveillé en bordure de l’éco camping pour votre véhicule (10 places). Les déplacements à l’intérieur du camping se font à pied.
+  * 1 parking non surveillé en bordure de l’écodomaine pour votre véhicule (10 places). Les déplacements à l’intérieur du camping se font à pied.
 tarifs: >-
-  * Forfait : 50 € par tente/nuitée + 10,50 € par adulte et 7 € par enfant de
-  moins de 16 ans (3 ou 4 personnes).
+  * Forfait : 55 € par lodge/nuitée + 17,50 € par adulte et 12 € par enfant de
+  moins de 16 ans.
 
   * 2 nuitées minimum, tarifs dégressifs à partir de 3 nuitées.
 
@@ -67,10 +70,6 @@ tarifs: >-
 
 
   *  branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
-
-  * linge de toilette : +7€/jour/personne
-
-  * Ménage : +30 €
 show_adhesion: true
 show_rent_conditions: true
 gallery:
