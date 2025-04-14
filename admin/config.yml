@@ -40,11 +40,12 @@ collections:
         name: published
         widget: boolean
         default: false
+        required: false
 
       - label: URL
         name: permalink
         widget: string
-        hint: De la forme "/categorie/titre-de-la-page/" Pas d'espace et pas d'accent
+        hint: De la forme "/categorie/titre-de-la-page/" Tout en minuscules, pas d'espace et pas d'accent
 
       - label: Title
         name: title
@@ -82,12 +83,14 @@ collections:
         widget: boolean
         default: true
         hint: Afficher l'adhésion à la Ligue obligatoire
+        required: false
 
       - label: Conditions de location
         name: show_rent_conditions
         widget: boolean
         default: false
         hint: Afficher les conditions de location (hébergements)
+        required: false
 
       - label: Galerie photos
         name: gallery
@@ -113,13 +116,18 @@ collections:
             name: link_text
             widget: string
             hint: "Exemple : Téléchargez le dossier d'inscription à la Diagonale"
-   
 
       - label: Ordre
         name: order
         widget: string
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
         required: true
+
+      - label: "Modèle de page"
+        name: "layout"
+        widget: "select"
+        options: ["page", "hebergement"]
+        default: "page"
 
   - name: pages-en
     summary: "{{category}} - {{title}}"

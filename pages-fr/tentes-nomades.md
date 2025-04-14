@@ -4,41 +4,30 @@ permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
 category: Hébergements
 intro: >-
-  Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
-  hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
-
+  Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
 
   Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
   ## Descriptif intérieur
 
-
   Un espace nuit équipé de 3 lits en bois de hêtre avec matelas, draps, couette et oreiller.
-
 
   Un espace vie quotidienne avec table basse et sièges bas en bois, des casiers de rangement. 
 
 
   Éclairage autonome par lampe à leds.
 
-
   ## Descriptif extérieur
-
 
   1 espace cuisine privatif extérieur sous toile avec un réchaud à gaz 2 feux, vaisselle complète et ustensiles de cuisine. 
 
-
   1 table bois avec bancs. 
-
 
   1 carriole à bras pour le transport des affaires. 
 
-
   Autour de la tente, grands espaces de vie. Possibilité de barbecue à proximité de la maison forestière.
 
-
   1 toilette sec privatif à proximité de la tente et un espace vaisselle et douches collectif (avec eau chaude).
-
 
   Réfrigérateur partagé à la maison forestière.
 tarifs: |-
