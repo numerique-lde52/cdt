@@ -1,7 +1,6 @@
 ---
 published: true
 permalink: /hebergements/les-cabanes-perchees-les-nids-damorey/
-category: Hébergements
 title: Les Cabanes perchées "les nids d'Amorey"
 intro: >-
   **Vivre perché au cœur de la forêt !**
@@ -21,10 +20,19 @@ intro: >-
 
 
   Le confort est minimaliste mais quelle expérience !  La forêt tout autour bruisse de mille bruits …
-main_img: /assets/uploads/pxl_20240806_091444176-sd.jpg
+show_adhesion: true
+show_rent_conditions: true
 gallery:
-  - /assets/uploads/pxl_20240513_090804955-sd.jpg
+  - /assets/uploads/50cabane-amorey.jpg
+  - /assets/uploads/dsc_6464.jpg
+documents:
+  - url: /assets/uploads/contrat-de-location-nids-perches-2025.pdf
+    link_text: Téléchargez le contrat de location des nids.
+  - url: /assets/uploads/conditions-de-location-des-nids-perches-d-amorey-2025.pdf
+    link_text: Téléchargez les conditions de location des nids.
 order: "40"
+main_img: /assets/uploads/pxl_20240806_091444176-sd.jpg
+category: Hébergements
 ---
 Regroupées dans un même lieu, les 3 nids d’Amorey vous permettent de 
 venir en famille ou en groupe (jusqu’à 9 adultes ou 6 adultes et 6 
@@ -52,10 +60,10 @@ Un nid d’Amorey est loué avec **1 kit de matériel** comprenant :
 
 **Prix de la location :**
 
-Tarif normal : **50 €/cabane à la nuitée**  (+ adhésion Ligue de l’enseignement 52\* (10,76€/foyer/an) et taxe de séjour 0.22€/adulte/nuit)
+Tarif normal : **50 €/cabane à la nuitée**  (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et taxe de séjour 0.22€/adulte/nuit)
 
 Tarif spécial Randonneurs (pédestre, équestre, cyclo) : 40 €/cabane à la
- nuitée (+ adhésion Ligue de l’enseignement 52\* (10,76€/foyer/an) et 
+ nuitée (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et 
 taxe de séjour 0.22€/adulte)
 
 Tarifs groupes, séjours : nous contacter.
@@ -67,20 +75,16 @@ Caution demandée :  150 €/cabane (200 €/2 cabanes et 250 €/3 cabanes)
 \***Pour séjourner dans notre hébergement, vous vous acquitterez
  de l’adhésion annuelle à la Ligue de l’enseignement de Haute-Marne, 
 association d’éducation populaire,  porteuse du projet. Il vous sera 
-donc demandé une adhésion de 10,76€ par foyer et par an à votre arrivée.
+donc demandé une adhésion de 10,58€ par foyer et par an à votre arrivée.
  En réservant, vous vous engagez à régler l’adhésion à votre arrivée à 
 Chemins de Traverse. Merci de votre confiance.**
 
 **Avertissements :**
 
-les nids d’Amorey se réservent si possible 1 semaine à l’avance (envoi et signature du contrat et versement de la caution)
+Les nids d’Amorey se réservent si possible 1 semaine à l’avance (envoi et signature du contrat et versement de la caution)
 
 Les mineurs doivent systématiquement être accompagnés par une personne majeure pour monter dans les nids.
 
 **Dates d’ouverture :**
 
 du 1er mai au 30 septembre
-
-[Pour en savoir +](https://www.bienvenue-hautemarne.fr/hebergements/auberive-cabanes-perchees-les-nids-damorey-hlocha052v50029v/)
-
-[Contrat de location nids Amorey 2024](https://chemindetraverse52.org/wp-content/uploads/2023/12/contrat-de-location-cabanes-Amorey-2024.pdf)
