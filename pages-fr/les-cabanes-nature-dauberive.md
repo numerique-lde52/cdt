@@ -14,8 +14,12 @@ intro: >-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
-  - /assets/uploads/pxl_20240806_091444176-sd.jpg
-  - /assets/uploads/mont-armet.jpg
+  - /assets/uploads/img_20230705_151054.jpg
+  - /assets/uploads/img_20221027_105638.jpg
+  - /assets/uploads/sauvageonne-epide-mars-2025.jpg
+  - /assets/uploads/pb100092.jpg
+  - /assets/uploads/image0000021-2-.jpg
+  - /assets/uploads/image0000011-1-.jpg
 order: "50"
 main_img: /assets/uploads/pxl_20240513_090804955-sd.jpg
 category: Hébergements
@@ -23,20 +27,17 @@ category: Hébergements
 Chaque cabane vous invite à rêver, à vous retrouver, à perdre vos 
 habitudes, … à vivre simplement tout simplement en prenant votre temps !
 
-Ces cabanes sont libres d’accès et ne se réservent donc pas (sauf Nids 
+Ces cabanes sont libres d’accès et ne se réservent donc pas (sauf les nids 
 d’Amorey – voir menu déroulant). Vous y venez, vous vous installez, vous
  laissez le lieux propres en pensant aux prochains habitants : un petit 
-coup de balais, du journal, quelques morceaux de bois, des brindilles 
-pour allumer le feu (**quand c’est autorisé**), toutes ces petites intentions bienveillantes qui vous donnent le sourire en poussant la porte de la cabane.
+coup de balai, des petites intentions bienveillantes qui vous donnent le sourire en poussant la porte de la cabane.
 
 Profitez-en pleinement et faites de belles découvertes !
 
 **Le livret de découverte des cabanes nature : « Habitez la forêt ! »**
 
-
-
 Les cabanes d’Auberive sont disséminées autour du village d’Auberive 
-dans un rayon de  6 à 15 kms du gîte d’accueil de Charbonnières.
+dans un rayon de  6 à 15 kms de l'écodomaine Chemins de Traverse.
 
 Une pochette « Habitez la forêt», contenant 5 livrets accompagne la découverte (voir ci-dessous pour les télécharger).
 
@@ -54,16 +55,13 @@ Elles sont pour la plupart libres d’accès. Un toilette sèche est disponible 
 
 **Les cabanes nature en plein rénovation !**
 
-
-
 Nos cabanes nature sont toujours aussi fréquentées par les 
 randonneurs, c’est une super nouvelle ! Elles prennent cependant de 
 l’âge ; pour assurer à tous un bon toit et éviter des petites fuites, 
 nous leur redonnons un brin de fraîcheur !
 
 A l’automne 2022, la cabane du Greuillemeurger a retrouvé une belle 
-terrasse grâce à une équipe de bénévoles et la passerelle de la cabane 
+terrasse grâce à une équipe de bénévoles, en 2023-2024, des jeunes de l'EPIDE ont participé à la rénovation de la cabane de la Gouyët. La passerelle de la cabane 
 de la Sauvageonne a fait peau neuve grâce à quelques jeunes qui avaient 
 participé aux chantiers de construction de ces mêmes cabanes il y a 
-quelques années de cela. La poursuite de la rénovation de la Sauvageonne
- aura lieu en 2024.
+quelques années de cela. La rénovation de la Sauvageonne se termine ce printemps et elle toute fraîche pour accueillir la saison 2025 !
