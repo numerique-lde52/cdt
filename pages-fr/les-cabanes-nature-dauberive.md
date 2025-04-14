@@ -1,7 +1,6 @@
 ---
 published: true
 permalink: /hebergements/les-cabanes-nature-dauberive/
-category: Hébergements
 title: Les cabanes nature d'Auberive
 intro: >-
   **Habitez la forêt !**
@@ -12,10 +11,14 @@ intro: >-
   Chacune d’elle propose une architecture originale et vous fait découvrir  "l’esprit du lieu"...
 
   Vous les trouverez en cheminant le long de sentiers balisés.
-main_img: /assets/uploads/pxl_20240513_090804955-sd.jpg
+show_adhesion: true
+show_rent_conditions: true
 gallery:
   - /assets/uploads/pxl_20240806_091444176-sd.jpg
+  - /assets/uploads/mont-armet.jpg
 order: "50"
+main_img: /assets/uploads/pxl_20240513_090804955-sd.jpg
+category: Hébergements
 ---
 Chaque cabane vous invite à rêver, à vous retrouver, à perdre vos 
 habitudes, … à vivre simplement tout simplement en prenant votre temps !
