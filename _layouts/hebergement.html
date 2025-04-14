@@ -26,7 +26,7 @@ testing Jumbo and css background images
   </div>
 </div>
 
-{{ page.body | markdownify }}
+{{ content | markdownify }}
 
 {% if page.tech-description %}
 
@@ -55,3 +55,21 @@ testing Jumbo and css background images
 {{ texte[page.lang] | markdownify }}
 
 {%- endif -%}
+
+
+{% if page.gallery %}
+
+{% for img_url in page.gallery %}
+<img src="{{ img_url | relative_url }}" width="100px">
+{% endfor %}
+
+{%- endif -%}
+
+{% if page.documents %}
+
+{% for doc in page.documents %}
+<a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
+{% endfor %}
+
+{%- endif -%}
+
