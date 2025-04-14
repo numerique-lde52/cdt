@@ -20,6 +20,37 @@ intro: >-
 
 
   Le confort est minimaliste mais quelle expérience !  La forêt tout autour bruisse de mille bruits …
+tarifs: >-
+  
+
+
+  **Prix de la location :**
+
+
+  Tarif normal : **50 €/cabane à la nuitée**  (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et taxe de séjour 0.22€/adulte/nuit)
+
+
+  Tarif spécial Randonneurs (pédestre, équestre, cyclo) : 40 €/cabane à la
+   nuitée (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et 
+  taxe de séjour 0.22€/adulte)
+
+
+  Tarifs groupes, séjours : nous contacter.
+
+
+  La nuitée à partir de 14h00 à 12h00 le lendemain midi.
+
+
+  Caution demandée :  150 €/cabane (200 €/2 cabanes et 250 €/3 cabanes)
+
+
+  \***Pour séjourner dans notre hébergement, vous vous acquitterez
+   de l’adhésion annuelle à la Ligue de l’enseignement de Haute-Marne, 
+  association d’éducation populaire,  porteuse du projet. Il vous sera 
+
+  donc demandé une adhésion de 10,58€ par foyer et par an à votre arrivée.
+   En réservant, vous vous engagez à régler l’adhésion à votre arrivée à 
+  Chemins de Traverse. Merci de votre confiance.**
 show_adhesion: true
 show_rent_conditions: true
 gallery:
@@ -58,26 +89,7 @@ Un nid d’Amorey est loué avec **1 kit de matériel** comprenant :
 
  *1 lampe à énergie autonome*
 
-**Prix de la location :**
 
-Tarif normal : **50 €/cabane à la nuitée**  (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et taxe de séjour 0.22€/adulte/nuit)
-
-Tarif spécial Randonneurs (pédestre, équestre, cyclo) : 40 €/cabane à la
- nuitée (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et 
-taxe de séjour 0.22€/adulte)
-
-Tarifs groupes, séjours : nous contacter.
-
-La nuitée à partir de 14h00 à 12h00 le lendemain midi.
-
-Caution demandée :  150 €/cabane (200 €/2 cabanes et 250 €/3 cabanes)
-
-\***Pour séjourner dans notre hébergement, vous vous acquitterez
- de l’adhésion annuelle à la Ligue de l’enseignement de Haute-Marne, 
-association d’éducation populaire,  porteuse du projet. Il vous sera 
-donc demandé une adhésion de 10,58€ par foyer et par an à votre arrivée.
- En réservant, vous vous engagez à régler l’adhésion à votre arrivée à 
-Chemins de Traverse. Merci de votre confiance.**
 
 **Avertissements :**
 
