@@ -26,4 +26,32 @@ testing Jumbo and css background images
   </div>
 </div>
 
+{{ page.body | markdownify }}
 
+{% if page.tech-description %}
+
+{{ page.tech-description | markdownify }}
+
+{% endif %}
+
+{% if page.tarifs %}
+
+{{ page.tarifs | markdownify }}
+
+{% endif %}
+
+{% if page.show_adhesion %}
+
+{%- assign texte = site.data.translations.translations | where:"slug", "adhesion_ligue" | first -%}
+
+{{ texte[page.lang] | markdownify }}
+
+{%- endif -%}
+
+{% if page.show_rent_conditions %}
+
+{%- assign texte = site.data.translations.translations | where:"slug", "conditions_location" | first -%}
+
+{{ texte[page.lang] | markdownify }}
+
+{%- endif -%}
