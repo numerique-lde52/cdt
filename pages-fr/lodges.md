@@ -94,9 +94,10 @@ gallery:
 documents:
   - url: /assets/uploads/contrats-de-reservation-lodges-niv-car-rdp-2025.odt
     link_text: Téléchargez le contrat de location
-  - url: /assets/uploads/cgv-lodges-niv-car-rdp-2025.pdf
+  - url: /assets/uploads/conditions-de-location-lodges-plantes-2025.pdf
     link_text: Téléchargez les conditions générales de vente
 order: "20"
+layout: hebergement
 main_img: /assets/uploads/p1000007.jpg
 category: Hébergements
 ---
