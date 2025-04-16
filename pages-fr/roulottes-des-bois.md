@@ -30,7 +30,7 @@ tech-description: >-
   * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site). 
 
 
-  A proximité du lodge :
+  A proximité de la roulotte :
 
 
   * 1 toilette sec privatif (le seau est à déposer avant votre départ sur un espace où il sera ensuite acheminé vers un composteur)
