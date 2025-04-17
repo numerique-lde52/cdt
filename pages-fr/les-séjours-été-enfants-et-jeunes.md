@@ -1,7 +1,6 @@
 ---
 published: true
 permalink: /activites/sejours-ete-enfants-et-jeunes/
-category: Activités
 title: Les séjours été enfants et jeunes
 intro: >-
   Après une intense année d’école, il est temps de prendre de bonnes vacances.
@@ -13,10 +12,27 @@ intro: >-
    - "Enforeste-toi !" du 16 au 23 juillet (7/11 ans)
 
    - "Enforeste-toi !" du 26 juillet au 5 août (10/14 ans)
-main_img: /assets/uploads/coollogo_com-28252544.png
+tarifs: >-
+  
+  **Tarifs et inscriptions :** séjour 7/11 ans,16 au 23 juillet : 510 €, séjour 10/14 ans, 26 juillet au 5 août: 645 €, 
+
+  Des réductions sont proposées quand des inscriptions nous parviennent groupées (frères, sœurs, cousins ou voisins, copains,…) :– 2% pour deux enfants et – 3% pour trois enfants
+
+
+  En sus : 3.72 € d’adhésion à l’association des Amis de la Ligue 52
+
+
+  **Aides possibles :** chèques vacances et bons CAF acceptées, séjours en cours d’habilitation Pass Colos (CAF) et Colos apprenantes. Possibilité devis. Nous contacter.
+show_adhesion: true
 gallery:
   - /assets/uploads/coollogo_com-28252544.png
+documents:
+  - url: /assets/uploads/formulaire-d_inscription_sejours_2025.pdf
+    link_text: Téléchargez le bulletin d'inscription
 order: "50"
+layout: page
+main_img: /assets/uploads/coollogo_com-28252544.png
+category: Activités
 ---
 **Prêt pour l’aventure ? Si tu veux passer des vacances en 
 pleine nature avec d’autres enfants qui, comme toi, adorent jouer dehors
@@ -88,15 +104,4 @@ air et de veillées, 1 animatrice nature de métier qui assure l’animation
  technique et 1 directrice BAFD, également animatrice nature de métier 
 qui assure l’animation technique, la gestion et l’encadrement du projet.
 
-
-
 **Nombre de participants :** 20 maximum, 10 minimum.
-
-**Tarifs et inscriptions :** séjour 7/11 ans,16 au 23 juillet : 510 €, séjour 10/14 ans, 26 juillet au 5 août: 645 €, 
-Des réductions sont proposées quand des inscriptions nous parviennent groupées (frères, sœurs, cousins ou voisins, copains,…) :– 2% pour deux enfants et – 3% pour trois enfants
-
-En sus : 3.72 € d’adhésion à l’association des Amis de la Ligue 52
-
-**Aides possibles :** chèques vacances et bons CAF acceptées, séjours en cours d’habilitation Pass Colos (CAF). Possibilité devis. Nous contacter.
-
- Bulletins d’inscription à venir.
