@@ -44,9 +44,8 @@ tech-description: >-
 
   * Les déplacements à l’intérieur du camping se font à pied.
 tarifs: >-
-  
-
-  * Forfait : 50 € par lodge/nuitée + 10,50 € par adulte et 7 € par enfant de moins de 16 ans.
+  * Forfait : 50 € par tente/nuitée + 10,50 € par adulte et 7 € par enfant de
+  moins de 16 ans.
 
   * Tarifs dégressifs à partir de 3 nuitées.
 
@@ -58,7 +57,7 @@ tarifs: >-
   Tarifs groupes, séjours : nous contacter.
 
 
-  Caution demandée :  200 €/roulotte
+  Caution demandée :  200 €/tente
 
 
   \***Pour séjourner dans notre hébergement, vous vous acquitterez de l’adhésion annuelle à la Ligue de l’enseignement de Haute-Marne, association d’éducation populaire,  porteuse du projet. Il vous sera donc demandé une adhésion de 10,58€ par foyer et par an à votre arrivée. En réservant, vous vous engagez à régler l’adhésion à votre arrivée à Chemins de Traverse. Merci de votre confiance.**
