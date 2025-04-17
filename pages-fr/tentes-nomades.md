@@ -70,6 +70,8 @@ gallery:
 documents:
   - url: /assets/uploads/contrat-de-reservation-tentes-2025.pdf
     link_text: Téléchargez le contrat de location
+  - url: /assets/uploads/cgv-tentes-2025.pdf
+    link_text: Téléhargez les conditions générales de ventes
 order: "10"
 layout: hebergement
 ---
