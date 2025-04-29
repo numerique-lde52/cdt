@@ -1,26 +1,27 @@
 ---
 published: true
-permalink: /activites/locations-libres-d-ânes-de-portage
-title: Locations libres d'ânes de portage
+permalink: /activites/les-randonnees-sur-mesure-2
+title: Les randonnées sur mesure
 intro: >-
-  Partez en autonomie sur les chemins du Parc national en compagnie d'ânes de
-  portage !
-
-
-  Une façon privilégiée de découvrir les paysages et les forêts au pas de l'âne et de se relier à l'essentiel !
+  
+  Une formule sur mesure pour répondre à vos besoins et vos attentes : distance, hébergement, type de circuit, on vous accompagne dans la préparation de votre projet !
 tech-description: ""
-tarifs: >-
-  **Tarifs ½ journée (9h/13h) ou (14h/18h):**   40 € par âne.
+tarifs: |-
+  
+
+  **Tarifs ânes:**
+
+  1/2 journée : **40 €/ âne – 35 € par âne supplémentaire** 
+
+  Journée : **60 €/ âne – 50 € par âne supplémentaire** 
 
 
-  **Tarifs journée (9h/18h):**   60 € par âne – 50 € par âne supplémentaire
 
 
-  **Tarifs 2 jours et + :**  60 € par âne le premier jour – 50 € les jours suivants et par âne supplémentaire
+  **Tarifs guide ânier** :
 
-
-
-  + 10,58 € adhésion à l’association des Amis de la Ligue de l’enseignement 52 (par famille)
+  **300 € /jour
+  150 € / demie- journée**
 show_adhesion: true
 gallery: []
 order: "60"
@@ -29,10 +30,20 @@ main_img: /assets/uploads/cea-logo-feader.jpg
 category: Activités
 ---
 
-Votre balade ou randonnée se pratique de façon libre et autonome. Chaque
- itinéraire proposé s’effectue à l’aide d’un topoguide comportant une 
-carte IGN au 25 000ème sur laquelle est indiqué votre itinéraire. A 
-certains endroits du parcours, un pictogramme vous permet d’éviter les 
-erreurs d’orientation. Avant la prise en main de votre animal, un temps 
-d’explications et de recommandations d’environ 45 min est prévu par 
-l’ânier qui vous accueillera.
+Vous êtes un particulier, une famille, un groupe, nous pouvons vous 
+proposer un parcours à la journée ou en itinérance avec hébergement avec
+ éventuellement location d’ânes de portage à la journée ou sur plusieurs
+ jours.
+
+Nous vous proposons des hébergements et nous pouvons accompagner votre groupe, assurer le guidage, la gestion des animaux.
+
+Possibilité d’hébergement en gîte, sous tentes nomades, en cabanes perchées au départ d’Auberive.
+
+
+A votre demande, il est possible de vous mettre à disposition un guide 
+ânier (également guide nature) pour vous accompagner et vous guider dans
+ votre balade à la journée ou votre itinérance sur plusieurs jours.
+
+Sa présence rassurante, vous permettra de bénéficier d’une aide et de 
+conseils sur la prise en main de votre (vos) âne(s) et de votre 
+itinéraire.
