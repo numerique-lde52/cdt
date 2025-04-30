@@ -4,6 +4,16 @@ permalink: /activites/les-balades
 title: Les balades immersives
 category: Activités
 intro: Petites randos pour grand plaisir !
+tarifs: |
+  **Tarifs ânes:**
+
+  1/2 journée : **40 €/ âne – 35 € par âne supplémentaire** 
+  Journée : **60 €/ âne – 50 € par âne supplémentaire** 
+
+  **Tarifs guide ânier** :
+
+  **300 € /jour
+  150 € / demie- journée**
 show_adhesion: true
 show_rent_conditions: false
 order: "10"
