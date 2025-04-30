@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /activites/les-balades
 title: Les balades immersives
 category: Activités
