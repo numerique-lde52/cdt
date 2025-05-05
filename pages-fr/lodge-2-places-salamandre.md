@@ -70,7 +70,7 @@ documents:
   - url: /assets/uploads/contrat-de-location-salamandre-2025.pdf
     link_text: Téléchargez le contrat de location
   - url: /assets/uploads/conditions-de-location-salamandre-2025.pdf
-    link_text: Téléchargez les conditions générales de vente
+    link_text: Téléchargez les conditions générales de location
 order: "20"
 layout: hebergement
 main_img: /assets/uploads/p1000007.jpg
