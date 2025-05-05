@@ -60,8 +60,9 @@ documents:
   - url: /assets/uploads/contrat-de-location-nids-perches-2025.pdf
     link_text: Téléchargez le contrat de location des nids.
   - url: /assets/uploads/conditions-de-location-des-nids-perches-d-amorey-2025.pdf
-    link_text: Téléchargez les conditions de location des nids.
+    link_text: Téléchargez les conditions générales de location
 order: "40"
+layout: hebergement
 main_img: /assets/uploads/pxl_20240806_091444176-sd.jpg
 category: Hébergements
 ---
