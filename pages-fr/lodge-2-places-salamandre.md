@@ -1,6 +1,6 @@
 ---
 published: true
-permalink: /hebergements/lodges-4-places/
+permalink: /hebergements/lodges-2-places/
 title: Lodge 2 places Salamandre
 intro: "**Vous souhaitez vivre un week-end ou un séjour insolite 100% nature,
   être hébergé, nous vous proposons de vivre cette expérience dans l'un de nos
