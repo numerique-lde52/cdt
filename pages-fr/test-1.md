@@ -2,7 +2,7 @@
 published: true
 permalink: /test1
 title: Test 1
-intro: sdf
+intro: sdf dghdghdhdgdg
 tech-description: test
 gallery:
   - /assets/uploads/coollogo_com-28252544.png
