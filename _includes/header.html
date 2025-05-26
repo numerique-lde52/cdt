@@ -65,6 +65,7 @@
             {%- endfor -%}
           </ul>
 
+{% comment %}
           <div class="navbar-text">
             {%- if page.lang == "fr" -%}
               <a href="{{ '/en' | relative_url }}">
@@ -76,6 +77,7 @@
               </a>
             {% endif %}
           </div> 
+{% endcomment %}
 
         </div>
 
