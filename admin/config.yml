@@ -12,6 +12,7 @@ backend:
 
 media_library:
   name: cloudinary
+  output_filename_only: true
   config:
     cloud_name: dwr0s07kl
     api_key: 117657116259457
@@ -222,6 +223,13 @@ collections:
       - label: Date fin
         name: date_end
         widget: datetime
+
+      - label: Image
+        name: image
+        widget: image
+        hint: Taille maximum 800 px de large
+        required: false
+        choose_url: false
 
   - name: partenaires
     label: Partenaires
