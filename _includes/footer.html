@@ -3,11 +3,9 @@
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
 
     {%- assign cats = site.data.categories.categories | where: 'menu', 'footer' -%}
-
     {%- for cat in cats -%}
-      {%- assign pages = site.pages | where:"categorie", cat.fr | where:"lang", page.lang | sort: "ordre" -%}
+      {%- assign pages = site.pages | where:"category", cat.fr | where:"lang", page.lang | sort: "ordre" -%}
       {%- assign pages-size = pages | size -%}
-
       {% if pages-size > 0 %}
           {%- for p in pages -%}
           <li class="nav-item">
@@ -25,7 +23,7 @@
 
 <script src="{{ '/assets/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 
-<script src="{{ "/assets/scripts.js" | relative_url }}"></script>
+<script src="{{ '/assets/scripts.js' | relative_url }}"></script>
 
 <script>
   if (window.netlifyIdentity) {
@@ -39,25 +37,25 @@
   }
 </script>
 
-    <script>
-      // Enable hover behavior for dropdowns on desktop only
-      if (window.innerWidth > 768) {
-        document.querySelectorAll('.dropdown').forEach(function(element) {
-          element.addEventListener('mouseenter', function() {
-            this.querySelector('.dropdown-toggle').click();
-          });
-          element.addEventListener('mouseleave', function() {
-            this.querySelector('.dropdown-toggle').click();
-          });
-        });
-        
-        document.querySelectorAll('.dropend').forEach(function(element) {
-          element.addEventListener('mouseenter', function() {
-            this.querySelector('.dropdown-toggle').click();
-          });
-          element.addEventListener('mouseleave', function() {
-            this.querySelector('.dropdown-toggle').click();
-          });
-        });
-      }
-    </script>
+<script>
+  // Enable hover behavior for dropdowns on desktop only
+  if (window.innerWidth > 768) {
+    document.querySelectorAll('.dropdown').forEach(function(element) {
+      element.addEventListener('mouseenter', function() {
+        this.querySelector('.dropdown-toggle').click();
+      });
+      element.addEventListener('mouseleave', function() {
+        this.querySelector('.dropdown-toggle').click();
+      });
+    });
+    
+    document.querySelectorAll('.dropend').forEach(function(element) {
+      element.addEventListener('mouseenter', function() {
+        this.querySelector('.dropdown-toggle').click();
+      });
+      element.addEventListener('mouseleave', function() {
+        this.querySelector('.dropdown-toggle').click();
+      });
+    });
+  }
+</script>
