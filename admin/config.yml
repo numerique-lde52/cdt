@@ -10,6 +10,12 @@ backend:
   name: git-gateway
   branch: main
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dwr0s07kl
+    api_key: 117657116259457
+
 logo_url: /assets/logo-chemins-de-traverse-proto-1-optimized.svg
 
 slug:
