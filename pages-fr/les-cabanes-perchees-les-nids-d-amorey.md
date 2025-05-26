@@ -56,6 +56,7 @@ show_rent_conditions: true
 gallery:
   - /assets/uploads/50cabane-amorey.jpg
   - /assets/uploads/dsc_6464.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748252451/50cabane-amorey_zy2wmo.jpg
 documents:
   - url: /assets/uploads/contrat-de-location-nids-perches-2025.pdf
     link_text: Téléchargez le contrat de location des nids.
