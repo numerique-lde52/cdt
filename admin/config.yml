@@ -17,8 +17,10 @@ media_library:
     cloud_name: dwr0s07kl
     api_key: 117657116259457
 
-media_folder: 'assets/uploads'
-public_folder: "/images/upload"
+# those two entries have an influence on cloudinary file name contruction
+# as they're added to the path
+# media_folder: 'assets/uploads'
+# public_folder: "/image/upload" 
 
 logo_url: /assets/logo-chemins-de-traverse-proto-1-optimized.svg
 
