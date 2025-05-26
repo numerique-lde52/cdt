@@ -34,8 +34,7 @@ intro: >-
 
 
   **Directeur de publication** : Stéphane MASSENET
-gallery:
-  - /assets/uploads/pxl_20240806_084259505.jpg
+gallery: []
 order: "20"
 layout: page
 main_img: /assets/uploads/pxl_20240513_120246001.long_exposure-01.cover-sd.jpg
