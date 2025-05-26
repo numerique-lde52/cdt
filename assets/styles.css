@@ -11,8 +11,6 @@
 --bs-body-color: red ; 
     
   */
-    
-
     --bs-body-bg: #c4e14c;
     --bs-heading-color: #4b7242;
 
@@ -38,6 +36,7 @@
 
   .dropdown-menu {
     --bs-dropdown-link-active-bg: #4b7242;
+    --bs-dropdown-link-hover-color: #c4e14c;
   }
 
 }
