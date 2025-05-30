@@ -1,3 +1,10 @@
+---
+layout: none
+---
+# ce fichier est généré par jekyll
+# les balises {% raw %}.....{% endraw %} evitent que les variables de configuration
+# entre curly braces {{ variable }} ne soient traitées par Jekyll comme des balises Liquid
+
 # local dev : https://decapcms.org/docs/working-with-a-local-git-repository/
 # when using the default proxy server port
 # comment this line when publishing online
@@ -29,18 +36,16 @@ slug:
   clean_accents: true
   sanitize_replacement: "-"  
 
-site_url: https://jekyll-decap-cms.netlify.app
+site_url: {{ site.url }}
 
 publish_mode: simple # can be editorial_workflow
 
 show_preview_links: true
 
-
-
 collections:
 
   - name: pages-fr
-    summary: "{{ order }} - {{category}} - {{title}}"
+    {% raw %}summary: "{{ order }} - {{category}} - {{title}}"{% endraw %}
     label: Pages FR
     label_singular: Page FR
     folder: pages-fr
@@ -142,7 +147,7 @@ collections:
         default: "page"
 
   - name: pages-en
-    summary: "{{category}} - {{title}}"
+    {% raw %}summary: "{{category}} - {{title}}"{% endraw %}
     label: Pages EN
     label_singular: Page EN
     folder: pages-en
@@ -199,7 +204,7 @@ collections:
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
 
   - name: agenda
-    summary: "{{date_start | date('YYYY-MM-DD')}} - {{title}}"
+    {% raw %}summary: "{{date_start | date('YYYY-MM-DD')}} - {{title}}"{% endraw %}
     label: Agenda
     folder: _agenda
     create: true
@@ -240,7 +245,7 @@ collections:
     label: Partenaires
     folder: _partenaires
     create: true
-    summary: "{{name}}"
+    {% raw %}summary: "{{name}}"{% endraw %}
     fields: 
       - label: Nom 
         name: name
@@ -340,7 +345,7 @@ collections:
     label: 'Blog'
     folder: '_posts/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    {% raw %}slug: '{{year}}-{{month}}-{{day}}-{{slug}}'{% endraw %}
     editor:
       preview: false
     fields:
