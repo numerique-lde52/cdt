@@ -25,13 +25,58 @@ testing Jumbo and css background images
   </div>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col bg-primary-subtle">
+      {{ content | markdownify }}
+      <button class="btn btn-primary btn-lg" type="button">Réserver</button>
+    </div>
+    <div class="col-3">
+      {% if page.gallery %}
 
-{{ content }}
+      {% for img_url in page.gallery %}
+      <img src="{{ img_url | relative_url }}" width="100px">
+      {% endfor %}
 
-<hr>
+      {%- endif -%}
+    </div>    
+  </div>
 
-{{ page.tech-description | markdownify }}
+  <div class="row">
+    {% if page.tech-description %}
+    <div class="col">
+      {{ page.tech-description | markdownify }}
+    </div>
+    {% endif %}    
+  </div>
 
+  <div class="row">
+    {% if page.tarifs %}
+    <h2>tarifs</h2>
+    <div class="col">
+      {{ page.tarifs | markdownify }}
+    </div>
+    {% endif %}
+    {% if page.show_adhesion %}
+    <div class="col bg-warning-subtle">
+      {%- assign texte = site.data.translations.translations | where:"slug", "adhesion_ligue" | first -%}
+      {{ texte[page.lang] | markdownify }}
+    </div>
+    {%- endif -%}
+  </div>
 
+{% if page.documents %}
+  <div class="row">
+    <div class="col">
+      <ul>
+      {% for doc in page.documents %}
+        <li>
+          <a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>    
+  </div>
+{%- endif -%}
 
-
+</div>

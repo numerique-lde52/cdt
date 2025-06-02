@@ -32,7 +32,6 @@ tech-description: "**Le pont Griselin :**
   et vert
 
 
-
   Ce circuit vous invite à la découverte d’une partie du riche patrimoine tant
   naturel qu’historique du village d’Auberive.
 

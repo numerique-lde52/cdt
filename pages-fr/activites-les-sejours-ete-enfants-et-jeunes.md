@@ -23,7 +23,7 @@ tarifs: >-
 
 
   **Aides possibles :** chèques vacances et bons CAF acceptées, séjours en cours d’habilitation Pass Colos (CAF) et Colos apprenantes. Possibilité devis. Nous contacter.
-show_adhesion: true
+show_adhesion: false
 gallery:
   - /assets/uploads/coollogo_com-28252544.png
 documents:
