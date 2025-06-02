@@ -1,26 +1,35 @@
 ---
 layout: default
 ---
-{% assign img_list = page.gallery %}
 
-<style>
-  /* TEST
-testing Jumbo and css background images
-  */
-.jumbo{
-  background-image: url("{{ page.gallery | first }}");
-  background-size: cover;
-  text-shadow: -1px 0px 1px #fff;
-}
-.jumbo-text{
-  background-image: url("/assets/jumbo-background.png");
-  background-repeat: repeat;
-}
-</style>
+{% assign img_transformations_names = "t_1300-16-9,t_950-16-9,t_720-16-9,t_430-16-9,t_250-16-09,t_media_lib_thumb" | split: "," %}
+
+{% for img_url in page.gallery %}
+  {% assign url_parts = img_url | split: "/" %}
+  {% for img_trans in img_transformations_names %}
+    {% assign url_trans = img_url | replace: url_parts[6], img_trans %}
+      {{ img_trans }}
+      <img class="img-fluid" src="{{ url_trans }}"><br>
+    {% endfor %}
+{% endfor %}
+
+<main class="container">
+  <div class="row rounded text-body-emphasis bg-body-secondary g-2">
+    <div class="col px-0">
+      <h1 class="display-4 fst-italic">{{ page.title }}</h1>
+      <p class="my-3">
+      Vous allez bivouaquer dans des tentes nomades, découvrir les secrets des sous-bois, louer un âne pour accompagner vos découvertes, habiter des cabanes insolites, cheminer le long des ruisseaux forestiers jusqu’à leur source, apprendre la vannerie sauvage, vous initier au croquis naturaliste avec un professionnel le temps d’un week-end … ou tout simplement profiter du calme et de la sérénité des lieux, en famille ou entre amis, pour vous reposer, prendre le temps de vivre …
+      </p>
+    </div>    
+    <div class="col-lg-4 px-0">
+      <img class="img-fluid" src="{{ '/assets/uploads/pxl_20250414_140621026.jpg' | relative_url }}">
+    </div>
+  </div>
+</main>
 
 <div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbo">
   <div class="container-fluid rounded-3 jumbo-text">
-    <h1 class="display-5 fw-bold">{{ page.title }}</h1>
+    <h1 class="display-5 fw-bold"></h1>
     <p class="col-md-8 fs-4">{{ page.intro | markdownify }}</p>
   </div>
 </div>
