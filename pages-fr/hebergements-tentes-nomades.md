@@ -9,7 +9,7 @@ intro: >-
 
   Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
-
+  
   En intérieur, chaque tente propose : 
 
 
@@ -65,6 +65,7 @@ show_rent_conditions: true
 gallery:
   - /assets/uploads/20230716_auberive_cl2_7536_bd.jpg
   - /assets/uploads/20230717_auberive_cl2_7884_bd.jpg
+  - /tente-nomade_trqifm.jpg
 documents:
   - url: /assets/uploads/contrat-de-reservation-tentes-2025.pdf
     link_text: Téléchargez le contrat de location
