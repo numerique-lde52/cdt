@@ -64,6 +64,8 @@ show_adhesion: true
 show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748867700/tente-nomade_trqifm.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748868464/20230717_Auberive_CL2_7929_BD_kaku8f.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748868609/20230716_Auberive_CL2_7664_BD_l5ozjs.jpg
 documents:
   - url: /assets/uploads/contrat-de-reservation-tentes-2025.pdf
     link_text: Téléchargez le contrat de location
