@@ -1,19 +1,7 @@
 ---
 layout: default
 ---
-
-{% assign img_transformations_names = "t_1300-16-9,t_950-16-9,t_720-16-9,t_430-16-9,t_250-16-09,t_media_lib_thumb" | split: "," %}
-
-{% for img_url in page.gallery %}Original
-  <img class="img-fluid" src="{{ img_url }}"><br>
-  {% assign url_parts = img_url | split: "/" %}
-  {% for img_trans in img_transformations_names %}
-    {% assign url_trans = img_url | replace: url_parts[6], img_trans %}
-      {{ img_trans }}
-      <img class="img-fluid" src="{{ url_trans }}"><br>
-    {% endfor %}
-{% endfor %}
-
+{%- include responsive_image.html col=12 -%}
 <main class="container">
   <div class="row rounded text-body-emphasis bg-body-secondary g-2">
     <div class="col px-0">

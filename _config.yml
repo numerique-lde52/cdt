@@ -1,5 +1,3 @@
-
-
 title: Chemins de traverse
 subtitle: Découvrez la forêt autrement !
 email: 
@@ -49,6 +47,30 @@ kramdown:
     parse_block_html: true
     parse_span_html: true
 
+###################################################################
+# Responsives images
+# 
+# This is based on Cloudinary transformations that we've set up in our Cloudinary account
+# Depending on the context, we can craft responsive img+srcset tag based on those presets
+# 
+# This used by specialized includes that produces bootstrap element
+#
+# 0 - t_1300-16-9
+# 1 - t_950-16-9
+# 2 - t_720-16-9
+# 3 - t_430-16-9
+# 4 - t_250-16-09
+# 5 - t_media_lib_thumb
+#
+images_transformations: [t_1300-16-9,t_950-16-9,t_720-16-9,t_430-16-9,t_250-16-09,t_media_lib_thumb]
+
+bootstrap_elements:
+  - name: "jumbotron"
+    main: 2
+    srcsets: [0, 1, 2, 3]
+
+# End Responsives images
+###################################################################
 
 # Exclude from processing.
 # The following items will not be processed, by default.
