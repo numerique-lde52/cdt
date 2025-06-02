@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 permalink: /tarifs/
 category: Divers
 title: Tous nos tarifs

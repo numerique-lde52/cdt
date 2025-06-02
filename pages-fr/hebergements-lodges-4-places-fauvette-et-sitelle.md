@@ -88,7 +88,7 @@ documents:
     link_text: Téléchargez le contrat de location.
   - url: /assets/uploads/cgv-lodges-sittelle-et-fauvette-2025.pdf
     link_text: Téléchargez les conditions générales de location
-order: "20"
+order: "050"
 layout: hebergement
 main_img: /assets/uploads/p1000007.jpg
 category: Hébergements

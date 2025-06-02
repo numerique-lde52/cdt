@@ -48,7 +48,7 @@ gallery:
   - /assets/uploads/camping-ete-2024jpg-1-.jpg
   - /assets/uploads/pxl_20240729_211135836.night-corrected2.jpg
 documents: []
-order: "30"
+order: "070"
 layout: hebergement
 main_img: /assets/uploads/p1000007.jpg
 category: Hébergements

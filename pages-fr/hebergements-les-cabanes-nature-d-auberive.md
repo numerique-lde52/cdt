@@ -20,7 +20,7 @@ gallery:
   - /assets/uploads/pb100092.jpg
   - /assets/uploads/image0000021-2-.jpg
   - /assets/uploads/image0000011-1-.jpg
-order: "50"
+order: "090"
 main_img: /assets/uploads/pxl_20240513_090804955-sd.jpg
 category: Hébergements
 ---

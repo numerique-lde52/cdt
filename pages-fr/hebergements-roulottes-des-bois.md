@@ -78,7 +78,7 @@ documents:
     link_text: Téléchargez le contrat de location
   - url: /assets/uploads/cgv-roulottes-aurore-et-lucine-2025.pdf
     link_text: Téléchargez les conditions générales de vente
-order: "30"
+order: "030"
 layout: hebergement
 main_img: /assets/uploads/p1000007.jpg
 category: Hébergements

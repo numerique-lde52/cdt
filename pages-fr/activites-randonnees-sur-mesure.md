@@ -1,6 +1,6 @@
 ---
 published: true
-permalink: /activites/les-randonnees-sur-mesure-2
+permalink: /activites/les-randonnees-sur-mesure
 title: Les randonnées sur mesure
 intro: >-
   
@@ -8,14 +8,11 @@ intro: >-
 tech-description: ""
 tarifs: |-
   
-
   **Tarifs ânes:**
 
   1/2 journée : **40 €/ âne – 35 € par âne supplémentaire** 
 
   Journée : **60 €/ âne – 50 € par âne supplémentaire** 
-
-
 
 
   **Tarifs guide ânier** :

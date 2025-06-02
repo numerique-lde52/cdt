@@ -9,7 +9,6 @@ intro: >-
 
   Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
-  
 
   En intérieur, chaque tente propose : 
 
@@ -71,7 +70,7 @@ documents:
     link_text: Téléchargez le contrat de location
   - url: /assets/uploads/cgv-tentes-2025.pdf
     link_text: Téléchargez les conditions générales de location
-order: "10"
+order: "020"
 layout: hebergement
 ---
 La tente nomade est spacieuse avec ses 5 ou 6 mètres de diamètre et ses 3 mètres de hauteur. 

@@ -28,7 +28,7 @@ show_adhesion: true
 show_rent_conditions: true
 gallery: []
 documents: []
-order: "30"
+order: "100"
 layout: hebergement
 main_img: /assets/uploads/p1000007.jpg
 category: Hébergements

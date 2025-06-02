@@ -1,7 +1,7 @@
 ---
 published: true
 permalink: /partenaires/
-category: Général
+category: Divers
 layout: partenaires
 title: Partenaires
 order: "40"
