@@ -4,7 +4,8 @@ layout: default
 
 {% assign img_transformations_names = "t_1300-16-9,t_950-16-9,t_720-16-9,t_430-16-9,t_250-16-09,t_media_lib_thumb" | split: "," %}
 
-{% for img_url in page.gallery %}
+{% for img_url in page.gallery %}Original
+  <img class="img-fluid" src="{{ img_url }}"><br>
   {% assign url_parts = img_url | split: "/" %}
   {% for img_trans in img_transformations_names %}
     {% assign url_trans = img_url | replace: url_parts[6], img_trans %}
@@ -40,7 +41,7 @@ layout: default
       {{ content | markdownify }}
       <button class="btn btn-primary btn-lg" type="button">Réserver</button>
     </div>
-    <div class="col-3">
+    <div class="col-3">{% comment %}
       {% if page.gallery %}
 
       {% for img_url in page.gallery %}
@@ -48,7 +49,7 @@ layout: default
       {% endfor %}
 
       {%- endif -%}
-    </div>    
+    </div>{% endcomment %}    
   </div>
 
   <div class="row">
