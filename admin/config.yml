@@ -19,7 +19,7 @@ backend:
 
 media_library:
   name: cloudinary
-  output_filename_only: true
+  output_filename_only: false
   config:
     cloud_name: dwr0s07kl
     api_key: 117657116259457
