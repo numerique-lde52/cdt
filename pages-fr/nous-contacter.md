@@ -52,5 +52,5 @@ const handleSubmit = event => {
     .catch(error => alert(error));
 };
 
-document.querySelector("contact").addEventListener("submit", handleSubmit);
+document.querySelector("#contact").addEventListener("submit", handleSubmit);
 </script>
