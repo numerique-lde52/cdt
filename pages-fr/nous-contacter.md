@@ -25,7 +25,7 @@ cin.auberive@ligue52.org
 Q3H4+3Q Auberive
 
 
-<form name="contact" netlify>
+<form name="contact" id="contact" netlify>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
