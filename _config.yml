@@ -62,6 +62,8 @@ kramdown:
 # 4 - t_250-16-09
 # 5 - t_media_lib_thumb
 #
+
+# custom named transformations on Cloudinary
 images_transformations: [t_1300-16-9,t_950-16-9,t_720-16-9,t_430-16-9,t_250-16-09,t_media_lib_thumb]
 
 bootstrap_elements:
