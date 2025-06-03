@@ -99,7 +99,7 @@ collections:
         name: show_adhesion
         widget: boolean
         default: true
-        hint: Afficher l'adhésion à la Ligue obligatoire
+        hint: Afficher le texte adhésion à la Ligue obligatoire
         required: false
 
       - label: Conditions de location
@@ -137,7 +137,7 @@ collections:
       - label: Ordre
         name: order
         widget: string
-        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
+        hint: "Numérotation de 10 en 10 qui conditionne la position dans le menu. Sous la forme à trois chiffres : 010, 020, etc."
         required: true
 
       - label: "Modèle de page"
@@ -184,11 +184,6 @@ collections:
         name: body
         widget: markdown
 
-      - label: Image principale
-        name: main_img
-        widget: image
-        choose_url: false  
-
       - label: Galerie
         name: gallery
         widget: list
@@ -201,7 +196,7 @@ collections:
       - label: Ordre
         name: Ordre
         widget: text
-        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu
+        hint: Numérotation de 10 en 10 qui conditionne la position dans le menu. 010, 020, ...
 
   - name: agenda
     {% raw %}summary: "{{date_start | date('YYYY-MM-DD')}} - {{title}}"{% endraw %}
@@ -274,7 +269,6 @@ collections:
         required: false
         choose_url: false
 
-
   - name: configuration
     label: Configuration
     files:
@@ -341,74 +335,74 @@ collections:
                 name: description
                 widget: markdown
 
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    create: true
-    {% raw %}slug: '{{year}}-{{month}}-{{day}}-{{slug}}'{% endraw %}
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - {
-          label: 'Author',
-          name: 'author',
-          widget: 'relation',
-          collection: 'authors',
-          display_fields: [name],
-          search_fields: [name],
-          value_field: 'name',
-        }      
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'blog'
+  #   label: 'Blog'
+  #   folder: '_posts/'
+  #   create: true
+  #   {% raw %}slug: '{{year}}-{{month}}-{{day}}-{{slug}}'{% endraw %}
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+  #     - {
+  #         label: 'Author',
+  #         name: 'author',
+  #         widget: 'relation',
+  #         collection: 'authors',
+  #         display_fields: [name],
+  #         search_fields: [name],
+  #         value_field: 'name',
+  #       }      
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: 'authors'
-    label: 'Authors'
-    label_singular: 'Author'
-    folder: '_authors/'
-    create: true
-    identifier_field: name
-    editor:
-      preview: false
-    fields:
-      - { label: 'Pseudo', name: 'pseudo', widget: 'string' }
-      - { label: 'Full Name', name: 'name', widget: 'string' }
-      - { label: 'Bio', name: 'bio', widget: 'markdown', required: False }
-      - { label: 'Image', name: 'image', widget: 'image', required: False }
+  # - name: 'authors'
+  #   label: 'Authors'
+  #   label_singular: 'Author'
+  #   folder: '_authors/'
+  #   create: true
+  #   identifier_field: name
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - { label: 'Pseudo', name: 'pseudo', widget: 'string' }
+  #     - { label: 'Full Name', name: 'name', widget: 'string' }
+  #     - { label: 'Bio', name: 'bio', widget: 'markdown', required: False }
+  #     - { label: 'Image', name: 'image', widget: 'image', required: False }
 
-  - name: 'galleries'
-    label: 'Galleries'
-    label_singular: 'Gallery'
-    folder: '_galleries'
-    path: '{{slug}}/index'
-    media_folder: ''
-    public_folder: ''
-    create: True
-    editor:
-      preview: false
-    fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'gallery' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
-      - { label: "Published", name: "published", widget: "boolean", default: true }
-      - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "YYYY/MM/DD", picker_utc: false }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true }
-      - {
-          label: 'Author',
-          name: 'author',
-          widget: 'relation',
-          collection: 'authors',
-          display_fields: [name],
-          search_fields: [name],
-          value_field: 'name',
-        }      
-      - label: 'Images'
-        name: 'images'
-        widget: 'list'
-        fields: 
-          - { label: 'Image', name: 'url', widget: 'image' }
-          - { label: 'Caption', name: 'caption', widget: 'string' }
+  # - name: 'galleries'
+  #   label: 'Galleries'
+  #   label_singular: 'Gallery'
+  #   folder: '_galleries'
+  #   path: '{{slug}}/index'
+  #   media_folder: ''
+  #   public_folder: ''
+  #   create: True
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'gallery' }
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Description', name: 'description', widget: 'markdown' }
+  #     - { label: "Published", name: "published", widget: "boolean", default: true }
+  #     - { label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "YYYY/MM/DD", picker_utc: false }
+  #     - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true }
+  #     - {
+  #         label: 'Author',
+  #         name: 'author',
+  #         widget: 'relation',
+  #         collection: 'authors',
+  #         display_fields: [name],
+  #         search_fields: [name],
+  #         value_field: 'name',
+  #       }      
+  #     - label: 'Images'
+  #       name: 'images'
+  #       widget: 'list'
+  #       fields: 
+  #         - { label: 'Image', name: 'url', widget: 'image' }
+  #         - { label: 'Caption', name: 'caption', widget: 'string' }
 
 
 
