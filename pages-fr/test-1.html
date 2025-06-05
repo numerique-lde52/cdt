@@ -16,12 +16,34 @@ layout: default
 ---
 <div class="container">
   <div class="row">
+    <div class="col-12">
+      <img class="img-fluid"
+           src="/assets/test-responsive/1300w.jpg"
+           srcset="
+           /assets/test-responsive/1300w.jpg 1300w,
+           /assets/test-responsive/1100w.jpg 1100w,
+           /assets/test-responsive/920w.jpg 920w,
+           /assets/test-responsive/680w.jpg 680w" 
+           sizes="
+           (min-width: 1400px) 1300px, 
+           (min-width: 1200px) 1100px, 
+           (min-width: 992px) 920px, 
+           (min-width: 768px) 680px, 
+           (min-width: 576px) 560px"
+      >
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="container">
+  <div class="row">
     <div class="col-12">12
       {%- include responsive_image.html model="12w" index=0 -%}
     </div>
   </div>
 </div>
-
+-->
 
 <div class="container">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
