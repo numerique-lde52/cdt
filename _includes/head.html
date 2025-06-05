@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="{{ '/assets/bootstrap/css/bootstrap.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
   <!-- Include the identity widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript"></script>
 </head>
