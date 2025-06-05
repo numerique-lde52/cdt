@@ -1,25 +1,97 @@
-<!-- _includes/responsive_image.html  -->
+<!-- includes/responsive_image.html  -->
 
-{{ include.col }}
+{% comment %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-<div class="container text-center">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-    <div class="col bg-primary-subtle">Column<br><br></div>
-    <div class="col bg-secondary-subtle">Column<br></div>
-    <div class="col bg-warning-subtle">Column</div>
-    <div class="col bg-success-subtle">Column<br><br><br></div>
-  </div>
-</div>
+Call with 
+{%- include responsive_image.html model="4" index=0 -%}
+
+Where :
+  - "model" is the name of one model present in config site.img_trans_models
+  - "index" is an integer given to determine which image in the page.gallery is used.
+    as page.gallery is an array, index start at 0. 
+
+<img src="//placehold.it/300x300"  
+srcset="//placehold.it/160x160 160w, 
+        //placehold.it/90x90 130w, 
+        //placehold.it/300x300 300w"   
+sizes="(min-width: 1200px) 160px, 
+       (min-width: 992px) 130px, 
+       (min-width: 768px) 90px, 
+       300px"  />
+
+%}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{% endcomment %}
+
+{% assign image_url = page.gallery[include.index] %}
+{% assign url_parts = image_url | split: "/" %}
+
+<br><br>  {% comment %}
+url_parts = {{ url_parts | jsonify }}<br>
+include.model : {{ include.model }} - include.index : {{ include.index }}<br>
+{{ page.gallery | jsonify }}<br>
+image_url = {{ image_url }}<br>
+<br>
+{% endcomment %}
+{% for model in site.img_transformation_models %}
+  {% if model.name == include.model %}
+    {% assign format = model.format %}
+    {% assign sizes = model.sizes %}
+      {% comment %}
+      format = {{ format }} - sizes = {{ sizes | jsonify }}<br>
+      {% endcomment %}
+  {% endif %}
+{% endfor %}
+
+{% assign img_srcset_array = "" | split: "" %}
+{% assign sizes_array = "" | split: "" %}
 
 {% comment %}
-{% for img_url in page.gallery %}Original
-  <img class="img-fluid" src="{{ img_url }}"><br>
-  {% assign url_parts = img_url | split: "/" %}
-  {% for img_trans in site.images_transformations %}
-    {% assign url_trans = img_url | replace: url_parts[6], img_trans %}
-      {{ img_trans }}<br>
-      <img class="img-fluid" src="{{ url_trans }}"><br>
-    {% endfor %}
-{% endfor %}
+img_srcset_array = {{ img_srcset_array | jsonify }}<br>
+sizes_array = {{ sizes_array | jsonify }}<br>
 {% endcomment %}
+
+{% for size in sizes %}
+
+  {% assign index = forloop.index0 %}
+  {% assign breakpoint = site.breakpoints[index] %}
+
+  {% capture transformation_name %}t_{{ size }}-{{ format }}{% endcapture %}
+  
+  {% comment %} ############## srcset ################# {% endcomment %}
+  {% assign url_trans = image_url | replace: url_parts[6], transformation_name %}
+
+  {% if index == 0 %}{% assign img_src = url_trans %}{% endif %}
+
+  {% capture srcset_element %}{{ url_trans }} {{ size }}w{% endcapture %}
+
+  {% assign img_srcset_array = img_srcset_array | push: srcset_element %}
+
+  {% comment %} ############## sizes ################# {% endcomment %}
+  {% capture size_element %}(min-width: {{ site.breakpoints[index] }}px) {{ size }}px{% endcapture %}
+  {% assign sizes_array = sizes_array | push: size_element %}
+  
+  {% comment %}
+  index = {{ index }}<br>
+  size = {{ size }}<br>
+  breakpoint = {{ breakpoint }}<br>
+  transformation_name = {{ transformation_name }}<br>
+  img_src = {{ img_src }}<br>
+  img_srcset_array = {{ img_srcset_array | jsonify }}<br>
+  sizes_array = {{ sizes_array | jsonify }}<br>
+  {% endcomment %}
+
+{% endfor %}
+
+{% assign img_srcset = img_srcset_array | join: ", " %}
+{% assign sizes = sizes_array | join: ", " %}
+
+{% comment %}
+img_srcset = {{ img_srcset }}<br>
+sizes = {{ sizes }}<br>
+{% endcomment %}
+
+<img class="img-fluid" 
+src="{{ img_src }}" 
+srcset="{{ img_srcset }}"
+sizes="{{ sizes }}" >
+
 <!-- end _includes/responsive_image.html  -->

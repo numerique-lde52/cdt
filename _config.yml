@@ -55,21 +55,24 @@ kramdown:
 # 
 # This used by specialized includes that produces bootstrap element
 #
-# 0 - t_1300-16-9
-# 1 - t_950-16-9
-# 2 - t_720-16-9
-# 3 - t_430-16-9
-# 4 - t_250-16-09
-# 5 - t_media_lib_thumb
 #
 
 # custom named transformations on Cloudinary
-images_transformations: [t_1300-16-9,t_950-16-9,t_720-16-9,t_430-16-9,t_250-16-09,t_media_lib_thumb]
 
-bootstrap_elements:
-  - name: "jumbotron"
-    main: 2
-    srcsets: [0, 1, 2, 3]
+breakpoints : [1400, 1200, 992, 768, 576]
+
+img_transformation_models:
+  - name: "4"
+    main: 3
+    srcsets: [4]
+  - name: "6"
+    main: 3
+    srcsets: [2]
+  - name: "12w"
+    format: "16-9"
+    sizes: [1300, 1100, 920, 680, 560]
+
+
 
 # End Responsives images
 ###################################################################

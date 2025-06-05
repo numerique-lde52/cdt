@@ -1,0 +1,33 @@
+---
+published: true
+permalink: /test-images
+title: Test Images
+category: Divers
+intro: sdf dghdghdhdgdg
+tech-description: test
+gallery:
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748944385/enforeste-toi-2024-01_ktr1mm.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748951447/enforeste-toi-2024-03_oo6yb1.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748952222/enforeste-toi-2024-04_ba7jsk.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748952237/enforeste-toi-2024-05_aou8wo.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748952251/enforeste-toi-2024-06_opuhoj.jpg
+order: "1"
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col-12">12
+      {%- include responsive_image.html model="12w" index=0 -%}
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+    <div class="col bg-primary-subtle">blah !</div>
+    <div class="col bg-secondary-subtle">Column<br></div>
+    <div class="col bg-warning-subtle">Column</div>
+    <div class="col bg-success-subtle">Column<br><br><br></div>
+  </div>
+</div>
