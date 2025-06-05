@@ -2,6 +2,7 @@
 published: true
 permalink: /activites/accueil-d-etablissements-specialises
 title: L'accueil d'établissements spécialisés
+category: Activités
 intro: |-
   
   Vous êtes  éducateur, psychomotricien, infirmier spécialisé, …, vous 
@@ -34,10 +35,9 @@ tarifs: >-
   Nous contacter.
 show_adhesion: true
 gallery: []
-order: "60"
+order: "070"
 layout: page
 main_img: /assets/uploads/cea-logo-feader.jpg
-category: Activités
 ---
 
 Les formules d’animation permettent d’élaborer un projet sur mesure pour votre groupe. Ce projet s’appuiera sur le contact avec la nature et différentes formules de découverte, activités de plein air, randonnée, contact avec les animaux, etc.  pour être le plus bénéfique aux attentes et aux besoins de vos participants.

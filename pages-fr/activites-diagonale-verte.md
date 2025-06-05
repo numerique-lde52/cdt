@@ -2,6 +2,7 @@
 published: true
 permalink: /activites/diagonale-verte/
 title: Diagonale Verte
+category: Activités
 intro: >-
   Au fil des années, la Diagonale Verte est devenue une classique de
   l’itinérance.
@@ -47,10 +48,9 @@ tarifs: >-
 show_adhesion: true
 gallery:
   - /assets/uploads/pxl_20240806_084259505.jpg
-order: "60"
+order: "010"
 layout: page
 main_img: /assets/uploads/cea-logo-feader.jpg
-category: Activités
 ---
 Entre Haute-Marne et Côte d’Or, l’itinérance, d’environ 70 kms de 
 chemins et de sentiers, vous emmène à la découverte de la forêt, des 

@@ -2,6 +2,7 @@
 published: true
 permalink: /activites/bivouacs-forestiers
 title: Bivouacs forestiers
+category: Activités
 intro: |-
   
   Nos bivouacs forestiers sont l’occasion de vous initier à la randonnée 
@@ -11,10 +12,9 @@ tech-description: Prochaines dates en 2026
 tarifs: ""
 show_adhesion: true
 gallery: []
-order: "60"
+order: "040"
 layout: page
 main_img: /assets/uploads/cea-logo-feader.jpg
-category: Activités
 ---
 
 

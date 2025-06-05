@@ -4,8 +4,7 @@ permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
 category: Hébergements
 intro: >-
-  Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
-  hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
+  Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
 
   Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-

@@ -2,7 +2,7 @@
 published: true
 permalink: /activites/les-balades
 title: Les balades immersives
-category: Activités
+category: Découvrir
 intro: Petites randos pour grand plaisir !
 tech-description: "**Le pont Griselin :**
 
@@ -69,7 +69,7 @@ tech-description: "**Le pont Griselin :**
   **Montavoir**
 
 
-  \\ 
+  \\
 
   Distance : 11 km (au départ du gîte de Charbonnière)
 
@@ -229,7 +229,7 @@ tech-description: "**Le pont Griselin :**
 tarifs: ""
 show_adhesion: false
 show_rent_conditions: false
-order: "10"
+order: "010"
 layout: page
 ---
 En famille, entre amis, vous êtes amateurs de balade plutôt que de 

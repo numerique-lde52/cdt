@@ -1,27 +1,18 @@
 ---
 layout: default
 ---
-{%- include responsive_image.html col=12 -%}
+
 <main class="container">
   <div class="row rounded text-body-emphasis bg-body-secondary g-2">
     <div class="col px-0">
       <h1 class="display-4 fst-italic">{{ page.title }}</h1>
-      <p class="my-3">
-      Vous allez bivouaquer dans des tentes nomades, découvrir les secrets des sous-bois, louer un âne pour accompagner vos découvertes, habiter des cabanes insolites, cheminer le long des ruisseaux forestiers jusqu’à leur source, apprendre la vannerie sauvage, vous initier au croquis naturaliste avec un professionnel le temps d’un week-end … ou tout simplement profiter du calme et de la sérénité des lieux, en famille ou entre amis, pour vous reposer, prendre le temps de vivre …
-      </p>
+      <div class="my-3 lead">{{ page.intro | markdownify }}</div>
     </div>    
     <div class="col-lg-4 px-0">
-      <img class="img-fluid" src="{{ '/assets/uploads/pxl_20250414_140621026.jpg' | relative_url }}">
+      {%- include responsive_image.html model="4" index="1" -%}
     </div>
   </div>
 </main>
-
-<div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbo">
-  <div class="container-fluid rounded-3 jumbo-text">
-    <h1 class="display-5 fw-bold"></h1>
-    <p class="col-md-8 fs-4">{{ page.intro | markdownify }}</p>
-  </div>
-</div>
 
 <div class="container">
   <div class="row">

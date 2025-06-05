@@ -2,6 +2,7 @@
 published: true
 permalink: /activites/accueil-de-groupes
 title: L'accueil de groupes
+category: Activités
 intro: |-
   Vous êtes animateur, responsable d’une association, d’un club, d’un 
   service municipal enfance jeunesse, organisateur de loisirs…, vous 
@@ -37,10 +38,9 @@ tarifs: >-
   Nous contacter.
 show_adhesion: true
 gallery: []
-order: "60"
+order: "060"
 layout: page
 main_img: /assets/uploads/cea-logo-feader.jpg
-category: Activités
 ---
 
 Nous vous accueillons avec votre groupe sur notre écodomaine

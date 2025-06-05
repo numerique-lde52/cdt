@@ -2,6 +2,7 @@
 published: true
 permalink: /activites/sejours-ete-enfants-et-jeunes/
 title: Les séjours été enfants et jeunes
+category: Activités
 intro: >-
   Après une intense année d’école, il est temps de prendre de bonnes vacances.
   Des vacances tranquilles à vivre dans la nature.
@@ -25,14 +26,13 @@ tarifs: >-
   **Aides possibles :** chèques vacances et bons CAF acceptées, séjours en cours d’habilitation Pass Colos (CAF) et Colos apprenantes. Possibilité devis. Nous contacter.
 show_adhesion: false
 gallery:
-  - /assets/uploads/coollogo_com-28252544.png
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748944385/enforeste-toi-2024-01_ktr1mm.jpg
 documents:
   - url: /assets/uploads/formulaire-d_inscription_sejours_2025.pdf
     link_text: Téléchargez le bulletin d'inscription
-order: "50"
+order: "050"
 layout: page
 main_img: /assets/uploads/coollogo_com-28252544.png
-category: Activités
 ---
 **Prêt pour l’aventure ? Si tu veux passer des vacances en 
 pleine nature avec d’autres enfants qui, comme toi, adorent jouer dehors
