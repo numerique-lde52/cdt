@@ -17,6 +17,7 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="col-12">
+<figure id="demo">
       <img class="img-fluid"
            src="/assets/test-responsive/1300w.jpg"
            srcset="
@@ -31,9 +32,28 @@ layout: default
                   (min-width: 780px) 672px, 
                   (min-width: 600px) 516px, calc(94.29vw - 31px)"
       >
+<figcaption>Loading...</figcaption>      
     </div>
+
   </div>
 </div>
+
+<script>
+  setInterval(function() {
+  let str = "";
+  str += "logical width: " + window.innerWidth + "<br>";
+  str += "physical width: " + (window.devicePixelRatio * window.innerWidth) + "<br>";
+  str += "current source: " + document.querySelector("#demo img").currentSrc.split("/").pop();
+  document.querySelector("#demo figcaption").innerHTML = str;
+}, 1000);
+</script>
+<style>
+  body { margin: 0; }
+  figure { margin: 0; position: relative; }
+  figure img { width: 100vw; }
+  figcaption { position: absolute; left: 0; top: 0; background-color: #FC0; }
+</style>
+
 
 <!--
 <div class="container">
