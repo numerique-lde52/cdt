@@ -42,6 +42,7 @@ layout: default
   setInterval(function() {
   let str = "";
   str += "logical width: " + window.innerWidth + "<br>";
+  str += "pixel ratio: " + window.devicePixelRatio + "<br>";
   str += "physical width: " + (window.devicePixelRatio * window.innerWidth) + "<br>";
   str += "current source: " + document.querySelector("#demo img").currentSrc.split("/").pop();
   document.querySelector("#demo figcaption").innerHTML = str;
