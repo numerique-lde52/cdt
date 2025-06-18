@@ -29,9 +29,9 @@ layout: default
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     {%- for p in pages -%}
     <div class="col">
-      <div class="card shadow-sm bg-primary-subtle">
+      <div class="card shadow-sm bg-primary-subtle rounded">
         <a class="nav-link" href="{{ p.url | relative_url }}">
-          <img class="img-fluid" src="{{ p.gallery| first | relative_url }}">
+          <img class="img-fluid rounded" src="{{ p.gallery| first | relative_url }}">
         </a>
         <div class="card-body">
           <a class="nav-link" href="{{ p.url | relative_url }}">
@@ -54,9 +54,9 @@ layout: default
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     {%- for p in pages -%}
     <div class="col">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm bg-primary-subtle rounded">
         <a class="nav-link" href="{{ p.url | relative_url }}">
-          <img class="img-fluid" src="{{ p.gallery| first | relative_url }}">
+          <img class="img-fluid rounded" src="{{ p.gallery| first | relative_url }}">
         </a>
         <div class="card-body">
           <a class="nav-link" href="{{ p.url | relative_url }}">
