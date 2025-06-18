@@ -5,15 +5,13 @@
 
 <body data-bs-theme="light">
 {% if site.debug == true %}Layout : {{ page.layout }} / Environment : {{ jekyll.environment }}{% endif %}
-  <div class="main-col container-md">
+  <div class="main-col container-lg">
     {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main class="page-content mx-2" aria-label="Content">
+<!-- default include -->
+      {{ content }}
+<!-- default include end -->      
     </main>
-
     {%- include footer.html -%}
   </div>  
 </body>

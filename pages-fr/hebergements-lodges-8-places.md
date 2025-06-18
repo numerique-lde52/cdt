@@ -69,7 +69,7 @@ tarifs: >-
   **Option :**
 
 
-  *  branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
+  * branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
 
 
 
@@ -77,16 +77,8 @@ tarifs: >-
   Tarifs groupes, séjours : nous contacter.
 
 
-  Caution demandée :  200 €/lodge
+  Caution demandée : 200 €/lodge
 
-
-  \***Pour séjourner dans notre hébergement, vous vous acquitterez
-   de l’adhésion annuelle à la Ligue de l’enseignement de Haute-Marne, 
-  association d’éducation populaire,  porteuse du projet. Il vous sera 
-
-  donc demandé une adhésion de 10,58€ par foyer et par an à votre arrivée.
-   En réservant, vous vous engagez à régler l’adhésion à votre arrivée à 
-  Chemins de Traverse. Merci de votre confiance.**
 show_adhesion: true
 show_rent_conditions: true
 gallery:

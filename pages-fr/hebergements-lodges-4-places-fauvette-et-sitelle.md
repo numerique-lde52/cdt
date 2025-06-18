@@ -69,16 +69,8 @@ tarifs: >-
   Tarifs groupes, séjours : nous contacter.
 
 
-  Caution demandée :  200 €/lodge
+  Caution demandée : 200 €/lodge
 
-
-  \***Pour séjourner dans notre hébergement, vous vous acquitterez
-   de l’adhésion annuelle à la Ligue de l’enseignement de Haute-Marne, 
-  association d’éducation populaire,  porteuse du projet. Il vous sera 
-
-  donc demandé une adhésion de 10,58€ par foyer et par an à votre arrivée.
-   En réservant, vous vous engagez à régler l’adhésion à votre arrivée à 
-  Chemins de Traverse. Merci de votre confiance.**
 show_adhesion: true
 show_rent_conditions: true
 gallery:

@@ -41,16 +41,8 @@ tarifs: >-
   La nuitée à partir de 14h00 à 12h00 le lendemain midi.
 
 
-  Caution demandée :  150 €/cabane (200 €/2 cabanes et 250 €/3 cabanes)
+  Caution demandée : 150 €/cabane (200 €/2 cabanes et 250 €/3 cabanes)
 
-
-  \***Pour séjourner dans notre hébergement, vous vous acquitterez
-   de l’adhésion annuelle à la Ligue de l’enseignement de Haute-Marne, 
-  association d’éducation populaire,  porteuse du projet. Il vous sera 
-
-  donc demandé une adhésion de 10,58€ par foyer et par an à votre arrivée.
-   En réservant, vous vous engagez à régler l’adhésion à votre arrivée à 
-  Chemins de Traverse. Merci de votre confiance.**
 show_adhesion: true
 show_rent_conditions: true
 gallery:

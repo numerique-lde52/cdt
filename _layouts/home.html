@@ -1,10 +1,9 @@
 ---
 layout: default
 ---
-
-<main class="container">
+<!-- home layout start -->
   <div class="row rounded text-body-emphasis bg-body-secondary g-2">
-    <div class="col px-0">
+    <div class="col p-3">
       <h1 class="display-4 fst-italic">Vivre la forêt ...</h1>
       <p class="lead my-3">
       Le projet des Chemins de Traverse vous propose de vivre et d’habiter vivre les forêts du Parc national de Forêts, 11 ème et dernier né des Parc nationaux français.
@@ -14,13 +13,11 @@ layout: default
       </p>
       <p class="lead mb-0"><a href="{{ '/qui-sommes-nous' | relative_url }}" class="text-body-emphasis fw-bold">En savoir plus sur Chemins de Traverse...</a></p>
     </div>    
-    <div class="col-lg-4 px-0">
-      <img class="img-fluid" src="{{ '/assets/uploads/pxl_20250414_140621026.jpg' | relative_url }}">
+    <div class="col-lg-4 ">
+      <img class="img-fluid rounded" src="{{ '/assets/uploads/pxl_20250414_140621026.jpg' | relative_url }}">
     </div>
   </div>
-</main>
 
-<div class="container">
   <section class="py-1 text-center">
     <div class="row py-lg-2">
       <div class="col-lg-6 col-md-8 mx-auto">
@@ -32,7 +29,7 @@ layout: default
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     {%- for p in pages -%}
     <div class="col">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm bg-primary-subtle">
         <a class="nav-link" href="{{ p.url | relative_url }}">
           <img class="img-fluid" src="{{ p.gallery| first | relative_url }}">
         </a>
@@ -45,10 +42,7 @@ layout: default
     </div>
     {%- endfor -%}
   </div>
-</div>
 
-
-<div class="container">
   <section class="py-1 text-center">
     <div class="row py-lg-2">
       <div class="col-lg-6 col-md-8 mx-auto">
@@ -73,4 +67,4 @@ layout: default
     </div>
     {%- endfor -%}
   </div>
-</div>
+<!-- home layout end -->  

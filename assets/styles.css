@@ -11,27 +11,18 @@
 
 :root, [data-bs-theme="light"] {
 
-  /*  
---bs-body-color: red ; 
-    
-  */
-
   --bs-primary: #a5c235;
   --bs-primary-rgb: 165, 194, 53;
-
   --bs-primary-bg-subtle: #e6f2b8;
 
   --bs-secondary: #4d3516;
   --bs-secondary-rgb: 77, 53, 22;
-
-  --bs-secondary-bg-subtle: #b77e34;
+  --bs-secondary-bg-subtle: #ebd4b8;
 
   --bs-tertiary: #e88427;
   --bs-tertiary-rgb: 232, 132, 39;
 
   --bs-body-bg: var(--bs-primary);
-
-
 
 /*
     
@@ -83,10 +74,10 @@
 
 
 
-
+/*
   .main-col{
     background: #eee;
-  }
+  }*/
 
 
   .dropdown-menu {
