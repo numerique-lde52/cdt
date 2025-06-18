@@ -5,13 +5,36 @@
  */
 
 
+/*
+
+*/
+
 :root, [data-bs-theme="light"] {
 
   /*  
 --bs-body-color: red ; 
     
   */
-    --bs-body-bg: #c4e14c;
+
+  --bs-primary: #a5c235;
+  --bs-primary-rgb: 165, 194, 53;
+
+  --bs-primary-bg-subtle: #e6f2b8;
+
+  --bs-secondary: #4d3516;
+  --bs-secondary-rgb: 77, 53, 22;
+
+  --bs-secondary-bg-subtle: #b77e34;
+
+  --bs-tertiary: #e88427;
+  --bs-tertiary-rgb: 232, 132, 39;
+
+  --bs-body-bg: var(--bs-primary);
+
+
+
+/*
+    
     --bs-heading-color: #4b7242;
 
     --bs-bg-opacity: 1;
@@ -28,6 +51,38 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
+*/
+
+.text-bg-primary {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-primary-subtle{
+  background-color: var(--bs-primary-bg-subtle)
+}
+
+.text-bg-secondary {
+  color: #fff !important;
+  background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.bg-secondary-subtle{
+  background-color: var(--bs-secondary-bg-subtle)
+}
+
+.text-bg-tertiary {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-tertiary-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-tertiary{
+  color: rgba(var(--bs-tertiary-rgb),var(--bs-text-opacity)) !important;
+}
+
+
+
+
 
   .main-col{
     background: #eee;
