@@ -21,33 +21,39 @@ sizes="(min-width: 1200px) 160px,
 
 %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{% endcomment %}
 
+{% assign debug = true %}
+
+
 {% assign image_url = page.gallery[include.index] %}
 {% assign url_parts = image_url | split: "/" %}
 
-<br><br>  {% comment %}
+
+{% if debug == true %}
+<br><br>  
 url_parts = {{ url_parts | jsonify }}<br>
 include.model : {{ include.model }} - include.index : {{ include.index }}<br>
 {{ page.gallery | jsonify }}<br>
 image_url = {{ image_url }}<br>
 <br>
-{% endcomment %}
+{% endif %}
+
 {% for model in site.img_transformation_models %}
   {% if model.name == include.model %}
     {% assign format = model.format %}
     {% assign sizes = model.sizes %}
-      {% comment %}
+      {% if debug == true %}
       format = {{ format }} - sizes = {{ sizes | jsonify }}<br>
-      {% endcomment %}
+      {% endif %}
   {% endif %}
 {% endfor %}
 
 {% assign img_srcset_array = "" | split: "" %}
 {% assign sizes_array = "" | split: "" %}
 
-{% comment %}
+{% if debug == true %}
 img_srcset_array = {{ img_srcset_array | jsonify }}<br>
 sizes_array = {{ sizes_array | jsonify }}<br>
-{% endcomment %}
+{% endif %}
 
 {% for size in sizes %}
 
@@ -69,7 +75,7 @@ sizes_array = {{ sizes_array | jsonify }}<br>
   {% capture size_element %}(min-width: {{ site.breakpoints[index] }}px) {{ size }}px{% endcapture %}
   {% assign sizes_array = sizes_array | push: size_element %}
   
-  {% comment %}
+  {% if debug == true %}
   index = {{ index }}<br>
   size = {{ size }}<br>
   breakpoint = {{ breakpoint }}<br>
@@ -77,17 +83,17 @@ sizes_array = {{ sizes_array | jsonify }}<br>
   img_src = {{ img_src }}<br>
   img_srcset_array = {{ img_srcset_array | jsonify }}<br>
   sizes_array = {{ sizes_array | jsonify }}<br>
-  {% endcomment %}
+  {% endif %}
 
 {% endfor %}
 
 {% assign img_srcset = img_srcset_array | join: ", " %}
 {% assign sizes = sizes_array | join: ", " %}
 
-{% comment %}
+{% if debug == true %}
 img_srcset = {{ img_srcset }}<br>
 sizes = {{ sizes }}<br>
-{% endcomment %}
+{% endif %}
 
 <img class="img-fluid" 
 src="{{ img_src }}" 

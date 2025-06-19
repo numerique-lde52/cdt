@@ -22,20 +22,7 @@ layout: default
   </div> 
   <div class="carousel-inner rounded-3"> 
     <div class="carousel-item active rounded-3">
-      <img class="img-fluid d-block w-100"
-           src="/assets/test-responsive/1300w.jpg"
-           srcset="
-           /assets/test-responsive/mire-1300.webp 1300w,
-           /assets/test-responsive/mire-1100.webp 1100w,
-           /assets/test-responsive/mire-920.webp 920w,
-           /assets/test-responsive/mire-680.webp 680w,
-           /assets/test-responsive/mire-560.webp 560w" 
-           sizes="(min-width: 1400px) 1272px, 
-                  (min-width: 1200px) 1092px, 
-                  (min-width: 1000px) 912px, 
-                  (min-width: 780px) 672px, 
-                  (min-width: 600px) 516px, calc(94.29vw - 31px)"
-      >
+      {%- include responsive_image.html model="12w" index=0 -%}
       <div class="container"> 
         <div class="carousel-caption text-start text-bg-carousel px-3"> 
           <h1>Example headline.</h1> 
@@ -134,7 +121,6 @@ layout: default
   </div>
   <div class="col-6 text-bg-light">
     <img class="img-fluid" src="/assets/uploads/hebergements/tentes/tente01.jpg">
-
   </div>
 
 </div>
