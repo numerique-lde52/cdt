@@ -62,6 +62,15 @@
   background-color: var(--bs-secondary-bg-subtle)
 }
 
+.text-bg-carousel {
+  color: #000 !important;
+  background-color: #eeeeeedd !important;
+}
+
+.carousel-caption{
+
+}
+
 .text-bg-tertiary {
   color: #000 !important;
   background-color: RGBA(var(--bs-tertiary-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -71,8 +80,32 @@
   color: rgba(var(--bs-tertiary-rgb),var(--bs-text-opacity)) !important;
 }
 
+@media (min-width: 576px) {
+  .h-sm-600px {
+    height: 600px !important;
+  }
+}
+.card .card-img-overlay {
+  z-index: 2;
+}
 
+.overflow-hidden {
+  overflow: hidden !important;
+}
 
+.opacity-3 {
+  opacity: 0.3 !important;
+}
+
+.bg-overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
 
 /*
   .main-col{
