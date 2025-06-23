@@ -3,13 +3,20 @@
 
 Generates responsive image html tag
 
-Call with 
+From within a page call with 
 {%- include responsive_image.html model="4" index=0 -%}
+It will use current page.gallery and look for an image at passed index
+
+From anywhere, just pass the PAGE OBJECT in target_page
+{%- include responsive_image.html model="4" target_page=PAGE.OBJECT -%}
+
 
 Where :
   - "model" is the name of one model present in config site.img_trans_models
   - "index" is an integer given to determine which image in the page.gallery is used.
-    as page.gallery is an array, index start at 0. 
+    as page.gallery is an array, index start at 0.
+  - "target_page" a page object
+
 
 <img src="//placehold.it/300x300"  
 srcset="//placehold.it/160x160 160w, 
@@ -38,27 +45,38 @@ sizes="(min-width: 1200px) 160px,
 
 {% if debug == true %}
 <br><br>
+include.model = {{ include.model }}<br>
 include.index = {{ include.index }}<br>
-include.target_page = {{ target_page.title }}<br><br><br>
+include.target_page = {{ target_page }}<br><br><br>
 
 
 
 url_parts = {{ url_parts | jsonify }}<br>
 include.model : {{ include.model }} - include.index : {{ include.index }}<br>
-Page galleery : {{ target_page.gallery | jsonify }}<br>
+Page gallery : {{ target_page.gallery | jsonify }}<br>
 image_url = {{ image_url }}<br>
 <br>
+
 {% endif %}
 
-{% for model in site.img_transformation_models %}
-  {% if model.name == include.model %}
-    {% assign format = model.format %}
-    {% assign sizes = model.sizes %}
-      {% if debug == true %}
-      format = {{ format }} - sizes = {{ sizes | jsonify }}<br>
-      {% endif %}
-  {% endif %}
-{% endfor %}
+
+{% assign model = site.img_transformation_models | where: "name", include.model | first %}
+
+{% if debug == true %}
+<br><br>
+model = {{ model | jsonify }}<br>
+
+<br>
+
+{% endif %}
+
+{% assign format = model.format %}
+{% assign sizes = model.sizes %}
+
+{% if debug == true %}
+  format = {{ format }} - sizes = {{ sizes | jsonify }}<br>
+{% endif %}
+
 
 {% assign img_srcset_array = "" | split: "" %}
 {% assign sizes_array = "" | split: "" %}
@@ -108,7 +126,7 @@ img_srcset = {{ img_srcset }}<br>
 sizes = {{ sizes }}<br>
 {% endif %}
 
-<img class="img-fluid" 
+<img class="img-fluid rounded" 
 src="{{ img_src }}" 
 srcset="{{ img_srcset }}"
 sizes="{{ sizes }}" >
