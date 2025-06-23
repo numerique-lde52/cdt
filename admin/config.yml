@@ -26,7 +26,7 @@ media_library:
 
 # those two entries have an influence on cloudinary file name contruction
 # as they're added to the path
-# media_folder: 'assets/uploads'
+media_folder: 'assets/uploads'
 # public_folder: "/image/upload" 
 
 logo_url: /assets/logo-chemins-de-traverse-proto-1-optimized.svg
@@ -158,6 +158,12 @@ collections:
         name: published
         widget: boolean
         default: false
+
+      - label: Mise en avant
+        name: home-carousel
+        widget: boolean
+        default: false
+        required: false
 
       - label: URL
         name: permalink
@@ -298,6 +304,25 @@ collections:
                 hint: Dans quel menu doit apparaitre cette catégorie "main = menu principal" et "footer = menu pied de page"
                 widget: "select"
                 options: ["main", "footer"]
+
+
+      - label: Caroussel Accueil
+        name: carousel_fr
+        file: _data/carousel_fr.yml
+        fields:
+          - label: pages
+            name: pages
+            identifier_field: title
+            widget: list
+            fields:
+              - label: Titre
+                name: titre
+                widget: relation
+                collection: pages-fr
+                search_fields: ["title"]
+                display_fields: ["title"]
+                value_field: "title"
+
 
       - label: Traductions
         name: translations

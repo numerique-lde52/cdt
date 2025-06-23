@@ -2,7 +2,6 @@
 published: true
 permalink: /activites/diagonale-verte/
 title: Diagonale Verte
-category: Activités
 intro: >-
   Au fil des années, la Diagonale Verte est devenue une classique de
   l’itinérance.
@@ -47,10 +46,13 @@ tarifs: >-
   **La Diagonale Verte est complète pour 2025, rendez-vous dès janvier 2026 pour les inscriptions.**
 show_adhesion: true
 gallery:
-  - /assets/uploads/pxl_20240806_084259505.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672048/20220529_114910_jcud9n.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672048/20220529_160121_njtgpa.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672049/20220529_114234_ttkhhy.jpg
 order: "010"
 layout: page
 main_img: /assets/uploads/cea-logo-feader.jpg
+category: Activités
 ---
 Entre Haute-Marne et Côte d’Or, l’itinérance, d’environ 70 kms de 
 chemins et de sentiers, vous emmène à la découverte de la forêt, des 

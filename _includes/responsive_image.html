@@ -24,15 +24,28 @@ sizes="(min-width: 1200px) 160px,
 
 {% assign debug = false %}
 
-{% assign image_url = page.gallery[include.index] %}
+
+{% if include.index %}
+  {% assign target_page = page %}
+  {% assign image_url = page.gallery[include.index] %}
+{% elsif include.target_page %}
+  {% assign target_page = include.target_page %}
+  {% assign image_url = target_page.gallery.first %}
+{% endif %}
+
 {% assign url_parts = image_url | split: "/" %}
 
 
 {% if debug == true %}
-<br><br>  
+<br><br>
+include.index = {{ include.index }}<br>
+include.target_page = {{ target_page.title }}<br><br><br>
+
+
+
 url_parts = {{ url_parts | jsonify }}<br>
 include.model : {{ include.model }} - include.index : {{ include.index }}<br>
-Page galleery : {{ page.gallery | jsonify }}<br>
+Page galleery : {{ target_page.gallery | jsonify }}<br>
 image_url = {{ image_url }}<br>
 <br>
 {% endif %}

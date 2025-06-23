@@ -70,7 +70,6 @@ tarifs: >-
 
 
   Caution demandée : 200 €/lodge
-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
