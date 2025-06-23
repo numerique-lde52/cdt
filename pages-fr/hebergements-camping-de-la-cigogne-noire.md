@@ -2,9 +2,9 @@
 published: true
 permalink: /hebergements/camping-de-la-cigogne-noire/
 title: Camping de la cigogne noire
-intro: "**Vous souhaitez vivre un week-end ou un séjour insolite 100% nature,
-  nous vous proposons de vivre cette expérience sur le camping de la Cigogne
-  noire, dans un vallon de rêve en bordure de la forêt.**"
+intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, nous
+  vous proposons de vivre cette expérience sur le camping de la Cigogne noire,
+  dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
   A proximité des emplacements :
 
@@ -37,12 +37,11 @@ tarifs: >-
 
 
   Tarifs groupes, séjours : nous contacter.
-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
-  - /assets/uploads/camping-ete-2024jpg-1-.jpg
-  - /assets/uploads/pxl_20240729_211135836.night-corrected2.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748255228/camping-ete-2024jpg-1-_ij2ffu.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682941/pxl_20240729_211135836.night-corrected2_dsdrgi.jpg
 documents: []
 order: "070"
 layout: hebergement

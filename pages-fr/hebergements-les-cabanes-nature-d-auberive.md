@@ -1,6 +1,6 @@
 ---
 published: true
-permalink: /hebergements/les-cabanes-nature-dauberive/
+permalink: /hebergements/les-cabanes-nature-d-auberive/
 title: Les cabanes nature d'Auberive
 intro: >-
   **Habitez la forêt !**
@@ -14,13 +14,14 @@ intro: >-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
-  - /assets/uploads/img_20230705_151054.jpg
-  - /assets/uploads/img_20221027_105638.jpg
-  - /assets/uploads/sauvageonne-epide-mars-2025.jpg
-  - /assets/uploads/pb100092.jpg
-  - /assets/uploads/image0000021-2-.jpg
-  - /assets/uploads/image0000011-1-.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683250/pb100092_qc8wmc.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683240/img_20230705_151054_okfydd.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683254/sauvageonne-epide-mars-2025_me3gqj.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683241/img_20221027_105638_zx6mia.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683239/image0000011-1-_m9pm1k.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683239/image0000021-2-_ltwprc.jpg
 order: "090"
+layout: hebergement
 main_img: /assets/uploads/pxl_20240513_090804955-sd.jpg
 category: Hébergements
 ---

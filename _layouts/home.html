@@ -4,53 +4,8 @@ layout: default
 <!-- home layout start -->
 {%- include home-carousel.html -%}
 
-  <section class="py-1 text-center">
-    <div class="row py-lg-2">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Nos hébergement</h1>
-      </div>
-    </div>
-  </section>
-{%- assign pages = site.pages | where:"category", "Hébergements" | where:"lang", page.lang | sort: "order" -%}
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    {%- for p in pages -%}
-    <div class="col">
-      <div class="card shadow-sm bg-primary-subtle rounded">
-        <a class="nav-link" href="{{ p.url | relative_url }}">
-          <img class="img-fluid rounded" src="{{ p.gallery| first | relative_url }}">
-        </a>
-        <div class="card-body">
-          <a class="nav-link" href="{{ p.url | relative_url }}">
-            <h3 class="card-text">{{ p.title }}</h2>
-          </a>
-        </div>
-      </div>
-    </div>
-    {%- endfor -%}
-  </div>
+{%- include home-category-section-thumbnails.html category="Hébergements" -%}
 
-  <section class="py-1 text-center">
-    <div class="row py-lg-2">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Nos activités</h1>
-      </div>
-    </div>
-  </section>
-{%- assign pages = site.pages | where:"category", "Activités" | where:"lang", page.lang | sort: "order" -%}
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    {%- for p in pages -%}
-    <div class="col">
-      <div class="card shadow-sm bg-primary-subtle rounded">
-        <a class="nav-link" href="{{ p.url | relative_url }}">
-          <img class="img-fluid rounded" src="{{ p.gallery| first | relative_url }}">
-        </a>
-        <div class="card-body">
-          <a class="nav-link" href="{{ p.url | relative_url }}">
-            <h3 class="card-text">{{ p.title }}</h2>
-          </a>
-        </div>
-      </div>
-    </div>
-    {%- endfor -%}
-  </div>
+{%- include home-category-section-thumbnails.html category="Activités" -%}
+
 <!-- home layout end -->  

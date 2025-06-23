@@ -2,29 +2,24 @@
 published: true
 permalink: /hebergements/hebergement-d-etape/
 title: La chambre aux papillons
-intro: "**Vous souhaitez faire une étape sur votre itinéraire de randonnée, vous
+intro: Vous souhaitez faire une étape sur votre itinéraire de randonnée, vous
   avez une mobilité réduite, la chambre aux papillons vous accueille ! Dans la
   maison forestière, à l'entrée de l'écodomaine Chemins de Traverse, venez
-  goûter à la quiétude du lieu !**"
+  goûter à la quiétude du lieu !
 tech-description: ""
-tarifs: >-
+tarifs: |-
   * 18 € par adulte et 12 € par enfant de moins de 16 ans.
-
   * Tarifs dégressifs à partir de 3 nuitées
-
   * Taxe de séjour en sus : 0.60 €/personne adulte/nuitée
-
   * Adhésion à la Ligue de l’enseignement 52* : 10,58€/foyer/an
-
 
   **Option :**
 
-
   * option draps : 7 €/séjour
-
 show_adhesion: true
 show_rent_conditions: true
-gallery: []
+gallery:
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683849/chambre-aux-papillons_myogog.jpg
 documents: []
 order: "100"
 layout: hebergement

@@ -1,0 +1,43 @@
+<!-- includes/home-carousel.html  -->
+{% assign debug = false %}
+
+{%- assign pages = "" | split: "" -%}
+{%- for carousel_page in site.data.carousel_fr.pages -%}
+  {%- assign target_page = site.pages | where: "title", carousel_page.title | first -%}
+  {%- assign pages = pages | push: target_page -%}
+{%- endfor -%}
+
+{% if debug == true %}
+<br><br>
+pages = {{ pages | jsonify }}<br>
+pages_count = {{ pages | size }}<br>
+{% endif %}
+
+<div id="homeCarousel" class="carousel slide carousel-fade mb-6" data-bs-ride="true">
+  <div class="carousel-indicators">
+    {%- for p in pages -%}
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="{{ forloop.index0 }}" aria-label="Slide {{ forloop.index }}" {% if forloop.index == 1 %} class="active"{% endif %} ></button>
+    {%- endfor -%}
+  </div> 
+
+  <div class="carousel-inner rounded-3">
+
+{%- for p in pages -%}
+    <div class="carousel-item {% if forloop.index == 1 %} active {% endif %} rounded-3">
+      {%- include responsive_image.html model="12w" target_page=p -%}
+      <div class="container"> 
+        <div class="carousel-caption text-end text-bg-carousel rounded p-2 m-2"> 
+          <h1>{{ p.title }}</h1> 
+          <p class="opacity-75">{{ p.intro | markdownify }}</p> 
+          <p><a class="btn btn-primary" href="{{ p.url | relative_url }}">En savoir plus</a></p> 
+        </div> 
+      </div> 
+    </div> 
+{%- endfor -%}
+
+
+  </div> 
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button> 
+  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+</div>
+<!-- end includes/home-carousel.html  -->

@@ -2,10 +2,7 @@
 published: true
 permalink: /hebergements/lodges-2-places/
 title: Lodge 2 places Salamandre
-intro: "Vous souhaitez vivre un week-end ou un séjour insolite 100% nature,
-  être hébergé, nous vous proposons de vivre cette expérience dans l'un de nos
-  lodges *Fauvette et Sittelle*, installés dans un vallon de rêve en bordure de
-  la forêt."
+intro: "Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être hébergé, nous vous proposons de vivre cette expérience dans notre lodge *Salamadre*, installés dans un vallon de rêve en bordure de la forêt."
 tech-description: >-
   En intérieur, le lodge propose :
 

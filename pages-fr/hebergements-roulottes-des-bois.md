@@ -2,9 +2,10 @@
 published: true
 permalink: /hebergements/roulotte-des-bois/
 title: Roulottes de Bois
-intro: >-
-  
-  **Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être hébergé, nous vous proposons de vivre cette expérience dans l'une de nos roulottes Aurore et Lucine, installées dans un vallon de rêve en bordure de la forêt.**
+intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
+  hébergé, nous vous proposons de vivre cette expérience dans l'une de nos
+  roulottes Aurore et Lucine, installées dans un vallon de rêve en bordure de la
+  forêt.
 tech-description: >-
   En intérieur, chaque roulotte propose :
 
@@ -64,13 +65,12 @@ tarifs: >-
 
 
   Caution demandée : 200 €/roulotte
-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
-  - /assets/uploads/20230717_auberive_celine-lecomte2p.jpg
-  - /assets/uploads/20230717_auberive_cl2_7839_bd.jpg
-  - /assets/uploads/cecile-mannevy.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682616/roulotte-des-bois_e7bc7q.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682449/20230717_auberive_celine-lecomte2p_nadq1v.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682449/20230717_auberive_cl2_7839_bd_dvpr8m.jpg
 documents:
   - url: /assets/uploads/contrat-de-roulotte-2025.pdf
     link_text: Téléchargez le contrat de location

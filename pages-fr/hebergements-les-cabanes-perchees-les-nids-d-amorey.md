@@ -42,14 +42,11 @@ tarifs: >-
 
 
   Caution demandée : 150 €/cabane (200 €/2 cabanes et 250 €/3 cabanes)
-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
-  - /assets/uploads/50cabane-amorey.jpg
-  - /assets/uploads/dsc_6464.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748252451/50cabane-amorey_zy2wmo.jpg
-  - /50cabane-amorey_zy2wmo.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683071/dsc_6464_wjlsm6.jpg
 documents:
   - url: /assets/uploads/contrat-de-location-nids-perches-2025.pdf
     link_text: Téléchargez le contrat de location des nids.

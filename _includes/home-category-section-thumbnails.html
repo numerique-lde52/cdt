@@ -1,0 +1,36 @@
+<!-- includes/home-category-section-thumbnails.html  -->
+{% comment %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+{%- include home-category-section-thumbnails.html category="Hébergements" -%}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{% endcomment %}
+
+{% assign debug = false %}
+
+
+  <section class="pt-4 text-center">
+    <div class="row py-lg-2">
+      <div class="col-lg-6 col-md-8 mx-auto text-bg-secondary rounded">
+        <h1 class="fw-medium">{{ include.category }}</h1>
+      </div>
+    </div>
+  </section>
+{%- assign pages = site.pages | where:"category", include.category | where:"lang", page.lang | sort: "order" -%}
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    {%- for p in pages -%}
+    <div class="col">
+      <div class="card shadow-sm bg-primary-subtle rounded">
+        <a class="nav-link" href="{{ p.url | relative_url }}">
+          {%- include responsive_image.html model="4" target_page=p -%}
+        </a>
+        <div class="card-body">
+          <a class="nav-link" href="{{ p.url | relative_url }}">
+            <h3 class="card-text">{{ p.title }}</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+
+<!-- end _includes/home-category-section-thumbnails.html  -->

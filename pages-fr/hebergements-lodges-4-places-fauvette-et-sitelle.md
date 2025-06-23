@@ -2,10 +2,10 @@
 published: true
 permalink: /hebergements/lodges-4-places/
 title: Lodges 4 places Fauvette et Sitelle
-intro: "**Vous souhaitez vivre un week-end ou un séjour insolite 100% nature,
-  être hébergé, nous vous proposons de vivre cette expérience dans l'un de nos
-  lodges *Fauvette et Sittelle*, installés dans un vallon de rêve en bordure de
-  la forêt.**"
+intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
+  hébergé, nous vous proposons de vivre cette expérience dans l'un de nos lodges
+  *Fauvette et Sittelle*, installés dans un vallon de rêve en bordure de la
+  forêt.
 tech-description: >-
   En intérieur, chaque lodge propose :
 
@@ -73,7 +73,7 @@ tarifs: >-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
-  - /assets/uploads/pxl_20250414_140621026.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682793/pxl_20250414_140621026_is4cxu.jpg
 documents:
   - url: /assets/uploads/contrats-de-reservation-lodges-sittelle-et-fauvette.odt
     link_text: Téléchargez le contrat de location.
