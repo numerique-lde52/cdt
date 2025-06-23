@@ -52,10 +52,13 @@ tarifs: >-
   * Adhésion à la Ligue de l’enseignement 52* : 10,58€/foyer/an
 
   * Tarifs groupes, séjours : nous contacter.
-
 show_adhesion: true
 show_rent_conditions: true
-gallery: []
+gallery:
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669624/PXL_20250606_090302583_2_gyqcmq.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669629/PXL_20250606_090346802_dghgop.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669637/PXL_20250606_090427459_holrif.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669633/PXL_20250606_090454162_rqbyhx.jpg
 documents:
   - url: /assets/uploads/contrat-de-location-salamandre-2025.pdf
     link_text: Téléchargez le contrat de location
