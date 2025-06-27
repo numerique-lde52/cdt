@@ -40,7 +40,6 @@ show_adhesion: true
 gallery: []
 order: "060"
 layout: page
-main_img: /assets/uploads/cea-logo-feader.jpg
 ---
 
 Nous vous accueillons avec votre groupe sur notre écodomaine

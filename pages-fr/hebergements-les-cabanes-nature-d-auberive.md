@@ -22,7 +22,6 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683239/image0000021-2-_ltwprc.jpg
 order: "090"
 layout: hebergement
-main_img: /assets/uploads/pxl_20240513_090804955-sd.jpg
 category: Hébergements
 ---
 Chaque cabane vous invite à rêver, à vous retrouver, à perdre vos 

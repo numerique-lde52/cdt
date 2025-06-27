@@ -37,7 +37,6 @@ intro: >-
 gallery: []
 order: "20"
 layout: page
-main_img: /assets/uploads/pxl_20240513_120246001.long_exposure-01.cover-sd.jpg
 category: Divers
 ---
 **Hébergement**

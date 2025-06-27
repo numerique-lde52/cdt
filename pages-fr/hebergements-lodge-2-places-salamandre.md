@@ -63,7 +63,6 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "060"
 layout: hebergement
-main_img: /assets/uploads/p1000007.jpg
 category: Hébergements
 ---
 Le lodge « Salamandre » est une charmante proposition pour les amoureux de la nature !

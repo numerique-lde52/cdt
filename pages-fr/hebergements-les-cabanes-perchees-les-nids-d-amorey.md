@@ -54,7 +54,6 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "080"
 layout: hebergement
-main_img: /assets/uploads/pxl_20240806_091444176-sd.jpg
 category: Hébergements
 ---
 Regroupées dans un même lieu, les 3 nids d’Amorey vous permettent de 

@@ -23,7 +23,6 @@ gallery:
 documents: []
 order: "100"
 layout: hebergement
-main_img: /assets/uploads/p1000007.jpg
 category: Hébergements
 ---
 L'écodomaine Chemins de Traverse se situe à 100m du GR7, la chambre aux papillons est donc un hébergement de choix pour les randonneurs de passage à la nuitée. 

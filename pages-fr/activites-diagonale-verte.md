@@ -51,7 +51,6 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672049/20220529_114234_ttkhhy.jpg
 order: "010"
 layout: page
-main_img: /assets/uploads/cea-logo-feader.jpg
 category: Activités
 ---
 Entre Haute-Marne et Côte d’Or, l’itinérance, d’environ 70 kms de 

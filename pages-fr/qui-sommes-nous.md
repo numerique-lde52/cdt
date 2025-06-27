@@ -9,7 +9,6 @@ intro: >-
 
 
   Il est géré par la Ligue de l’enseignement de Haute-Marne et mis en musique par une petite équipe de 3 animateurs et quelques poignées de bénévoles.
-main_img: /assets/uploads/pxl_20240806_091444176-sd.jpg
 gallery:
   - /assets/uploads/pxl_20240806_084259505.jpg
 order: "20"

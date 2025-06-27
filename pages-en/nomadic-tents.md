@@ -9,6 +9,5 @@ Ordre: "10"
 ordre: "10"
 category: Hébergements
 title: Nomadic tents
-main_img: /assets/uploads/pxl_20240513_090804955-sd.jpg
 ---
 blah

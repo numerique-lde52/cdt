@@ -14,7 +14,6 @@ show_adhesion: true
 gallery: []
 order: "040"
 layout: page
-main_img: /assets/uploads/cea-logo-feader.jpg
 ---
 
 

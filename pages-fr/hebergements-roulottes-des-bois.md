@@ -78,7 +78,6 @@ documents:
     link_text: Téléchargez les conditions générales de vente
 order: "030"
 layout: hebergement
-main_img: /assets/uploads/p1000007.jpg
 category: Hébergements
 ---
 

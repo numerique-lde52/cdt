@@ -32,7 +32,6 @@ documents:
     link_text: Téléchargez le bulletin d'inscription
 order: "050"
 layout: page
-main_img: /assets/uploads/coollogo_com-28252544.png
 ---
 **Prêt pour l’aventure ? Si tu veux passer des vacances en 
 pleine nature avec d’autres enfants qui, comme toi, adorent jouer dehors

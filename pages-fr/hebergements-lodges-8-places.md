@@ -89,7 +89,6 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "040"
 layout: hebergement
-main_img: /assets/uploads/p1000007.jpg
 category: Hébergements
 ---
 Les lodges "Reine des prés", "Cardamine" et "Nivéole" sont 3 charmantes cabanes sur pilotis, en bois et toile bâchée avec terrasse semi-abritée. Les cabanes sont isolées et peuvent être chauffées.

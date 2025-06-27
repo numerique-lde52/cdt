@@ -45,7 +45,6 @@ gallery:
 documents: []
 order: "070"
 layout: hebergement
-main_img: /assets/uploads/p1000007.jpg
 category: Hébergements
 ---
 Posez votre tente dans la vaste prairie bordée par le ruisseau qui descend du marais et par les vigoureuses haies qui abritent une précieuse petite faune sauvage !

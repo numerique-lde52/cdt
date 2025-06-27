@@ -46,7 +46,6 @@ show_adhesion: true
 gallery: []
 order: "60"
 layout: page
-main_img: /assets/uploads/cea-logo-feader.jpg
 category: Participer
 ---
 

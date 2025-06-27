@@ -37,7 +37,6 @@ show_adhesion: true
 gallery: []
 order: "070"
 layout: page
-main_img: /assets/uploads/cea-logo-feader.jpg
 ---
 
 Les formules d’animation permettent d’élaborer un projet sur mesure pour votre groupe. Ce projet s’appuiera sur le contact avec la nature et différentes formules de découverte, activités de plein air, randonnée, contact avec les animaux, etc.  pour être le plus bénéfique aux attentes et aux besoins de vos participants.
