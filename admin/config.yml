@@ -45,13 +45,13 @@ show_preview_links: true
 collections:
 
   - name: pages-fr
-    {% raw %}summary: "{{ order }} - {{category}} - {{title}}"{% endraw %}
+    {% raw %}summary: "{{ order }} - {{category}} - {{title}} (publiée : {{ published }})"{% endraw %}
     label: Pages FR
     label_singular: Page FR
     folder: pages-fr
     create: true
 
-    sortable_fields: ['ordre', 'category', 'title']
+    sortable_fields: ['ordrer', 'category', 'title', 'published']
     fields:
       - label: Publication
         name: published
