@@ -11,7 +11,10 @@ intro: |-
 tech-description: Prochaines dates en 2026
 tarifs: ""
 show_adhesion: true
-gallery: []
+gallery:
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1751016690/tente_geignh.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1751016689/PXL_20240830_182806614_rwvo8b.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1751016665/DSC_2708_tr3sfk.jpg
 order: "040"
 layout: page
 ---

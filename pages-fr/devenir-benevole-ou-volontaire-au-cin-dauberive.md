@@ -2,6 +2,7 @@
 published: true
 permalink: /participer/devenir-benevoles-ou-volontaire
 title: Devenir bénévole ou volontaire au CIN d'Auberive
+category: Participer
 intro: >-
   
   Une partie des actions entreprises par le Centre d’Initiation à la Nature d’Auberive est portée par les bénévoles ou des volontaires aidés par l’équipe permanente ! 
@@ -44,9 +45,8 @@ tarifs: >-
   Pour **faire du volontariat** chez nous (service civique, woofing par exemple), contactez Margaud (03 25 03 28 20) à la[ Ligue de l’enseignement 52](http://www.ligue52.org)
 show_adhesion: true
 gallery: []
-order: "60"
+order: "010"
 layout: page
-category: Participer
 ---
 
 Vous pouvez devenir bénévole ou volontaire au Centre d’Initiation à la Nature d’Auberive géré par la Ligue de l’enseignement de Haute-Marne.

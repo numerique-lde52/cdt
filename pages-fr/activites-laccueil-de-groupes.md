@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 permalink: /activites/accueil-de-groupes
 title: L'accueil de groupes
 category: Activités

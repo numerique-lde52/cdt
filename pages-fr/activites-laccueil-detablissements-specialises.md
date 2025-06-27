@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 permalink: /activites/accueil-d-etablissements-specialises
 title: L'accueil d'établissements spécialisés
 category: Activités

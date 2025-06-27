@@ -1,7 +1,8 @@
 ---
-published: true
+published: false
 permalink: /activites/les-randonnees-sur-mesure
 title: Les randonnées sur mesure
+category: Activités
 intro: >-
   
   Une formule sur mesure pour répondre à vos besoins et vos attentes : distance, hébergement, type de circuit, on vous accompagne dans la préparation de votre projet !
@@ -21,9 +22,8 @@ tarifs: |-
   150 € / demie- journée**
 show_adhesion: true
 gallery: []
-order: "60"
+order: "060"
 layout: page
-category: Activités
 ---
 
 Vous êtes un particulier, une famille, un groupe, nous pouvons vous 

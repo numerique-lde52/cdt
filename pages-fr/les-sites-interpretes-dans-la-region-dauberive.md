@@ -13,7 +13,7 @@ tech-description: >-
 tarifs: ""
 show_adhesion: false
 show_rent_conditions: false
-order: "10"
+order: "010"
 layout: page
 ---
 ### Le Val Clavin
