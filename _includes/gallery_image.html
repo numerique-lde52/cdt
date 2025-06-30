@@ -1,0 +1,139 @@
+<!-- includes/gallery_image.html  -->
+{% comment %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Generates gallery thumbnails for Lightbox for Bootstrap 5
+https://trvswgnr.github.io/bs5-lightbox/
+
+From within a page call with 
+{%- include gallery_image.html model="thumb" index=0 -%}
+It will use current page.gallery and look for an image at passed index
+
+Where :
+  - "model" is the name of one model present in config site.img_trans_models
+  - "index" is an integer given to determine which image in the page.gallery is used.
+    as page.gallery is an array, index start at 0.
+    Also used to order images in the gallery
+
+
+Return markup like this
+
+<a href="https://img/url.jpg?image={{ img_number }}" 
+class="col" 
+data-toggle="lightbox" 
+data-gallery="ex-gallery"
+data-size="xl">
+  <img src="https://img/url.jpg?image={{ img_number }}" class="img-fluid">
+</a>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{% endcomment %}
+
+{% assign debug = false %}
+
+{% assign target_img_size = 1100 %}
+{% assign target_img_format = "16-9" %}
+
+{% assign target_page = page %}
+{% assign image_url = page.gallery[include.index] %}
+
+{% assign url_parts = image_url | split: "/" %}
+
+
+{% if debug == true %}
+<br><br>
+include.model = {{ include.model }}<br>
+include.index = {{ include.index }}<br>
+
+<!-- include.target_page = {{ target_page }}<br><br><br> -->
+
+url_parts = {{ url_parts | jsonify }}<br>
+include.model : {{ include.model }} - include.index : {{ include.index }}<br>
+Page gallery : {{ target_page.gallery | jsonify }}<br>
+image_url = {{ image_url }}<br>
+<br>
+
+{% endif %}
+
+
+{% assign model = site.img_transformation_models | where: "name", include.model | first %}
+
+{% if debug == true %}
+<br><br>
+model = {{ model | jsonify }}<br>
+
+<br>
+
+{% endif %}
+
+{% assign format = model.format %}
+{% assign sizes = model.sizes %}
+
+{% if debug == true %}
+  format = {{ format }} - sizes = {{ sizes | jsonify }}<br>
+{% endif %}
+
+
+{% assign img_srcset_array = "" | split: "" %}
+{% assign sizes_array = "" | split: "" %}
+
+{% if debug == true %}
+img_srcset_array = {{ img_srcset_array | jsonify }}<br>
+sizes_array = {{ sizes_array | jsonify }}<br>
+{% endif %}
+
+{% for size in sizes %}
+
+  {% assign index = forloop.index0 %}
+  {% assign breakpoint = site.breakpoints[index] %}
+
+  {% capture transformation_name %}t_{{ size }}-{{ format }}{% endcapture %}
+  
+  {% comment %} ############## srcset ################# {% endcomment %}
+  {% assign url_trans = image_url | replace: url_parts[6], transformation_name %}
+
+  {% if index == 0 %}{% assign img_src = url_trans %}{% endif %}
+
+  {% capture srcset_element %}{{ url_trans }} {{ size }}w{% endcapture %}
+
+  {% assign img_srcset_array = img_srcset_array | push: srcset_element %}
+
+  {% comment %} ############## sizes ################# {% endcomment %}
+  {% capture size_element %}(min-width: {{ site.breakpoints[index] }}px) {{ size }}px{% endcapture %}
+  {% assign sizes_array = sizes_array | push: size_element %}
+  
+  {% if debug == true %}
+  index = {{ index }}<br>
+  size = {{ size }}<br>
+  breakpoint = {{ breakpoint }}<br>
+  transformation_name = {{ transformation_name }}<br>
+  img_src = {{ img_src }}<br>
+  img_srcset_array = {{ img_srcset_array | jsonify }}<br>
+  sizes_array = {{ sizes_array | jsonify }}<br>
+  {% endif %}
+
+{% endfor %}
+
+{% assign img_srcset = img_srcset_array | join: ", " %}
+{% assign sizes = sizes_array | join: ", " %}
+
+{% if debug == true %}
+img_srcset = {{ img_srcset }}<br>
+sizes = {{ sizes }}<br>
+{% endif %}
+
+
+{% assign target-img-url = sizes_array | join: ", " %}
+{% capture transformation_name %}t_{{ target_img_size }}-{{ target_img_format }}{% endcapture %}
+{% assign url_trans = image_url | replace: url_parts[6], transformation_name %}
+{% capture target_img_src %}{{ url_trans }}?image={{ include.index }}{% endcapture %}
+
+<a href="{{ target_img_src }}" 
+class="col" 
+data-toggle="lightbox" 
+data-gallery="page-gallery"
+data-size="xl">
+<img class="img-fluid rounded" 
+src="{{ img_src }}?image={{ include.img_number }}" 
+srcset="{{ img_srcset }}"
+sizes="{{ sizes }}" >
+</a>
+<!-- end _includes/gallery_image.html  -->

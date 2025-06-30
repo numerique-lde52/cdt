@@ -62,12 +62,15 @@ kramdown:
 breakpoints : [1400, 1200, 992, 768, 576]
 
 img_transformation_models:
+  - name: "thumb"
+    format: "16-9"
+    sizes: [300]
   - name: "4"
     format: "16-9"
-    sizes: [560]
+    sizes: [768]
   - name: "6"
     format: "16-9"
-    sizes: [560]
+    sizes: [680]
   - name: "12w"
     format: "16-9"
     sizes: [1300, 1100, 920, 680, 560]
