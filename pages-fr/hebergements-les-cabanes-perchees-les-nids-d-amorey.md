@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/les-cabanes-perchees-les-nids-damorey/
 title: Les Cabanes perchées "les nids d'Amorey"
+category: Hébergements
 intro: >-
   **Vivre perché au cœur de la forêt !**
 
@@ -20,6 +21,7 @@ intro: >-
 
 
   Le confort est minimaliste mais quelle expérience !  La forêt tout autour bruisse de mille bruits …
+show_nearby: false
 tarifs: >-
   
 
@@ -54,7 +56,6 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "080"
 layout: hebergement
-category: Hébergements
 ---
 Regroupées dans un même lieu, les 3 nids d’Amorey vous permettent de 
 venir en famille ou en groupe (jusqu’à 9 adultes ou 6 adultes et 6 

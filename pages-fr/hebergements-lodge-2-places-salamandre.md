@@ -2,7 +2,10 @@
 published: true
 permalink: /hebergements/lodges-2-places/
 title: Lodge 2 places Salamandre
-intro: "Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être hébergé, nous vous proposons de vivre cette expérience dans notre lodge *Salamadre*, installés dans un vallon de rêve en bordure de la forêt."
+category: Hébergements
+intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
+  hébergé, nous vous proposons de vivre cette expérience dans notre lodge
+  *Salamadre*, installés dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
   En intérieur, le lodge propose :
 
@@ -23,21 +26,8 @@ tech-description: >-
 
   * 1 terrasse abritée de 4m2 pour la vie quotidienne avec 1 table et 2 chaises (accès cabane avec quelques marches).
 
-  * 1 carriole à bras pour le transport des affaires sur l’éco camping (les voitures restent sur le parking en bordure du site). 
-
-
-  A proximité du lodge :
-
-
-  * 1 toilette sec privatif (le seau est à déposer avant votre départ sur un espace où il sera ensuite acheminé vers un composteur)
-
-  * 2 espaces sanitaires collectifs équipés pour la vaisselle, avec douches (eau chaude) au milieu du camping et un deuxième avec douches, WC et bacs vaisselle pour les sanitaires situés à côté de l’accueil.
-
-  * Possibilité de barbecue à proximité de la maison forestière sur un espace dédié.
-
-  * Réfrigérateurs et micro-ondes partagés disponibles à l’espace commun à côté de la maison forestière.
-
-  * 1 parking non surveillé en bordure de l’éco camping pour votre véhicule (10 places). Les déplacements à l’intérieur du camping se font à pied.
+  * 1 carriole à bras pour le transport des affaires sur l’éco camping (les voitures restent sur le parking en bordure du site).
+show_nearby: true
 tarifs: >-
   * Forfait : 18 € par lodge/nuitée + 5 € par adulte et 2,50 € par enfant de
   moins de 16 ans.
@@ -63,7 +53,6 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "060"
 layout: hebergement
-category: Hébergements
 ---
 Le lodge « Salamandre » est une charmante proposition pour les amoureux de la nature !
 

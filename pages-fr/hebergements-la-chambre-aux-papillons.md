@@ -2,11 +2,13 @@
 published: true
 permalink: /hebergements/hebergement-d-etape/
 title: La chambre aux papillons
+category: Hébergements
 intro: Vous souhaitez faire une étape sur votre itinéraire de randonnée, vous
   avez une mobilité réduite, la chambre aux papillons vous accueille ! Dans la
   maison forestière, à l'entrée de l'écodomaine Chemins de Traverse, venez
   goûter à la quiétude du lieu !
 tech-description: ""
+show_nearby: false
 tarifs: |-
   * 18 € par adulte et 12 € par enfant de moins de 16 ans.
   * Tarifs dégressifs à partir de 3 nuitées
@@ -23,7 +25,6 @@ gallery:
 documents: []
 order: "100"
 layout: hebergement
-category: Hébergements
 ---
 L'écodomaine Chemins de Traverse se situe à 100m du GR7, la chambre aux papillons est donc un hébergement de choix pour les randonneurs de passage à la nuitée. 
 

@@ -4,11 +4,11 @@ permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
 category: Hébergements
 intro: >-
-  Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
+  Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
+  hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …
 
   Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
-  
   En intérieur, chaque tente propose : 
 
 
@@ -24,23 +24,8 @@ tech-description: >-
 
   * 1 table bois avec bancs
 
-  * 1 carriole à bras pour le transport des affaires. 
-
-
-  A proximité de la tente : 
-
-
-  * 1 toilette sec privatif (le seau est à déposer avant votre départ sur un espace où il sera ensuite acheminé vers un composteur)
-
-  * 2 espaces sanitaires collectifs équipés pour la vaisselle, avec douches (eau chaude) au milieu du camping et un deuxième avec douches, WC et bacs vaisselle pour les sanitaires situés à côté de l’accueil
-
-  * Possibilité de barbecue à proximité de la maison forestière sur un espace dédié
-
-  * Réfrigérateurs et micro-ondes partagés disponibles à l’espace commun à côté de la maison forestière
-
-  * 1 parking non surveillé en bordure de l’écodomaine pour votre véhicule (10 places). 
-
-  * Les déplacements à l’intérieur du camping se font à pied.
+  * 1 carriole à bras pour le transport des affaires.
+show_nearby: true
 tarifs: >-
   * Forfait : 50 € par tente/nuitée + 10,50 € par adulte et 7 € par enfant de
   moins de 16 ans.
@@ -56,7 +41,6 @@ tarifs: >-
 
 
   Caution demandée : 200 €/tente
-
 show_adhesion: true
 show_rent_conditions: true
 gallery:

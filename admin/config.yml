@@ -90,6 +90,13 @@ collections:
         widget: markdown  
         required: false
 
+      - label: Afficher 'à proximité de votre logement'
+        name: show_nearby
+        widget: boolean
+        default: true
+        hint: Afficher le texte sur les structures communes. Valable pour les hébergements sur le Camping.
+        required: true
+
       - label: Tarifs
         name: tarifs
         widget: markdown  

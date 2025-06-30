@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/lodges-4-places/
 title: Lodges 4 places Fauvette et Sitelle
+category: Hébergements
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé, nous vous proposons de vivre cette expérience dans l'un de nos lodges
   *Fauvette et Sittelle*, installés dans un vallon de rêve en bordure de la
@@ -34,21 +35,8 @@ tech-description: >-
 
   * Une terrasse de 10 m2 semi abritée (accès cabane avec quelques marches).
 
-  * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site). 
-
-
-  A proximité du lodge :
-
-
-  * 1 toilette sec privatif (le seau est à déposer avant votre départ sur un espace où il sera ensuite acheminé vers un composteur)
-
-  * 2 espaces sanitaires collectifs équipés pour la vaisselle, avec douches (eau chaude) au milieu du camping et un deuxième avec douches, WC et bacs vaisselle pour les sanitaires situés à côté de l’accueil.
-
-  * Possibilité de barbecue à proximité de la maison forestière sur un espace dédié.
-
-  * Réfrigérateurs et micro-ondes partagés disponibles à l’espace commun à côté de la maison forestière.
-
-  * 1 parking non surveillé en bordure de l’écodomaine pour votre véhicule (10 places). Les déplacements à l’intérieur du camping se font à pied.
+  * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site).
+show_nearby: true
 tarifs: >-
   * Forfait : 50 € par lodge/nuitée + 17,50 € par adulte et 12 € par enfant de
   moins de 16 ans.
@@ -81,7 +69,6 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "050"
 layout: hebergement
-category: Hébergements
 ---
 Les lodges "Fauvette et Sitelle" sont 3 charmantes cabanes sur pilotis, en bois et toile bâchée avec terrasse semi-abritée. Les cabanes sont isolées et peuvent être chauffées.
 

@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/camping-de-la-cigogne-noire/
 title: Camping de la cigogne noire
+category: Hébergements
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, nous
   vous proposons de vivre cette expérience sur le camping de la Cigogne noire,
   dans un vallon de rêve en bordure de la forêt.
@@ -19,6 +20,7 @@ tech-description: >-
 
 
     *Le camping de la cigogne noire est à côté des hébergements meublés de Chemins de Traverse (10 hébergements) et d’un espace réservé aux accueils de groupes (ponctuels). Le site est vaste, plus de 2 hectares, il y a de la place pour tous et nous veillons à ce que chacun trouve quiétude et intimité.*
+show_nearby: true
 tarifs: >-
   * Forfait : 8 € par emplacement/nuitée + 5 € par adulte et 2,50 € par enfant
   de moins de 16 ans.
@@ -45,7 +47,6 @@ gallery:
 documents: []
 order: "070"
 layout: hebergement
-category: Hébergements
 ---
 Posez votre tente dans la vaste prairie bordée par le ruisseau qui descend du marais et par les vigoureuses haies qui abritent une précieuse petite faune sauvage !
 
