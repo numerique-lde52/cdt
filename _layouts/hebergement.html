@@ -13,19 +13,36 @@ layout: default
   </div>
 
   <div class="row bg-secondary-subtle my-2 p-2 rounded">
-    <div class="col">
+    <div class="col-6">
       {{ content | markdownify }}
       <button class="btn btn-primary btn-lg" type="button">Réserver</button>
     </div>
-    <div class="col-3">{% comment %}{% endcomment %}
+
+    <div class="col-6">
       {% if page.gallery %}
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
 
-      {% for img_url in page.gallery %}
-      <img src="{{ img_url | relative_url }}" width="100px">
-      {% endfor %}
+{% assign img_number = 1 %}
+{%- for img_url in page.gallery %}
 
+<a href="https://unsplash.it/1200/768.jpg?image={{ img_number }}" 
+class="col" 
+data-toggle="lightbox" 
+data-gallery="ex-gallery"
+data-size="xl">
+  <img src="https://unsplash.it/600.jpg?image={{ img_number }}" class="img-fluid">
+</a>
+{% assign img_number = img_number | plus: 1 %}
+
+{% comment %}<img src="{{ img_url | relative_url }}" class="img-fluid">{% endcomment %}
+
+{%- endfor -%}
+        </div>
+      </div>
       {%- endif -%}
     </div>    
+
   </div>
 
   <div class="row text-bg-light rounded">
