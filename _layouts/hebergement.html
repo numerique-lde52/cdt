@@ -6,6 +6,9 @@ layout: default
     <div class="col-lg-6 text-bg-secondary rounded">
       <h1 class="display-4 fst-italic">{{ page.title }}</h1>
       <div class="my-3 lead">{{ page.intro | markdownify }}</div>
+
+      <div id="ConstellationButtonContainer486fe0b8-c55a-4bba-a9f3-6e3ad18312bf" style="width:100%; text-align:center;" title="CHEMINS DE TRAVERSE 52" data-id-projet='486fe0b8c55a4bbaa9f36e3ad18312bf'>Chargement en cours...</div> <script type="text/javascript" src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script> <script type="text/javascript">var constellationWidgetUrl486fe0b8c55a4bbaa9f36e3ad18312bf, constellationTypeModule486fe0b8c55a4bbaa9f36e3ad18312bf; constellationWidgetUrl486fe0b8c55a4bbaa9f36e3ad18312bf = 'https://reservation.elloha.com/Widget/BookingButton/486fe0b8-c55a-4bba-a9f3-6e3ad18312bf?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR'; constellationTypeModule486fe0b8c55a4bbaa9f36e3ad18312bf=3; constellationBookingButtonLoad('ConstellationButtonContainer486fe0b8-c55a-4bba-a9f3-6e3ad18312bf');</script>
+       
     </div>    
     <div class="col-lg-6 rounded">
       {%- include responsive_image.html model="6" index=0 -%}
@@ -13,15 +16,19 @@ layout: default
   </div>
 
   <div class="row bg-secondary-subtle my-2 p-2 rounded">
-    <div class="col-6">
+    <div class="col-8">
       {{ content | markdownify }}
-      <button class="btn btn-primary btn-lg" type="button">Réserver</button>
+
+
+<div id="ConstellationWidgetContainer0dd4a485-8e64-4b96-a2a0-1fde8bfda32c" style="width:100%" title="CHEMINS DE TRAVERSE 52" data-id-projet='0dd4a4858e644b96a2a01fde8bfda32c'>Chargement en cours...</div> <script type="text/javascript" src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script> <script type="text/javascript">var constellationWidgetUrl0dd4a4858e644b96a2a01fde8bfda32c, constellationTypeModule0dd4a4858e644b96a2a01fde8bfda32c; constellationWidgetUrl0dd4a4858e644b96a2a01fde8bfda32c = 'https://reservation.elloha.com/Widget/BookingEngine/0dd4a485-8e64-4b96-a2a0-1fde8bfda32c?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR'; constellationTypeModule0dd4a4858e644b96a2a01fde8bfda32c=1; constellationWidgetLoad('ConstellationWidgetContainer0dd4a485-8e64-4b96-a2a0-1fde8bfda32c'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationWidgetContainer0dd4a485-8e64-4b96-a2a0-1fde8bfda32c'); });</script> 
+
+
     </div>
 
-    <div class="col-6">
+    <div class="col-4">
       {% if page.gallery %}
       <div class="container text-center">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+        <div class="row row-cols-1 row-cols-md-2">
 
 {% assign img_number = 0 %}
 {%- for img_url in page.gallery %}
@@ -30,12 +37,19 @@ layout: default
 
 {% assign img_number = img_number | plus: 1 %}
 
-{% comment %}<img src="{{ img_url | relative_url }}" class="img-fluid">{% endcomment %}
-
 {%- endfor -%}
         </div>
       </div>
       {%- endif -%}
+
+<div class="text-center">
+<a href="https://tinyurl.com/yanzhqeq">
+  <button type="button" class="btn btn-lg btn-primary rounded">Réserver maintenant</button>
+</a>
+</div>
+
+
+
     </div>    
 
   </div>
@@ -47,6 +61,15 @@ layout: default
     </div>
     {% endif %}    
   </div>
+
+
+<div class="row text-bg-light rounded">
+      {%- assign texte = site.data.translations.translations | where:"slug", "a_proximite_logement" | first -%}
+      {{ texte[page.lang] | markdownify }}
+</div>
+
+
+
 
   <div class="row text-bg-light">
     {% if page.tarifs %}
