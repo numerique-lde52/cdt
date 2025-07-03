@@ -67,7 +67,7 @@ img_transformation_models:
     sizes: [300]
   - name: "4"
     format: "16-9"
-    sizes: [768]
+    sizes: [680]
   - name: "6"
     format: "16-9"
     sizes: [680]

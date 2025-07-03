@@ -150,8 +150,8 @@ collections:
       - label: "Modèle de page"
         name: "layout"
         widget: "select"
-        options: ["page", "hebergement"]
-        default: "page"
+        options: ["activites", "hebergement", "divers"]
+        default: "hebergement"
 
   - name: pages-en
     {% raw %}summary: "{{category}} - {{title}}"{% endraw %}

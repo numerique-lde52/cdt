@@ -36,7 +36,7 @@ intro: >-
   **Directeur de publication** : Stéphane MASSENET
 gallery: []
 order: "20"
-layout: page
+layout: divers
 category: Divers
 ---
 **Hébergement**
