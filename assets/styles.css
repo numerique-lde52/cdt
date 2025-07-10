@@ -38,6 +38,7 @@ layout: none
 
   --bs-body-bg: var(--bs-primary);
 
+  --bs-body-font-size: 1.2rem;
   --bs-body-font-family: 'Glacial Indifference', sans-serif;
 
 /*

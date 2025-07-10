@@ -7,7 +7,7 @@ intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, êtr
   hébergé, nous vous proposons de vivre cette expérience dans notre lodge
   *Salamadre*, installés dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
-  En intérieur, le lodge propose :
+  **En intérieur, le lodge propose :**
 
 
   * 1 chambre avec 2 lit simples 80x190 avec matelas, draps, couettes et oreillers.
@@ -21,7 +21,7 @@ tech-description: >-
   * Éclairage autonome par lampe à leds.
 
 
-  A l’extérieur sous le auvent :
+  **A l’extérieur sous le auvent :**
 
 
   * 1 terrasse abritée de 4m2 pour la vie quotidienne avec 1 table et 2 chaises (accès cabane avec quelques marches).
