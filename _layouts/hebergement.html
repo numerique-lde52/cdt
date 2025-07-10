@@ -54,32 +54,27 @@ layout: default
 
   </div>
 
-  <div class="row text-bg-light rounded">
+  <div class="row">
     {% if page.tech-description %}
-    <div class="col">
+    <div class="col text-bg-light rounded m-2 p-3">
       {{ page.tech-description | markdownify }}
     </div>
+    <div class="col text-bg-light rounded m-2 p-3">
+          {%- assign texte = site.data.translations.translations | where:"slug", "a_proximite_logement" | first -%}
+          {{ texte[page.lang] | markdownify }}
+    </div>  
     {% endif %}    
   </div>
 
-
-<div class="row text-bg-light rounded">
-      {%- assign texte = site.data.translations.translations | where:"slug", "a_proximite_logement" | first -%}
-      {{ texte[page.lang] | markdownify }}
-</div>
-
-
-
-
-  <div class="row text-bg-light">
+  <div class="row">
     {% if page.tarifs %}
-    <h2>tarifs</h2>
-    <div class="col">
+    <div class="col text-bg-light rounded m-2 p-3">
+      <h2>tarifs</h2>
       {{ page.tarifs | markdownify }}
     </div>
     {% endif %}
     {% if page.show_adhesion %}
-    <div class="col bg-warning-subtle">
+    <div class="col bg-warning-subtle rounded m-2 p-3">
       {%- assign texte = site.data.translations.translations | where:"slug", "adhesion_ligue" | first -%}
       {{ texte[page.lang] | markdownify }}
     </div>
@@ -87,15 +82,13 @@ layout: default
   </div>
 
 {% if page.documents %}
-  <div class="row text-bg-tertiary my-2 p-2 rounded">
-    <div class="col">
-      <ul>
-      {% for doc in page.documents %}
-        <li>
-          <a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </div>    
+  <div class="row m-2 ">
+    <ul class="list-group">
+    {% for doc in page.documents %}
+      <li class="h4 list-group-item text-bg-warning">
+        <a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
+      </li>
+    {% endfor %}
+    </ul>
   </div>
 {%- endif -%}

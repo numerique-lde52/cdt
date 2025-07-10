@@ -1,81 +1,67 @@
 ---
 layout: default
 ---
-{% assign img_list = page.gallery %}
 
-<style>
-  /* TEST
-testing Jumbo and css background images
-  */
-.jumbo{
-  background-image: url("{{ page.gallery | first }}");
-  background-size: cover;
-  text-shadow: -1px 0px 1px #fff;
-}
-.jumbo-text{
-  background-image: url("/assets/jumbo-background.png");
-  background-repeat: repeat;
-}
-</style>
-
-<div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbo">
-  <div class="container-fluid rounded-3 jumbo-text">
-    <h1 class="display-5 fw-bold">{{ page.title }}</h1>
-    <p class="col-md-8 fs-4">{{ page.intro | markdownify }}</p>
-  </div>
-</div>
-
-<div class="container">
   <div class="row">
-    <div class="col bg-primary-subtle">
-      {{ content }}
-    </div>
-    <div class="col-3">
-      {% if page.gallery %}
+    <div class="col-lg-6 text-bg-secondary rounded">
+      <h1 class="display-4 fst-italic">{{ page.title }}</h1>
+      <div class="my-3 lead">{{ page.intro | markdownify }}</div>
 
-      {% for img_url in page.gallery %}
-      <img src="{{ img_url | relative_url }}" width="100px">
-      {% endfor %}
-
-      {%- endif -%}
     </div>    
+    <div class="col-lg-6 rounded">
+      {%- include responsive_image.html model="6" index=0 -%}
+    </div>
+  </div>
+
+  <div class="row bg-secondary-subtle my-2 p-2 rounded">
+    <div class="col-8">
+      {{ content | markdownify }}
+
+    </div>
+
+    <div class="col-4">
+      {% if page.gallery %}
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-2">
+
+{% assign img_number = 0 %}
+{%- for img_url in page.gallery %}
+
+{%- include gallery_image.html model="thumb" index=img_number -%}
+
+{% assign img_number = img_number | plus: 1 %}
+
+{%- endfor -%}
+        </div>
+      </div>
+      {%- endif -%}
+
+    </div>    
+
   </div>
 
   <div class="row">
     {% if page.tech-description %}
-    <div class="col">
+    <div class="col text-bg-light rounded m-2 p-3">
       {{ page.tech-description | markdownify }}
     </div>
+    {% endif %}
+    {% if page.tarifs %}
+    <div class="col text-bg-light rounded m-2 p-3">
+      <h2>tarifs</h2>
+      {{ page.tarifs | markdownify }}
+    </div>  
     {% endif %}    
   </div>
 
-  <div class="row">
-    {% if page.tarifs %}
-    <h2>tarifs</h2>
-    <div class="col">
-      {{ page.tarifs | markdownify }}
-    </div>
-    {% endif %}
-    {% if page.show_adhesion %}
-    <div class="col bg-warning-subtle">
-      {%- assign texte = site.data.translations.translations | where:"slug", "adhesion_ligue" | first -%}
-      {{ texte[page.lang] | markdownify }}
-    </div>
-    {%- endif -%}
-  </div>
-
 {% if page.documents %}
-  <div class="row">
-    <div class="col">
-      <ul>
-      {% for doc in page.documents %}
-        <li>
-          <a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </div>    
+  <div class="row m-2 ">
+    <ul class="list-group">
+    {% for doc in page.documents %}
+      <li class="h4 list-group-item  text-bg-warning">
+        <a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
+      </li>
+    {% endfor %}
+    </ul>
   </div>
 {%- endif -%}
-
-</div>

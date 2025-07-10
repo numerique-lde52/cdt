@@ -8,3 +8,6 @@ vendor
 .netlify
 package-lock.json
 Gemfile.lock
+
+node_modules
+package*
