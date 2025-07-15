@@ -15,12 +15,12 @@ layout: none
 
   --bs-secondary: #4d3516;
   --bs-secondary-rgb: 77, 53, 22;
-  --bs-secondary-bg-subtle: #ebd4b8;
+  --bs-secondary-bg-subtle: #fdfdfd;
 
   --bs-tertiary: #e88427;
   --bs-tertiary-rgb: 232, 132, 39;
 
-  --bs-body-bg: var(--bs-primary);
+  --bs-body-bg: var(--bs-primary-bg-subtle);
 
   --bs-body-font-size: 1.2rem;
   --bs-body-font-family: 'Glacial Indifference', sans-serif;

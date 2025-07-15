@@ -3,6 +3,7 @@ published: true
 permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
 category: Hébergements
+show_booking_button: true
 intro: >-
   Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …

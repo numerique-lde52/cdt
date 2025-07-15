@@ -3,6 +3,7 @@ published: true
 permalink: /hebergements/roulotte-des-bois/
 title: Roulottes de Bois
 category: Hébergements
+show_booking_button: true
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé, nous vous proposons de vivre cette expérience dans l'une de nos
   roulottes Aurore et Lucine, installées dans un vallon de rêve en bordure de la

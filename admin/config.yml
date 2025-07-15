@@ -77,6 +77,13 @@ collections:
         display_fields: ["categories.*.fr"]
         value_field: "categories.*.fr"
 
+      - label: Afficher le bouton de réservation
+        name: show_booking_button
+        widget: boolean
+        default: true
+        hint: Afficher le bouton de réservation. Valable pour les hébergements.
+        required: true        
+
       - label: Introduction
         name: intro
         widget: markdown
@@ -94,7 +101,7 @@ collections:
         name: show_nearby
         widget: boolean
         default: true
-        hint: Afficher le texte sur les structures communes. Valable pour les hébergements sur le Camping.
+        hint: Afficher le texte sur les structures communes. Valable pour les hébergements sur le Camping et les nids.
         required: true
 
       - label: Tarifs

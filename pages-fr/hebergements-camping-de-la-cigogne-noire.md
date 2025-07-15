@@ -3,6 +3,7 @@ published: true
 permalink: /hebergements/camping-de-la-cigogne-noire/
 title: Camping de la cigogne noire
 category: Hébergements
+show_booking_button: true
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, nous
   vous proposons de vivre cette expérience sur le camping de la Cigogne noire,
   dans un vallon de rêve en bordure de la forêt.

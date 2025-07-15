@@ -3,6 +3,7 @@ published: true
 permalink: /hebergements/hebergement-d-etape/
 title: La chambre aux papillons
 category: Hébergements
+show_booking_button: true
 intro: Vous souhaitez faire une étape sur votre itinéraire de randonnée, vous
   avez une mobilité réduite, la chambre aux papillons vous accueille ! Dans la
   maison forestière, à l'entrée de l'écodomaine Chemins de Traverse, venez

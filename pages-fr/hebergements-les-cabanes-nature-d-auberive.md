@@ -3,6 +3,7 @@ published: true
 permalink: /hebergements/les-cabanes-nature-d-auberive/
 title: Les cabanes nature d'Auberive
 category: Hébergements
+show_booking_button: false
 intro: >-
   **Habitez la forêt !**
 
@@ -13,8 +14,8 @@ intro: >-
 
   Vous les trouverez en cheminant le long de sentiers balisés.
 show_nearby: false
-show_adhesion: true
-show_rent_conditions: true
+show_adhesion: false
+show_rent_conditions: false
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683250/pb100092_qc8wmc.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683240/img_20230705_151054_okfydd.jpg

@@ -3,6 +3,7 @@ published: true
 permalink: /hebergements/lodges-2-places/
 title: Lodge 2 places Salamandre
 category: Hébergements
+show_booking_button: true
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé, nous vous proposons de vivre cette expérience dans notre lodge
   *Salamadre*, installés dans un vallon de rêve en bordure de la forêt.
