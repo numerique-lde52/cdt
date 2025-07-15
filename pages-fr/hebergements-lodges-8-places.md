@@ -8,7 +8,7 @@ intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, êtr
   *Cardamine, Nivéole et Reine des Prés*, installés dans un vallon de rêve en
   bordure de la forêt.
 tech-description: >-
-  En intérieur, chaque lodge propose :
+  **En intérieur, chaque lodge propose :**
 
 
   * 1 chambre avec 1 lit double 140 x 190 avec matelas, draps, couette et oreiller.
@@ -35,7 +35,7 @@ tech-description: >-
   * Attention, le linge de toilette n’est pas fourni (voir onglet options plus bas)
 
 
-  A l’extérieur sous le auvent :
+  **A l’extérieur sous le auvent :**
 
 
   * Une terrasse de 10 m2 semi abritée (accès cabane avec quelques marches).
@@ -69,7 +69,9 @@ tarifs: >-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
-  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682793/pxl_20250414_140621026_is4cxu.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240959/PXL_20250709_090306427_brzgwa.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240966/PXL_20250709_090346718_ghyjws.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240959/PXL_20250709_090334327_j5zeee.jpg
 documents:
   - url: /assets/uploads/contrats-de-reservation-lodges-niv-car-rdp-2025.odt
     link_text: Téléchargez le contrat de location

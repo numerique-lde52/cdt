@@ -8,7 +8,7 @@ intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, êtr
   roulottes Aurore et Lucine, installées dans un vallon de rêve en bordure de la
   forêt.
 tech-description: >-
-  En intérieur, chaque roulotte propose :
+  **En intérieur, chaque roulotte propose :**
 
 
   * 1 lit double en "alcôve" 140 x 190 avec matelas, draps, couette et oreiller.
@@ -24,7 +24,7 @@ tech-description: >-
   * Attention, le linge de toilette n’est pas fourni
 
 
-  A l’extérieur :
+  **A l’extérieur :**
 
 
   * 1 terrasse avec 1 table et 4 chaises

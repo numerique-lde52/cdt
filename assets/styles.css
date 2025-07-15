@@ -7,22 +7,6 @@ layout: none
  * @see https://getbootstrap.com/docs/5.3/customize/color/
  */
 
-
-/*
-
-*/
-
-/*@font-face{
-    font-family: "Block Berthold Regular";
-    src: url("{{site.url}}/assets/Block-Berthold-Regular.woff2")format("woff2")
-    format("svg");
-    font-weight:normal;
-    font-style:normal;
-    font-display:swap;
-}*/
-
-
-
 :root, [data-bs-theme="light"] {
 
   --bs-primary: #a5c235;
@@ -135,23 +119,50 @@ layout: none
 }
 
 
-/* latin */
-@font-face {
-  font-family: 'Marck Script';
-  font-style: normal;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/marckscript/v20/nwpTtK2oNgBA3Or78gapdwuyyCg_.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
-.navbar-brand small {
+
+
+/*
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+*/
+.navbar-brand .h1{  
     display: block;
-
-    font-family: "Marck Script", serif;
+    font-family: "Block Berthold Regular", sans-serif; 
     font-weight: 400;
     font-style: normal;
+    font-size: 1.8rem;
+}
+
+.navbar-brand .h2 {
+    display: block;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+  .navbar-brand .h1{  
+      font-size: 2.2rem;
+  }
+
+  .navbar-brand .h2 {
+      font-size: 1.5rem;
+  }
+
 
 }
 
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
 
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { ... }
 

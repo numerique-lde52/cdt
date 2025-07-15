@@ -9,7 +9,7 @@ intro: >-
 
   Nous vous proposons de vivre cette expérience dans l’une de nos 2 tentes nomades installées dans un vallon de rêve en bordure de la forêt.
 tech-description: >-
-  En intérieur, chaque tente propose : 
+  **En intérieur, chaque tente propose :** 
 
 
   * Un espace nuit équipé de 3 (ou 4) lits simple en bois de hêtre avec matelas, draps, couette et oreiller.
@@ -17,7 +17,7 @@ tech-description: >-
   * Un espace vie quotidienne avec table basse et sièges bas en bois
 
 
-  En extérieur, chaque tente propose : 
+  **En extérieur, chaque tente propose :** 
 
 
   * 1 espace cuisine privatif extérieur sous toile avec un réchaud à gaz 2 feux, vaisselle et ustensiles de cuisine

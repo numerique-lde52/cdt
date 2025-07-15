@@ -1,8 +1,8 @@
 ---
 published: true
-permalink: /participer/devenir-benevoles-ou-volontaire
+permalink: /activités/devenir-benevoles-ou-volontaire
 title: Devenir bénévole ou volontaire au CIN d'Auberive
-category: Participer
+category: Activités
 intro: >-
   
   Une partie des actions entreprises par le Centre d’Initiation à la Nature d’Auberive est portée par les bénévoles ou des volontaires aidés par l’équipe permanente ! 
@@ -49,7 +49,7 @@ tarifs: >-
 show_adhesion: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752152604/dom_yk5dly.jpg
-order: "010"
+order: "070"
 layout: page
 ---
 

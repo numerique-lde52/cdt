@@ -42,6 +42,7 @@ tarifs: >-
 show_adhesion: true
 show_rent_conditions: true
 gallery:
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752241978/PXL_20250709_090530051_zcloqx.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669624/PXL_20250606_090302583_2_gyqcmq.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669629/PXL_20250606_090346802_dghgop.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669637/PXL_20250606_090427459_holrif.jpg

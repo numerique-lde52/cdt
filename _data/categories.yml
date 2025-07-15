@@ -11,10 +11,6 @@ categories:
     is_parent: true
     menu: main
     en: Discover
-  - fr: Participer
-    is_parent: true
-    menu: main
-    en: Participate
   - fr: Général
     is_parent: false
     menu: main
