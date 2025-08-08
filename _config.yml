@@ -16,7 +16,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-debug: true
+debug: false
 
 collections:
   authors:
