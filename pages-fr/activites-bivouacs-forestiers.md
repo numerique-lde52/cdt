@@ -18,7 +18,7 @@ gallery:
 order: "040"
 layout: page
 ---
-Une occasion unique de découvrir la forêt de jour, de vivre l’ambiance nocturne et de partager cette « heure bleue », basculement entre le jour et la nuit et vice-versa le matin ! Le bivouac se fait dans un site naturel accessible en 2h de marche, sous une forme légère, dans le respect du lieu (pas de feu), en hamac, bâché en cas de pluie.
+Une occasion unique de découvrir la forêt de jour, de vivre l’ambiance nocturne et de partager cette «heure bleue», basculement entre le jour et la nuit et vice-versa le matin ! Le bivouac se fait dans un site naturel accessible en 2h de marche, sous une forme légère, dans le respect du lieu (pas de feu), en hamac, bâché en cas de pluie.
 
 Le repas du soir et le petit déjeuner sont prévus.
 

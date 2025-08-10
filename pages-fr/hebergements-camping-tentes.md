@@ -1,7 +1,7 @@
 ---
 published: true
 permalink: /hebergements/camping-de-la-cigogne-noire/
-title: Camping de la cigogne noire
+title: Camping tentes
 category: Hébergements
 show_booking_button: true
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, nous

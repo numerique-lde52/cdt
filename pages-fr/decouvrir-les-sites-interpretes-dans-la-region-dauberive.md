@@ -10,7 +10,7 @@ tech-description: >-
   
 
   [Toutes les balades et randonnées en Haute-Marne](https://www.bienvenue-hautemarne.fr/visites-activites/randos-balades/toutes-les-balades-et-randonnees-en-haute-marne/)
-tarifs: ""
+tarifs:
 show_adhesion: false
 show_rent_conditions: false
 order: "010"

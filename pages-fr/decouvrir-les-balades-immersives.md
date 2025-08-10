@@ -61,7 +61,7 @@ tech-description: >-
     [Téléchargez le topo-guide](https://www.bienvenue-hautemarne.fr/itineraires/auberive-le-pont-griselin-pr-n-96-iticha052v5002bc/?)
 
 
-   ## Montavoir
+  ## Montavoir
 
     Distance : 11 km (au départ du gîte de Charbonnière)
 
@@ -84,12 +84,7 @@ tech-description: >-
     Niveau à cheval : facile
 
 
-    Couleur de balisage : bleu et jaune (PR jusqu'à 10 km) puis blanc et rouge
-    (GR)
-
-
-
-
+    Couleur de balisage : bleu et jaune (PR jusqu'à 10 km) puis blanc et rouge (GR7)
 
     Ce circuit vous propose une balade à la découverte de la forêt domaniale
     d’Auberive et de ses richesses.
@@ -101,8 +96,6 @@ tech-description: >-
     Pour votre plus grand confort, notez la présence d’une aire de découverte de la forêt et de ses habitants qui est agrémentée d’un abri forestier pour pique-nique, d’une aire de jeux pour enfants ou encore d’une aire de jeux de boules. L’enclos à gibier, quant à lui, présente des cerfs Sika, des daims et des sangliers, dont l’observation est complétée par des panneaux de présentation du milieu forestier (écosystème, flore).
 
     [Téléchargez le topo-guide](https://www.bienvenue-hautemarne.fr/itineraires/auberive-montavoir-pr-n-96-iticha052v5002bd/?)
-
-
 
 
   ## La tufière d’Amorey
@@ -137,7 +130,7 @@ tech-description: >-
     Ce circuit vous invite à découvrir le ruisseau du Clavin au sortir d’un vallon encaissé encadré de falaises. Le chemin remonte sur le plateau à travers la forêt et débouche dans le vallon d’Amorey où coule la Germainelle. Ce vallon abrite une grosse ferme, ancienne dépendance de l’abbaye d’Auberive au moyen âge. La route forestière qui longe le vallon à l’aplomb du ruisseau dans les grandes futaies d’Amorey (les plus hauts arbres de la forêt d’Auberive) rencontre le site naturel de la Tufière d’Amorey.
 
 
-    Cette source était réputée miraculeuse et avait le pouvoir de prédire aux filles si elles se marieraient dans l’année. Véritable laboratoire naturel, la tufière et le marais tufeux en contrebas transforment les mousses en « tuf ». Le calcaire dissout dans les eaux précipite au contact des végétaux, « encroûte » tous les éléments et constitue alors un nouveau matériau : le « tuf ». Le dépôt du calcaire et la croissance des mousses forment des coussinets qui s’élèvent, édifiant progressivement des fragiles barrages naturels.
+    Cette source était réputée miraculeuse et avait le pouvoir de prédire aux filles si elles se marieraient dans l’année. Véritable laboratoire naturel, la tufière et le marais tufeux en contrebas transforment les mousses en « tuf ». Le calcaire dissout dans les eaux précipite au contact des végétaux, «encroûte» tous les éléments et constitue alors un nouveau matériau : le « tuf ». Le dépôt du calcaire et la croissance des mousses forment des coussinets qui s’élèvent, édifiant progressivement des fragiles barrages naturels.
 
 
     Cette agréable ballade au fil de l’eau et à travers bois vous offrira au final une belle échappée paysagère sur la vallée de l’Aube, le village d’Auberive et son abbaye cistercienne fondée en 1135 par Bernard de Clairvaux et l’évêque de Langres.
@@ -153,7 +146,7 @@ tech-description: >-
     - sur le site du [Parc national de forêts](https://rando.forets-parcnational.fr/) 
     - sur le site de l'[Agence d'Attractivité de Haute-Marne](https://www.bienvenue-hautemarne.fr/visites-activites/randos-balades/toutes-les-balades-et-randonnees-en-haute-marne/)
 show_nearby: false
-tarifs: null
+tarifs:
 show_adhesion: false
 show_rent_conditions: false
 gallery:
@@ -167,4 +160,4 @@ Les sentiers sont balisés et ne présentent pas de difficultés particulières.
 
 Les topo-guides sont téléchargeables ou nous pouvons vous les mettre à disposition.
 
-Les balades peuvent se faire avec la compagnie d’un ou plusieurs ânes bâtés (voir item « location d’ânes » pour les conditions).
+Les balades peuvent se faire avec la compagnie d’un ou plusieurs ânes bâtés (voir item «location d’ânes» pour les conditions).

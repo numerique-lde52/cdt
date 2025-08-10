@@ -1,7 +1,7 @@
 ---
 published: true
 permalink: /hebergements/roulotte-des-bois/
-title: Roulottes de Bois
+title: Roulottes des Bois
 category: Hébergements
 show_booking_button: true
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
