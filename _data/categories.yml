@@ -1,20 +1,25 @@
 categories:
+
   - fr: Hébergements
     en: Accomodations
     menu: main
     is_parent: true
+
   - fr: Activités
     is_parent: true
     menu: main
     en: Activities
+
   - fr: Découvrir
     is_parent: true
     menu: main
     en: Discover
+
   - fr: Général
     is_parent: false
     menu: main
     en: General
+
   - fr: Divers
     is_parent: false
     menu: footer
