@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 permalink: /activites/bivouacs-forestiers
 title: Bivouacs forestiers
 category: Activités

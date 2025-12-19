@@ -1,7 +1,7 @@
 ---
 published: true
 permalink: /activités/devenir-benevoles-ou-volontaire
-title: Devenir bénévole ou volontaire au CIN d'Auberive
+title: Devenir bénévole ou volontaire
 category: Activités
 intro: >-
   

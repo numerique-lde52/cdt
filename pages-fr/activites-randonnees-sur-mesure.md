@@ -1,7 +1,7 @@
 ---
-published: false
-permalink: /activites/les-randonnees-sur-mesure
-title: Les randonnées sur mesure
+published: true
+permalink: /activites/randonnees-avec-un-ane
+title: Randonnées avec un âne
 category: Activités
 intro: >-
   
