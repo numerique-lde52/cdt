@@ -55,8 +55,8 @@ layout: none
   }
 
   .text-bg-secondary {
-    color: #fff !important;
-    background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important;
+    color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important;
+    background-color: #fff !important;
   }
 
   .bg-secondary-subtle{
@@ -142,7 +142,7 @@ layout: none
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-
+/*
   .navbar-brand .h1{  
       font-size: 2.2rem;
   }
@@ -150,7 +150,7 @@ layout: none
   .navbar-brand .h2 {
       font-size: 1.5rem;
   }
-
+*/
 
 }
 

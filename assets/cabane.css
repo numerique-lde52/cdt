@@ -1,24 +1,5 @@
 /* Accommodation Detail Page Styles */
 
-/* Breadcrumb */
-.breadcrumb-section {
-    background-color: var(--neutral-50);
-    padding: 1rem 0;
-    margin-top: 76px;
-}
-
-.breadcrumb-link {
-    color: var(--emerald-700);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: color 0.3s ease;
-}
-
-.breadcrumb-link:hover {
-    color: var(--emerald-800);
-}
-
 /* Image Gallery */
 .image-gallery {
     display: grid;
