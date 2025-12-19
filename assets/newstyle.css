@@ -1,0 +1,368 @@
+/* Custom CSS for Chemins de traverse */
+
+/* Color Variables */
+:root {
+    --emerald-50: #ecfdf5;
+    --emerald-100: #d1fae5;
+    --emerald-200: #a7f3d0;
+    --emerald-700: #047857;
+    --emerald-800: #065f46;
+    --emerald-900: #064e3b;
+    --neutral-50: #fafafa;
+    --neutral-100: #f5f5f5;
+    --neutral-600: #525252;
+    --neutral-700: #404040;
+    --success-green: rgb(8, 122, 0);
+}
+
+/* Global Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    scroll-behavior: smooth;
+    padding-top: 76px;
+}
+
+html {
+    scroll-padding-top: 80px;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+/* Header Styles */
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    color: var(--emerald-900);
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    font-size: 0.75rem;
+    color: var(--emerald-700);
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.nav-link {
+    color: var(--neutral-700) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--emerald-700) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 32rem;
+    background-image: url('/img/enforeste-toi-2024-02-optim.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.hero-tagline {
+    font-size: 2rem;
+    color: var(--emerald-200);
+    font-style: italic;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--success-green);
+    border-color: var(--success-green);
+}
+
+.btn-primary:hover {
+    background-color: var(--emerald-800);
+    border-color: var(--emerald-800);
+}
+
+.btn-outline-light {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-success {
+    background-color: var(--emerald-700);
+    border-color: var(--emerald-700);
+}
+
+.btn-success:hover {
+    background-color: var(--emerald-800);
+    border-color: var(--emerald-800);
+}
+
+/* Section Styles */
+.section-title {
+    font-size: 3rem;
+    color: var(--emerald-900);
+}
+
+.section-description {
+    font-size: 1.125rem;
+    color: var(--neutral-700);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--emerald-100);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.feature-icon i {
+    font-size: 2rem;
+    color: var(--emerald-700);
+}
+
+/* Cards */
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.accommodation-card:hover,
+.activity-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-title {
+    color: var(--emerald-900);
+}
+
+.card-img-top {
+    height: 256px;
+    object-fit: cover;
+}
+
+/* Feature List */
+.feature-list {
+    font-size: 0.875rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-600);
+}
+
+.bullet {
+    width: 6px;
+    height: 6px;
+    background-color: var(--emerald-700);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* Activity Icons */
+.activity-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--emerald-100);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-icon i {
+    font-size: 1.5rem;
+    color: var(--emerald-700);
+}
+
+.activity-card img {
+    height: 192px;
+}
+
+@media (max-width: 768px) {
+    .activity-card img {
+        height: 200px;
+    }
+}
+
+/* Contact Section */
+.contact-info-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--emerald-100);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 1.25rem;
+    color: var(--emerald-700);
+}
+
+.contact-details h4 {
+    color: var(--emerald-900);
+}
+
+/* Forms */
+.form-control {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--emerald-700);
+    box-shadow: 0 0 0 0.2rem rgba(4, 120, 87, 0.25);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--emerald-900);
+    color: white;
+}
+
+.brand-tagline-footer {
+    font-size: 0.75rem;
+    color: var(--emerald-200);
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--emerald-100);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--emerald-800);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--emerald-700);
+    color: white;
+}
+
+.social-link i {
+    font-size: 1.125rem;
+}
+
+/* Utilities */
+.bg-light {
+    background-color: var(--neutral-50) !important;
+}
+
+.text-muted {
+    color: var(--neutral-600) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Badge */
+.badge.bg-success {
+    background-color: var(--emerald-700) !important;
+}
+
+/* Object Fit Utility (for older browsers) */
+.object-fit-cover {
+    object-fit: cover;
+}
