@@ -1,4 +1,8 @@
 
+{% if site.print-includes-boundaries-comments == true %}
+<!-- _includes/date-fr.html -->
+{% endif %}
+
 <h4>from include date_fr.html</h4>
 date_start = {{ event.date_start }}<br>
 
@@ -23,3 +27,8 @@ date_start = {{ event.date_start }}<br>
   s{% endcase %}
 {% assign yearFR = event.date_start | date: " %Y" %} 
 {{ yearFR }}
+
+{% if site.print-includes-boundaries-comments == true %}
+<!-- end _includes/date-fr.html -->
+{% endif %}
+

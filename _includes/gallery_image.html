@@ -1,4 +1,9 @@
+
+{% if site.print-includes-boundaries-comments == true %}
 <!-- includes/gallery_image.html  -->
+{% endif %}
+
+
 {% comment %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Generates gallery thumbnails for Lightbox for Bootstrap 5
@@ -136,4 +141,7 @@ src="{{ img_src }}?image={{ include.img_number }}"
 srcset="{{ img_srcset }}"
 sizes="{{ sizes }}" >
 </a>
-<!-- end _includes/gallery_image.html  -->
+
+{% if site.print-includes-boundaries-comments == true %}
+<!-- end includes/gallery_image.html  -->
+{% endif %}

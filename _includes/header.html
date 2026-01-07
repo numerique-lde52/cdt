@@ -4,7 +4,7 @@
 
       <a class="navbar-brand" href="/">
         <div class="row">
-          <div class="col-2">
+          <div class="col-3">
             <img src="{{ site.logo | relative_url }}" alt="Logo CIN" class="d-inline-block align-text-top img-fluid">
           </div>
           <div class="col-5 text-secondary">
@@ -14,9 +14,6 @@
             <div class="col-5">
               <span class="h2">{{ site.subtitle }}</span>
             </div>
-          </div>
-          <div class="col-2">
-            <img src="{{ '/assets/logo-ligue-52-cin-optim.svg' | relative_url }}" alt="Logo Ligue 52" class="d-inline-block align-text-middle img-fluid">
           </div>
         </div>
       </a>
@@ -49,7 +46,7 @@
                     <ul class="dropdown-menu">
                       {%- for p in pages -%}
                       <li>
-                        <a class="dropdown-item {% if p.url == page.url %} active" aria-current="page"{% endif %}" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+                        <a class="dropdown-item {% if p.url == page.url %} active" aria-current="page"{% else %}"{% endif %} href="{{ p.url | relative_url }}">{{ p.title }}</a>
                       </li>
                       {%- endfor -%}
                     </ul>

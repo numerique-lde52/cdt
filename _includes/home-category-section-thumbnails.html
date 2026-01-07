@@ -1,13 +1,7 @@
+
+{% if site.print-includes-boundaries-comments == true %}
 <!-- includes/home-category-section-thumbnails.html  -->
-{% comment %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-{%- include home-category-section-thumbnails.html category="Hébergements" -%}
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{% endcomment %}
-
-{% assign debug = false %}
-
-
+{% endif %}
   <section class="pt-4 text-center">
     <div class="row py-lg-2">
       <div class="col-lg-6 col-md-8 mx-auto text-bg-secondary rounded">
@@ -25,7 +19,7 @@
         </a>
         <div class="card-body">
           <a class="nav-link" href="{{ p.url | relative_url }}">
-            <h3 class="card-text">{{ p.title }}</h2>
+            <h2 class="card-text">{{ p.title }}</h2>
           </a>
         </div>
       </div>
@@ -33,4 +27,6 @@
     {%- endfor -%}
   </div>
 
-<!-- end _includes/home-category-section-thumbnails.html  -->
+{% if site.print-includes-boundaries-comments == true %}
+<!-- end includes/home-category-section-thumbnails.html  -->
+{% endif %}

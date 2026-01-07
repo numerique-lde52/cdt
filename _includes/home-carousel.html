@@ -1,4 +1,8 @@
+
+{% if site.print-includes-boundaries-comments == true %}
 <!-- includes/home-carousel.html  -->
+{% endif %}
+
 {% assign debug = false %}
 
 {%- assign pages = "" | split: "" -%}
@@ -28,16 +32,19 @@ pages_count = {{ pages | size }}<br>
       <div class="container"> 
         <div class="carousel-caption text-bg-carousel rounded p-2 m-2"> 
           <h1>{{ p.title }}</h1> 
-          <p class="opacity-75">{{ p.intro | markdownify }}</p> 
+          <div class="opacity-75">{{ p.intro | markdownify }}</div> 
           <p><a class="btn btn-primary" href="{{ p.url | relative_url }}">En savoir plus</a></p> 
         </div> 
       </div> 
     </div> 
 {%- endfor -%}
 
-
   </div> 
   <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button> 
   <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
 </div>
+
+{% if site.print-includes-boundaries-comments == true %}
 <!-- end includes/home-carousel.html  -->
+{% endif %}
+

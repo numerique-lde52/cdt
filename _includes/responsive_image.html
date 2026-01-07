@@ -1,5 +1,8 @@
+
+{% if site.print-includes-boundaries-comments == true %}
 <!-- includes/responsive_image.html  -->
-{% comment %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+{% endif %}
+{%- comment %}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Generates responsive image html tag
 
@@ -27,23 +30,22 @@ sizes="(min-width: 1200px) 160px,
        (min-width: 768px) 90px, 
        300px"  />
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{% endcomment %}
-
-{% assign debug = false %}
-
-
-{% if include.index %}
-  {% assign target_page = page %}
-  {% assign image_url = page.gallery[include.index] %}
-{% elsif include.target_page %}
-  {% assign target_page = include.target_page %}
-  {% assign image_url = target_page.gallery.first %}
-{% endif %}
-
-{% assign url_parts = image_url | split: "/" %}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++{%- endcomment %}
+{%- assign debug = false -%}
 
 
-{% if debug == true %}
+{%- if include.index -%}
+  {%- assign target_page = page %}
+  {%- assign image_url = page.gallery[include.index] %}
+{%- elsif include.target_page -%}
+  {%- assign target_page = include.target_page %}
+  {%- assign image_url = target_page.gallery.first %}
+{%- endif -%}
+
+{%- assign url_parts = image_url | split: "/" -%}
+
+
+{%- if debug == true -%}
 <br><br>
 include.model = {{ include.model }}<br>
 include.index = {{ include.index }}<br>
@@ -57,56 +59,56 @@ Page gallery : {{ target_page.gallery | jsonify }}<br>
 image_url = {{ image_url }}<br>
 <br>
 
-{% endif %}
+{%- endif -%}
 
 
-{% assign model = site.img_transformation_models | where: "name", include.model | first %}
+{%- assign model = site.img_transformation_models | where: "name", include.model | first -%}
 
-{% if debug == true %}
+{%- if debug == true -%}
 <br><br>
 model = {{ model | jsonify }}<br>
 
 <br>
 
-{% endif %}
+{%- endif -%}
 
-{% assign format = model.format %}
-{% assign sizes = model.sizes %}
+{%- assign format = model.format -%}
+{%- assign sizes = model.sizes -%}
 
-{% if debug == true %}
+{%- if debug == true %}
   format = {{ format }} - sizes = {{ sizes | jsonify }}<br>
-{% endif %}
+{%- endif %}
 
 
-{% assign img_srcset_array = "" | split: "" %}
-{% assign sizes_array = "" | split: "" %}
+{%- assign img_srcset_array = "" | split: "" %}
+{%- assign sizes_array = "" | split: "" %}
 
-{% if debug == true %}
+{%- if debug == true %}
 img_srcset_array = {{ img_srcset_array | jsonify }}<br>
 sizes_array = {{ sizes_array | jsonify }}<br>
-{% endif %}
+{%- endif %}
 
-{% for size in sizes %}
+{%- for size in sizes %}
 
-  {% assign index = forloop.index0 %}
-  {% assign breakpoint = site.breakpoints[index] %}
+  {%- assign index = forloop.index0 %}
+  {%- assign breakpoint = site.breakpoints[index] %}
 
-  {% capture transformation_name %}t_{{ size }}-{{ format }}{% endcapture %}
+  {%- capture transformation_name %}t_{{ size }}-{{ format }}{%- endcapture %}
   
-  {% comment %} ############## srcset ################# {% endcomment %}
-  {% assign url_trans = image_url | replace: url_parts[6], transformation_name %}
+  {%- comment %} ############## srcset ################# {%- endcomment %}
+  {%- assign url_trans = image_url | replace: url_parts[6], transformation_name %}
 
-  {% if index == 0 %}{% assign img_src = url_trans %}{% endif %}
+  {%- if index == 0 %}{%- assign img_src = url_trans %}{%- endif %}
 
-  {% capture srcset_element %}{{ url_trans }} {{ size }}w{% endcapture %}
+  {%- capture srcset_element %}{{ url_trans }} {{ size }}w{%- endcapture %}
 
-  {% assign img_srcset_array = img_srcset_array | push: srcset_element %}
+  {%- assign img_srcset_array = img_srcset_array | push: srcset_element %}
 
-  {% comment %} ############## sizes ################# {% endcomment %}
-  {% capture size_element %}(min-width: {{ site.breakpoints[index] }}px) {{ size }}px{% endcapture %}
-  {% assign sizes_array = sizes_array | push: size_element %}
+  {%- comment %} ############## sizes ################# {%- endcomment %}
+  {%- capture size_element %}(min-width: {{ site.breakpoints[index] }}px) {{ size }}px{%- endcapture %}
+  {%- assign sizes_array = sizes_array | push: size_element %}
   
-  {% if debug == true %}
+  {%- if debug == true %}
   index = {{ index }}<br>
   size = {{ size }}<br>
   breakpoint = {{ breakpoint }}<br>
@@ -114,21 +116,23 @@ sizes_array = {{ sizes_array | jsonify }}<br>
   img_src = {{ img_src }}<br>
   img_srcset_array = {{ img_srcset_array | jsonify }}<br>
   sizes_array = {{ sizes_array | jsonify }}<br>
-  {% endif %}
+  {%- endif %}
 
-{% endfor %}
+{%- endfor %}
 
-{% assign img_srcset = img_srcset_array | join: ", " %}
-{% assign sizes = sizes_array | join: ", " %}
+{%- assign img_srcset = img_srcset_array | join: ", " %}
+{%- assign sizes = sizes_array | join: ", " %}
 
-{% if debug == true %}
+{%- if debug == true %}
 img_srcset = {{ img_srcset }}<br>
 sizes = {{ sizes }}<br>
-{% endif %}
+{%- endif %}
 
 <img class="img-fluid rounded" 
 src="{{ img_src }}" 
 srcset="{{ img_srcset }}"
 sizes="{{ sizes }}" >
 
-<!-- end _includes/responsive_image.html  -->
+{% if site.print-includes-boundaries-comments == true %}
+<!-- end includes/responsive_image.html  -->
+{% endif %}
