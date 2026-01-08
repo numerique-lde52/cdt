@@ -1,36 +1,29 @@
-<header class="site-header mb-3" role="banner">
-
+<header class="site-header" role="banner">
+  <nav class="navbar navbar-expand-lg bg-primary-subtle border-bottom mb-3 rounded" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
 
       <a class="navbar-brand" href="/">
         <div class="row">
-          <div class=" col-md-2 col-3">
+          <div class="col-3">
             <img src="{{ site.logo | relative_url }}" alt="Logo CIN" class="d-inline-block align-text-top img-fluid">
           </div>
           <div class="col-5 text-secondary">
             <div class="col-5">
-              <span class="fw-bold fs-1">{{ site.title }}</span>
+              <span class="h1">{{ site.title }}</span>
             </div>
             <div class="col-5">
-              <span class="fs-3">{{ site.subtitle }}</span>
+              <span class="h2">{{ site.subtitle }}</span>
             </div>
           </div>
         </div>
       </a>
 
-    </div>
-
-</header>
-
-
-
-<nav class="navbar navbar-expand-md justify-content-end bg-primary-subtle border-top mb-3" aria-label="Offcanvas navbar large">
-      <button class="navbar-toggler text-bg-primary shadow-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
         <span>Menu</span>
       </button>
 
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-        <div class="offcanvas-header ">
+        <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -87,4 +80,32 @@
 
 
       </div>
+    </div>
+  </nav>
+
+</header>
+
+
+
+<nav class="py-2 bg-body-tertiary border-bottom">
+  <div class="container d-flex flex-wrap">
+    <ul class="nav me-auto">
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
+    </ul>
+    <ul class="nav">
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+    </ul>
+  </div>
 </nav>
+
+<header class="py-3 mb-4 border-bottom">
+  <div class="container d-flex flex-wrap justify-content-center">
+    <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none"> <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> <span class="fs-4">Double header</span> </a>
+    <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search"> <input type="search" class="form-control" placeholder="Search..." aria-label="Search"> </form> 
+  </div> 
+</header>

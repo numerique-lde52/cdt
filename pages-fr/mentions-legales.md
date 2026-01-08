@@ -33,7 +33,7 @@ intro: >-
   **Régime TVA** : TVA non appliquable, article 261.7.1a du Code Général des impôts
 
 
-  **Directeur de publication** : Stéphane MASSENET
+  **Directeur de publication** : Stéphane MASSENET - Présidente
 gallery: []
 order: "20"
 layout: divers
@@ -57,7 +57,10 @@ Pour exercer ce droit, contactez-nous par e-mail à : cin.auberive@ligue52.org
 
 **Cookies**
 
-Le site https://chemindetraverse52.org n'utilise pas de cookies.
+Le site https://chemindetraverse52.org utilise des cookies pour le fonctionnement de son outil de mesure d'audience Wysistat.
+
+La solution Wysistat est conforme aux critères établis par la CNIL et peut être mise en œuvre sans requérir le consentement des utilisateurs.
+
 
 **Droits d’auteur – Copyright**
 
