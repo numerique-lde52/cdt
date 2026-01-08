@@ -1,25 +1,17 @@
 <header class="site-header mb-3" role="banner">
-
-    <div class="container-fluid">
-
-      <a class="navbar-brand" href="/">
-        <div class="row">
-          <div class=" col-md-2 col-3">
-            <img src="{{ site.logo | relative_url }}" alt="Logo CIN" class="d-inline-block align-text-top img-fluid">
-          </div>
-          <div class="col-5 text-secondary">
-            <div class="col-5">
-              <span class="fw-bold fs-1">{{ site.title }}</span>
-            </div>
-            <div class="col-5">
-              <span class="fs-3">{{ site.subtitle }}</span>
-            </div>
-          </div>
-        </div>
+  <div class="row">
+    <div class="col-3 col-md-auto">
+      <a class="navbar-brand " href="/">
+        <img src="{{ site.logo | relative_url }}" alt="Logo CIN" class="d-inline-block align-text-top img-fluid mt-2">
       </a>
-
     </div>
-
+    <div class="col-6">
+      <a class="navbar-brand " href="/">
+        <span class="d-block fw-bold fs-1 text-secondary">{{ site.title }}</span>
+        <span class="fs-3 text-secondary">{{ site.subtitle }}</span> 
+      </a>
+    </div>
+  </div>      
 </header>
 
 
