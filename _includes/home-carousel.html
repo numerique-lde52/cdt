@@ -29,11 +29,11 @@ pages_count = {{ pages | size }}<br>
 {%- for p in pages -%}
     <div class="carousel-item {% if forloop.index == 1 %} active {% endif %} rounded-3">
       {%- include responsive_image.html model="12w" target_page=p -%}
-      <div class="container"> 
+      <div class="container d-none d-md-block d-lg-block d-xl-block d-xxl-block"> 
         <div class="carousel-caption text-bg-carousel rounded p-2 m-2"> 
           <h1>{{ p.title }}</h1> 
           <div class="opacity-75">{{ p.intro | markdownify }}</div> 
-          <p><a class="btn btn-primary" href="{{ p.url | relative_url }}">En savoir plus</a></p> 
+          <p><a class="btn btn-primary btn-sm" href="{{ p.url | relative_url }}">En savoir plus</a></p> 
         </div> 
       </div> 
     </div> 
