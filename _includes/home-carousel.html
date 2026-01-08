@@ -17,7 +17,23 @@ pages = {{ pages | jsonify }}<br>
 pages_count = {{ pages | size }}<br>
 {% endif %}
 
-<div id="homeCarousel" class="carousel slide carousel-fade mb-6" data-bs-ride="true">
+
+
+<div class="row d-lg-none d-xl-none d-xxl-none">
+  <div class="col-lg-6 text-bg-secondary rounded border border-secondary-subtle p-3">
+    <h1 class="display-4 fst-italic">Chemins de traverse</h1>
+    <div class="my-3 lead">
+      <p>Vous souhaitez vivre un week-end ou un séjour insolite 100% nature ?<p>
+      <p>L'équipe des Chemins de Traverse vous propose de vivre et d’habiter les forêts du Parc national de Forêts.</p>
+      <p>Vous allez séjourner dans une tente nomade, une roulotte ou un lodge, découvrir les secrets des sous-bois, louer un âne pour accompagner vos découvertes, habiter des cabanes insolites, cheminer le long des ruisseaux forestiers ... ou tout simplement profiter du calme et de la sérénité des lieux.</p>
+    </div>
+  </div>    
+  <div class="col-lg-6 rounded">
+    <img class="img-fluid rounded" src="https://res.cloudinary.com/dwr0s07kl/image/upload/t_680-16-9/tente-nomade_trqifm.jpg" srcset="https://res.cloudinary.com/dwr0s07kl/image/upload/t_680-16-9/tente-nomade_trqifm.jpg 680w" sizes="(min-width: 1400px) 680px">
+  </div>
+</div>  
+
+<div id="homeCarousel" class="carousel slide carousel-fade mb-6  d-none d-lg-block d-xl-block d-xxl-block" data-bs-ride="true">
   <div class="carousel-indicators">
     {%- for p in pages -%}
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="{{ forloop.index0 }}" aria-label="Slide {{ forloop.index }}" {% if forloop.index == 1 %} class="active"{% endif %} ></button>
@@ -29,7 +45,7 @@ pages_count = {{ pages | size }}<br>
 {%- for p in pages -%}
     <div class="carousel-item {% if forloop.index == 1 %} active {% endif %} rounded-3">
       {%- include responsive_image.html model="12w" target_page=p -%}
-      <div class="container d-none d-md-block d-lg-block d-xl-block d-xxl-block"> 
+      <div class="container"> 
         <div class="carousel-caption text-bg-carousel rounded p-2 m-2"> 
           <h1>{{ p.title }}</h1> 
           <div class="opacity-75">{{ p.intro | markdownify }}</div> 
