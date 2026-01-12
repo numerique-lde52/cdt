@@ -48,6 +48,8 @@ layout: default
     <div class="col-12 col-md-6 text-bg-light rounded m-2 p-3">
       {{ page.tech-description | markdownify }}
     </div>
+    {% endif %}
+    {% if page.show_nearby %}
     <div class="col-12 col-md-5 text-bg-light rounded m-2 p-3">
           {%- assign texte = site.data.translations.translations | where:"slug", "a_proximite_logement" | first -%}
           {{ texte[page.lang] | markdownify }}

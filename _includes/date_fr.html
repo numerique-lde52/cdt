@@ -4,12 +4,14 @@
 {% endif %}
 
 <h4>from include date_fr.html</h4>
-date_start = {{ event.date_start }}<br>
+Passed argument = {{ include.date_to_print }}
+<hr>
 
-{{ 'Publié le' }}
-{% assign dayFR = event.date_start | date: "%d " %}
+{% assign the_date = include.date_to_print %}
+
+{% assign dayFR = the_date | date: "%d " %}
 {{ dayFR }}
-{% assign monthFR = event.date_start | date: "%m" %}
+{% assign monthFR = the_date | date: "%m" %}
   {% case monthFR %}
     {% when "01" %}Janvier
     {% when "02" %}Février
@@ -25,7 +27,7 @@ date_start = {{ event.date_start }}<br>
     {% when "12" %}Décembre
     {% else %}{{ monthFR }}
   s{% endcase %}
-{% assign yearFR = event.date_start | date: " %Y" %} 
+{% assign yearFR = the_date | date: " %Y" %} 
 {{ yearFR }}
 
 {% if site.print-includes-boundaries-comments == true %}
