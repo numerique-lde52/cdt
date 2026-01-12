@@ -25,6 +25,8 @@ tarifs: |-
 show_adhesion: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768217048/20220529_114234_x0wklz.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768217048/PXL_20250728_094220887_fh4xvo.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768217048/PXL_20250816_050843773-EDIT_tiitnz.jpg
 order: "060"
 layout: page
 ---
