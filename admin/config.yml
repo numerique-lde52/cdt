@@ -84,6 +84,13 @@ collections:
         hint: Afficher le bouton de réservation. Valable pour les hébergements.
         required: true        
 
+      - label: Code html Réservation Elloha
+        hint: Voir les modules dans l'administration Elloha https://app.elloha.com/distribution/booking-engines-list.aspx
+        name: bookin_button_code
+        default: ""
+        widget: "text"
+        required: false
+
       - label: Introduction
         name: intro
         widget: markdown

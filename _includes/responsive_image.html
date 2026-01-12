@@ -120,8 +120,10 @@ sizes_array = {{ sizes_array | jsonify }}<br>
 
 {%- endfor %}
 
-{%- assign img_srcset = img_srcset_array | join: ", " %}
-{%- assign sizes = sizes_array | join: ", " %}
+{%- assign new_line = ",
+" %}
+{%- assign img_srcset = img_srcset_array | join: new_line %}
+{%- assign sizes = sizes_array | join: new_line %}
 
 {%- if debug == true %}
 img_srcset = {{ img_srcset }}<br>

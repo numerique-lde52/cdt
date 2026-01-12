@@ -68,10 +68,6 @@ layout: none
     background-color: #eeeeeedd !important;
   }
 
-  .carousel-caption{
-
-  }
-
   .text-bg-tertiary {
     color: #000 !important;
     background-color: RGBA(var(--bs-tertiary-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -101,7 +97,7 @@ layout: none
 
   .carousel-caption {
     position: absolute;
-    right: 35%;
+    right: 5%;
     bottom: 1rem;
     left: 5%;
     padding-top: 1rem;

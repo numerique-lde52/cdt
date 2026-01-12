@@ -47,7 +47,7 @@ pages_count = {{ pages | size }}<br>
       {%- include responsive_image.html model="12w" target_page=p -%}
       <div class="container"> 
         <div class="carousel-caption text-bg-carousel rounded p-2 m-2"> 
-          <h1>{{ p.title }}</h1> 
+          <h2>{{ p.title }}</h2> 
           <div class="opacity-75">{{ p.intro | markdownify }}</div> 
           <p><a class="btn btn-primary btn-sm" href="{{ p.url | relative_url }}">En savoir plus</a></p> 
         </div> 

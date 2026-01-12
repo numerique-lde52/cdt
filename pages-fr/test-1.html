@@ -15,6 +15,10 @@ order: "1"
 layout: default
 ---
 
+
+
+
+{% comment %}
 <div id="homeCarousel" class="carousel slide mb-6" data-bs-ride="true">
   <div class="carousel-indicators"> 
     <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
@@ -103,29 +107,35 @@ layout: default
 
 
 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      {%- include responsive_image.html model="12w" index=0 -%}
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+    <div class="col bg-primary-subtle">blah !</div>
+    <div class="col bg-secondary-subtle">Column<br></div>
+    <div class="col bg-warning-subtle">Column</div>
+    <div class="col bg-success-subtle">Column<br><br><br></div>
+  </div>
+</div>
 
   <div class="row">
     <div class="col-12">
-<figure id="demo">
-      <img class="img-fluid"
-           src="/assets/test-responsive/1300w.jpg"
-           srcset="
-           /assets/test-responsive/mire-1300.webp 1300w,
-           /assets/test-responsive/mire-1100.webp 1100w,
-           /assets/test-responsive/mire-920.webp 920w,
-           /assets/test-responsive/mire-680.webp 680w,
-           /assets/test-responsive/mire-560.webp 560w" 
-           sizes="(min-width: 1400px) 1272px, 
-                  (min-width: 1200px) 1092px, 
-                  (min-width: 1000px) 912px, 
-                  (min-width: 780px) 672px, 
-                  (min-width: 600px) 516px, calc(94.29vw - 31px)"
-      >
-<figcaption>Loading...</figcaption>      
+      <figure id="demo2">
+        {%- include responsive_image.html model="12w" index=1 -%}
+        <figcaption>Loading...</figcaption>      
+      </figure>
     </div>
-
   </div>
-</div>
+
+{% endcomment %}
 
 <script>
   setInterval(function() {
@@ -133,8 +143,8 @@ layout: default
   str += "logical width: " + window.innerWidth + "<br>";
   str += "pixel ratio: " + window.devicePixelRatio + "<br>";
   str += "physical width: " + (window.devicePixelRatio * window.innerWidth) + "<br>";
-  str += "current source: " + document.querySelector("#demo img").currentSrc.split("/").pop();
-  document.querySelector("#demo figcaption").innerHTML = str;
+  str += "current source: " + document.querySelector("#demo1 img").currentSrc.split("/").pop();
+  document.querySelector("#demo1 figcaption").innerHTML = str;
 }, 1000);
 </script>
 <style>
@@ -145,21 +155,33 @@ layout: default
 </style>
 
 
-<!--
-<div class="container">
+<div class="container gap-3">
+
+
   <div class="row">
-    <div class="col-12">12
-      {%- include responsive_image.html model="12w" index=0 -%}
+    <div class="col-12">
+      <figure id="demo1">
+        <img class="img-fluid"
+             src="/assets/test-responsive/1300w.jpg"
+             srcset="
+             /assets/test-responsive/mire-1300.webp 1300w,
+             /assets/test-responsive/mire-1100.webp 1100w,
+             /assets/test-responsive/mire-920.webp 920w,
+             /assets/test-responsive/mire-680.webp 680w,
+             /assets/test-responsive/mire-560.webp 560w" 
+             sizes="(min-width: 1400px) 1300px,
+             (min-width: 1200px) 1100px,
+             (min-width: 992px) 920px,
+             (min-width: 768px) 680px,
+             (min-width: 576px) 560px" 
+        >
+        <figcaption>Loading...</figcaption>      
+      </figure>
     </div>
   </div>
-</div>
--->
 
-<div class="container">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-    <div class="col bg-primary-subtle">blah !</div>
-    <div class="col bg-secondary-subtle">Column<br></div>
-    <div class="col bg-warning-subtle">Column</div>
-    <div class="col bg-success-subtle">Column<br><br><br></div>
-  </div>
+
+
+
+  
 </div>
