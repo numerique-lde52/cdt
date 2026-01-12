@@ -3,10 +3,12 @@ published: true
 permalink: /activites/randonnees-avec-un-ane
 title: Randonnées avec un âne
 category: Activités
+show_booking_button: false
 intro: >-
   
   Une formule sur mesure pour répondre à vos besoins et vos attentes : distance, hébergement, type de circuit, on vous accompagne dans la préparation de votre projet !
 tech-description: ""
+show_nearby: false
 tarifs: |-
   
   **Tarifs ânes:**
@@ -21,7 +23,8 @@ tarifs: |-
   **300 € /jour
   150 € / demie- journée**
 show_adhesion: true
-gallery: []
+gallery:
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768217048/20220529_114234_x0wklz.jpg
 order: "060"
 layout: page
 ---
