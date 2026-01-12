@@ -3,6 +3,23 @@ published: true
 permalink: /hebergements/les-cabanes-perchees-les-nids-damorey/
 title: Les Cabanes perchées "les nids d'Amorey"
 category: Hébergements
+show_booking_button: true
+bookin_button_code: <div
+  id="ConstellationWidgetContainer68bf5152-1b96-4c79-892d-441754ad8b98"
+  style="width:100%" title="CHEMINS DE TRAVERSE 52"
+  data-id-projet='68bf51521b964c79892d441754ad8b98'>Chargement en
+  cours...</div><script type="text/javascript"
+  src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script><script
+  type="text/javascript">var
+  constellationWidgetUrl68bf51521b964c79892d441754ad8b98,
+  constellationTypeModule68bf51521b964c79892d441754ad8b98;
+  constellationWidgetUrl68bf51521b964c79892d441754ad8b98 =
+  'https://reservation.elloha.com/Widget/BookingEngine/68bf5152-1b96-4c79-892d-441754ad8b98?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR';
+  constellationTypeModule68bf51521b964c79892d441754ad8b98=1;
+  constellationWidgetLoad('ConstellationWidgetContainer68bf5152-1b96-4c79-892d-441754ad8b98');
+  constellationWidgetAddEvent(window, "resize", function () {
+  constellationWidgetSetAppearance('ConstellationWidgetContainer68bf5152-1b96-4c79-892d-441754ad8b98');
+  });</script>
 intro: >-
   **Vivre perché au cœur de la forêt !**
 

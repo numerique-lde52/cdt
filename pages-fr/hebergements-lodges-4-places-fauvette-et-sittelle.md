@@ -4,6 +4,22 @@ permalink: /hebergements/lodges-4-places/
 title: Lodges 4 places Fauvette et Sittelle
 category: Hébergements
 show_booking_button: true
+bookin_button_code: <div
+  id="ConstellationWidgetContainere7498050-c35c-4529-98d4-fb177fc6272a"
+  style="width:100%" title="CHEMINS DE TRAVERSE 52"
+  data-id-projet='e7498050c35c452998d4fb177fc6272a'>Chargement en
+  cours...</div><script type="text/javascript"
+  src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script><script
+  type="text/javascript">var
+  constellationWidgetUrle7498050c35c452998d4fb177fc6272a,
+  constellationTypeModulee7498050c35c452998d4fb177fc6272a;
+  constellationWidgetUrle7498050c35c452998d4fb177fc6272a =
+  'https://reservation.elloha.com/Widget/BookingEngine/e7498050-c35c-4529-98d4-fb177fc6272a?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR';
+  constellationTypeModulee7498050c35c452998d4fb177fc6272a=1;
+  constellationWidgetLoad('ConstellationWidgetContainere7498050-c35c-4529-98d4-fb177fc6272a');
+  constellationWidgetAddEvent(window, "resize", function () {
+  constellationWidgetSetAppearance('ConstellationWidgetContainere7498050-c35c-4529-98d4-fb177fc6272a');
+  });</script>
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé, nous vous proposons de vivre cette expérience dans l'un de nos lodges
   *Fauvette et Sittelle*, installés dans un vallon de rêve en bordure de la

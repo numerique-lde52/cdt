@@ -4,6 +4,22 @@ permalink: /hebergements/roulotte-des-bois/
 title: Roulottes des Bois
 category: Hébergements
 show_booking_button: true
+bookin_button_code: <div
+  id="ConstellationWidgetContainer17274be5-2c28-4674-ad01-dc5b8867a440"
+  style="width:100%" title="CHEMINS DE TRAVERSE 52"
+  data-id-projet='17274be52c284674ad01dc5b8867a440'>Chargement en
+  cours...</div><script type="text/javascript"
+  src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script><script
+  type="text/javascript">var
+  constellationWidgetUrl17274be52c284674ad01dc5b8867a440,
+  constellationTypeModule17274be52c284674ad01dc5b8867a440;
+  constellationWidgetUrl17274be52c284674ad01dc5b8867a440 =
+  'https://reservation.elloha.com/Widget/BookingEngine/17274be5-2c28-4674-ad01-dc5b8867a440?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR';
+  constellationTypeModule17274be52c284674ad01dc5b8867a440=1;
+  constellationWidgetLoad('ConstellationWidgetContainer17274be5-2c28-4674-ad01-dc5b8867a440');
+  constellationWidgetAddEvent(window, "resize", function () {
+  constellationWidgetSetAppearance('ConstellationWidgetContainer17274be5-2c28-4674-ad01-dc5b8867a440');
+  });</script>
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé, nous vous proposons de vivre cette expérience dans l'une de nos
   roulottes Aurore et Lucine, installées dans un vallon de rêve en bordure de la

@@ -18,12 +18,8 @@ layout: default
       {{ content | markdownify }}
 
       {% if page.show_booking_button %}
-      <div class="text-center">
-      <a href="https://tinyurl.com/22oh64qw" rel="noreferrer" target="_blank">
-        <button type="button" class="btn btn-lg btn-primary rounded">Réserver maintenant</button>
-      </a>
-      </div>
-       {%- endif -%}
+        {{ page.bookin_button_code }}
+      {%- endif -%}
     </div>
 
     <div class="col-4 order-1">

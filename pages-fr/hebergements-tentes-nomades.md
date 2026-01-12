@@ -4,6 +4,22 @@ permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
 category: Hébergements
 show_booking_button: true
+bookin_button_code: <div
+  id="ConstellationWidgetContainercb60ec64-72c9-4bcf-ad84-b2ad28513aa9"
+  style="width:100%" title="CHEMINS DE TRAVERSE 52"
+  data-id-projet='cb60ec6472c94bcfad84b2ad28513aa9'>Chargement en
+  cours...</div><script type="text/javascript"
+  src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script><script
+  type="text/javascript">var
+  constellationWidgetUrlcb60ec6472c94bcfad84b2ad28513aa9,
+  constellationTypeModulecb60ec6472c94bcfad84b2ad28513aa9;
+  constellationWidgetUrlcb60ec6472c94bcfad84b2ad28513aa9 =
+  'https://reservation.elloha.com/Widget/BookingEngine/cb60ec64-72c9-4bcf-ad84-b2ad28513aa9?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR';
+  constellationTypeModulecb60ec6472c94bcfad84b2ad28513aa9=1;
+  constellationWidgetLoad('ConstellationWidgetContainercb60ec64-72c9-4bcf-ad84-b2ad28513aa9');
+  constellationWidgetAddEvent(window, "resize", function () {
+  constellationWidgetSetAppearance('ConstellationWidgetContainercb60ec64-72c9-4bcf-ad84-b2ad28513aa9');
+  });</script>
 intro: >-
   Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé ; la veille ou au retour de votre séjour ; en balade ou randonnée, …

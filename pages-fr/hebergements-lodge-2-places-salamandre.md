@@ -4,6 +4,22 @@ permalink: /hebergements/lodges-2-places/
 title: Lodge 2 places Salamandre
 category: Hébergements
 show_booking_button: true
+bookin_button_code: <div
+  id="ConstellationWidgetContainer9fb2c19d-a4ba-41e5-8555-4b831049db35"
+  style="width:100%" title="CHEMINS DE TRAVERSE 52"
+  data-id-projet='9fb2c19da4ba41e585554b831049db35'>Chargement en
+  cours...</div><script type="text/javascript"
+  src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script><script
+  type="text/javascript">var
+  constellationWidgetUrl9fb2c19da4ba41e585554b831049db35,
+  constellationTypeModule9fb2c19da4ba41e585554b831049db35;
+  constellationWidgetUrl9fb2c19da4ba41e585554b831049db35 =
+  'https://reservation.elloha.com/Widget/BookingEngine/9fb2c19d-a4ba-41e5-8555-4b831049db35?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR';
+  constellationTypeModule9fb2c19da4ba41e585554b831049db35=1;
+  constellationWidgetLoad('ConstellationWidgetContainer9fb2c19d-a4ba-41e5-8555-4b831049db35');
+  constellationWidgetAddEvent(window, "resize", function () {
+  constellationWidgetSetAppearance('ConstellationWidgetContainer9fb2c19d-a4ba-41e5-8555-4b831049db35');
+  });</script>
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé, nous vous proposons de vivre cette expérience dans notre lodge
   *Salamadre*, installés dans un vallon de rêve en bordure de la forêt.

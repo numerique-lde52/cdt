@@ -4,6 +4,22 @@ permalink: /hebergements/lodges-8-places/
 title: Lodges 8 places Cardamine, Nivéole et Reine des Prés
 category: Hébergements
 show_booking_button: true
+bookin_button_code: <div
+  id="ConstellationWidgetContainerf3f698b0-bd2a-4ace-b651-10721a1b3049"
+  style="width:100%" title="CHEMINS DE TRAVERSE 52"
+  data-id-projet='f3f698b0bd2a4aceb65110721a1b3049'>Chargement en
+  cours...</div><script type="text/javascript"
+  src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script><script
+  type="text/javascript">var
+  constellationWidgetUrlf3f698b0bd2a4aceb65110721a1b3049,
+  constellationTypeModulef3f698b0bd2a4aceb65110721a1b3049;
+  constellationWidgetUrlf3f698b0bd2a4aceb65110721a1b3049 =
+  'https://reservation.elloha.com/Widget/BookingEngine/f3f698b0-bd2a-4ace-b651-10721a1b3049?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR';
+  constellationTypeModulef3f698b0bd2a4aceb65110721a1b3049=1;
+  constellationWidgetLoad('ConstellationWidgetContainerf3f698b0-bd2a-4ace-b651-10721a1b3049');
+  constellationWidgetAddEvent(window, "resize", function () {
+  constellationWidgetSetAppearance('ConstellationWidgetContainerf3f698b0-bd2a-4ace-b651-10721a1b3049');
+  });</script>
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, être
   hébergé, nous vous proposons de vivre cette expérience dans l'un de nos lodges
   *Cardamine, Nivéole et Reine des Prés*, installés dans un vallon de rêve en

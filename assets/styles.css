@@ -159,3 +159,17 @@ layout: none
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) { }
 
+
+
+#ConstellationWidget{
+  background-color: #448d30;
+}
+
+.co-widget-title > *{
+  font-size: 1.25rem !important;
+  color: white !important;
+}
+
+#BtnLaunchBooking{
+  background-color: #a5c235 !important;
+}

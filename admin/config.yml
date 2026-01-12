@@ -29,7 +29,7 @@ media_library:
 media_folder: 'assets/uploads'
 # public_folder: "/image/upload" 
 
-logo_url: /assets/logo-chemins-de-traverse-proto-1-optimized.svg
+logo_url: /assets/logos/logo-chemins-de-traverse.webp
 
 slug:
   encoding: "ascii"
