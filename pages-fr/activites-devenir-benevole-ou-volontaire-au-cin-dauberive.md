@@ -3,6 +3,7 @@ published: true
 permalink: /activités/devenir-benevoles-ou-volontaire
 title: Devenir bénévole ou volontaire
 category: Activités
+show_booking_button: false
 intro: >-
   
   Une partie des actions entreprises par le Centre d’Initiation à la Nature d’Auberive est portée par les bénévoles ou des volontaires aidés par l’équipe permanente ! 
@@ -49,6 +50,8 @@ tarifs: >-
 show_adhesion: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752152604/dom_yk5dly.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768230670/PXL_20250516_113750415_ehgndj.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768230665/PXL_20250412_151409870_athik8.jpg
 order: "070"
 layout: page
 ---

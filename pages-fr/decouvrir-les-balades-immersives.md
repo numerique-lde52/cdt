@@ -3,6 +3,7 @@ published: true
 permalink: /activites/les-balades-immersives
 title: Les balades immersives
 category: Découvrir
+show_booking_button: false
 intro: >-
   Petites randos pour grand plaisir !
 
@@ -146,11 +147,12 @@ tech-description: >-
     - sur le site du [Parc national de forêts](https://rando.forets-parcnational.fr/) 
     - sur le site de l'[Agence d'Attractivité de Haute-Marne](https://www.bienvenue-hautemarne.fr/visites-activites/randos-balades/toutes-les-balades-et-randonnees-en-haute-marne/)
 show_nearby: false
-tarifs:
+tarifs: null
 show_adhesion: false
 show_rent_conditions: false
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752155883/foret_mfxzuc.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768231044/PXL_20250519_155958009_b1whpe.jpg
 order: "010"
 layout: page
 ---

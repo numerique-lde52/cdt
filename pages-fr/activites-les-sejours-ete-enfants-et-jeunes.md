@@ -3,6 +3,7 @@ published: true
 permalink: /activites/sejours-ete-enfants-et-jeunes/
 title: Les séjours été enfants et jeunes
 category: Activités
+show_booking_button: false
 intro: >-
   Après une intense année d’école, il est temps de prendre de bonnes vacances.
   Des vacances tranquilles à vivre dans la nature.
@@ -13,6 +14,7 @@ intro: >-
    - "Enforeste-toi !" du 16 au 23 juillet (7/11 ans)
 
    - "Enforeste-toi !" du 26 juillet au 5 août (10/14 ans)
+show_nearby: false
 tarifs: >-
   
   **Tarifs et inscriptions :** séjour 7/11 ans,16 au 23 juillet : 510 €, séjour 10/14 ans, 26 juillet au 5 août: 645 €, 
@@ -27,6 +29,7 @@ tarifs: >-
 show_adhesion: false
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748944385/enforeste-toi-2024-01_ktr1mm.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768230265/marguerite_2_e3k4bk.jpg
 documents:
   - url: /assets/uploads/formulaire-d_inscription_sejours_2025.pdf
     link_text: Téléchargez le bulletin d'inscription

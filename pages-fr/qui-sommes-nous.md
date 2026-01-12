@@ -1,17 +1,20 @@
 ---
 published: true
 permalink: /qui-sommes-nous/
-category: Général
 title: Qui sommes nous ?
+category: Général
+show_booking_button: false
 intro: >-
   Le Centre d’Initiation à la Nature d’Auberive est géré depuis 30 ans par la
   Ligue de l’enseignement de Haute-Marne.
 
 
   Il est géré par la Ligue de l’enseignement de Haute-Marne et mis en musique par une petite équipe de 3 animateurs et quelques poignées de bénévoles.
+show_nearby: false
 gallery:
-  - /assets/uploads/pxl_20240806_084259505.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768232012/PXL_20250424_105111979_zl7sqx.jpg
 order: "20"
+layout: page
 ---
 Il est au cœur du vaste massif forestier d’Auberive. Un espace entrecoupé de vallées ouvertes aux villages typiques et aux maisons en pierre.
 

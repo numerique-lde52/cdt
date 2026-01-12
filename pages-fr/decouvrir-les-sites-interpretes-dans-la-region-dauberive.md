@@ -3,6 +3,7 @@ published: true
 permalink: /decouvrir/les-sites-interpretes-dans-la-region-dauberive/
 title: Les sites interprétés dans la région d'Auberive
 category: Découvrir
+show_booking_button: false
 intro: >-
   
   Le Centre d’Initiation à la Nature d’Auberive travaille aussi à l’interprétation de sites patrimoniaux. En voici quelques-uns dans un rayon de 20 kms qui peuvent faire l’objet d’une découverte ou d’une balade . Tous sont en accès libre.
@@ -10,9 +11,14 @@ tech-description: >-
   
 
   [Toutes les balades et randonnées en Haute-Marne](https://www.bienvenue-hautemarne.fr/visites-activites/randos-balades/toutes-les-balades-et-randonnees-en-haute-marne/)
-tarifs:
+show_nearby: false
+tarifs: null
 show_adhesion: false
 show_rent_conditions: false
+gallery:
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768231049/PXL_20250805_085756795_ly59al.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768231682/PXL_20250309_095211090_lbyqzn.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768231671/PXL_20250309_082121292_wv5pbf.jpg
 order: "010"
 layout: page
 ---
