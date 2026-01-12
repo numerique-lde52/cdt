@@ -162,7 +162,7 @@ layout: none
 
 
 #ConstellationWidget{
-  background-color: #448d30;
+  background-color: #a5c235;
 }
 
 .co-widget-title > *{
@@ -171,5 +171,5 @@ layout: none
 }
 
 #BtnLaunchBooking{
-  background-color: #a5c235 !important;
+  background-color: #e88427 !important;
 }
