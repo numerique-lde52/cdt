@@ -1,6 +1,6 @@
 ---
 published: true
-permalink: /hebergements/les-cabanes-nature-d-auberive/
+permalink: /decouvrir/les-cabanes-nature-d-auberive/
 title: Les cabanes nature d'Auberive
 category: Découvrir
 show_booking_button: false

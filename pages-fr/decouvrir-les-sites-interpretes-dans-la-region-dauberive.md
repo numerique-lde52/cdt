@@ -1,6 +1,6 @@
 ---
 published: true
-permalink: /les-sites-interpretes-dans-la-region-dauberive/
+permalink: /decouvrir/les-sites-interpretes-dans-la-region-dauberive/
 title: Les sites interprétés dans la région d'Auberive
 category: Découvrir
 intro: >-

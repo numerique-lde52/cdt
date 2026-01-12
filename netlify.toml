@@ -1,0 +1,62 @@
+
+
+
+
+# see https://docs.netlify.com/manage/routing/redirects/redirect-options/
+
+
+# Redirect with a 301
+[[redirects]]
+from = "/notre-hebergement-en-tentes-dhotes-2/"
+to = "/hebergements/tentes-nomades/"
+status = 301
+
+[[redirects]]
+from = "/les-cabanes-perchees-les-nids-damorey-2/"
+to = "/hebergements/les-cabanes-perchees-les-nids-damorey/"
+status = 301
+
+[[redirects]]
+from = "/les-hebergements-insolites/la-roulotte-des-bois/"
+to = "/hebergements/roulotte-des-bois/"
+status = 301
+
+[[redirects]]
+from = "/la-maison-daccueil-de-charbonnieres-2/"
+to = "/hebergements/hebergement-d-etape/"
+status = 301
+
+[[redirects]]
+from = "/les-cabanes-nature-dauberive-2/"
+to = "/decouvrir/les-cabanes-nature-d-auberive/"
+status = 301
+
+[[redirects]]
+from = "/les-balades-2/"
+to = "/activites/les-balades-immersives"
+status = 301
+
+[[redirects]]
+from = "/les-sites-interpretes-dans-la-region-dauberive-2/"
+to = "/decouvrir/les-sites-interpretes-dans-la-region-dauberive/"
+status = 301
+
+[[redirects]]
+from = "/les-randos-nomades-2/"
+to = "/activites/diagonale-verte/"
+status = 301
+
+[[redirects]]
+from = "/locations-en-liberte-danes-de-portage/"
+to = "/activites/randonnees-avec-un-ane/"
+status = 301
+
+[[redirects]]
+from = "/vivre-dehors-les-sejours-enfants-2/"
+to = "/activites/sejours-ete-enfants-et-jeunes/"
+status = 301
+
+
+
+
+
