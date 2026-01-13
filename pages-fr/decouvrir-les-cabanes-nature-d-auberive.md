@@ -51,7 +51,7 @@ superbes illustrations originales à l’aquarelle de Laura Bour.
 
 Chaque livret : 9 x 15 cm (plié) – 30 x 52 cm (déplié)
 
-Les cabanes se découvrent à pied, à vélo, à cheval, ou pourquoi pas avec un [âne de portage](https://chemindetraverse52.org/locations-en-liberte-danes-de-portage/).
+Les cabanes se découvrent à pied, à vélo, à cheval, ou pourquoi pas avec un [âne de portage](/activites/randonnees-avec-un-ane).
 
 Elles sont pour la plupart libres d’accès. Un toilette sèche est disponible sur chaque site.
 
