@@ -11,7 +11,7 @@ intro: >-
   Le mouvement national de la Ligue de l’enseignement s’engage dans la transition écologique à travers son texte «[ Habiter un monde commun ](<>)».
 show_nearby: false
 gallery:
-  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768291772/PXL_20250829_175504583_s5hbfe.jpg
+  - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768293222/equipe-cin-2026_hrdp4q.jpg
 order: "25"
 layout: page
 ---
