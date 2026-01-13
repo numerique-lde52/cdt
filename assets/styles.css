@@ -166,6 +166,7 @@ layout: none
     #faeder{
       position: absolute;
       right: 0;
+      left: calc(100% - 155px);
       top: 0;
       width: 150px;
       height: auto;
