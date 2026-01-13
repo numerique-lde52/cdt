@@ -337,7 +337,7 @@ collections:
             widget: list
             fields:
               - label: Titre
-                name: titre
+                name: title
                 widget: relation
                 collection: pages-fr
                 search_fields: ["title"]
