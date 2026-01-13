@@ -41,7 +41,7 @@ layout: default
   </div>
 
   <div class="row">
-    {% if page.tech-description %}
+    {% if page.tech-description and page.tech-description!= "" %}
     <div class="col text-bg-light rounded m-2 p-3">
       {{ page.tech-description | markdownify }}
     </div>
