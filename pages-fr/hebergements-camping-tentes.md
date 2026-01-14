@@ -39,7 +39,7 @@ tarifs: >-
   * branchement électrique 220V : 5 €/jour.
 
 
-  Tarifs groupes, séjours : nous contacter.
+  **Tarifs groupes, séjours : nous contacter.**
 show_adhesion: true
 show_rent_conditions: true
 gallery:
