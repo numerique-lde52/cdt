@@ -3,6 +3,7 @@ published: false
 permalink: /activites/accueil-d-etablissements-specialises
 title: L'accueil d'établissements spécialisés
 category: Activités
+show_booking_button: true
 intro: |-
   
   Vous êtes  éducateur, psychomotricien, infirmier spécialisé, …, vous 
@@ -11,14 +12,14 @@ intro: |-
   fragilité, nous vous proposons des ateliers à la journée ou des séjours 
   sur l'écodomaine, en lodges, en roulotte ou en tentes aménagées.
 tech-description: ""
+show_nearby: true
 tarifs: >-
-  Tarif à la journée  : 350 € par groupe sur la base de 9 personnes (encadrement
+  Tarif à la journée  : 375 € par groupe sur la base de 9 personnes (encadrement
   compris), soit 1 minibus.
 
   La mise à disposition d’un animateur pour votre groupe.
 
   La mise à disposition du site (toilettes sèches/sanitaires – tables de pique-nique- salle d'activité).
-
 
 
   Au-delà de 9 personnes, possibilité (pour des raisons pédagogiques et de 
