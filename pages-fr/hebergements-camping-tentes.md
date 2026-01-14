@@ -4,6 +4,7 @@ permalink: /hebergements/camping-de-la-cigogne-noire/
 title: Camping tentes
 category: Hébergements
 show_booking_button: true
+bookin_button_code: <div id="ConstellationWidgetContainer5027479f-3ac1-43e9-a9ca-05dd17c3c953" style="width:100%" title="CHEMINS DE TRAVERSE 52" data-id-projet='5027479f3ac143e9a9ca05dd17c3c953'>Chargement en cours...</div><script type="text/javascript" src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script><script type="text/javascript">var constellationWidgetUrl5027479f3ac143e9a9ca05dd17c3c953, constellationTypeModule5027479f3ac143e9a9ca05dd17c3c953; constellationWidgetUrl5027479f3ac143e9a9ca05dd17c3c953 = 'https://reservation.elloha.com/Widget/BookingEngine/5027479f-3ac1-43e9-a9ca-05dd17c3c953?idoi=3399d1d9-460d-42d6-966c-ba923288aa99&culture=fr-FR'; constellationTypeModule5027479f3ac143e9a9ca05dd17c3c953=1; constellationWidgetLoad('ConstellationWidgetContainer5027479f-3ac1-43e9-a9ca-05dd17c3c953'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationWidgetContainer5027479f-3ac1-43e9-a9ca-05dd17c3c953'); });</script>
 intro: Vous souhaitez vivre un week-end ou un séjour insolite 100% nature, nous
   vous proposons de vivre cette expérience sur le camping de la Cigogne noire,
   dans un vallon de rêve en bordure de la forêt.
