@@ -9,23 +9,14 @@ intro: >-
   Des vacances tranquilles à vivre dans la nature.
 
 
-  Eté 2025, 2 séjours sont proposés :
+  Eté 2026, 2 séjours sont proposés, dates à venir :
 
-   - "Enforeste-toi !" du 16 au 23 juillet (7/11 ans)
 
-   - "Enforeste-toi !" du 26 juillet au 5 août (10/14 ans)
+  * 7/11 ans
+
+  * 10/14 ans
 show_nearby: false
-tarifs: >-
-  
-  **Tarifs et inscriptions :** séjour 7/11 ans,16 au 23 juillet : 510 €, séjour 10/14 ans, 26 juillet au 5 août: 645 €, 
-
-  Des réductions sont proposées quand des inscriptions nous parviennent groupées (frères, sœurs, cousins ou voisins, copains,…) :– 2% pour deux enfants et – 3% pour trois enfants
-
-
-  En sus : 3.72 € d’adhésion à l’association des Amis de la Ligue 52
-
-
-  **Aides possibles :** chèques vacances et bons CAF acceptées, séjours en cours d’habilitation Pass Colos (CAF) et Colos apprenantes. Possibilité devis. Nous contacter.
+tarifs: "**Tarifs et inscriptions :** formulaires d'inscription à venir"
 show_adhesion: false
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748944385/enforeste-toi-2024-01_ktr1mm.jpg
