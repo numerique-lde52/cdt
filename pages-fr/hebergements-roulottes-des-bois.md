@@ -49,15 +49,14 @@ tech-description: >-
   * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site).
 show_nearby: true
 tarifs: >-
-  
-
-  * Forfait : 60 € par roulotte/nuitée + 10,50 € par adulte et 7 € par enfant de moins de 16 ans.
+  * Forfait : 60 € par roulotte/nuitée + 10,50 € par adulte et 7 € par enfant de
+  moins de 16 ans.
 
   * Tarifs dégressifs à partir de 3 nuitées.
 
   * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
 
-  * Adhésion à la Ligue de l’enseignement 52* : 10,58€/foyer/an
+  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
 
 
   **Option :**
