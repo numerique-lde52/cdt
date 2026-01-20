@@ -40,17 +40,14 @@ intro: >-
   Le confort est minimaliste mais quelle expérience !  La forêt tout autour bruisse de mille bruits …
 show_nearby: false
 tarifs: >-
-  
-
-
   **Prix de la location :**
 
 
-  Tarif normal : **50 €/cabane à la nuitée**  (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et taxe de séjour 0.22€/adulte/nuit)
+  Tarif normal : **50 €/cabane à la nuitée**  (+ Adhésion annuelle aux Amis de la Ligue (10€/foyer) et taxe de séjour 0.22€/adulte/nuit)
 
 
   Tarif spécial Randonneurs (pédestre, équestre, cyclo) : 40 €/cabane à la
-   nuitée (+ adhésion Ligue de l’enseignement 52* (10,58€/foyer/an) et 
+   nuitée (+Adhésion annuelle aux Amis de la Ligue (10€/foyer) et 
   taxe de séjour 0.22€/adulte)
 
 
