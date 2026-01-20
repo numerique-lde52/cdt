@@ -49,6 +49,8 @@ tarifs: >-
   * Forfait : 18 € par lodge/nuitée + 5 € par adulte et 2,50 € par enfant de
   moins de 16 ans.
 
+  * Option électricité (point lumineux supplémentaire et accès prise : 2€/nuitée.
+
   * Tarifs dégressifs à partir de 3 nuitées.
 
   * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
