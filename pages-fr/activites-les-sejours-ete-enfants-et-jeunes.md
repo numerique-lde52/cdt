@@ -9,12 +9,12 @@ intro: >-
   Des vacances tranquilles à vivre dans la nature.
 
 
-  Eté 2026, 2 séjours sont proposés, dates à venir :
+  Eté 2026, 2 séjours sont proposés  :
 
 
-  * 7/11 ans
+  * **7/11 ans : 11 au 18 juillet 2026**
 
-  * 10/14 ans
+  * **10/14 ans : 21 au 31 juillet 2026**
 show_nearby: false
 tarifs: "**Tarifs et inscriptions :** formulaires d'inscription à venir"
 show_adhesion: false
