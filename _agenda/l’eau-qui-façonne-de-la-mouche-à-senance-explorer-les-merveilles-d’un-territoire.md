@@ -18,6 +18,6 @@ intro: >-
   par le Centre d'Initiation à la Nature d'Auberive
 title-en: test en
 intro-en: yolo en
-date_start: 2025-02-20T09:00:00.000Z
-date_end: 2025-02-23T17:00:00.000Z
+date_start: 2026-02-20T09:00:00.000Z
+date_end: 2026-02-23T17:00:00.000Z
 ---
