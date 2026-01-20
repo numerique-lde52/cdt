@@ -46,7 +46,7 @@ tarifs: >-
 
   * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
 
-  * Adhésion à la Ligue de l’enseignement 52* : 10,58€/foyer/an
+  * Adhésion annuelle aux Amis de la Ligue (10€/foyer)
 
 
   **Option :**
