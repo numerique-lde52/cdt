@@ -10,18 +10,18 @@ intro: >-
 tech-description: ""
 show_nearby: false
 tarifs: |-
-  
   **Tarifs ânes:**
 
   1/2 journée : **40 €/ âne – 35 € par âne supplémentaire** 
 
   Journée : **60 €/ âne – 50 € par âne supplémentaire** 
 
-
   **Tarifs guide ânier** :
 
-  **300 € /jour
+  **300 € / jour
   150 € / demie- journée**
+
+  **Adhésion annuelle aux Amis de la Ligue (10€/foyer)**
 show_adhesion: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768217048/20220529_114234_x0wklz.jpg
