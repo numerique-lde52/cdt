@@ -67,16 +67,13 @@ tarifs: >-
 
   * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
 
-  * Adhésion à la Ligue de l’enseignement 52* : 10,58€/foyer/an
-
+  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
 
 
   **Option :**
 
 
   * branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
-
-
 
 
   Tarifs groupes, séjours : nous contacter.
