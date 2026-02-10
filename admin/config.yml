@@ -111,7 +111,7 @@ collections:
         hint: Afficher le texte sur les structures communes. Valable pour les hébergements sur le Camping et les nids.
         required: true
 
-      - label: Tarifs
+      - label: Tarifs - NE PAS REMPLIR ICI > VOIR FICHIER CALC
         name: tarifs
         hint: NE PAS REMPLIR ICI > VOIR FICHIER CALC
         widget: markdown  
