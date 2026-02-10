@@ -9,7 +9,7 @@ intro: >-
   Ligue de l’enseignement de Haute-Marne.
 
 
-  Il est géré par la Ligue de l’enseignement de Haute-Marne et mis en musique par une petite équipe de 3 animateurs et quelques poignées de bénévoles.
+  Il est géré par la Ligue de l’enseignement de Haute-Marne et mis en musique par une petite équipe de 3 animatrices et animateurs, ainsi qu'une équipe de super bénévoles.
 show_nearby: false
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768232012/PXL_20250424_105111979_zl7sqx.jpg

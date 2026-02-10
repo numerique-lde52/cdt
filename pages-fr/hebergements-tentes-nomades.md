@@ -29,7 +29,7 @@ tech-description: >-
   **En intérieur, chaque tente propose :** 
 
 
-  * Un espace nuit équipé de 3 (ou 4) lits simple en bois de hêtre avec matelas, draps, couette et oreiller.
+  * Un espace nuit équipé de 3 (ou 4) lits simple en bois de hêtre avec matelas, draps, couette et oreillers. **Attention, le linge de toilette n’est pas fourni**.
 
   * Un espace vie quotidienne avec table basse et sièges bas en bois
 
@@ -41,7 +41,9 @@ tech-description: >-
 
   * 1 table bois avec bancs
 
-  * 1 carriole à bras pour le transport des affaires.
+  * 1 carriole à bras pour le transport des affaires
+
+  * 1 bidon d’eau de 10 l à recharger aux bornes eau sur le terrain de camping
 show_nearby: true
 tarifs: >-
   * Forfait : 50 € par tente/nuitée + 10,50 € par adulte et 7 € par enfant de

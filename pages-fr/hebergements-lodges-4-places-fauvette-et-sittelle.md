@@ -28,7 +28,7 @@ tech-description: >-
   **En intérieur, chaque lodge propose :**
 
 
-  * 1 chambre avec 1 lit double 140 x 190 avec matelas, draps, couette et oreiller.
+  * 1 chambre avec 1 lit double 140 x 190 avec matelas, draps, couette et oreillers.
 
   * 1 chambre avec 2 lit simples 80 x 190 avec matelas, draps, couettes et oreillers.
 
@@ -68,7 +68,7 @@ tarifs: >-
   **Option :**
 
 
-  *  branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
+  * branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
 
 
   Tarifs groupes, séjours : nous contacter.
@@ -92,7 +92,7 @@ documents:
 order: "050"
 layout: hebergement
 ---
-Les lodges "Fauvette et Sitelle" sont 3 charmantes cabanes sur pilotis, en bois et toile bâchée avec terrasse semi-abritée. Les cabanes sont isolées et peuvent être chauffées.
+Les lodges "Fauvette et Sitelle" sont 2 charmantes cabanes sur pilotis, en bois et toile bâchée avec terrasse semi-abritée. Les cabanes sont isolées et peuvent être chauffées.
 
 Chacune d’elle accueille une famille ou un groupe de 4 personnes.
 

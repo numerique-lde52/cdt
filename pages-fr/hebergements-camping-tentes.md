@@ -1,6 +1,6 @@
 ---
 published: true
-permalink: /hebergements/camping-de-la-cigogne-noire/
+permalink: /hebergements/camping-tentes/
 title: Camping tentes
 category: Hébergements
 show_booking_button: true
@@ -27,7 +27,7 @@ tech-description: >-
   A proximité des emplacements :
 
 
-  * 2 espaces sanitaires collectifs équipés pour la vaisselle, avec douches (eau chaude) au milieu du camping et un deuxième avec douches, WC et bacs vaisselle pour les sanitaires situés à côté de l’accueil.
+  * 2 espaces sanitaires collectifs équipés pour la vaisselle, avec douches au milieu du camping et un deuxième avec douches, WC et bacs vaisselle pour les sanitaires situés à côté de l’accueil.
 
   * Possibilité de barbecue à proximité de la maison forestière sur un espace dédié.
 
@@ -35,8 +35,7 @@ tech-description: >-
 
   * 1 parking non surveillé en bordure de l’écodomaine pour votre véhicule (10 places). Les déplacements à l’intérieur du camping se font à pied.
 
-
-    *Le camping de la cigogne noire est à côté des hébergements meublés de Chemins de Traverse (10 hébergements) et d’un espace réservé aux accueils de groupes (ponctuels). Le site est vaste, plus de 2 hectares, il y a de la place pour tous et nous veillons à ce que chacun trouve quiétude et intimité.*
+  *Le camping est à côté des hébergements meublés de Chemins de Traverse (10 hébergements) et d’un espace réservé aux accueils de groupes (ponctuels). Le site est vaste, plus de 2 hectares, il y a de la place pour tous et nous veillons à ce que chacun trouve quiétude et intimité.*
 show_nearby: true
 tarifs: >-
   * Forfait : 8 € par emplacement/nuitée + 5 € par adulte et 2,50 € par enfant

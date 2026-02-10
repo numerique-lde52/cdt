@@ -16,7 +16,7 @@ tech-description: >-
   ## Le pont Griselin
 
 
-    Distance : 6 km (au départ du gîte de Charbonnière)
+    Distance : 6 km (au départ du CIN Chemins de traverse)
 
 
     Durée à pied : 1h30

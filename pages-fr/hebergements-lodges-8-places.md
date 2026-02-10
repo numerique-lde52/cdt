@@ -28,7 +28,7 @@ tech-description: >-
   **En intérieur, chaque lodge propose :**
 
 
-  * 1 chambre avec 1 lit double 140 x 190 avec matelas, draps, couette et oreiller.
+  * 1 chambre avec 1 lit double 140 x 190 avec matelas, draps, couette et oreillers.
 
   * 1 chambre avec 2 lit simples 80x190 avec matelas, draps, couettes et oreillers.
 

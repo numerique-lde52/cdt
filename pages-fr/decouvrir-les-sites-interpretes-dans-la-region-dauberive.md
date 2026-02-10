@@ -30,19 +30,19 @@ Vallon secret, vallon discret, le vallon du Val Clavin (littéralement, «le val
 
 Découverte d’1h30 en aller et retour.
 
-Retrouvez le livret d’accompagnement à la découverte [recto](https://chemindetraverse52.org/wp-content/uploads/2023/12/recto-val-clavin-9.pdf) et [verso](https://chemindetraverse52.org/wp-content/uploads/2023/12/verso-val-clavin-6.pdf) (disponible en livret à l'accueil)
+[Retrouvez le livret d’accompagnement à la découverte](/assets/uploads/brochure-val-clavin_compressed.pdf){:target="_blank"} disponible en livret à l'accueil.
 
 ### Le lac de Villegusien
 
 (20 kms d’Auberive) l’un des 4 lacs de Langres situé à 12 kms au sud de la ville en direction de Dijon.
 Un sentier de découverte propose de comprendre la construction de ce barrage réservoir (à l’époque, pour alimenter en eau le canal de la Marne à la Saône) et donne également diverses informations sur l’écologie remarquable du site. Observatoire à oiseaux, baignade surveillée, résidence de tourisme, gîtes et camping. Destination rando au départ d’Auberive. 
 
-Festival de musique du Chien à Plumes le 2ème WE d’août.
+Festival de musique du Chien à Plumes le 1er week-end d’août.
 
  - [En savoir plus](https://www.bienvenue-hautemarne.fr/nature-preservee/lacs/vingeanne/tour/)
  - Retrouvez le [livret de découverte des aménagements et paysages du lac de la Vingeanne, ](https://adt52.media.tourinsoft.eu/upload/Sentier-decouverte-lac-vingeanne-amenagement-et-paysage.pdf)
  - [le livret de découverte des différents milieux, ](https://adt52.media.tourinsoft.eu/upload/Sentier-decouverte-lac-vingeanne-les-milieux.pdf)
- - [le livret de découverte au fil des saisons, ](https://adt52.media.tourinsoft.eu/upload/Sentier-decouverte-lac-vingeanne-les-milieux.pdf)
+ - [le livret de découverte au fil des saisons, ](https://adt52.media.tourinsoft.eu/upload/Sentier-decouverte-lac-vingeanne-les-saisons.pdf)
  - [le livret de détermination des oiseaux.](https://adt52.media.tourinsoft.eu/upload/Sentier-decouverte-lac-vingeanne-determination-des-oiseaux.pdf)
 
 
@@ -61,7 +61,7 @@ végétation particulière à tendance sub-montagnarde. Un sentier en boucle d�
 8 kms d’Auberive
 
 
-«Naissance d’une rivière, naissance d’une industrie». La présence de l’eau, du bois et du minerai de fer a rendu possible le développement d’une activité métallurgique dans la haute vallée de l’Aube. De l’antiquité jusqu’au XIXème siècle, le savoir-faire relatif au travail du fer n’a cessé de se perfectionner sur ce plateau de Langres . Les «moines blancs» des abbayes cisterciennes locales ont contribué à cet essor dès le XIIIème siècle. La révolution industrielle est passée par là apportant ses lots d’espoirs et de déceptions. Le sentier de découverte fait revivre cet épopée. La cabane du Charbonnier est l’une des 8 cabanes nature d’Auberive et une halte sympathique pour un pique-nique ou une nuit au coin du feu.
+«Naissance d’une rivière, naissance d’une industrie». La présence de l’eau, du bois et du minerai de fer a rendu possible le développement d’une activité métallurgique dans la haute vallée de l’Aube. De l’antiquité jusqu’au XIXème siècle, le savoir-faire relatif au travail du fer n’a cessé de se perfectionner sur ce plateau de Langres . Les «moines blancs» des abbayes cisterciennes locales ont contribué à cet essor dès le XIIIème siècle. La révolution industrielle est passée par là apportant ses lots d’espoirs et de déceptions. Le sentier de découverte fait revivre cette épopée. La cabane du Charbonnier est l’une des 8 cabanes nature d’Auberive et une halte sympathique pour un pique-nique ou une nuit.
 
 [En savoir plus](https://www.bienvenue-hautemarne.fr/sit/auberive-source-de-laube-pnacha052v5003pk/)
 
@@ -77,6 +77,16 @@ La cabane du Charbonnier et sa «meule» est l’une des 8 cabanes nature d’Au
 ### Les pelouses de Villemoron 
 
 (17 kms d’Auberive)
+
+La Réserve Naturelle Régionale des Pelouses et Bois de Villemoron comprend un ensemble remarquable de pelouses calcaires et de chênaie pubescente qui abrite une richesse écologique exceptionnelle.
+
+Deux sentiers d'interprétation vous permettent de découvrir cette magnifique réserve.
+
+ * [Le sentier "Sur la piste des premiers paysans" qui vous fait remonter presque 20.000 ans d'histoire.](https://reserve-pelouses-villemoron.org/sites/default/files/telechargement/carte_sentier_neolithique.pdf)
+
+ * [Le "sentier de la mante religieuse"](https://reserve-pelouses-villemoron.org/sites/default/files/telechargement/carte_sentier_mante.pdf)
+
+[Site de la Réserve Naturelle Régionale des Pelouses et bois de Villemoron](https://reserve-pelouses-villemoron.org/)
 
 ### Les Sentes secrètes du Val d’Esnoms 
 
@@ -98,6 +108,6 @@ Surplombant le typique village de Bay sur Aube et son église du XII ème siècl
 
 à l’ancienne gare de Vaillant (10 kms d’Auberive): un petit jardin plein de trucs et d’astuces pour cultiver la nature au jardin tout en produisant de belles fleurs et de beaux légumes ! La cabane du Jardinier est l’une des 8 cabanes nature d’Auberive.
 
-Retrouvez l’univers du Père Labidouille : [son jardin](https://chemindetraverse52.org/wp-content/uploads/2023/12/recto-6.pdf) et [le jardin de la Régie Rurale](https://chemindetraverse52.org/wp-content/uploads/2023/12/verso-8.pdf) (maraîchage bio porté par une Structure d’Insertion par l’Activité Economique)
+Retrouvez l’univers du Père Labidouille : [son jardin](/assets/uploads/jardin-pere-labidouille.pdf){:target="_blank"} et [le jardin de la Régie Rurale](/assets/uploads/jardin-regie-rurale-vaillant.pdf){:target="_blank"} (maraîchage bio porté par une [Structure d’Insertion par l’Activité Economique](https://www.regierurale.fr/))
 
 

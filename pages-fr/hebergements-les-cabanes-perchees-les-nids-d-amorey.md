@@ -26,18 +26,16 @@ intro: >-
 
   Situés en haut du vallon d’Amorey, au cœur de la forêt d’Auberive, 
 
-  les 3 nids d’Amorey sont des cabanes en osier perchées à 3 m au dessus 
-
-  du sol.
+  les 3 nids d’Amorey sont des cabanes en osier perchées à 3 m au dessus du sol.
 
 
   Les nids d’Amorey vous offrent une approche originale et sensible du milieu naturel, en toute quiétude.
 
 
-  Les bâches qui les recouvrent sont amovibles. Vous choisissez de dormir à l’abri ou la tête dans les étoiles  !
+  Les bâches qui les recouvrent sont amovibles. Vous choisissez de dormir à l’abri ou la tête dans les étoiles !
 
 
-  Le confort est minimaliste mais quelle expérience !  La forêt tout autour bruisse de mille bruits …
+  Le confort est minimaliste mais quelle expérience ! La forêt tout autour bruisse de mille bruits …
 show_nearby: false
 tarifs: >-
   **Prix de la location :**
@@ -71,13 +69,9 @@ documents:
 order: "080"
 layout: hebergement
 ---
-Regroupées dans un même lieu, les 3 nids d’Amorey vous permettent de 
-venir en famille ou en groupe (jusqu’à 9 adultes ou 6 adultes et 6 
-enfants).
+Regroupés dans un même lieu et distants d'une centaine de mètres chacun, les 3 nids d’Amorey vous permettent de venir en famille ou en groupe (jusqu’à 9 adultes ou 6 adultes et 6 enfants).
 
-Un parc électrifié et arboré (50 m x 30 m) à coté des cabanes permet 
-d’accueillir des ânes ou des chevaux pour la nuitée (pensez à apporter 
-du foin si chevaux).
+Un parc électrifié et arboré (50 m x 30 m) à coté des cabanes permet d’accueillir des ânes ou des chevaux pour la nuitée (pensez à apporter du foin si chevaux).
 
 Un toilette sèche est disponible pour les 3 nids.
 
@@ -87,9 +81,9 @@ Un nid d’Amorey est loué avec **1 kit de matériel** comprenant :
 
 *4 matelas gonflables Thermarest (190 x 70 x 3 cm)* 
 
- *1  réchaud à gaz  et 1 popote complète pour 4 personnes.*
+ *1 réchaud à gaz et 1 popote complète pour 4 personnes.*
 
- *1 bidon d’eau  en plastique alimentaire et 1 vache à eau en toile de lin*
+ *1 bidon d’eau en plastique alimentaire et 1 vache à eau en toile de lin*
 
  *1 douche solaire*
 
@@ -97,12 +91,8 @@ Un nid d’Amorey est loué avec **1 kit de matériel** comprenant :
 
 
 
-**Avertissements :**
-
-Les nids d’Amorey se réservent si possible 1 semaine à l’avance (envoi et signature du contrat et versement de la caution)
+**Avertissements :** Les nids d’Amorey se réservent si possible 1 semaine à l’avance (envoi et signature du contrat et versement de la caution).
 
 Les mineurs doivent systématiquement être accompagnés par une personne majeure pour monter dans les nids.
 
-**Dates d’ouverture :**
-
-du 1er mai au 30 septembre
+**Dates d’ouverture :** du 1er mai au 31 août 2026
