@@ -29,22 +29,17 @@ layout: default
   {%- if event_timestamp > reference_time -%}
     <div class="col">
       <div class="card shadow-sm">
-
         <div class="card-body">
+          <h2 class="card-title">{{ event.title }}</h2>
           <h6 class="card-subtitle mb-2 text-body-secondary">
-          {%- include date_fr.html date_to_print=event.date_start -%}
+          du {%- include date_fr.html date_to_print=event.date_start -%}<br>
+          au {%- include date_fr.html date_to_print=event.date_end -%}
           </h6>
-          <h5 class="card-title">{{ event.title }}</h5>
           <p class="card-text">{{ event.intro }}</p>      
-
           <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
+            <a class="btn btn-primary btn-sm" href="{{ event.url }}">En savoir plus</a>
           </div>
-
         </div>
-
        </div>
     </div>
   {%- endif -%}

@@ -1,36 +1,37 @@
-
-{% if site.print-includes-boundaries-comments == true %}
+{%- if site.print-includes-boundaries-comments == true %}
 <!-- _includes/date-fr.html -->
-{% endif %}
-
-<h4>from include date_fr.html</h4>
-Passed argument = {{ include.date_to_print }}
-<hr>
-
-{% assign the_date = include.date_to_print %}
-
-{% assign dayFR = the_date | date: "%d " %}
-{{ dayFR }}
-{% assign monthFR = the_date | date: "%m" %}
-  {% case monthFR %}
-    {% when "01" %}Janvier
-    {% when "02" %}Février
-    {% when "03" %}Mars
-    {% when "04" %}Avril
-    {% when "05" %}Mai
-    {% when "06" %}Juin
-    {% when "07" %}Juillet
-    {% when "08" %}Août
-    {% when "09" %}Septembre
-    {% when "10" %}Octobre
-    {% when "11" %}Novembre
-    {% when "12" %}Décembre
-    {% else %}{{ monthFR }}
+{%- endif %}
+{%- assign the_date = include.date_to_print %}
+{%- assign dayFR = the_date | date: "%u" %}
+  {%- case dayFR %}
+    {%- when "1" %}Lundi
+    {%- when "2" %}Mardi
+    {%- when "3" %}Mercredi
+    {%- when "4" %}Jeudi
+    {%- when "5" %}Vendredi
+    {%- when "6" %}Samedi
+    {%- when "7" %}Dimanche
+    {%- else %}{{ dayFR }}
+  s{%- endcase %}
+{{ the_date | date: "%d " }}
+{%- assign monthFR = the_date | date: "%m" %}
+  {%- case monthFR %}
+    {%- when "01" %}Janvier
+    {%- when "02" %}Février
+    {%- when "03" %}Mars
+    {%- when "04" %}Avril
+    {%- when "05" %}Mai
+    {%- when "06" %}Juin
+    {%- when "07" %}Juillet
+    {%- when "08" %}Août
+    {%- when "09" %}Septembre
+    {%- when "10" %}Octobre
+    {%- when "11" %}Novembre
+    {%- when "12" %}Décembre
+    {%- else %}{{ monthFR }}
   s{% endcase %}
-{% assign yearFR = the_date | date: " %Y" %} 
-{{ yearFR }}
-
-{% if site.print-includes-boundaries-comments == true %}
+{{ the_date | date: "%Y" }} - 
+{{ the_date | date: "%H" }}h{{ the_date | date: "%M" }}
+{%- if site.print-includes-boundaries-comments == true %}
 <!-- end _includes/date-fr.html -->
-{% endif %}
-
+{%- endif %}

@@ -227,7 +227,7 @@ collections:
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu. 010, 020, ...
 
   - name: agenda
-    {% raw %}summary: "{{date_start | date('YYYY-MM-DD')}} - {{title}}"{% endraw %}
+    {% raw %}summary: "{{date_start | date('DD-MM-YYYY')}} - {{title}}"{% endraw %}
     label: Agenda
     folder: _agenda
     create: true
@@ -237,16 +237,12 @@ collections:
         name: title
         widget: string
 
-      - label: Description
+      - label: Introduction
         name: intro
         widget: markdown
 
-      - label: Title EN
-        name: title-en
-        widget: string
-
-      - label: Description EN
-        name: intro-en
+      - label: Texte
+        name: texte
         widget: markdown
 
       - label: Date début
