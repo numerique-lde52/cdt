@@ -1,0 +1,14 @@
+Annee,Periode_ouverture_debut,Periode_ouverture_fin,Adjectif_1,Adjectif_2,Id,Type_hebergement,Type_hebergement_pluriel,Nom_hebergement,Capacite,Locatif,Prix_base,Tarif_adulte,Tarif_enfant,Reduc_mob_douces,Nuits_mini,Tarifs_degressifs,Caution,Taxe_sejour,Adhesion_ligue,Assurance_annul,Options
+2026,13 avril 2026,31 octobre 2026,Les,aux,roulotte,Roulotte,Roulottes,“Lucine” ou “Aurore”,4,"Les roulottes «Aurore» et «Lucine» sont prévues pour 4 personnes (1 lit double 140 x 190 cm, 1 lit superposé de 2 lits 80 x 190 cm). 
+Il est mis à votre disposition une table de jardin avec 4 chaises.
+",65,10.5,7,10,,"3 nuits -5%, 4 nuits -10%, 5 nuits -15%, 6 nuits -15%, 7 nuits et plus -20%",200,0.22,10,2,
+2026,13 avril 2026,31 octobre 2026,Le,au,lodge2,Lodge,Lodge,“Salamandre”,2,"Le lodge « Salamandre » est prévue pour 2 personnes (2 lits de 90 x 190 cm).
+Il est mis à votre disposition une table de jardin avec 2 chaises.",20,5,2.5,10,,"3 nuits -5%, 4 nuits -10%, 5 nuits -15%, 6 nuits -15%, 7 nuits et plus -20%",200,0.22,10,2, - électricité (point lumineux supplémentaire et accès prise : 2€/nuitée.
+2026,13 avril 2026,31 octobre 2026,Les,aux,lodge4,Lodge,Lodges,“Sittelle” ou “Fauvette”,4,"Les lodges « Sittelle et Fauvette » sont prévus pour 4 personnes (1 lit double 140 x 190 cm, 2 lits de 90 x 190 cm).
+Il est mis à votre disposition une table de jardin avec 5 chaises.",55,17.5,12,10,2,"3 nuits -5%, 4 nuits -10%, 5 nuits -15%, 6 nuits -15%, 7 nuits et plus -20%",200,0.22,10,2, - branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
+2026,13 avril 2026,31 octobre 2026,Les,aux,lodge8,Lodge,Lodges,"“Nivéole”, “Cardamine” ou “Reine des prés”",8,"Les lodges « Nivéole, cardamine et reine des prés » sont prévus pour 8 personnes (+1 personne supplémentaire)
+(1 lit double 140 x 190, 2 lits simples (90 X 190), 2 lits superposés (80 X 190) + 1).
+Il est mis à votre disposition une table de jardin avec 8 chaises.",60,17.5,12,10,2,"3 nuits -5%, 4 nuits -10%, 5 nuits -15%, 6 nuits -15%, 7 nuits et plus -20%",200,0.22,10,2, - branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
+2026,13 avril 2026,31 octobre 2026,Les,aux,tente,Tente,Tentes,“Aubépine” ou “Clématite”,3 ou 4,"Les tentes « Aubépine » et « Clématite» sont prévues pour 3 et 4 personnes (3 et 4 lits simples 80 x 190 cm).
+Il est mis à votre disposition une table de jardin avec bancs.",55,10.5,7,10,,"3 nuits -5%, 4 nuits -10%, 5 nuits -15%, 6 nuits -15%, 7 nuits et plus -20%",200,0.22,10,2,
+,,,La,à la ,chambre,Chambre,Chambres,“Chambre aux papillons”,4,,,18,12,,,"3 nuits -5%, 4 nuits -10%, 5 nuits -15%, 6 nuits -15%, 7 nuits et plus -20%",,0.6,10,2, - draps : 7 €/séjour

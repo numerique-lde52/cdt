@@ -61,26 +61,7 @@ layout: default
     {% if page.tarifs %}
     <div class="col-12 col-md-6 text-bg-light rounded m-2 p-3">
       <h2>tarifs</h2>
-
-{% assign t = site.data.donnees-hebergements  | where: "Id", page.id | first %}
-<ul>
-  <li>{% if t.Prix_base %}Forfait : {{ t.Prix_base }} € par {{ t.Type_hebergement }}/nuitée + {% endif %}
-  {{ t.Tarif_adulte }} € par adulte et {{ t.Tarif_enfant }} € par enfant de moins de 16 ans.</li>
-  {% if t.Nuits_mini %}<li><strong>{{ t.Nuits_mini }} nuitées minimum,</strong></li>{% endif %}
-  <li>Tarifs dégressifs à partir de 3 nuitées ({{ t.Tarifs_degressifs }})</li>
-  <li>Taxe de séjour en sus : {{ t.Taxe_sejour }} €/personne adulte/nuitée</li>
-  <li>Adhésion annuelle aux Amis de la Ligue : {{ t.Adhesion_ligue }} €/foyer</li>
-</ul>
-
-{% if t.Options %}
-<p><strong>Options : </strong></p>
-  {{ t.Options | markdownify }}
-{% endif %}
-
-{% if t.Caution %}<p>Caution demandée : {{ t.Caution }} €/hébergement</p>{% endif %}
-
-<p>Tarifs groupes, séjours : <a href="/nous-contacter">nous contacter</a>.</p>
-
+      {{ page.tarifs | markdownify }}
     </div>
     {% endif %}
     {% if page.show_adhesion %}

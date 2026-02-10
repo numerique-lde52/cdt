@@ -1,7 +1,8 @@
 ---
 published: true
-permalink: /hebergements/hebergement-d-etape/
+permalink: /hebergements/chambre-aux-papillons/
 title: La chambre aux papillons
+id: chambre
 category: Hébergements
 show_booking_button: false
 intro: Vous souhaitez faire une étape sur votre itinéraire de randonnée, vous
@@ -10,15 +11,7 @@ intro: Vous souhaitez faire une étape sur votre itinéraire de randonnée, vous
   goûter à la quiétude du lieu !
 tech-description: ""
 show_nearby: false
-tarifs: |-
-  * 18 € par adulte et 12 € par enfant de moins de 16 ans.
-  * Tarifs dégressifs à partir de 3 nuitées
-  * Taxe de séjour en sus : 0.60 €/personne adulte/nuitée
-  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
-
-  **Option :**
-
-  * option draps : 7 €/séjour
+tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
 show_rent_conditions: true
 gallery:

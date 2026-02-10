@@ -113,6 +113,7 @@ collections:
 
       - label: Tarifs
         name: tarifs
+        hint: NE PAS REMPLIR ICI > VOIR FICHIER CALC
         widget: markdown  
         required: false
 

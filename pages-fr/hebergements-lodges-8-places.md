@@ -59,29 +59,8 @@ tech-description: >-
 
   * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site).
 show_nearby: true
-tarifs: >-
-  * Forfait : 55 € par lodge/nuitée + 17,50 € par adulte et 12 € par enfant de
-  moins de 16 ans.
-
-  * 2 nuitées minimum, tarifs dégressifs à partir de 3 nuitées.
-
-  * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
-
-  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
-
-
-  **Option :**
-
-
-  * branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
-
-
-  Tarifs groupes, séjours : nous contacter.
-
-
-  Caution demandée : 200 €/lodge
+tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768217659/PXL_20250430_141446380_2_d5pepm.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240959/PXL_20250709_090306427_brzgwa.jpg
@@ -94,6 +73,8 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "040"
 layout: hebergement
+id: lodge8
+show_rent_conditions: true
 ---
 Les lodges "Reine des prés", "Cardamine" et "Nivéole" sont 3 charmantes cabanes sur pilotis, en bois et toile bâchée avec terrasse semi-abritée. Les cabanes sont isolées et peuvent être chauffées.
 

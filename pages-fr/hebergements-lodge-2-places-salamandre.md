@@ -45,21 +45,8 @@ tech-description: >-
 
   * 1 carriole à bras pour le transport des affaires sur l’éco camping (les voitures restent sur le parking en bordure du site).
 show_nearby: true
-tarifs: >-
-  * Forfait : 18 € par lodge/nuitée + 5 € par adulte et 2,50 € par enfant de
-  moins de 16 ans.
-
-  * Option électricité (point lumineux supplémentaire et accès prise : 2€/nuitée.
-
-  * Tarifs dégressifs à partir de 3 nuitées.
-
-  * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
-
-  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
-
-  * Tarifs groupes, séjours : nous contacter.
+tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752241978/PXL_20250709_090530051_zcloqx.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669624/PXL_20250606_090302583_2_gyqcmq.jpg
@@ -73,6 +60,8 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "060"
 layout: hebergement
+id: lodge2
+show_rent_conditions: true
 ---
 Le lodge « Salamandre » est une charmante proposition pour les amoureux de la nature !
 

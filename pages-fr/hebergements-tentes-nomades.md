@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
+id: tente
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div
@@ -45,21 +46,7 @@ tech-description: >-
 
   * 1 bidon d’eau de 10 l à recharger aux bornes eau sur le terrain de camping
 show_nearby: true
-tarifs: >-
-  * Forfait : 50 € par tente/nuitée + 10,50 € par adulte et 7 € par enfant de
-  moins de 16 ans.
-
-  * Tarifs dégressifs à partir de 3 nuitées.
-
-  * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
-
-  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
-
-
-  Tarifs groupes, séjours : nous contacter.
-
-
-  Caution demandée : 200 €/tente
+tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
 show_rent_conditions: true
 gallery:

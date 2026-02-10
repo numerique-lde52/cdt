@@ -48,29 +48,8 @@ tech-description: >-
 
   * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site).
 show_nearby: true
-tarifs: >-
-  * Forfait : 60 € par roulotte/nuitée + 10,50 € par adulte et 7 € par enfant de
-  moins de 16 ans.
-
-  * Tarifs dégressifs à partir de 3 nuitées.
-
-  * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
-
-  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
-
-
-  **Option :**
-
-
-  *  branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
-
-
-  Tarifs groupes, séjours : nous contacter.
-
-
-  Caution demandée : 200 €/roulotte
+tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682616/roulotte-des-bois_e7bc7q.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682449/20230717_auberive_celine-lecomte2p_nadq1v.jpg
@@ -82,6 +61,8 @@ documents:
     link_text: Téléchargez les conditions générales de vente
 order: "030"
 layout: hebergement
+id: roulotte
+show_rent_conditions: true
 ---
 
 Un petit cocon confortable pour vivre tout près de la grande forêt d’Auberive, de ses 

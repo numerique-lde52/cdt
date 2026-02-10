@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/camping-tentes/
 title: Camping tentes
+id: camping-tentes
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div
@@ -62,7 +63,7 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682941/pxl_20240729_211135836.night-corrected2_dsdrgi.jpg
 documents: []
 order: "070"
-layout: hebergement
+layout: hebergement-v2
 ---
 Posez votre tente dans la vaste prairie bordée par le ruisseau qui descend du marais et par les vigoureuses haies qui abritent une précieuse petite faune sauvage !
 

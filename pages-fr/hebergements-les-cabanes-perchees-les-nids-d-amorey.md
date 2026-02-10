@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/les-cabanes-perchees-les-nids-damorey/
 title: Les Cabanes perchées "les nids d'Amorey"
+id: nids-amorey
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div
@@ -67,7 +68,7 @@ documents:
   - url: /assets/uploads/conditions-de-location-des-nids-perches-d-amorey-2025.pdf
     link_text: Téléchargez les conditions générales de location
 order: "080"
-layout: hebergement
+layout: hebergement-v2
 ---
 Regroupés dans un même lieu et distants d'une centaine de mètres chacun, les 3 nids d’Amorey vous permettent de venir en famille ou en groupe (jusqu’à 9 adultes ou 6 adultes et 6 enfants).
 

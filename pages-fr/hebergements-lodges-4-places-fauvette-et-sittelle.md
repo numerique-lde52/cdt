@@ -54,29 +54,8 @@ tech-description: >-
 
   * 1 carriole à bras pour le transport des affaires sur l’écodomaine (les voitures restent sur le parking en bordure du site).
 show_nearby: true
-tarifs: >-
-  * Forfait : 50 € par lodge/nuitée + 17,50 € par adulte et 12 € par enfant de
-  moins de 16 ans.
-
-  * 2 nuitées minimum, tarifs dégressifs à partir de 3 nuitées.
-
-  * Taxe de séjour en sus : 0.22 €/personne adulte/nuitée
-
-  * Adhésion annuelle aux Amis de la Ligue : 10€/foyer
-
-
-  **Option :**
-
-
-  * branchement électrique 220V : 5 €/jour du 16/06 au 30/08 et 8 €/jour du 15/04 au 15/05 et du 1er/09 au 31/10.
-
-
-  Tarifs groupes, séjours : nous contacter.
-
-
-  Caution demandée : 200 €/lodge
+tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240400/PXL_20250627_182712034_jboxfk.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682793/pxl_20250414_140621026_is4cxu.jpg
@@ -91,6 +70,8 @@ documents:
     link_text: Téléchargez les conditions générales de location
 order: "050"
 layout: hebergement
+id: lodge4
+show_rent_conditions: true
 ---
 Les lodges "Fauvette et Sitelle" sont 2 charmantes cabanes sur pilotis, en bois et toile bâchée avec terrasse semi-abritée. Les cabanes sont isolées et peuvent être chauffées.
 
