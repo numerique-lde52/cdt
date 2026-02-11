@@ -233,6 +233,10 @@ collections:
     create: true
     sortable_fields: ['date_start', 'title']
     fields:
+
+      - {label: "Layout", name: "layout", widget: "hidden", default: "agenda"}
+      - {label: "Lang", name: "lang", widget: "hidden", default: "fr"}
+
       - label: Title
         name: title
         widget: string

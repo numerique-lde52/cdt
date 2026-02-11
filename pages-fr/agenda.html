@@ -2,10 +2,62 @@
 published: true
 permalink: /agenda/
 category: Général
-layout: agenda
+layout: default
 title: Agenda
-intro: Blah
-gallery:
-  - /assets/uploads/affiche-jdll-18-01-25.jpg
 order: "30"
 ---
+
+<h1>{{ page.title | escape }}</h1>
+
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {%- assign reference_time = site.time | date: "%s" -%}
+      {%- assign reference_time = reference_time | minus: 86400 -%}
+      {% assign events = site.agenda | sort: "date_start" %}
+<p>Site time : {{ site.time }}</p>
+
+<ul>
+
+      {%- for event in events -%}
+      <li>{{ event.title }} - {{ event.date_start }} - {{ event.date_end }}</li>
+
+
+
+      {%- endfor -%}
+</ul>
+
+      {%- for event in events -%}
+
+        {%- assign event_timestamp = event.date_start | date: "%s" | to_integer -%}
+
+        {%- comment -%}
+          Guess if this is future current or past event
+          We compare current time to event time using timestamp (time from 1 jan 1970 also known as Unix time)
+          Future or current event must include the current day time frame, 
+          so we substract 1 day in seconds to server time to be sure that a today envents are still on our agenda.
+          today = today + 1 day in seconds (86400)
+        {%- endcomment -%}
+
+        {%- if event_timestamp > reference_time -%}
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title">{{ event.title }}</h2>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                du {%- include date_fr.html date_to_print=event.date_start -%}<br>
+                au {%- include date_fr.html date_to_print=event.date_end -%}
+                </h6>
+                <p class="card-text">{{ event.intro }}</p>      
+                <div class="d-flex justify-content-between align-items-center">
+                  <a class="btn btn-primary btn-sm" href="{{ event.url }}">En savoir plus</a>
+                </div>
+              </div>
+             </div>
+          </div>
+        {%- endif -%}
+
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

@@ -16,7 +16,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-debug: false
+debug: true
 print-includes-boundaries-comments: true
 
 collections:
@@ -28,11 +28,6 @@ collections:
   partenaires:
 
 defaults:
-  - scope:
-      type: "pages"
-    values:
-      layout: "page"
-
   - scope:
       path: "pages-fr"
     values:
