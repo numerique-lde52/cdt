@@ -8,6 +8,7 @@ order: "30"
 ---
 
 <h1>{{ page.title | escape }}</h1>
+<span class="badge text-bg-primary">Primary</span>
 
 <div class="album py-5 bg-body-tertiary">
   <div class="container">
@@ -15,15 +16,16 @@ order: "30"
       {%- assign reference_time = site.time | date: "%s" -%}
       {%- assign reference_time = reference_time | minus: 86400 -%}
       {% assign events = site.agenda | sort: "date_start" %}
+
 <p>Site time : {{ site.time }}</p>
-
 <ul>
-
       {%- for event in events -%}
-      <li>{{ event.title }} - {{ event.date_start }} - {{ event.date_end }}</li>
-
-
-
+      <li>
+        {% if event.date_end < site.time %}Past event ->>{% endif %}
+        {% if event.date_start > site.time %}Future event ->> {% endif %}
+        {% if event.date_start < site.time and event.date_end > site.time %}CURRENT event ->> {% endif %}
+        {{ event.title }} - {{ event.date_start }} - {{ event.date_end }}
+      </li>
       {%- endfor -%}
 </ul>
 
@@ -45,7 +47,11 @@ order: "30"
               <div class="card-body">
                 <h2 class="card-title">{{ event.title }}</h2>
                 <h6 class="card-subtitle mb-2 text-body-secondary">
+                  <span class="badge text-bg-primary">Primary</span>
                 du {%- include date_fr.html date_to_print=event.date_start -%}<br>
+                du {%- include date_fr.html date_to_print=event.date_start format=long -%}<br>
+                du {%- include date_fr.html date_to_print=event.date_start format=short -%}<br>
+                du {%- include date_fr.html date_to_print=event.date_start format=badge -%}<br>
                 au {%- include date_fr.html date_to_print=event.date_end -%}
                 </h6>
                 <p class="card-text">{{ event.intro }}</p>      

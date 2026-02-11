@@ -1,37 +1,115 @@
 {%- if site.print-includes-boundaries-comments == true %}
 <!-- _includes/date-fr.html -->
 {%- endif %}
+{% comment %} ===========================================
+Include that transforms a datetime to a french form
+using ruby date formating
+hints here : https://strftime.net/
+
+
+Arguments :
+
+  - date_to_print : a datetime value stored as 2026-02-16 09:00:00 +0100
+
+  - format : specifies output format for the date
+    default = long
+
+    availble formats : 
+      - long : Vendredi 20 Février 2026 - 17h00
+      - short : Ven. 20 Fév.
+      - .....
+
+=========================================== {% endcomment %}
+
 {%- assign the_date = include.date_to_print %}
-{%- assign dayFR = the_date | date: "%u" %}
-  {%- case dayFR %}
-    {%- when "1" %}Lundi
-    {%- when "2" %}Mardi
-    {%- when "3" %}Mercredi
-    {%- when "4" %}Jeudi
-    {%- when "5" %}Vendredi
-    {%- when "6" %}Samedi
-    {%- when "7" %}Dimanche
-    {%- else %}{{ dayFR }}
-  s{%- endcase %}
-{{ the_date | date: "%d " }}
-{%- assign monthFR = the_date | date: "%m" %}
-  {%- case monthFR %}
-    {%- when "01" %}Janvier
-    {%- when "02" %}Février
-    {%- when "03" %}Mars
-    {%- when "04" %}Avril
-    {%- when "05" %}Mai
-    {%- when "06" %}Juin
-    {%- when "07" %}Juillet
-    {%- when "08" %}Août
-    {%- when "09" %}Septembre
-    {%- when "10" %}Octobre
-    {%- when "11" %}Novembre
-    {%- when "12" %}Décembre
-    {%- else %}{{ monthFR }}
-  s{% endcase %}
-{{ the_date | date: "%Y" }} - 
-{{ the_date | date: "%H" }}h{{ the_date | date: "%M" }}
+
+<p>Date received : {{ the_date }}</p>
+
+{% if include.format %}
+  {%- assign format = include.format %}
+{% else %}
+  {%- assign format = "long" %}
+{% endif %}
+
+{% comment %} =====  French translation stored here ===== {% endcomment %}
+
+{% assign day_name_long = "Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche" | split: "," %}
+{% assign day_name_short = "Lun.,Mar.,Mer.,Jeu.,Ven.,Sam.,Dim." | split: "," %}
+{% assign month_name_long = "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre" | split: "," %}
+{% assign month_name_short = "Jan.,Fév.,Mar.,Avr.,Mai,Juin,Juil.,Août,Sept.,Oct.,Nov.,Déc." | split: "," %}
+
+{% comment %} ===== end translations ===== {% endcomment %}
+
+{% comment %} =====
+Set indexes from passed date to correspond to translation arrays
+As translation array have interger indexes
+and
+datetime with arguments returns string,
+we cast (force) string to integer by doing an addition
+===== {% endcomment %}
+
+{% comment %} %w retunrs a day number from 0 to 6, just add 0 to cast to integer {% endcomment %}
+{%- assign dayIndex = the_date | date: "%w" | plus: 0 %}
+
+{% comment %} %m retunrs a month number from "01" to "12", just substract 1 to cast to integer and correspond to our array that is 0 indexed{% endcomment %}
+{%- assign monthIndex = the_date | date: "%m" | minus: 1 %}
+
+
+{% comment %} ===== depending on translation available day and month values ===== {% endcomment %}
+{% assign date_day_name_long = day_name_long[dayIndex] %}
+<p>date_day_name_long : {{ date_day_name_long }}</p>
+{% assign date_day_name_short = day_name_short[dayIndex] %}
+<p>date_day_name_short : {{ date_day_name_short }}</p>
+
+<h1>Now month</h1>
+<p>monthIndex {{ monthIndex }}</p>
+{% assign month_name_long = month_name_long[monthIndex] %}
+<p>month_name_long : {{ month_name_long }}</p>
+{% assign month_name_short = month_name_short[monthIndex] %}
+<p>month_name_short : {{ month_name_short }}</p>
+
+{% comment %}
+Set other date values independant of current translation
+{% endcomment %}
+
+{% assign year_long = the_date | date: "%Y"%}
+<p>year_long : {{ year_long }}</p>
+
+{% assign day_number = the_date | date: "%d"%}
+<p>day_number : {{ day_number }}</p>
+
+{% assign hour = the_date | date: "%H"%}
+<p>hour : {{ hour }}</p>
+
+{% assign minutes = the_date | date: "%M"%}
+<p>minutes : {{ minutes }}</p>
+
+
+
+
+{% comment %}
+============== Now depending on format passed, print the date
+{% endcomment %}
+<p>Format this date to : {{ format }}</p>
+
+{% case format %}
+  {% when "long" %}
+    <p>Print {{ format }} date</p>
+
+
+
+
+  {% when "short" %}
+    <p>Print {{ format }} date</p>
+{% endcase %}
+
+
+
+
+
+
+<p>+++++++++++++++++++++++++++++++++++++++++++++++++=</p>
+
 {%- if site.print-includes-boundaries-comments == true %}
 <!-- end _includes/date-fr.html -->
 {%- endif %}
