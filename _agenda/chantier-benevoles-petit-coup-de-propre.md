@@ -18,6 +18,6 @@ texte: >-
   * Nous fournissons les gants et les lunettes de chantier
 
   * Repas tiré du sac.
-date_start: 2026-02-24T09:00:00.000+01:00
-date_end: 2026-02-24T17:00:00.000+01:00
+date_start: 2026-02-24T00:00:00.000+01:00
+date_end: 2026-02-24T23:59:59.000+01:00
 ---

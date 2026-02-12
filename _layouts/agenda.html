@@ -2,4 +2,15 @@
 layout: default
 ---
 
-<p>Toto</p>
+<h2 class="">
+	{{ page.title }}
+    {% if page.canceled %}
+    	<span class="badge text-bg-danger">ANNULÉ</span>
+    {% endif %}
+</h2>
+<h5 class="">
+{%- include date_fr.html date_start=page.date_start date_end=page.date_end -%}
+</h6>
+<p class="card-text">{{ page.intro }}</p>
+
+{{ page.texte }}

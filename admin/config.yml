@@ -237,6 +237,12 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "agenda"}
       - {label: "Lang", name: "lang", widget: "hidden", default: "fr"}
 
+      - label: ANNULÉ !
+        hint: LES ÉVÉNEMENTS ANNULÉS RESTENT DANS L'AGENDA AVEC UNE GROSSE PASTILLE "ANNULÉ"
+        name: canceled
+        widget: boolean
+        default: false
+
       - label: Title
         name: title
         widget: string

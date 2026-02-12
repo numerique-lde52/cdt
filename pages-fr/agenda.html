@@ -7,52 +7,44 @@ title: Agenda
 order: "30"
 ---
 
-<h1>{{ page.title | escape }}</h1>
-<span class="badge text-bg-primary">Primary</span>
+{% assign debug = false %}
 
+<h1>{{ page.title | escape }}</h1>
+{% if debug == true %}
+  {%- include date_fr.html date_to_print=site.time -%}
+{% endif %}
 <div class="album py-5 bg-body-tertiary">
   <div class="container">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      {%- assign reference_time = site.time | date: "%s" -%}
-      {%- assign reference_time = reference_time | minus: 86400 -%}
+
+
       {% assign events = site.agenda | sort: "date_start" %}
 
-<p>Site time : {{ site.time }}</p>
-<ul>
-      {%- for event in events -%}
-      <li>
-        {% if event.date_end < site.time %}Past event ->>{% endif %}
-        {% if event.date_start > site.time %}Future event ->> {% endif %}
-        {% if event.date_start < site.time and event.date_end > site.time %}CURRENT event ->> {% endif %}
-        {{ event.title }} - {{ event.date_start }} - {{ event.date_end }}
-      </li>
-      {%- endfor -%}
-</ul>
+{% comment %} ===== Creating arrays to store events depending if they are future, present or past {% endcomment %}
+{% assign future_events = "" | split: "," %}
+{% assign current_events = "" | split: "," %}
+{% assign past_events = "" | split: "," %}
 
-      {%- for event in events -%}
+{% comment %} ===== Sort events in three categories {% endcomment %}
+{%- for event in events -%}
+  {% if event.date_end < site.time %}
+    {% assign past_events = past_events | push: event %}{% endif %}
+  {% if event.date_start > site.time %}
+    {% assign future_events = future_events | push: event %}{% endif %}
+  {% if event.date_start < site.time and event.date_end > site.time %}
+    {% assign current_events = current_events | push: event %}{% endif %}
+{%- endfor -%}
 
-        {%- assign event_timestamp = event.date_start | date: "%s" | to_integer -%}
 
-        {%- comment -%}
-          Guess if this is future current or past event
-          We compare current time to event time using timestamp (time from 1 jan 1970 also known as Unix time)
-          Future or current event must include the current day time frame, 
-          so we substract 1 day in seconds to server time to be sure that a today envents are still on our agenda.
-          today = today + 1 day in seconds (86400)
-        {%- endcomment -%}
-
-        {%- if event_timestamp > reference_time -%}
+      {%- for event in future_events -%}
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
+                <span class="badge text-bg-primary">{%- include date_fr.html date_start=event.date_start date_end=event.date_end format="badge" -%}</span>
+                {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
                 <h2 class="card-title">{{ event.title }}</h2>
-                <h6 class="card-subtitle mb-2 text-body-secondary">
-                  <span class="badge text-bg-primary">Primary</span>
-                du {%- include date_fr.html date_to_print=event.date_start -%}<br>
-                du {%- include date_fr.html date_to_print=event.date_start format=long -%}<br>
-                du {%- include date_fr.html date_to_print=event.date_start format=short -%}<br>
-                du {%- include date_fr.html date_to_print=event.date_start format=badge -%}<br>
-                au {%- include date_fr.html date_to_print=event.date_end -%}
+                <h5 class="card-subtitle mb-2 text-body-secondary">
+                  {%- include date_fr.html date_start=event.date_start date_end=event.date_end -%}
                 </h6>
                 <p class="card-text">{{ event.intro }}</p>      
                 <div class="d-flex justify-content-between align-items-center">
@@ -61,9 +53,9 @@ order: "30"
               </div>
              </div>
           </div>
-        {%- endif -%}
-
       {%- endfor -%}
+
+
     </div>
   </div>
 </div>
