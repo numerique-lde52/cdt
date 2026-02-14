@@ -1,7 +1,8 @@
 ---
 layout: agenda
 lang: fr
-title: "Chantier bénévoles : petit coup de propre"
+title: Petit coup de propre
+category: Chantiers bénévoles
 intro: Là on s'attaque à de la petite charpente et à du carrelage.
 texte: >-
   Matin : nettoyage du bardage de la roulotte Lucine

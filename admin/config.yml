@@ -121,7 +121,7 @@ collections:
         name: show_adhesion
         widget: boolean
         default: true
-        hint: Afficher le texte adhésion à la Ligue obligatoire
+        hint: Afficher le texte adhésion aux Amis de la Ligue obligatoire
         required: false
 
       - label: Conditions de location
@@ -227,11 +227,11 @@ collections:
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu. 010, 020, ...
 
   - name: agenda
-    {% raw %}summary: "{{date_start | date('DD-MM-YYYY')}} - {{title}}"{% endraw %}
+    {% raw %}summary: "{{date_start | date('DD/MM/YY')}} - {{date_end | date('DD/MM/YY')}} - {{category}} - {{title}}"{% endraw %}
     label: Agenda
     folder: _agenda
     create: true
-    sortable_fields: ['date_start', 'title']
+    sortable_fields: ['date_start', 'title', 'category']
     fields:
 
       - {label: "Layout", name: "layout", widget: "hidden", default: "agenda"}
@@ -242,10 +242,18 @@ collections:
         name: canceled
         widget: boolean
         default: false
+        required: false
 
       - label: Title
         name: title
         widget: string
+
+      - label: Catégorie
+        name: category
+        widget: select
+        default: ["Chantiers bénévoles"]
+        options: ["Chantiers bénévoles", "Animation nature", "Spectacle", "Conférence"]
+        required: false        
 
       - label: Introduction
         name: intro

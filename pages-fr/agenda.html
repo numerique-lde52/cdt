@@ -17,30 +17,15 @@ order: "30"
   <div class="container">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-
       {% assign events = site.agenda | sort: "date_start" %}
 
-{% comment %} ===== Creating arrays to store events depending if they are future, present or past {% endcomment %}
-{% assign future_events = "" | split: "," %}
-{% assign current_events = "" | split: "," %}
-{% assign past_events = "" | split: "," %}
-
-{% comment %} ===== Sort events in three categories {% endcomment %}
-{%- for event in events -%}
-  {% if event.date_end < site.time %}
-    {% assign past_events = past_events | push: event %}{% endif %}
-  {% if event.date_start > site.time %}
-    {% assign future_events = future_events | push: event %}{% endif %}
-  {% if event.date_start < site.time and event.date_end > site.time %}
-    {% assign current_events = current_events | push: event %}{% endif %}
-{%- endfor -%}
-
-
-      {%- for event in future_events -%}
+      {%- for event in events -%}
+      {% if event.date_end > site.time %}
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
                 <span class="badge text-bg-primary">{%- include date_fr.html date_start=event.date_start date_end=event.date_end format="badge" -%}</span>
+                <span class="badge text-bg-secondary">{{ event.category }}</span>
                 {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
                 <h2 class="card-title">{{ event.title }}</h2>
                 <h5 class="card-subtitle mb-2 text-body-secondary">
@@ -53,8 +38,8 @@ order: "30"
               </div>
              </div>
           </div>
+      {% endif %}
       {%- endfor -%}
-
 
     </div>
   </div>
