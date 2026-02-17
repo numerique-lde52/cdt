@@ -24,6 +24,9 @@ tech-description: >-
   Un espace sera à votre disposition avec des tables et bancs et une cuisine d'été, une salle en cas de météo capricieuse et des sanitaires.
 
 
+  Tarifs de location salle : 100€, puis 60€ la journée supplémentaire. Comprend wifi, vidéo projecteur, chaufage, menage en fin de séjour
+
+
   Aire de stationnement disponible pour voitures et mini-bus. Ecodomaine accessible en bus, sans stationnement longue durée.
 show_nearby: false
 tarifs: >-
