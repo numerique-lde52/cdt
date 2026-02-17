@@ -114,9 +114,14 @@ layout: none
 
 }
 
+.dropdown-item:hover {
+  color: #849d1b;
+  background-color: var(--bs-dropdown-link-hover-bg);
+}
 
-
-
+a {
+  color: #53640b;
+}
 
 /*
 // X-Small devices (portrait phones, less than 576px)
@@ -150,6 +155,8 @@ layout: none
 footer a.nav-link{
   text-decoration: underline;
 }
+
+
 
 
 

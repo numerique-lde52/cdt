@@ -2,8 +2,6 @@
 published: true
 permalink: /hebergements/chambre-aux-papillons/
 title: La chambre aux papillons
-id: chambre
-category: Hébergements
 show_booking_button: false
 intro: Vous souhaitez faire une étape sur votre itinéraire de randonnée, vous
   avez une mobilité réduite, la chambre aux papillons vous accueille ! Dans la
@@ -13,12 +11,16 @@ tech-description: ""
 show_nearby: false
 tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683849/chambre-aux-papillons_myogog.jpg
-documents: []
+documents:
+  - link_text: Télécharger le contrat et les conditions générales de vente
+    url: /assets/uploads/contrats-cgv/2026/contrat-cgv-hebergement-2026_chambre-papillons.pdf
 order: "100"
 layout: hebergement
+id: chambre
+category: Hébergements
+show_rent_conditions: true
 ---
 L'écodomaine Chemins de Traverse se situe à 100m du GR7, la chambre aux papillons est donc un hébergement de choix pour les randonneurs de passage à la nuitée. 
 

@@ -67,10 +67,8 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240966/PXL_20250709_090346718_ghyjws.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240959/PXL_20250709_090334327_j5zeee.jpg
 documents:
-  - url: /assets/uploads/contrats-de-reservation-lodges-niv-car-rdp-2025.odt
-    link_text: Téléchargez le contrat de location
-  - url: /assets/uploads/conditions-de-location-lodges-plantes-2025.pdf
-    link_text: Téléchargez les conditions générales de location
+  - link_text: Télécharger le contrat et les conditions générales de vente
+    url: /assets/uploads/contrats-cgv/2026/contrat-cgv-hebergement-2026_niveole-cardamine-rdp.pdf
 order: "040"
 layout: hebergement
 id: lodge8

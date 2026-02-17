@@ -91,16 +91,16 @@ layout: default
     {%- endif -%}
   </div>
 
-{% comment %}
+
 {% if page.documents %}
   <div class="row m-2">
     <ul class="list-group list-group-flush">
     {% for doc in page.documents %}
       <li class="h4 list-group-item text-bg-light rounded">
-        <a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
+        <a href="{{ doc.url | relative_url }}" target="_blank">{{ doc.link_text }}</a>
       </li>
     {% endfor %}
     </ul>
   </div>
 {%- endif -%}
-{% endcomment %}
+{% comment %}{% endcomment %}

@@ -2,7 +2,6 @@
 published: true
 permalink: /hebergements/camping-tentes/
 title: Camping tentes
-id: camping-tentes
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div
@@ -53,17 +52,17 @@ tarifs: >-
 
 
   * branchement électrique 220V : 5 €/jour.
-
-
-  **Tarifs groupes, séjours : nous contacter.**
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748255228/camping-ete-2024jpg-1-_ij2ffu.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750682941/pxl_20240729_211135836.night-corrected2_dsdrgi.jpg
-documents: []
+documents:
+  - url: /assets/uploads/contrats-cgv/2026/contrat-cgv-hebergement-2026_camping_1.pdf
+    link_text: Télécharger le contrat et les conditions générales de vente
 order: "070"
 layout: hebergement-v2
+id: camping-tentes
+show_rent_conditions: true
 ---
 Posez votre tente dans la vaste prairie bordée par le ruisseau qui descend du marais et par les vigoureuses haies qui abritent une précieuse petite faune sauvage !
 

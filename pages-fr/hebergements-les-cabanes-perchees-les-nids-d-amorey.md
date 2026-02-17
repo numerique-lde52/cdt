@@ -2,8 +2,6 @@
 published: true
 permalink: /hebergements/les-cabanes-perchees-les-nids-damorey/
 title: Les Cabanes perchées "les nids d'Amorey"
-id: nids-amorey
-category: Hébergements
 show_booking_button: true
 bookin_button_code: <div
   id="ConstellationWidgetContainer68bf5152-1b96-4c79-892d-441754ad8b98"
@@ -58,17 +56,17 @@ tarifs: >-
 
   Caution demandée : 150 €/cabane (200 €/2 cabanes et 250 €/3 cabanes)
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748252451/50cabane-amorey_zy2wmo.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750683071/dsc_6464_wjlsm6.jpg
 documents:
-  - url: /assets/uploads/contrat-de-location-nids-perches-2025.pdf
-    link_text: Téléchargez le contrat de location des nids.
-  - url: /assets/uploads/conditions-de-location-des-nids-perches-d-amorey-2025.pdf
-    link_text: Téléchargez les conditions générales de location
+  - link_text: Télécharger le contrat et les conditions générales de vente
+    url: /assets/uploads/contrats-cgv/2026/contrat-cgv-hebergement-2026_nids_1.pdf
 order: "080"
 layout: hebergement-v2
+id: nids-amorey
+category: Hébergements
+show_rent_conditions: true
 ---
 Regroupés dans un même lieu et distants d'une centaine de mètres chacun, les 3 nids d’Amorey vous permettent de venir en famille ou en groupe (jusqu’à 9 adultes ou 6 adultes et 6 enfants).
 

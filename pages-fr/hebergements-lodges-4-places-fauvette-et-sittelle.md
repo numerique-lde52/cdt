@@ -64,10 +64,8 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240611/PXL_20250710_141259014_aonykc.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1752240609/PXL_20250710_141350335_mzss6u.jpg
 documents:
-  - url: /assets/uploads/contrats-de-reservation-lodges-sittelle-et-fauvette.odt
-    link_text: Téléchargez le contrat de location.
-  - url: /assets/uploads/cgv-lodges-sittelle-et-fauvette-2025.pdf
-    link_text: Téléchargez les conditions générales de location
+  - link_text: Télécharger le contrat et les conditions générales de vente
+    url: /assets/uploads/contrats-cgv/2026/contrat-cgv-hebergement-2026_sittelle-fauvette.pdf
 order: "050"
 layout: hebergement
 id: lodge4

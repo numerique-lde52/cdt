@@ -14,14 +14,11 @@ tech-description: >-
   
   Plusieurs formules d’hébergement et de restauration sont possibles :
 
-
   - hébergement sous tentes, en tentes aménagées, en roulottes, en lodges sur l'écodomaine
 
-
   - hébergement en forêt dans les nids perchés d'Amorey, dans les cabanes nature 
-
-
-  - restauration : repas confectionnés par vos soins sur place, repas livrés sur place (organisation à votre charge)).
+  
+  - restauration : repas confectionnés par vos soins sur place, repas livrés sur place (organisation à votre charge).
 
 
   Un espace sera à votre disposition avec des tables et bancs et une cuisine d'été, une salle en cas de météo capricieuse et des sanitaires.
@@ -30,19 +27,12 @@ tech-description: >-
   Aire de stationnement disponible pour voitures et mini-bus. Ecodomaine accessible en bus, sans stationnement longue durée.
 show_nearby: false
 tarifs: >-
-  
-  Tarif à la journée  : 350.00 € par groupe sur la base de 9 personnes (encadrement compris), soit 1 minibus.
 
-
-  Hébergement en sus dans le cadre de séjours.
-
-
-  Nous contacter.
 show_adhesion: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1770719781/PXL_20250517_150319256_zdbfaz.jpg
 order: "060"
-layout: page
+layout: page-groupe
 ---
 
 Nous vous accueillons avec votre groupe sur notre écodomaine

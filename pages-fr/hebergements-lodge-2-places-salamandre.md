@@ -54,10 +54,8 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669637/PXL_20250606_090427459_holrif.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750669633/PXL_20250606_090454162_rqbyhx.jpg
 documents:
-  - url: /assets/uploads/contrat-de-location-salamandre-2025.pdf
-    link_text: Téléchargez le contrat de location
-  - url: /assets/uploads/conditions-de-location-salamandre-2025.pdf
-    link_text: Téléchargez les conditions générales de location
+  - link_text: Télécharger le contrat et les conditions générales de vente
+    url: /assets/uploads/contrats-cgv/2026/contrat-cgv-hebergement-2026_salamandre.pdf
 order: "060"
 layout: hebergement
 id: lodge2

@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+  <div class="row">
+    <div class="col-lg-6 text-bg-secondary rounded">
+      <h1 class="display-4 fst-italic">{{ page.title }}</h1>
+      <div class="my-3 lead">{{ page.intro | markdownify }}</div>
+
+    </div>    
+    <div class="col-lg-6 rounded">
+      {%- include responsive_image.html model="6" index=0 -%}
+    </div>
+  </div>
+
+  <div class="row bg-secondary-subtle my-2 p-2 rounded">
+    <div class="col-8">
+      {{ content | markdownify }}
+
+    </div>
+
+    <div class="col-4">
+      {% if page.gallery %}
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-md-2">
+
+{% assign img_number = 0 %}
+{%- for img_url in page.gallery %}
+
+{%- include gallery_image.html model="thumb" index=img_number -%}
+
+{% assign img_number = img_number | plus: 1 %}
+
+{%- endfor -%}
+        </div>
+      </div>
+      {%- endif -%}
+
+    </div>    
+
+  </div>
+
+  <div class="row">
+    {% if page.tech-description and page.tech-description!= "" %}
+    <div class="col text-bg-light rounded m-2 p-3">
+      {{ page.tech-description | markdownify }}
+    </div>
+    {% endif %}
+
+    <div class="col text-bg-light rounded m-2 p-3">
+      <h2>tarifs</h2>
+
+{% assign t = site.data.donnees-hebergements %}
+
+
+<table class="table table-success table-striped text-center table-bordered">
+  <thead>
+    <tr><th>Hébergement</th><th>Capacité</th><th>Groupe adhérent</th><th>Groupe non adhérent</th></tr>
+  </thead> 
+  <tbody>
+{% for t in site.data.donnees-hebergements %}
+  {% if t.Tarif_groupe_adherent %}
+  <tr>
+    <td><a href="{{ t.Url_courte }}">{{ t.Type_hebergement_pluriel }} {{ t.Nom_hebergement }}</a></td>
+    <td>{{ t.Capacite }}</td>
+    <td>{{ t.Tarif_groupe_adherent }} €</td>
+    <td>{{ t.Tarif_groupe_non_adherent }} €</td>
+  </tr>
+  {% endif %}
+{% endfor %}
+{% assign camping = site.data.donnees-hebergements-camping | first %}
+  <tr>
+    <td><a href="{{ t.Url_courte }}">{{ camping.Type_hebergement_pluriel }} {{ camping.Nom_hebergement }}</a></td>
+    <td>{{ camping.Capacite }}</td>
+    <td>{{ camping.Tarif_groupe_adherent }} €</td>
+    <td>{{ camping.Tarif_groupe_non_adherent }} €</td>
+  </tr>
+  </tbody>
+</table>
+    </div>  
+  </div>
+
+{% if page.documents %}
+  <div class="row m-2 ">
+    <ul class="list-group">
+    {% for doc in page.documents %}
+      <li class="h4 list-group-item  text-bg-warning">
+        <a href="{{ doc.url | relative_url }}">{{ doc.link_text }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+{%- endif -%}

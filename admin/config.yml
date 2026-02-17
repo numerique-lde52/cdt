@@ -154,6 +154,7 @@ collections:
           - label: "Texte du lien de téléchargement"
             name: link_text
             widget: string
+            default: "Télécharger le contrat et les conditions générales de vente"
             hint: "Exemple : Téléchargez le dossier d'inscription à la Diagonale"
 
       - label: Ordre

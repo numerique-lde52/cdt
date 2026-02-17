@@ -2,7 +2,6 @@
 published: true
 permalink: /hebergements/tentes-nomades/
 title: Tentes nomades
-id: tente
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div
@@ -48,18 +47,17 @@ tech-description: >-
 show_nearby: true
 tarifs: NE PAS REMPLIR ICI > VOIR FICHIER CALC
 show_adhesion: true
-show_rent_conditions: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748867700/tente-nomade_trqifm.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748868464/20230717_Auberive_CL2_7929_BD_kaku8f.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748868609/20230716_Auberive_CL2_7664_BD_l5ozjs.jpg
 documents:
-  - url: /assets/uploads/contrat-de-reservation-tentes-2025.pdf
-    link_text: Téléchargez le contrat de location
-  - url: /assets/uploads/cgv-tentes-2025.pdf
-    link_text: Téléchargez les conditions générales de location
+  - link_text: Télécharger le contrat et les conditions générales de vente
+    url: /assets/uploads/contrats-cgv/2026/contrat-cgv-hebergement-2026_aubepine-clematite.pdf
 order: "020"
 layout: hebergement
+id: tente
+show_rent_conditions: true
 ---
 La tente nomade est spacieuse avec ses 5 ou 6 mètres de diamètre et ses 3 mètres de hauteur. 
 
