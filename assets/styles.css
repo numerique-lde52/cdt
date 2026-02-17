@@ -147,6 +147,12 @@ layout: none
   height: auto;
 }
 
+footer a.nav-link{
+  text-decoration: underline;
+}
+
+
+
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
   .fs-1{  

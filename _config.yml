@@ -2,7 +2,8 @@ title: Chemins de traverse
 subtitle: Découvrez la forêt autrement !
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Installing a Jekyll web site with Decap CMS
+  L'équipe des Chemins de Traverse vous propose de vivre et d’habiter les forêts du Parc national de Forêts.
+  Vous allez séjourner dans une tente nomade, une roulotte ou un lodge, découvrir les secrets des sous-bois, louer un âne pour accompagner vos découvertes, habiter des cabanes insolites, cheminer le long des ruisseaux forestiers ... ou tout simplement profiter du calme et de la sérénité des lieux.
 baseurl: "" # the subpath of your site, e.g. /blog
 logo: /assets/logos/logo-chemins-de-traverse.webp
 url: "https://chemindetraverse52.org"
@@ -16,7 +17,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-debug: true
+debug: false
 print-includes-boundaries-comments: true
 
 collections:
