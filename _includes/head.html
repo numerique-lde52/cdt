@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="{{ '/assets/bootstrap/css/bootstrap.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
 
-  {% if page.permalink == "/visite-virtuelle/" %}
+  {% if page.permalink | contains, "/visite-virtuelle" %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.css" />
   {% endif %}
   
   <link rel="preconnect" href="https://www.wysistat.com" crossorigin="">

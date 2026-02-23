@@ -1,14 +1,14 @@
 ---
 published: true
-permalink: /visite-virtuelle/
-title: Visite virtuelle
+permalink: /visite-virtuelle2/
+title: Visite virtuelle 2
 category: Général
 order: "20"
 layout: default
 ---
 <!-- the viewer container must have a defined size -->
 <div id="console"></div>
-<div id="viewer" style="width: 80vw; height: 80vh;"></div>
+<div id="viewer" style="width: 70vw; height: 70vh;"></div>
 
 <div>
   <img src="/assets/photosphere/plan-chemins-de-traverse.svg" alt="Plan Chemins de Traverse - Auberive">
@@ -21,7 +21,8 @@ layout: default
             "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
             "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
             "@photo-sphere-viewer/compass-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.module.js",
-            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js"          
+            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",
+            "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js"
         }
     }
 </script>
@@ -30,15 +31,55 @@ layout: default
     import { Viewer } from '@photo-sphere-viewer/core';
     import { CompassPlugin } from '@photo-sphere-viewer/compass-plugin';
     import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+    import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
+
+    const baseUrl = '/assets/photosphere/';
+
+    const nodes = [
+      {
+        id: '1',
+        panorama: baseUrl + "photosphere-chemins-de-traverse-01.jpg",
+        caption: "la Maison forestière de Charbonnière",
+        sphereCorrection: { pan: '180deg' },
+        links: [
+          {
+            nodeId: '2',
+            position: { yaw: "80.6037deg", pitch: "-2.2252deg" },
+          },
+        ],
+        markers: [
+          {
+            id: 'new-marker',
+            position: { yaw: '2.75', pitch: '0.07' },
+            image: '/assets/photosphere/coquelicot.webp',
+            size: { width: 32, height: 32 },
+          },
+        ],
+      },
+
+      {
+        id: '2',
+        panorama: baseUrl + "photosphere-chemins-de-traverse-02.jpg",
+        caption: "Le jardin",
+        defaultPitch: 0,
+        defaultYaw: 0,
+        links: [
+          {
+            nodeId: '1',
+            position: { textureX: 1500, textureY: 780 },
+          },
+        ],
+      },
+
+
+    ];
+
+
 
 
     const viewer = new Viewer({
         container: document.querySelector('#viewer'),
-        panorama: '/assets/photosphere/photosphere-chemins-de-traverse-01.jpg',
-        caption: "Maison forestière de Charbonnière",
-        defaultPitch: 0,
-        defaultYaw: 3.5,
-        loadingImg: "/assets/photosphere/alphonse.webp",
+        loadingImg: baseUrl +  "alphonse.webp",
         lang: {
           zoom: 'Zoom',
           zoomOut: 'Zoom arrière',
@@ -60,19 +101,16 @@ layout: default
         },
         plugins: [
           CompassPlugin.withConfig({
-              size: '200px',
+              size: '100px',
           }),
 
           MarkersPlugin.withConfig({
-            markers: [
-                {
-                    id: 'new-marker',
-                    position: { yaw: '2.75', pitch: '0.07' },
-                    image: '/assets/photosphere/coquelicot.webp',
-                    size: { width: 32, height: 32 },
-                },
-            ],
-        }),
+
+          }),
+          VirtualTourPlugin.withConfig({
+            nodes: nodes,
+            startNodeId: '1',
+          }),
         ],
     });
 
@@ -82,13 +120,12 @@ layout: default
     });
 
     viewer.addEventListener('position-updated', ({ position }) => {
-        document.getElementById("console").innerHTML = "clicked at yaw: ${rad_to_deg(data.yaw)}° pitch: ${rad_to_deg(data.pitch)";
+        document.getElementById("console").innerHTML = `yaw: ${rad_to_deg(position.yaw)}° pitch: ${rad_to_deg(position.pitch)}`;
 
     });
 
     function show_pos(data){
-      document.getElementById("console").innerHTML = `${data.rightclick ? 'right ' : 'left '}
-      clicked at yaw: ${rad_to_deg(data.yaw)}° pitch: ${rad_to_deg(data.pitch)}° - textureX: ${data.textureX} textureY: ${data.textureY}`;
+      document.getElementById("console").innerHTML = `${data.rightclick ? 'right ' : 'left '}clicked at yaw: ${rad_to_deg(data.yaw)} DEG pitch: ${rad_to_deg(data.pitch)} DEG - yaw: ${data.yaw.toFixed(4)} RAD pitch: ${data.pitch.toFixed(4)} RAD - textureX: ${data.textureX} textureY: ${data.textureY} `;
 
       console.log(data)
     }
