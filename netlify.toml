@@ -56,7 +56,7 @@ from = "/vivre-dehors-les-sejours-enfants-2/"
 to = "/activites/sejours-ete-enfants-et-jeunes/"
 status = 301
 
-
-
-
-
+[[redirects]]
+from = "/accueils-de-groupes-et-accueils-detablissement-specialises-dans-laccompagnement-social-ou-medico-social-2/"
+to = "/activites/accueil-de-groupes"
+status = 301
