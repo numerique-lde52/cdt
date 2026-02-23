@@ -21,8 +21,7 @@ layout: default
             "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
             "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
             "@photo-sphere-viewer/compass-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.module.js",
-            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",          
-            "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",         
+            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js"          
         }
     }
 </script>
@@ -31,18 +30,7 @@ layout: default
     import { Viewer } from '@photo-sphere-viewer/core';
     import { CompassPlugin } from '@photo-sphere-viewer/compass-plugin';
     import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
-    import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
 
-    const viewer_nodes = [
-      { 
-        id: 'node-1', 
-        panorama: '/assets/photosphere/photosphere-chemins-de-traverse-01.jpg', 
-        links: [{ 
-          nodeId: 'node-2', 
-          position: { textureX: 1500, textureY: 780 } 
-        }] 
-      },
-    ];
 
     const viewer = new Viewer({
         container: document.querySelector('#viewer'),
@@ -84,11 +72,7 @@ layout: default
                     size: { width: 32, height: 32 },
                 },
             ],
-          }),
-/*          VirtualTourPlugin.withConfig({
-            nodes: viewer_nodes,
-
-          }),*/
+        }),
         ],
     });
 
