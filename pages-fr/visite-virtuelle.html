@@ -1,0 +1,117 @@
+---
+published: true
+permalink: /visite-virtuelle/
+title: Visite virtuelle
+category: Général
+order: "20"
+layout: default
+---
+<!-- the viewer container must have a defined size -->
+<div id="console"></div>
+<div id="viewer" style="width: 80vw; height: 80vh;"></div>
+
+<div>
+  <img src="/assets/photosphere/plan-chemins-de-traverse.svg" alt="Plan Chemins de Traverse - Auberive">
+</div>
+
+
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+            "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+            "@photo-sphere-viewer/compass-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.module.js",
+            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",          
+            "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",         
+        }
+    }
+</script>
+
+<script type="module">
+    import { Viewer } from '@photo-sphere-viewer/core';
+    import { CompassPlugin } from '@photo-sphere-viewer/compass-plugin';
+    import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+    import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
+
+    const viewer_nodes = [
+      { 
+        id: 'node-1', 
+        panorama: '/assets/photosphere/photosphere-chemins-de-traverse-01.jpg', 
+        links: [{ 
+          nodeId: 'node-2', 
+          position: { textureX: 1500, textureY: 780 } 
+        }] 
+      },
+    ];
+
+    const viewer = new Viewer({
+        container: document.querySelector('#viewer'),
+        panorama: '/assets/photosphere/photosphere-chemins-de-traverse-01.jpg',
+        caption: "Maison forestière de Charbonnière",
+        defaultPitch: 0,
+        defaultYaw: 3.5,
+        loadingImg: "/assets/photosphere/alphonse.webp",
+        lang: {
+          zoom: 'Zoom',
+          zoomOut: 'Zoom arrière',
+          zoomIn: 'Zoom avant',
+          moveUp: 'Monter',
+          moveDown: 'Descendre',
+          moveLeft: 'Rotation à gauche',
+          moveRight: 'Rotation à droite',
+          description: 'Description',
+          download: 'Télécharger l\'image',
+          fullscreen: 'Plein écran',
+          loading: 'Hi Han !',
+          menu: 'Menu',
+          close: 'Fermer',
+          twoFingers: 'Naviger avec deux dogts',
+          ctrlZoom: 'Utiliser ctrl + scroll pour zoomer l\'image',
+          loadError: 'Le panorama ne peut pas être chargé',
+          webglError: 'Votre navigateur ne semble pas supporter WebGL',
+        },
+        plugins: [
+          CompassPlugin.withConfig({
+              size: '200px',
+          }),
+
+          MarkersPlugin.withConfig({
+            markers: [
+                {
+                    id: 'new-marker',
+                    position: { yaw: '2.75', pitch: '0.07' },
+                    image: '/assets/photosphere/coquelicot.webp',
+                    size: { width: 32, height: 32 },
+                },
+            ],
+          }),
+          VirtualTourPlugin.withConfig({
+            nodes: viewer_nodes,
+
+          }),
+        ],
+    });
+
+
+    viewer.addEventListener('click', ({ data }) => {
+        show_pos(data);
+    });
+
+    viewer.addEventListener('position-updated', ({ position }) => {
+        show_pos(position);
+    });
+
+    function show_pos(data){
+      document.getElementById("console").innerHTML = `${data.rightclick ? 'right ' : 'left '}clicked at yaw: ${rad_to_deg(data.yaw)}° pitch: ${rad_to_deg(data.pitch)}`;
+
+      console.log(data)
+    }
+
+
+    function rad_to_deg(rad){
+      var deg = rad * (180 / Math.PI);
+      return deg.toFixed(4)
+    }
+
+</script>
+

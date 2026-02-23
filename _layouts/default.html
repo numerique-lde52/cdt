@@ -6,7 +6,8 @@
 <body data-bs-theme="light">
 {% if site.debug == true %}
 Layout : {{ page.layout }} -- Cat : {{ page.category }} -- Environment : {{ jekyll.environment }} -- domain : {{ site.url }}
-
+<br>
+Permalink : {{ page.permalink }}
 {% endif %}
   <div class="main-col container-lg">
     {%- include header.html -%}
