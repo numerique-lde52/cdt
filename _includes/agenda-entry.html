@@ -1,0 +1,28 @@
+{%- if site.print-includes-boundaries-comments == true %}
+<!-- _includes/agenda-entry.html -->
+{%- endif %}
+
+{% assign e = include.event %}
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          {% if event.date_end < site.time %}<span class="badge text-bg-warning">Événement terminé</span>{% endif %}
+          <span class="badge text-bg-primary">{%- include date_fr.html date_start=e.date_start date_end=e.date_end format="badge" -%}</span>
+          <span class="badge text-bg-secondary">{{ e.category }}</span>
+          {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
+          <a href="{{ event.url }}"><h2 class="card-title">{{ e.title }}</h2></a>
+          <h5 class="card-subtitle mb-2 text-body-secondary">
+            {%- include date_fr.html date_start=e.date_start date_end=e.date_end -%}
+          </h6>
+          <p class="card-text">{{ e.intro }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a class="btn btn-primary btn-sm" href="{{ e.url }}">En savoir plus</a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+{%- if site.print-includes-boundaries-comments == true %}
+<!-- END _includes/agenda-entry.html -->
+{%- endif %}

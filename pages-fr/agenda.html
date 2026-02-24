@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /agenda/
 category: Général
 layout: default
@@ -21,23 +21,30 @@ order: "30"
 
       {%- for event in events -%}
       {% if event.date_end > site.time %}
-          <div class="col">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <span class="badge text-bg-primary">{%- include date_fr.html date_start=event.date_start date_end=event.date_end format="badge" -%}</span>
-                <span class="badge text-bg-secondary">{{ event.category }}</span>
-                {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
-                <h2 class="card-title">{{ event.title }}</h2>
-                <h5 class="card-subtitle mb-2 text-body-secondary">
-                  {%- include date_fr.html date_start=event.date_start date_end=event.date_end -%}
-                </h6>
-                <p class="card-text">{{ event.intro }}</p>      
-                <div class="d-flex justify-content-between align-items-center">
-                  <a class="btn btn-primary btn-sm" href="{{ event.url }}">En savoir plus</a>
-                </div>
-              </div>
-             </div>
-          </div>
+
+        {% include agenda-entry.html event = event %}
+
+      {% endif %}
+      {%- endfor -%}
+
+    </div>
+  </div>
+</div>
+
+
+<h2>Les événements passés</h2>
+
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      {% assign events = site.agenda | sort: "date_start" %}
+
+      {%- for event in events -%}
+      {% if event.date_end < site.time %}
+
+        {% include agenda-entry.html event = event %}
+
       {% endif %}
       {%- endfor -%}
 

@@ -27,6 +27,11 @@ collections:
     output: True
   partenaires:
 
+
+
+home_agenda_max_entries: 3
+
+
 defaults:
   - scope:
       path: "pages-fr"
@@ -72,10 +77,12 @@ img_transformation_models:
     format: "16-9"
     sizes: [1300, 1100, 920, 680, 560]
 
-
-
 # End Responsives images
 ###################################################################
+
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -19,7 +19,9 @@
         </a>
         <div class="card-body">
           <a class="nav-link" href="{{ p.url | relative_url }}">
-            <h2 class="card-text">{{ p.title }}</h2>
+            <h2 class="card-text h4">
+              {% if p.short_title %}{{ p.short_title }}{% else %}{{ p.title }}{% endif %}
+            </h2>
           </a>
         </div>
       </div>

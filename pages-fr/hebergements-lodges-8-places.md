@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/lodges-8-places/
 title: Lodges 8 places Cardamine, Nivéole et Reine des Prés
+short_title: Lodge 8 places
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div

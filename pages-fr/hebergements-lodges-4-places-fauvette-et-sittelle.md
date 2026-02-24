@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/lodges-4-places/
 title: Lodges 4 places Fauvette et Sittelle
+short_title: Lodge 4 places
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div

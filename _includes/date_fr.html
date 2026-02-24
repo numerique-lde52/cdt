@@ -19,8 +19,8 @@ Passed arguments :
     available formats : 
       - long : returns "le vendredi 20 Février 2026 de 17h00 à 20h00" for one day event
                        "du jeudi 19 Février 2026 à 9h00 au vendredi 20 Février 2026 à 17h00" for multi days event
-      - short : returns "le ven. 20 Fév. 2026 de 17h00 à 20h00" for one day event
-                        "du jeu. 19 Fév. 2026 à 9h00 au ven. 20 Fév. 2026 à 17h00" for multi days event
+      - short : returns "le ven 20 Fév 2026 de 17h00 à 20h00" for one day event
+                        "du jeu 19 Fév 2026 à 9h00 au ven 20 Fév 2026 à 17h00" for multi days event
       - badge : returns "jeu. 19 Fév." for visible date badge on events
 
 =========================================== {% endcomment %}
@@ -42,9 +42,9 @@ Passed arguments :
 
 {% comment %} =====  French translation stored here ===== {% endcomment %}
 {% assign day_name_long = "lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche" | split: "," %}
-{% assign day_name_short = "Lun.,Mar.,Mer.,Jeu.,Ven.,Sam.,Dim." | split: "," %}
+{% assign day_name_short = "Lun,Mar,Mer,Jeu,Ven,Sam,Dim" | split: "," %}
 {% assign month_name_long = "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre" | split: "," %}
-{% assign month_name_short = "Jan.,Fév.,Mar.,Avr.,Mai,Juin,Juil.,Août,Sept.,Oct.,Nov.,Déc." | split: "," %}
+{% assign month_name_short = "Jan,Fév,Mar,Avr,Mai,Juin,Juil,Août,Sept,Oct,Nov,Déc" | split: "," %}
 
 {% comment %} ===== end translations ===== {% endcomment %}
 
@@ -120,22 +120,25 @@ Two conditions :
 {% case format %}
   {% when "long" %}
     {% if same_day_event %}
-      le {{ date_start_day_name_long }} {{ start_day_number }} {{ start_month_name_long }} {{ start_year }} de 
-      {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
+      le {{ date_start_day_name_long }} {{ start_day_number }} {{ start_month_name_long }} {{ start_year }}
+      <br> de {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
     {% else %}
       du {{ date_start_day_name_long }} {{ start_day_number }} {{ start_month_name_long }} {{ start_year }} à {{ start_hour }}h{{ start_minutes }} <br>au
     {{ date_end_day_name_long }} {{ end_day_number }} {{ end_month_name_long }} {{ end_year }} à {{ end_hour }}h{{ end_minutes }}
     {% endif %}
   {% when "short" %}
     {% if same_day_event %}
-      le {{ date_start_day_name_short }} {{ start_day_number }} {{ start_month_name_short }} {{ start_year }} de 
-      {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
+      le {{ date_start_day_name_short }} {{ start_day_number }} {{ start_month_name_short }} {{ start_year }}
+      <br>de {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
     {% else %}
       du {{ date_start_day_name_short }} {{ start_day_number }} {{ start_month_name_short }} {{ start_year }} à {{ start_hour }}h{{ start_minutes }} <br>au
     {{ date_end_day_name_short }} {{ end_day_number }} {{ end_month_name_short }} {{ end_year }} à {{ end_hour }}h{{ end_minutes }}
     {% endif %}
   {% when "badge" %}
-    {{ date_start_day_name_short }} {{ start_day_number }} {{ start_month_name_short }}
+    <span class="day-name">{{ date_start_day_name_short }}</span>
+    <span class="day-number">{{ start_day_number }}</span>
+    <span class="month-name">{{ start_month_name_short }}</span>
+
 
 {% endcase %}
 </span>

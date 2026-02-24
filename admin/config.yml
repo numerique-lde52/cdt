@@ -64,9 +64,14 @@ collections:
         widget: string
         hint: De la forme "/categorie/titre-de-la-page/" Tout en minuscules, pas d'espace et pas d'accent
 
-      - label: Title
+      - label: Titre
         name: title
         widget: string
+
+      - label: Titre court
+        name: short_title
+        widget: string
+        hint: "Ex : 'Lodge 8 places' au lieu de 'Lodges 8 places Cardamine, Nivéole et Reine des Prés'"
 
       - label: Catégorie
         name: category
@@ -272,12 +277,12 @@ collections:
         name: date_end
         widget: datetime
 
-      - label: Image
-        name: image
-        widget: image
-        hint: Taille maximum 800 px de large
-        required: false
-        choose_url: false
+      # - label: Image
+      #   name: image
+      #   widget: image
+      #   hint: Taille maximum 800 px de large
+      #   required: false
+      #   choose_url: false
 
   - name: partenaires
     label: Partenaires

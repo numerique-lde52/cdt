@@ -2,6 +2,7 @@
 published: true
 permalink: /hebergements/lodges-2-places/
 title: Lodge 2 places Salamandre
+short_title: Lodge 2 places
 category: Hébergements
 show_booking_button: true
 bookin_button_code: <div
