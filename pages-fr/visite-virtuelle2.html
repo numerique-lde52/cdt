@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 permalink: /visite-virtuelle2/
 title: Visite virtuelle 2
 category: Général
@@ -114,7 +114,7 @@ layout: default
         ],
     });
 
-
+{% if site.debug %}
     viewer.addEventListener('click', ({ data }) => {
         show_pos(data);
     });
@@ -135,6 +135,7 @@ layout: default
       var deg = rad * (180 / Math.PI);
       return deg.toFixed(4)
     }
+{% endif %}
 
 </script>
 
