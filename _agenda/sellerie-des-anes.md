@@ -2,8 +2,9 @@
 layout: agenda
 lang: fr
 canceled: true
+published: true
 title: Sellerie des ânes
-category: Chantiers bénévoles
+category: Chantier bénévoles
 intro: Construction du sol et de parois pour la sellerie des ânes.
 texte: >-
   Dans la cabane des ânes, reprise du sol (dépôt de gravier) puis construction

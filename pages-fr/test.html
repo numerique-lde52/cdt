@@ -1,0 +1,53 @@
+---
+published: true
+permalink: /t/
+category: Général
+layout: test
+title: Test
+order: "30"
+---
+
+{% assign debug = false %}
+
+<h1>{{ page.title | escape }}</h1>
+{% if debug == true %}
+  {%- include date_fr.html date_to_print=site.time -%}
+{% endif %}
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      {% assign events = site.agenda | sort: "date_start" %}
+
+      {%- for event in events -%}
+      {% if event.date_end > site.time %}
+
+        {% include agenda-entry.html event = event %}
+
+      {% endif %}
+      {%- endfor -%}
+
+    </div>
+  </div>
+</div>
+
+
+<h2>Les événements passés</h2>
+
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      {% assign events = site.agenda | sort: "date_start" %}
+
+      {%- for event in events -%}
+      {% if event.date_end < site.time %}
+
+        {% include agenda-entry.html event = event %}
+
+      {% endif %}
+      {%- endfor -%}
+
+    </div>
+  </div>
+</div>

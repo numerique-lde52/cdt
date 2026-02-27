@@ -1,9 +1,10 @@
 ---
 layout: agenda
 lang: fr
+published: true
 title: Petit coup de propre
 category: Chantiers bénévoles
-intro: Là on s'attaque à de la petite charpente et à du carrelage.
+intro: Nettoyage de roulotte et carrelage.
 texte: >-
   Matin : nettoyage du bardage de la roulotte Lucine
 
@@ -19,6 +20,6 @@ texte: >-
   * Nous fournissons les gants et les lunettes de chantier
 
   * Repas tiré du sac.
-date_start: 2026-03-24T00:00:00.000+01:00
-date_end: 2026-03-24T23:59:59.000+01:00
+date_start: 2026-03-12T09:00:00.000+01:00
+date_end: 2026-03-12T17:00:00.000+01:00
 ---

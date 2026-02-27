@@ -1,11 +1,52 @@
 ---
 layout: default
 ---
+{%- if site.print-includes-boundaries-comments == true %}
 <!-- home layout start -->
-{%- include home-carousel.html -%}
+{%- endif %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9 ">
 
-{%- include home-category-section-thumbnails.html category="Hébergements" -%}
+    {%- include home-carousel.html -%}
 
-{%- include home-category-section-thumbnails.html category="Activités" -%}
+		{%- include home-category-section-thumbnails.html category="Hébergements" -%}
 
-<!-- home layout end -->  
+		{%- include home-category-section-thumbnails.html category="Activités" -%}
+
+    </div>
+    <div class="col-lg-3">
+    	<h2>Dans votre agenda</h2>
+
+      {% assign events = site.agenda | sort: "date_start" %}
+
+      {% assign event_count = 0 %}
+
+      {% assign max_events = site.home_agenda_max_entries %}
+
+      {%- for event in events -%}
+
+        {% if event.date_end > site.time and event_count < max_events %}
+            {% assign event_count = event_count | plus: 1 %}
+            <div class="col mb-2 agenda-entry">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <span class="badge text-bg-primary">
+                    {%- include date_fr.html date_start=event.date_start date_end=event.date_end format="badge" -%}
+                  </span>
+                  <span class="badge text-bg-secondary">{{ event.category }}</span>
+                  {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
+                  <a href="{{ event.url }}"><h2 class="card-title h4">{{ event.title }}</h2></a>
+                  <p>{{ event.intro }}</p>
+                </div>
+               </div>
+            </div>
+        {% endif %}
+      {%- endfor -%}
+      <a class="badge text-bg-primary h2" href="/agenda/">Voir tout l'agenda</a>
+    </div>
+  </div>
+</div>
+{%- if site.print-includes-boundaries-comments == true %}
+<!-- home layout end -->
+{%- endif %}

@@ -36,7 +36,7 @@ slug:
   clean_accents: true
   sanitize_replacement: "-"  
 
-site_url: {{ site.url }}
+site_url: {{ site.url }} # from jekyll
 
 publish_mode: simple # can be editorial_workflow
 
@@ -71,7 +71,9 @@ collections:
       - label: Titre court
         name: short_title
         widget: string
-        hint: "Ex : 'Lodge 8 places' au lieu de 'Lodges 8 places Cardamine, Nivéole et Reine des Prés'"
+        hint: "SI NECESSAIRE Ex : 'Lodge 8 places' au lieu de 'Lodges 8 places Cardamine, Nivéole et Reine des Prés'"
+        required: false
+
 
       - label: Catégorie
         name: category
@@ -250,6 +252,19 @@ collections:
         default: false
         required: false
 
+      - label: Publié
+        name: published
+        widget: boolean
+        default: false
+        required: true
+
+      - label: Épinglé
+        name: pined
+        widget: boolean
+        default: false
+        required: false
+        hint: Épingler cet événement en haut de la liste.
+
       - label: Title
         name: title
         widget: string
@@ -257,8 +272,8 @@ collections:
       - label: Catégorie
         name: category
         widget: select
-        default: ["Chantiers bénévoles"]
-        options: ["Chantiers bénévoles", "Animation nature", "Spectacle", "Conférence"]
+        default: ["Chantier bénévoles"]
+        options: ["Chantier bénévoles", "Animation nature", "Spectacle", "Conférence", "Séjours jeunes", "Divers"]
         required: false        
 
       - label: Introduction

@@ -178,6 +178,13 @@ footer a.nav-link{
 @media (min-width: 768px) { 
 
 
+
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
     #faeder{
       position: absolute;
       right: 0;
@@ -186,12 +193,6 @@ footer a.nav-link{
       width: 150px;
       height: auto;
     }
-
-}
-
-/*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-
 
 }
 

@@ -86,7 +86,7 @@ Two conditions :
 {% comment %} ++++++++++++++++++++++ Get all necessary values to be displayed ++++++++++++++++++++++ {% endcomment %}
 
   {% comment %} %w returns a day number from 0 to 6, just cast to integer {% endcomment %}
-  {%- assign start_day_index = date_start | date: "%w" | to_integer %}
+  {%- assign start_day_index = date_start | date: "%w" | to_integer | minus: 1 %}
   {% assign date_start_day_name_long = day_name_long[ start_day_index ] %}
   {% assign date_start_day_name_short = day_name_short[ start_day_index ] %}
   {% assign start_day_number = date_start | date: "%d"%}
@@ -99,7 +99,7 @@ Two conditions :
   {% assign start_minutes = date_start | date: "%M"%}
 
   {% comment %} %w returns a day number from 0 to 6, just cast to integer {% endcomment %}
-  {%- assign end_day_index = date_end | date: "%w" | to_integer %}
+  {%- assign end_day_index = date_end | date: "%w" | to_integer | minus: 1 %}
   {% assign date_end_day_name_long = day_name_long[ end_day_index ] %}
   {% assign date_end_day_name_short = day_name_short[ end_day_index ] %}
   {% assign end_day_number = date_end | date: "%d"%}
