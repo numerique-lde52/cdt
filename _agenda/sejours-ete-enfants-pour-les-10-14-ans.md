@@ -3,6 +3,7 @@ layout: agenda
 lang: fr
 canceled: false
 published: true
+pined: false
 title: Séjours été enfants pour les 10-14 ans
 category: Séjours jeunes
 intro: Des séjours aventure inoubliables.

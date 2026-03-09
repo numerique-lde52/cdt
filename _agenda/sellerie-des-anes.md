@@ -3,6 +3,7 @@ layout: agenda
 lang: fr
 canceled: true
 published: true
+pined: false
 title: Sellerie des ânes
 category: Chantier bénévoles
 intro: Construction du sol et de parois pour la sellerie des ânes.

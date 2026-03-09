@@ -16,14 +16,14 @@ intro: >-
 
   * **10/14 ans : 21 au 31 juillet 2026**
 show_nearby: false
-tarifs: "**Tarifs et inscriptions :** formulaires d'inscription à venir"
+tarifs:
 show_adhesion: false
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748944385/enforeste-toi-2024-01_ktr1mm.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768230265/marguerite_2_e3k4bk.jpg
 documents:
-  - url: /assets/uploads/formulaire-d_inscription_sejours_2025.pdf
-    link_text: Téléchargez le bulletin d'inscription
+  - link_text: Télécharger le bulletin d'inscription
+    url: /assets/uploads/Formulaire_inscription_sejour-enfants-2026.pdf
 order: "050"
 layout: page
 ---

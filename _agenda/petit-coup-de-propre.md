@@ -2,6 +2,7 @@
 layout: agenda
 lang: fr
 published: true
+pined: false
 title: Petit coup de propre
 category: Chantiers bénévoles
 intro: Nettoyage de roulotte et carrelage.

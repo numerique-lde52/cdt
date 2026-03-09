@@ -3,6 +3,7 @@ layout: agenda
 lang: fr
 canceled: false
 published: true
+pined: false
 title: Réparation de la terrasse de la Gouyët
 category: Chantier bénévoles
 intro: Petit travaux de charpente sur la cabane "La Gouyët".

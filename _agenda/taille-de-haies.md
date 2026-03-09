@@ -3,6 +3,7 @@ layout: agenda
 lang: fr
 canceled: false
 published: true
+pined: false
 title: "Haies et bourgeons : taille et connaissances"
 category: Chantier bénévoles
 intro: Petites taille de printemps sur l'écocamping et reconnaissance des arbres

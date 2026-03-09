@@ -235,11 +235,11 @@ collections:
         hint: Numérotation de 10 en 10 qui conditionne la position dans le menu. 010, 020, ...
 
   - name: agenda
-    {% raw %}summary: "{{date_start | date('DD/MM/YY')}} - {{date_end | date('DD/MM/YY')}} - {{category}} - {{title}}"{% endraw %}
+    {% raw %}summary: "{{date_start | date('DD/MM/YY')}} - {{date_end | date('DD/MM/YY')}} - {{category}} - {{title}} - épinglé : {{pined}}"{% endraw %}
     label: Agenda
     folder: _agenda
     create: true
-    sortable_fields: ['date_start', 'title', 'category']
+    sortable_fields: ['date_start', 'title', 'category', 'pined']
     fields:
 
       - {label: "Layout", name: "layout", widget: "hidden", default: "agenda"}
@@ -272,7 +272,7 @@ collections:
       - label: Catégorie
         name: category
         widget: select
-        default: ["Chantier bénévoles"]
+        default: "Chantier bénévoles"
         options: ["Chantier bénévoles", "Animation nature", "Spectacle", "Conférence", "Séjours jeunes", "Divers"]
         required: false        
 
@@ -291,6 +291,12 @@ collections:
       - label: Date fin
         name: date_end
         widget: datetime
+
+      - label: Localisation
+        name: localisation
+        widget: string
+        required: false
+        default: "Auberive"
 
       # - label: Image
       #   name: image

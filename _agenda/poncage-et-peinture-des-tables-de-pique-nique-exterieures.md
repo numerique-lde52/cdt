@@ -3,6 +3,7 @@ layout: agenda
 lang: fr
 canceled: false
 published: true
+pined: false
 title: Ponçage et peinture des tables de pique-nique extérieures
 category: Chantier bénévoles
 intro: Un petit coup de jeune.
