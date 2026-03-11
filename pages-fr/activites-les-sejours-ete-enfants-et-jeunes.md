@@ -22,8 +22,11 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748944385/enforeste-toi-2024-01_ktr1mm.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1768230265/marguerite_2_e3k4bk.jpg
 documents:
+  - link_text: Télécharger la fiche descriptive des activités
+    url: /assets/uploads/Presentation_Sejours_jeunes_Enforeste-toi.pdf
   - link_text: Télécharger le bulletin d'inscription
     url: /assets/uploads/Formulaire_inscription_sejour-enfants-2026.pdf
+
 order: "050"
 layout: page
 ---
