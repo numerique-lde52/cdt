@@ -16,7 +16,19 @@ intro: >-
 
   * **10/14 ans : 21 au 31 juillet 2026**
 show_nearby: false
-tarifs:
+tarifs: >-2
+   - 7/11 ans : 560 € 
+   - 10/14 ans : 680 €
+
+
+  (+ 3,92 € d’adhésion à l ‘association des Amis de la Ligue 52 / enfant)
+
+
+
+  Aides possibles (AVE-CAF, Pass Colos, CE de votre employeur), renseignez vous dès à présent sur le site de votre CAF et auprès de votre employeur pour connaître vos aides.
+
+
+  Chèques vacances acceptés.
 show_adhesion: false
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1748944385/enforeste-toi-2024-01_ktr1mm.jpg
@@ -26,7 +38,6 @@ documents:
     url: /assets/uploads/Presentation_Sejours_jeunes_Enforeste-toi.pdf
   - link_text: Télécharger le bulletin d'inscription
     url: /assets/uploads/Formulaire_inscription_sejour-enfants-2026.pdf
-
 order: "050"
 layout: page
 ---
