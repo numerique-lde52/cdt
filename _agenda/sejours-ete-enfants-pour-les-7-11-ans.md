@@ -12,7 +12,7 @@ texte: >-
   Des vacances tranquilles à vivre dans la nature.
 
 
-  Toutes les information sur la page [Séjours jeunes](http://127.0.0.1:4000/activites/sejours-ete-enfants-et-jeunes/)
+  Toutes les information sur la page [Séjours jeunes](/activites/sejours-ete-enfants-et-jeunes/)
 date_start: 2026-07-11T09:00:00.000+02:00
 date_end: 2026-07-18T17:00:00.000+02:00
 ---
