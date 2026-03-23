@@ -37,7 +37,7 @@ tarifs: >-
   Le montant de la cotisation annuelle est :
 
 
-  Adulte : 10,58 €
+  Adulte : 10 €
 
 
   Jeunes<18 ans : 3,72 €
