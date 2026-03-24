@@ -27,10 +27,7 @@ collections:
     output: True
   partenaires:
 
-
-
-home_agenda_max_entries: 3
-
+home_agenda_max_entries: 5
 
 defaults:
   - scope:

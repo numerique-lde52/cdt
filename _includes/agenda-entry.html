@@ -3,13 +3,14 @@
 {%- endif %}
 
 {% assign e = include.event %}
+{% assign event_class = site.data.categories_agenda.categories_agenda | where: "name", e.category %}
 
-    <div class="col">
+    <div class="col agenda_entry {{ event_class[0].css_class }}">
       <div class="card shadow-sm">
         <div class="card-body">
           {% if event.date_end < site.time %}<span class="badge text-bg-warning">Événement terminé</span>{% endif %}
           <span class="badge text-bg-primary">{%- include date_fr.html date_start=e.date_start date_end=e.date_end format="badge" -%}</span>
-          <span class="badge text-bg-secondary">{{ e.category }}</span>
+          <span class="badge category_badge">{{ e.category }}</span>
           {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
           <a href="{{ event.url }}"><h2 class="card-title">{{ e.title }}</h2></a>
           <h5 class="card-subtitle mb-2 text-body-secondary">

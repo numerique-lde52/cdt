@@ -272,8 +272,8 @@ collections:
       - label: Catégorie
         name: category
         widget: select
-        default: "Chantier bénévoles"
-        options: ["Chantier bénévoles", "Animation nature", "Spectacle", "Conférence", "Séjours jeunes", "Divers"]
+        default: {% assign cats = site.data.categories_agenda.categories_agenda -%}"{{ cats[0].name }}"
+        options: [{% for cat in cats %}"{{ cat.name }}"{% if forloop.last %}{% else %}, {% endif %}{% endfor %}]
         required: false        
 
       - label: Introduction
@@ -368,6 +368,21 @@ collections:
                 widget: "select"
                 options: ["main", "footer"]
 
+      - label: Catégories Agenda
+        name: categories_agenda
+        file: _data/categories_agenda.yml
+        fields:
+          - label: Catégories agenda
+            name: categories_agenda
+            identifier_field: name
+            widget: list
+            fields:
+              - label: Nom
+                name: name
+                widget: string
+              - label: Classe CSS
+                name: css_class
+                widget: string
 
       - label: Caroussel Accueil
         name: carousel_fr

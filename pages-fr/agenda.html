@@ -9,13 +9,18 @@ order: "30"
 
 {% assign debug = false %}
 
-<h1>{{ page.title | escape }}</h1>
+
+<div class="col text-bg-secondary rounded">
+
+<h1 class="display-4 fst-italic">{{ page.title | escape }}</h1>
 {% if debug == true %}
   {%- include date_fr.html date_to_print=site.time -%}
 {% endif %}
-<div class="album py-5 bg-body-tertiary">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<p>Filtrer par catégorie : <div id="filter-buttons"></div></p>
+
+<div class="album py-1 bg-body-primary">
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
 
       {% assign events = site.agenda | sort: "date_start" %}
 
@@ -28,7 +33,7 @@ order: "30"
       {%- endfor -%}
 
     </div>
-  </div>
+
 </div>
 
 
@@ -51,3 +56,64 @@ order: "30"
     </div>
   </div>
 </div>
+
+</div>
+
+
+<script>
+  {% assign cats = site.data.categories_agenda.categories_agenda -%}
+
+  const categories = {{ cats | jsonify }}
+
+  const buttonsContainer = document.getElementById('filter-buttons');
+
+  const items = document.querySelectorAll('.agenda_entry');
+
+function generateButtons() {
+  const allBtn = createButton('Tous', 'all');
+  allBtn.classList.add('active');
+
+  categories.forEach(cat => {
+    const elementExists = document.querySelector('.' + cat.css_class);
+
+    if (elementExists) {
+      createButton(cat.name, cat.css_class);
+    }
+  });
+}
+
+function createButton(label, className) {
+  const btn = document.createElement('button');
+  btn.classList.add("btn");
+  btn.classList.add("mx-2");
+  btn.classList.add("category_badge");
+  btn.classList.add(className);
+  btn.innerText = label;
+
+  btn.addEventListener('click', (e) => {
+    // Gérer l'état actif
+    buttonsContainer.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+
+    // Filtrer
+    filterSelection(className);
+  });
+
+  buttonsContainer.appendChild(btn);
+  return btn;
+}
+
+function filterSelection(className) {
+  items.forEach(item => {
+    if (className === 'all' || item.classList.contains(className)) {
+      item.style.display = "inline";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+// Lancement
+generateButtons();
+
+</script>

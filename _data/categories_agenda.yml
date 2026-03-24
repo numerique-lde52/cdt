@@ -1,0 +1,13 @@
+categories_agenda:
+  - name: Chantier bénévoles
+    css_class: agenda_chantier_benevoles
+  - name: Animation nature
+    css_class: agenda_anime_nature
+  - name: Spectacle
+    css_class: agenda_spectacle
+  - name: Conférence
+    css_class: agenda_conference
+  - name: Séjours jeunes
+    css_class: agenda_sejours_jeunes
+  - name: Divers
+    css_class: agenda_divers

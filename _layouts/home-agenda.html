@@ -25,16 +25,16 @@ layout: default
       {% assign max_events = site.home_agenda_max_entries %}
 
       {%- for event in events -%}
-
+        {% assign event_class = site.data.categories_agenda.categories_agenda | where: "name", event.category %}
         {% if event.date_end > site.time and event_count < max_events %}
             {% assign event_count = event_count | plus: 1 %}
-            <div class="col mb-2 agenda-entry">
+            <div class="col mb-2 agenda-entry {{ event_class[0].css_class }}">
               <div class="card shadow-sm">
                 <div class="card-body">
                   <span class="badge text-bg-primary">
                     {%- include date_fr.html date_start=event.date_start date_end=event.date_end format="badge" -%}
                   </span>
-                  <span class="badge text-bg-secondary">{{ event.category }}</span>
+                  <span class="badge category_badge">{{ event.category }}</span>
                   {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
                   <a href="{{ event.url }}"><h2 class="card-title h4">{{ event.title }}</h2></a>
                   <p>{{ event.intro }}</p>

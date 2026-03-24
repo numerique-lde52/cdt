@@ -162,6 +162,54 @@ footer a.nav-link{
 }
 
 
+.category_badge, .category_badge:hover{
+  color: white;
+}
+
+.category_badge.active{
+  font-weight: bold;
+  color: white;
+}
+
+.category_badge.all, .category_badge.all:hover{
+  border-color: black;
+  color: black;
+}
+
+
+.agenda_chantier_benevoles .category_badge,
+.agenda_chantier_benevoles.category_badge{
+  background-color: #8e02b6;
+}
+
+.agenda_anime_nature .category_badge,
+.agenda_anime_nature.category_badge{
+  background-color: #5d9102;
+}
+
+.agenda_spectacle .category_badge,
+.agenda_spectacle.category_badge{
+  background-color: #b64602;
+}
+
+.agenda_conference .category_badge,
+.agenda_conference.category_badge{
+  background-color: #049c8e;
+}
+
+.agenda_sejours_jeunes .category_badge,
+.agenda_sejours_jeunes.category_badge{
+  background-color: #0237b6;
+}
+
+.agenda_divers .category_badge,
+.agenda_divers.category_badge{
+  background-color: #916d00;
+}
+
+
+
+
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
   .fs-1{  
