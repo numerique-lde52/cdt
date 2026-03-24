@@ -4,7 +4,7 @@ lang: fr
 canceled: false
 published: true
 pined: false
-title: Le printemps des oiseaux !
+title: Le printemps des oiseaux ! pour les 6 - 12 ans
 category: Animation nature
 intro: Avec l’arrivée du printemps, la nature se réveille… et les oiseaux aussi
   ! Publics enfants - 6/12 ans
