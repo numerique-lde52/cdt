@@ -21,7 +21,7 @@ tarifs: >-2
    - 10/14 ans : 680 €
 
 
-  (+ 3,92 € d’adhésion à l ‘association des Amis de la Ligue 52 / enfant)
+  (+ 10 € d’adhésion à l ‘association des Amis de la Ligue 52 / enfant)
 
 
 
