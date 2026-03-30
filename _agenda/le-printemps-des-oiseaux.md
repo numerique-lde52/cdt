@@ -24,6 +24,9 @@ texte: >-
 
 
   RDV à Chemins de Traverse - 9 rue du Val Clavin, 52160 Auberive
+
+
+  **Gratuit** (financé par le Parc National de Forêts), sur inscription obligatoire (places limitées) via le site du Parc National de Forêts : <https://www.forets-parcnational.fr/fr/agenda/le-printemps-des-oiseaux>
 date_start: 2026-04-22T14:00:00.000+02:00
 date_end: 2026-04-22T16:30:00.000+02:00
 localisation: Auberive
