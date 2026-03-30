@@ -12,6 +12,20 @@ texte: >-
   l'ouverture de l'écocamping.
 
 
+  Au programme :
+
+
+  * Rangement
+
+  * Remise en condition des lodges
+
+  * Bricolage, peinture, ...
+
+  * Et bonne humeur et beau temps au rendez-vous.
+
+
+
+
   Et comme d’habitude :
 
 
@@ -22,7 +36,7 @@ texte: >-
 
 
   \- Repas tiré du sac.
-date_start: 2026-04-02T09:00:00.000+02:00
+date_start: 2026-04-03T09:00:00.000+02:00
 date_end: 2026-04-03T17:00:00.000+02:00
 localisation: Auberive
 ---
