@@ -24,7 +24,13 @@ texte: >-
   Prévoyez une tenue adaptée à la météo, privilégiez des vêtements légers mais couvrant (les pantalons et tee-shirt à manches longues pour éviter les tiques) ainsi que des chaussures de randonnées. 
 
 
-  RDV : Place Sainte-Anne Saint Loup sur Aujon
+  **RDV** : Place Sainte-Anne Saint Loup sur Aujon
+
+
+  **Gratuit** (financé par la Région Grand Est), 
+
+
+  sur inscription obligatoire (places limitées) : 06 98 91 71 86 / cin.auberive@ligue52.org
 date_start: 2026-07-22T14:00:00.000+02:00
 date_end: 2026-07-22T17:00:00.000+02:00
 localisation: Saint Loup sur Aujon
