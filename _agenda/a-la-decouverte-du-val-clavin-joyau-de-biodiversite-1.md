@@ -23,7 +23,13 @@ texte: >-
   Prévoir une tenue adaptée à la météo, s’il fait chaud, privilégier des vêtements légers mais couvrant (les pantalons et tee-shirt à manches longues pour éviter les tiques) ainsi que des chaussures de randonnées.
 
 
-  RDV à Chemins de Traverse - Maison forestière des Charbonnières - 9 rue du Val Clavin, 52160 Auberive
+  **RDV** à Chemins de Traverse - Maison forestière des Charbonnières - 9 rue du Val Clavin, 52160 Auberive
+
+
+  **Gratuit** (financé par le Parc National de Forêts), 
+
+
+  sur inscription obligatoire (places limitées) : via l'[agenda du site du Parc National de Forêts](https://forets-parcnational.fr/fr/agenda)
 date_start: 2026-08-19T14:00:00.000+02:00
 date_end: 2026-08-19T17:00:00.000+02:00
 localisation: Auberive
