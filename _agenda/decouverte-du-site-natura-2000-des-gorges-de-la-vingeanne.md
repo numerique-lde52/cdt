@@ -4,22 +4,14 @@ lang: fr
 canceled: false
 published: true
 pined: false
-title: Découverte du site Natura 2000 des Gorges de la Vingeanne
+title: Matinée découverte du site Natura 2000 des Gorges de la Vingeanne
 category: Animation nature
 intro: Une immersion ludique et scientifique pour mieux comprendre la richesse
   et la fragilité des milieux aquatiques.
-texte: >+
+texte: >-
   Venez explorer la rivière au cœur du site Natura 2000 des Gorges de la
   Vingeanne et partez à la découverte des fascinantes petites bêtes de l’eau qui
   y vivent.
-
-
-  Deux séances vous sont proposées : 
-
-
-  * le matin de 9h30 à 12h 
-
-  * l’après-midi de 13h30 à 16h
 
 
   Au programme : 
@@ -36,12 +28,10 @@ texte: >+
   * et pourquoi pas une touche d’aquarelle pour prolonger l’expérience artistique en pleine nature.
 
 
-
   Prévoir des bottes (obligatoires) et des vêtements de rechange, par précaution.
 
-  Prévoyez une tenue adaptée à la météo, privilégiez des vêtements couvrant (les pantalons et tee-shirt à manches longues pour éviter les tiques). 
-
+  Prévoyez une tenue adaptée à la météo, privilégiez des vêtements couvrant (les pantalons et tee-shirt à manches longues pour éviter les tiques).
 date_start: 2026-05-30T09:30:00.000+02:00
-date_end: 2026-05-30T16:00:00.000+02:00
+date_end: 2026-05-30T12:00:00.000+02:00
 localisation: Auberive
 ---
