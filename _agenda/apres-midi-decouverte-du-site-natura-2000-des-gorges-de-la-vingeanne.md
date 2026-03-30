@@ -31,6 +31,18 @@ texte: >-
   Prévoir des bottes (obligatoires) et des vêtements de rechange, par précaution.
 
   Prévoyez une tenue adaptée à la météo, privilégiez des vêtements couvrant (les pantalons et tee-shirt à manches longues pour éviter les tiques).
+
+
+  Possibilité pour celles et ceux qui le souhaitent de pique-niquer sur place.
+
+
+  RDV : Gorges de la Vingeanne. Le lieu exact vous sera communiqué rapidement.
+
+
+  **Gratuit** (financé par le dispositif Natura 2000), 
+
+
+  sur inscription obligatoire (places limitées) : 06 98 91 71 86 / cin.auberive@ligue52.org
 date_start: 2026-05-30T13:30:00.000+02:00
 date_end: 2026-05-30T16:00:00.000+02:00
 localisation: Auberive
