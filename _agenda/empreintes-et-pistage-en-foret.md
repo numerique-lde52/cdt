@@ -18,11 +18,15 @@ texte: >-
   Le parcours est vallonné et d'environ 4 km.
 
 
-
   Prévoyez une tenue adaptée à la météo, s'il fait chaud, privilégiez des vêtements légers mais couvrant (les pantalons et tee-shirt à manches longues pour éviter les tiques) ainsi que des chaussures de randonnées ou bottes.
 
 
-  Rdv à la Maison forestière de Charbonnières, 9 chemin du val Clavin, 52160 Auberive
+  **Rdv** à la Maison forestière de Charbonnières, 9 chemin du val Clavin, 52160 Auberive
+
+
+  **Gratuit** (financé par la Région Grand Est), sur inscription obligatoire (places limitées)
+
+  06 98 91 71 86 / cin.auberive@ligue52.org
 date_start: 2026-04-21T09:00:00.000+02:00
 date_end: 2026-04-21T12:00:00.000+02:00
 localisation: Auberive
