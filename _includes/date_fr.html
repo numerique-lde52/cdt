@@ -121,7 +121,7 @@ Two conditions :
   {% when "long" %}
     {% if same_day_event %}
       le {{ date_start_day_name_long }} {{ start_day_number }} {{ start_month_name_long }} {{ start_year }}
-      <br> de {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
+      de {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
     {% else %}
       du {{ date_start_day_name_long }} {{ start_day_number }} {{ start_month_name_long }} {{ start_year }} à {{ start_hour }}h{{ start_minutes }} <br>au
     {{ date_end_day_name_long }} {{ end_day_number }} {{ end_month_name_long }} {{ end_year }} à {{ end_hour }}h{{ end_minutes }}
@@ -129,7 +129,7 @@ Two conditions :
   {% when "short" %}
     {% if same_day_event %}
       le {{ date_start_day_name_short }} {{ start_day_number }} {{ start_month_name_short }} {{ start_year }}
-      <br>de {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
+      de {{ start_hour }}h{{ start_minutes }} à {{ end_hour }}h{{ end_minutes }}
     {% else %}
       du {{ date_start_day_name_short }} {{ start_day_number }} {{ start_month_name_short }} {{ start_year }} à {{ start_hour }}h{{ start_minutes }} <br>au
     {{ date_end_day_name_short }} {{ end_day_number }} {{ end_month_name_short }} {{ end_year }} à {{ end_hour }}h{{ end_minutes }}

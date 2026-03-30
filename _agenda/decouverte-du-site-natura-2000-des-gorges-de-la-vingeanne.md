@@ -28,6 +28,9 @@ texte: >-
   * et pourquoi pas une touche d’aquarelle pour prolonger l’expérience artistique en pleine nature.
 
 
+  Il s'agit de la même animation que [celle qui à lieu le même jour dans l’après-midi](/agenda/apres-midi-decouverte-du-site-natura-2000-des-gorges-de-la-vingeanne.html).
+
+
   Prévoir des bottes (obligatoires) et des vêtements de rechange, par précaution.
 
   Prévoyez une tenue adaptée à la météo, privilégiez des vêtements couvrant (les pantalons et tee-shirt à manches longues pour éviter les tiques).

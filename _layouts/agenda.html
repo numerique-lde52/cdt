@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
-
-<h1 class=""><span class="badge text-bg-primary">{{ page.category }}</span>
+{% assign event_class = site.data.categories_agenda.categories_agenda | where: "name", page.category %}
+<div class="agenda_entry {{ event_class[0].css_class }}">
+    <span class="badge category_badge">{{ page.category }}</span>
+</div>
+<h1 class="">
 	{{ page.title }}
     {% if page.canceled %}
     	<span class="badge text-bg-danger">ANNULÉ</span>
     {% endif %}
 </h1>
 <p class="h2">
-{%- include date_fr.html date_start=page.date_start date_end=page.date_end -%}
+{%- include date_fr.html date_start=page.date_start date_end=page.date_end format="short" -%}
 </p>
 <h2>{{ page.intro }}</h2>
 
