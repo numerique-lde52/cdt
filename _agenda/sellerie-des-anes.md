@@ -15,7 +15,7 @@ texte: >-
   Essentiellement travail du bois, mais pas de compétences requises.
 
 
-  Merci de nous indiquer si vous souhaitez venir de sorte d'organiser au mieux la semaine. 
+  Merci de nous indiquer si vous souhaitez venir de sorte d'organiser au mieux la semaine.
 
 
   Et comme d'habitude, dans la joie et la bonne humeur : 

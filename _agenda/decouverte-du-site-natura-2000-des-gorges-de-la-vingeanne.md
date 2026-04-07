@@ -39,7 +39,7 @@ texte: >-
   Possibilité pour celles et ceux qui le souhaitent de pique-niquer sur place.
 
 
-  RDV : Gorges de la Vingeanne. Le lieu exact vous sera communiqué rapidement.
+  RDV : Gorges de la Vingeanne. [Voir sur Google maps](https://maps.app.goo.gl/FPgfk3FXnZVx89T8A)
 
 
   **Gratuit** (financé par le dispositif Natura 2000), 

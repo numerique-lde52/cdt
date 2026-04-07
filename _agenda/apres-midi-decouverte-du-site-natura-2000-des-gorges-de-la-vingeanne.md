@@ -39,7 +39,7 @@ texte: >-
   Possibilité pour celles et ceux qui le souhaitent de pique-niquer sur place.
 
 
-  RDV : Gorges de la Vingeanne. Le lieu exact vous sera communiqué rapidement.
+  **RDV** : Gorges de la Vingeanne. [Voir sur Google maps](https://maps.app.goo.gl/FPgfk3FXnZVx89T8A)
 
 
   **Gratuit** (financé par le dispositif Natura 2000), 
@@ -48,5 +48,5 @@ texte: >-
   sur inscription obligatoire (places limitées) : 06 98 91 71 86 / cin.auberive@ligue52.org
 date_start: 2026-05-30T13:30:00.000+02:00
 date_end: 2026-05-30T16:00:00.000+02:00
-localisation: Auberive
+localisation: Aprey
 ---
