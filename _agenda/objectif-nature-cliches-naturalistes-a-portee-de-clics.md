@@ -6,7 +6,7 @@ published: true
 pined: false
 title: "Objectif nature : clichés naturalistes à portée de clics"
 category: Animation nature
-intro: Une immersion sensible au coeur du Vivant accompagnée par une animatrice
+intro: Une immersion sensible au cœur du Vivant accompagnée par une animatrice
   nature et un photographe naturaliste.
 texte: >-
   Éclairés par les connaissances naturalistes de l’animatrice, les participants
@@ -20,13 +20,16 @@ texte: >-
   Prévoir votre pique-nique tiré du sac.
 
 
-  Gratuit (financé par la Région Grand Est)
+  Pour les plus de 10 ans.
 
 
-  Rdv à la Maison forestière de Charbonnières, 9 chemin du val Clavin, 52160 Auberive
+  **Gratuit** (financé par la Région Grand Est)
 
 
-  sur inscription obligatoire (places limitées) 06 98 91 71 86 / cin.auberive@ligue52.org
+  **Rdv** à la Maison forestière de Charbonnières, 9 chemin du val Clavin, 52160 Auberive
+
+
+  sur **inscription obligatoire** (places limitées) 06 98 91 71 86 / cin.auberive@ligue52.org
 date_start: 2026-07-25T09:00:00.000+02:00
 date_end: 2026-07-25T17:00:00.000+02:00
 localisation: Auberive
