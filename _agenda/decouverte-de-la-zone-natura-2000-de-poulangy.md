@@ -29,7 +29,7 @@ texte: >-
 
 
   sur inscription obligatoire (places limitées) 06 98 91 71 86 / cin.auberive@ligue52.org
-date_start: 2026-04-24T10:00:00.000+02:00
-date_end: 2026-04-24T16:30:00.000+02:00
+date_start: 2026-04-21T10:00:00.000+02:00
+date_end: 2026-04-21T16:30:00.000+02:00
 localisation: Poulangy
 ---
