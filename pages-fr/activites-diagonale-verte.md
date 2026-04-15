@@ -36,6 +36,9 @@ gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672048/20220529_114910_jcud9n.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672048/20220529_160121_njtgpa.jpg
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672049/20220529_114234_ttkhhy.jpg
+documents:
+  - link_text: Télécharger le bulletin d'inscription à la Diagonale Verte 2026
+    url: /assets/uploads/bulletins-inscription/Formulaire-d_inscription_diag_verte_2026.pdf
 order: "010"
 layout: page
 ---
