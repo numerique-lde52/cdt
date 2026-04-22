@@ -1,7 +1,7 @@
 ---
 layout: agenda
 lang: fr
-canceled: false
+canceled: true
 published: true
 pined: false
 title: Découverte de la zone Natura 2000 du Vallon de Senance
