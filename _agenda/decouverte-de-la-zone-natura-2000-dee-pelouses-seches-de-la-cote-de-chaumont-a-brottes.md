@@ -27,7 +27,7 @@ texte: >-
 
 
   RDV : en face du collège de la Rochotte
-date_start: 2026-05-23T14:00:00.000+02:00
-date_end: 2026-05-23T16:00:00.000+02:00
+date_start: 2026-05-23T10:00:00.000+02:00
+date_end: 2026-05-23T12:00:00.000+02:00
 localisation: Chaumont
 ---
