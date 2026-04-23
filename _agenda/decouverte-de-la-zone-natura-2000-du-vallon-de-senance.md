@@ -21,7 +21,7 @@ texte: >-
 
 
   06 98 91 71 86 / cin.auberive@ligue52.org
-date_start: 2026-04-23T14:00:00.000+02:00
-date_end: 2026-04-23T17:00:00.000+02:00
+date_start: 2026-05-23T14:00:00.000+02:00
+date_end: 2026-05-23T17:30:00.000+02:00
 localisation: Noidant-le-Rocheux
 ---
