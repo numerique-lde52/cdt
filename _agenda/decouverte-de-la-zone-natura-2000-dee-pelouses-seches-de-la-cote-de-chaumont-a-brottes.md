@@ -4,7 +4,7 @@ lang: fr
 canceled: false
 published: true
 pined: false
-title: Découverte de la zone Natura 2000 dee pelouses sèches de la côte de
+title: Découverte de la zone Natura 2000 des pelouses sèches de la côte de
   Chaumont à Brottes
 category: Animation nature
 intro: Venez découvrir la richesse de cette zone Natura 2000 proche de Chaumont.
