@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 permalink: /hebergements/chambre-aux-papillons/
 title: La chambre aux papillons
 show_booking_button: false
