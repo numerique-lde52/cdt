@@ -29,8 +29,6 @@ tarifs: |-
   Du vendredi 8 mai au dimanche 10 mai 2026,
 
   22 participants, enfants bons marcheurs bienvenus.
-
-  **Formulaire d'inscription à venir !**
 show_adhesion: true
 gallery:
   - https://res.cloudinary.com/dwr0s07kl/image/upload/v1750672048/20220529_114910_jcud9n.jpg
