@@ -19,7 +19,7 @@ texte: >-
   [Toutes les informations dans la brochure stages](/assets/uploads/brochures/brochure-stage-photo-2026_compressed.pdf).
 
 
-  Inscriptions obligatoire avant le 1er juin 2026.
+  Inscription obligatoire avant le 1er juin 2026.
 
 
   Renseignements : David Jacquel - numerique@ligue52.org
