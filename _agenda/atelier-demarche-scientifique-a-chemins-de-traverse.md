@@ -9,14 +9,10 @@ category: Animation nature
 intro: Venez découvrir comment se conduit une recherche scientifique et comment
   vous impliquer !
 texte: >-
-  Cet atelier, animé par une scientifique, vous permettra de comprendre comment
-  se construit une
-
-
-  nouvelle connaissance scientifique : par quelles étapes passent les scientifiques pour mener à bien leurs
-
-
-  recherches ? 
+  Cet atelier, animé par une scientifique de l’association Tous Chercheurs, vous
+  permettra de comprendre comment se construit une nouvelle connaissance
+  scientifique : par quelles étapes passent les scientifiques pour mener à bien
+  leurs recherches ? 
 
 
   Qui sont les actrices et les acteurs de la recherche ? Et comment chacun peut y participer ?
