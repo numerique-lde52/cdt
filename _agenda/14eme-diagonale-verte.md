@@ -1,7 +1,7 @@
 ---
 layout: agenda
 lang: fr
-canceled: false
+canceled: true
 published: true
 pined: true
 title: 14ème Diagonale Verte
