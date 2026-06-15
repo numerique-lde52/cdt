@@ -2,7 +2,7 @@
 layout: agenda
 lang: fr
 canceled: false
-published: true
+published: false
 pined: false
 title: Stage photo spécial téléphone portable
 category: Animation nature
