@@ -1,0 +1,141 @@
+---
+published: true
+permalink: /visite-virtuelle3/
+title: Visite virtuelle 3
+category: Général
+order: "20"
+layout: default
+---
+<!-- the viewer container must have a defined size -->
+<div id="console"></div>
+<div id="viewer" style="width: 70vw; height: 70vh;"></div>
+
+<div>
+  <img src="/assets/photosphere/plan-chemins-de-traverse.svg" alt="Plan Chemins de Traverse - Auberive">
+</div>
+
+
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+            "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+            "@photo-sphere-viewer/compass-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.module.js",
+            "@photo-sphere-viewer/markers-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",
+            "@photo-sphere-viewer/virtual-tour-plugin": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js"
+        }
+    }
+</script>
+
+<script type="module">
+    import { Viewer } from '@photo-sphere-viewer/core';
+    import { CompassPlugin } from '@photo-sphere-viewer/compass-plugin';
+    import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+    import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
+
+    const baseUrl = '/assets/photosphere/';
+
+    const nodes = [
+      {
+        id: '1',
+        panorama: baseUrl + "photosphere-chemins-de-traverse-05.jpg",
+        caption: "la Maison forestière de Charbonnière",
+        sphereCorrection: { pan: '180deg' },
+        links: [
+          {
+            nodeId: '2',
+            position: { yaw: "80.6037deg", pitch: "-2.2252deg" },
+          },
+        ],
+        markers: [
+          {
+            id: 'new-marker',
+            position: { yaw: '2.75', pitch: '0.07' },
+            image: '/assets/photosphere/coquelicot.webp',
+            size: { width: 32, height: 32 },
+          },
+        ],
+      },
+
+      {
+        id: '2',
+        panorama: baseUrl + "photosphere-chemins-de-traverse-06.jpg",
+        caption: "Le jardin",
+        defaultPitch: 0,
+        defaultYaw: 0,
+        links: [
+          {
+            nodeId: '1',
+            position: { textureX: 1500, textureY: 780 },
+          },
+        ],
+      },
+
+
+    ];
+
+
+
+
+    const viewer = new Viewer({
+        container: document.querySelector('#viewer'),
+        loadingImg: baseUrl +  "alphonse.webp",
+        lang: {
+          zoom: 'Zoom',
+          zoomOut: 'Zoom arrière',
+          zoomIn: 'Zoom avant',
+          moveUp: 'Monter',
+          moveDown: 'Descendre',
+          moveLeft: 'Rotation à gauche',
+          moveRight: 'Rotation à droite',
+          description: 'Description',
+          download: 'Télécharger l\'image',
+          fullscreen: 'Plein écran',
+          loading: 'Hi Han !',
+          menu: 'Menu',
+          close: 'Fermer',
+          twoFingers: 'Naviger avec deux dogts',
+          ctrlZoom: 'Utiliser ctrl + scroll pour zoomer l\'image',
+          loadError: 'Le panorama ne peut pas être chargé',
+          webglError: 'Votre navigateur ne semble pas supporter WebGL',
+        },
+        plugins: [
+          CompassPlugin.withConfig({
+              size: '100px',
+          }),
+
+          MarkersPlugin.withConfig({
+
+          }),
+          VirtualTourPlugin.withConfig({
+            nodes: nodes,
+            startNodeId: '1',
+          }),
+        ],
+    });
+
+{% if site.debug %}
+    viewer.addEventListener('click', ({ data }) => {
+        show_pos(data);
+    });
+
+    viewer.addEventListener('position-updated', ({ position }) => {
+        document.getElementById("console").innerHTML = `yaw: ${rad_to_deg(position.yaw)}° pitch: ${rad_to_deg(position.pitch)}`;
+
+    });
+
+    function show_pos(data){
+      document.getElementById("console").innerHTML = `${data.rightclick ? 'right ' : 'left '}clicked at yaw: ${rad_to_deg(data.yaw)} DEG pitch: ${rad_to_deg(data.pitch)} DEG - yaw: ${data.yaw.toFixed(4)} RAD pitch: ${data.pitch.toFixed(4)} RAD - textureX: ${data.textureX} textureY: ${data.textureY} `;
+
+      console.log(data)
+    }
+
+
+    function rad_to_deg(rad){
+      var deg = rad * (180 / Math.PI);
+      return deg.toFixed(4)
+    }
+{% endif %}
+
+</script>
+
