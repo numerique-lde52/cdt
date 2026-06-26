@@ -6,12 +6,8 @@ published: true
 pined: false
 title: Découverte de la zone Natura 2000 de la Tufière de Rolampont
 category: Animation nature
-intro: >-
-  Au cœur du vallon du Vaubrien, venez découvrir la tufière de Rolampont, l’une
-  des plus remarquables formations de tuf du nord-est de la France.  
-
-
-  \
+intro: Au cœur du vallon du Vaubrien, venez découvrir la tufière de Rolampont,
+  l’une des plus remarquables formations de tuf du nord-est de la France.
 texte: >-
   Façonné depuis des milliers d’années par l’action de l’eau, du calcaire et des
   mousses, ce site naturel dévoile un paysage étonnant de cascades, de bassins
