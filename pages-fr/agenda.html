@@ -43,7 +43,7 @@ order: "30"
   <div class="container">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-      {% assign events = site.agenda | sort: "date_start" %}
+      {% assign events = site.agenda | sort: "date_start" | reverse %}
 
       {%- for event in events -%}
       {% if event.date_end < site.time %}
