@@ -29,7 +29,7 @@ texte: >-
   **Gratuit** (financé par le Parc National de Forêts), 
 
 
-  sur **inscription obligatoire** (places limitées) : **06 98 91 71 86 / [cin.auberive@ligue52.org](mailto:cin.auberive@ligue52.org)**
+  sur **inscription obligatoire** (places limitées) : **06 74 23 30 91 / [Formulaire d'inscription](https://www.forets-parcnational.fr/fr/inscriptions-une-animation-estivale-parc-national-de-forets)**
 date_start: 2026-07-16T14:00:00.000+02:00
 date_end: 2026-07-16T17:00:00.000+02:00
 localisation: Auberive
