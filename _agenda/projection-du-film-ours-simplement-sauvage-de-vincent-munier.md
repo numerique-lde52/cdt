@@ -2,7 +2,7 @@
 layout: agenda
 lang: fr
 canceled: false
-published: false
+published: true
 pined: false
 title: Projection du film "Ours, Simplement Sauvage" de Vincent Munier
 category: Spectacle

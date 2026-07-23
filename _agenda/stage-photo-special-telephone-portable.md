@@ -25,4 +25,5 @@ texte: >-
   Renseignements : David Jacquel - numerique@ligue52.org
 date_start: 2026-06-13T09:00:00.000+02:00
 date_end: 2026-06-13T17:00:00.000+02:00
+localisation: Auberive
 ---

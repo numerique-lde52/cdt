@@ -36,7 +36,9 @@ layout: default
                   </span>
                   <span class="badge category_badge">{{ event.category }}</span>
                   {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
-                  <a href="{{ event.url }}"><h2 class="card-title h4">{{ event.title }}</h2></a>
+                  <a href="{{ event.url }}"><h2 class="card-title h4">
+                  {% if event.localisation %}<span class="localisation">{{ event.localisation }} - </span>{% endif %}
+                  {{ event.title }}</h2></a>
                   <p>{{ event.intro }}</p>
                 </div>
                </div>

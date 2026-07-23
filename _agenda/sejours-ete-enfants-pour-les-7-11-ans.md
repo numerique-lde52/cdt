@@ -15,4 +15,5 @@ texte: >-
   Toutes les information sur la page [Séjours jeunes](/activites/sejours-ete-enfants-et-jeunes/)
 date_start: 2026-07-11T09:00:00.000+02:00
 date_end: 2026-07-18T17:00:00.000+02:00
+localisation: Auberive
 ---
