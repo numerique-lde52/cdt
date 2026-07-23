@@ -13,11 +13,14 @@ texte: >-
   la relation à l'environnement.
 
 
-  Gratuit, sur inscription (places limitées) : evenements@forets-parcnational.fr // 06 74 23 30 91
+  Projection du film "Ours, Simplement Sauvage" de Vincent Munier
 
 
-  [Voir sur l'agenda du Parc national de fôrets](https://forets-parcnational.fr/fr/agenda/projection-plein-air-2)
-date_start: 2026-08-13T10:17:00.000+02:00
-date_end: 2026-08-13T10:17:00.000+02:00
-localisation: Chateauvillain
+  RDV : Chemins de traverse, 9 rue du val Clavin , 52160 Auberive
+
+
+  Gratuit, sur inscription (places limitées) : 06 98 91 71 86 / cin.auberive@ligue52.org
+date_start: 2026-08-12T21:00:00.000+02:00
+date_end: 2026-08-12T23:00:00.000+02:00
+localisation: Auberive
 ---
