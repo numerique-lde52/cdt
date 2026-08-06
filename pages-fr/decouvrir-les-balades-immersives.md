@@ -27,12 +27,6 @@ tech-description: >-
   * Couleur de balisage : PR jaune et bleu puis GR7 rouge et blanc puis PR jaune
       et vert
 
-  Voir la [carte sur le site du Parc national de forêts](https://rando.forets-parcnational.fr/trek/304239-Circuit-de-la-tufiere-d-Amorey)
-
-
-  Télécharger les traces GPS ([GPX](https://admin-geotrek.forets-parcnational.fr/api/fr/treks/304239/circuit-de-la-tufiere-damorey.gpx)  ou [KML](https://admin-geotrek.forets-parcnational.fr/api/fr/treks/304239/circuit-de-la-tufiere-damorey.kml))
-
-
   Ce circuit vous invite à la découverte d’une partie du riche patrimoine tant naturel qu’historique du village d’Auberive.
 
 
@@ -48,23 +42,21 @@ tech-description: >-
   Ce circuit bien que de longueur réduite, saura vous séduire par les nombreuses richesses patrimoniales rencontrées.
 
 
+  [Téléchargez le topo-guide](https://www.bienvenue-hautemarne.fr/itineraires/auberive-le-pont-griselin-pr-n-96-iticha052v5002bc/?)
+
+
   ## Montavoir
 
-    Distance : 11 km (au départ du gîte de Charbonnière)
 
-    Durée à pied : 3h00
+  * Distance : 11 km (au départ du gîte de Charbonnière)
 
-    Niveau à pied : facile
+  * Durée à pied : 3h00 niveau facile
 
-    Durée à vtt : 1h30
+  * Durée à vtt : 1h30 niveau facile
 
-    Niveau à vtt : facile
+  * Durée à cheval : 1h30 niveau facile
 
-    Durée à cheval : 1h30
-
-    Niveau à cheval : facile
-
-    Couleur de balisage : bleu et jaune (PR jusqu'à 10 km) puis blanc et rouge (GR7)
+  * Couleur de balisage : bleu et jaune (PR jusqu'à 10 km) puis blanc et rouge (GR7)
 
     Ce circuit vous propose une balade à la découverte de la forêt domaniale
     d’Auberive et de ses richesses.
@@ -99,9 +91,17 @@ tech-description: >-
 
     Cette agréable ballade au fil de l’eau et à travers bois vous offrira au final une belle échappée paysagère sur la vallée de l’Aube, le village d’Auberive et son abbaye cistercienne fondée en 1135 par Bernard de Clairvaux et l’évêque de Langres.
 
-    [Téléchargez le topo-guide](https://rando.forets-parcnational.fr/trek/304239-Circuit-de-la-tufiere-d-Amorey)
+  Voir la [carte sur le site du Parc national de forêts](https://rando.forets-parcnational.fr/trek/304239-Circuit-de-la-tufiere-d-Amorey)
 
-    D'autres balades et topo-guides à télécharger
+
+  Télécharger les traces GPS ([GPX](https://admin-geotrek.forets-parcnational.fr/api/fr/treks/304239/circuit-de-la-tufiere-damorey.gpx)  ou [KML](https://admin-geotrek.forets-parcnational.fr/api/fr/treks/304239/circuit-de-la-tufiere-damorey.kml))
+
+
+  [Téléchargez le topo-guide](https://rando.forets-parcnational.fr/trek/304239-Circuit-de-la-tufiere-d-Amorey)
+
+
+  ## Autres balades et topo-guides à télécharger
+
 
   * sur le site du [Parc national de forêts](https://rando.forets-parcnational.fr/) 
 
