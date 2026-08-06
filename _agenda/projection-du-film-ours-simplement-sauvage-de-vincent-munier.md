@@ -16,10 +16,12 @@ texte: >-
   Projection du film "Ours, Simplement Sauvage" de Vincent Munier
 
 
-  RDV : Chemins de traverse, 9 rue du val Clavin , 52160 Auberive
+  **Rendez-vous** : Chemins de traverse, 9 rue du val Clavin , 52160 Auberive
 
 
-  Gratuit, sur inscription (places limitées) auprès du Parc national de forêts : **evenements@forets-parcnational.fr** // **06 74 23 30 91** // [Formulaire d'inscription](https://www.forets-parcnational.fr/fr/inscriptions-une-animation-estivale-parc-national-de-forets)
+  Gratuit, sur inscription auprès du Parc national de forêts  (places limitées) :  ** evenements@forets-parcnational.fr** - **06 74 23 30 91**
+
+   [Formulaire d'inscription](https://www.forets-parcnational.fr/fr/inscriptions-une-animation-estivale-parc-national-de-forets)
 date_start: 2026-08-12T21:00:00.000+02:00
 date_end: 2026-08-12T23:00:00.000+02:00
 localisation: Auberive
