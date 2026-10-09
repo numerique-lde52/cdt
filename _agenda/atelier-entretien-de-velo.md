@@ -5,7 +5,7 @@ canceled: false
 published: true
 pined: false
 title: Atelier entretien de vélo
-category: Chantier bénévoles
+category: Divers
 intro: Venez avec votre vélo et éventuellement les pièces à changer.
 texte: |-
   Atelier d'apprentissage gratuit.
