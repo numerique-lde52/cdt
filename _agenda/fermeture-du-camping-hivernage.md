@@ -24,7 +24,7 @@ texte: >-
   * Nous fournissons les gants et les lunettes de chantier
 
   * Repas tiré du sac.
-date_start: 2026-10-30T09:00:00.000+01:00
-date_end: 2026-10-30T17:00:00.000+01:00
+date_start: 2026-10-31T09:00:00.000+01:00
+date_end: 2026-11-01T17:00:00.000+01:00
 localisation: Auberive
 ---
