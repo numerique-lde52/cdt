@@ -1,0 +1,63 @@
+---
+layout: default
+---
+{%- if site.print-includes-boundaries-comments == true %}
+<!-- home layout start -->
+{%- endif %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9 ">
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/SH0W_FtJEPE?si=CPIb36jm1-rTvwNd"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+  		{%- include home-category-section-thumbnails.html category="Hébergements" -%}
+
+  		{%- include home-category-section-thumbnails.html category="Activités" -%}
+
+    </div>
+    <div class="col-lg-3">
+    	<h2>Dans votre agenda</h2>
+
+      {% assign events = site.agenda | sort: "date_start" %}
+
+      {% assign event_count = 0 %}
+
+      {% assign max_events = site.home_agenda_max_entries %}
+
+      {%- for event in events -%}
+        {% assign event_class = site.data.categories_agenda.categories_agenda | where: "name", event.category %}
+        {% if event.date_end > site.time and event_count < max_events %}
+            {% assign event_count = event_count | plus: 1 %}
+            <div class="col mb-2 agenda-entry {{ event_class[0].css_class }}">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <span class="badge text-bg-primary">
+                    {%- include date_fr.html date_start=event.date_start date_end=event.date_end format="badge" -%}
+                  </span>
+                  <span class="badge category_badge">{{ event.category }}</span>
+                  {% if event.canceled %}<span class="badge text-bg-danger">ANNULÉ</span>{% endif %}
+                  <a href="{{ event.url }}"><h2 class="card-title h4">
+                  {% if event.localisation %}<span class="localisation">{{ event.localisation }} - </span>{% endif %}
+                  {{ event.title }}</h2></a>
+                  <p>{{ event.intro }}</p>
+                </div>
+               </div>
+            </div>
+        {% endif %}
+      {%- endfor -%}
+      <a class="badge text-bg-primary h2" href="/agenda/">Voir tout l'agenda</a>
+    </div>
+  </div>
+</div>
+{%- if site.print-includes-boundaries-comments == true %}
+<!-- home layout end -->
+{%- endif %}
